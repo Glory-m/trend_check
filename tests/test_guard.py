@@ -32,12 +32,8 @@ class GuardTest(unittest.TestCase):
 
     def test_private_terms_from_local_file(self):
         with tempfile.TemporaryDirectory() as d:
-            Path(d, "guard.local.txt").write_text("# comment
-acme-corp
-", encoding="utf-8")
-            Path(d, "x.md").write_text("hello
-works at ACME-CORP
-", encoding="utf-8")
+            Path(d, "guard.local.txt").write_text("# comment\nacme-corp\n", encoding="utf-8")
+            Path(d, "x.md").write_text("hello\nworks at ACME-CORP\n", encoding="utf-8")
             with mock.patch.object(guard, "ROOT", Path(d)):
                 problems = guard.check(["x.md", "company.crt"])
         self.assertEqual(len(problems), 2)
