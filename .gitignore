@@ -5,6 +5,12 @@
 .claude/settings.local.json
 *.pem
 *.key
+*.crt
+*.cer
+*.der
+*.p12
+*.pfx
+*.jks
 secrets/
 
 # Python

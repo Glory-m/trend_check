@@ -30,6 +30,19 @@ class GuardTest(unittest.TestCase):
         self.assertTrue(self.run_check(".env", "A=1"))
         self.assertTrue(self.run_check(".claude/settings.local.json", "{}"))
 
+    def test_private_terms_from_local_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            Path(d, "guard.local.txt").write_text("# comment
+acme-corp
+", encoding="utf-8")
+            Path(d, "x.md").write_text("hello
+works at ACME-CORP
+", encoding="utf-8")
+            with mock.patch.object(guard, "ROOT", Path(d)):
+                problems = guard.check(["x.md", "company.crt"])
+        self.assertEqual(len(problems), 2)
+        self.assertIn("x.md:2", problems[0])
+
     def test_clean_passes(self):
         self.assertEqual(self.run_check("ok.py", "print('hello')  # ANTHROPIC_API_KEY는 쓰지 않는다"), [])
         self.assertEqual(self.run_check("ok.md", "emoji 👨" + chr(0x200D) + "💻"), [])

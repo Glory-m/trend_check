@@ -25,8 +25,10 @@ SECRET_RULES = [
 HIDDEN = re.compile("[" + "".join(map(chr, [0x200B, 0x200C, 0x200E, 0x200F, 0x2060, 0x2061, 0x2062, 0x2063,
                                              0x2064, 0xFEFF])) + chr(0x202A) + "-" + chr(0x202E)
                     + chr(0x2066) + "-" + chr(0x2069) + chr(0xE0000) + "-" + chr(0xE007F) + "]")
-FORBIDDEN_NAMES = re.compile(r"(^|/)(\.env(\..*)?|.*\.pem|.*\.key|id_rsa.*|id_ed25519.*|\.credentials\.json|"
-                             r"settings\.local\.json|.*\.local\..*)$", re.I)
+FORBIDDEN_NAMES = re.compile(r"(^|/)(\.env(\..*)?|.*\.(pem|key|crt|cer|der|p12|pfx|jks|keystore)|id_rsa.*|id_ed25519.*|"
+                             r"\.credentials\.json|settings\.local\.json|.*\.local\..*)$", re.I)
+# 개인·회사 식별 키워드는 공개 레포에 적으면 그 자체가 노출이므로, 커밋되지 않는 로컬 파일에서만 읽는다.
+PRIVATE_TERMS_FILE = "guard.local.txt"
 TEXT_EXT = {".py", ".js", ".mjs", ".html", ".css", ".json", ".yml", ".yaml", ".md", ".txt", ".sh", ".toml", ""}
 
 
@@ -39,8 +41,17 @@ def files(mode):
     return [f for f in out.splitlines() if f]
 
 
+def private_terms():
+    p = ROOT / PRIVATE_TERMS_FILE
+    if not p.is_file():
+        return []
+    lines = p.read_text(encoding="utf-8").splitlines()
+    return [t.strip().lower() for t in lines if t.strip() and not t.startswith("#")]
+
+
 def check(paths):
     problems = []
+    terms = private_terms()
     for rel in paths:
         p = ROOT / rel
         if FORBIDDEN_NAMES.search(rel):
@@ -57,6 +68,11 @@ def check(paths):
             for m in rx.finditer(text):
                 line = text.count("\n", 0, m.start()) + 1
                 problems.append(f"{rel}:{line}: {name} 의심 (값은 출력하지 않음)")
+        low = text.lower()
+        for i, t in enumerate(terms, 1):
+            if t in low:
+                line = low.count("\n", 0, low.find(t)) + 1
+                problems.append(f"{rel}:{line}: 개인·회사 식별 키워드 #{i} (guard.local.txt) 발견")
         for m in HIDDEN.finditer(text):
             line = text.count("\n", 0, m.start()) + 1
             problems.append(f"{rel}:{line}: 보이지 않는 문자 U+{ord(m.group()):04X}")
