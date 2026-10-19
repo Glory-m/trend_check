@@ -13,11 +13,83 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:03092103e1": {
+   "ko": "Windows: Git Bash가 시작에서 PATH를 보고하지 못했을 때 전체 세션에 대해 \"command not found\"로 실패한 Bash 명령을 수정했습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:06100cde10": {
+   "ko": "Ultracode는 계획된 작업 및 기타 전달된 headless turn에 발표되지 않습니다. ultracode가 설정에 있을 때",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:062300cb82": {
+   "ko": "읽힌 읽힌 UTF-16LE 파일을 바이트 순서 표로 덮고, Windows-1252, Shift-JIS, GBK 또는 UTF-16BE 파일을 UTF-8로 덮어 쓰기 (지금 거부)",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:08c863c330": {
+   "ko": "Claude가 작업중인 동안 첨부 된 고정 이미지 (VS Code, 데스크톱 앱, SDK)는 긴 대화에서 이미지 오류를 반복하는 풀 사이즈로 전송됩니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:0db9a066bc": {
+   "ko": "bare-repository layout's root에서 worktree를 생성하는 오류를 개선했습니다. 이제 관련 git 오류 대신 레이아웃을 설명합니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:0e63ffb087": {
+   "ko": "다음 퀴즈드 프롬프트의 후크를 중단했을 때 신속한 역사에서 떨어졌다는 원격 제어 프롬프트를 고정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:0e9c79047f": {
    "ko": "사이버 보호 안내에서 Cyber Verification Program 신청 권유 문구 삭제",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:0f3aeae64d": {
+   "ko": "개선 된 배경 에이전트 알림: 그들은 지금 에이전트가 자신의 배경 일에 대기 할 때, 그 결과에 대해 너무 늦은 메시지를 가지고, 또는 사용 제한에 의해 중지되었다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:16cafe80f2": {
+   "ko": "Fixed SendMessage는 CLI가 다시 시작된 후, 하위 시약을 발견하지 않고 세션을 재개했습니다. (마지막 압축이 여전히 에이전트 ID가 필요합니다.)",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:199903b6e5": {
+   "ko": "Claude 앱 게이트웨이 뒤에 Claude Code Sessions에서 attribution 블록에 필드를 추가했습니다. CLAUDE_CODE_ATTRIBUTION_HEADER=0과 블록을 제거하십시오.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:1ddab4bbbc": {
+   "ko": "[VSCode] claude.ai에서 서명 할 때 내부 오류 메시지를 보여주는 mic 버튼을 고정; 그것은 지금 당신에게 서명 할 수 있습니다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:2098ccf896": {
+   "ko": "[Claude Tag] Slack에서 Claude에 대한 능력을 추가하여 누군가가 그것을 묻을 때 채널에서 생성 된 캔버스를 삭제",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:22b014746a": {
+   "ko": "[VSCode] 향상된 시작: 모델 선택기 및 슬래시 명령 메뉴 이제는 이전 폴더에 새 창에서 채울 수 있습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.299:2461120b9e": {
    "ko": "Claude Desktop의 Code 탭에서 작성자 표시(attribution)를 끄는 설정 지원",
@@ -43,11 +115,35 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:37b332929c": {
+   "ko": "수정된 클라우드 세션은 도구 그룹의 원라인 라벨 후 모델의 후속 텍스트를 보여줍니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:38fa6f0393": {
+   "ko": "클라우드 및 헤드리스 세션이 다시 시작된 2.1.296에 회귀를 수정하면 새로운 메시지가 다시 시작된 세션이 다시 시작된 경우 승인된 도구 호출을 두 번 실행할 수 있습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:3d235bfc6f": {
+   "ko": "고정 배경 세션은 --safe-mode 침묵으로 안전한 모드를 떠나 세션이 woken 또는 재시작했을 때",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:3f163f2f8e": {
    "ko": "에이전트 화면에서 /effort·/fast로 새 세션 기본값 설정, /model 등만 치면 선택 창이 열림",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:432612a9c8": {
+   "ko": "새 메시지가 명령을 중단했을 때 사용자 정의 슬래시 명령의 임베디드 쉘 라인 고정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.299:4ac76969fb": {
    "ko": "클라우드 세션·Remote Control의 MCP 커넥터가 기본으로 2026-07-28 프로토콜 사용 (legacy로 끌 수 있음)",
@@ -55,11 +151,59 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:4bc0dafbe8": {
+   "ko": "[Claude Tag] Slack에서 Claude가 잘못된 메시지를 수정하는 방법을 변경했습니다. 그것은 장소에 메시지를 편집하고 오래된 텍스트를 통해 눈에 띄는 짧은 \"Edited\"주의를 추가합니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:4d12a3ce6f": {
+   "ko": "Windows: Windows를 위한 Git가 설치되지 않을 때 열리는 포탄을 놓지 않는 고정된 PreToolUse와 PermissionRequest 걸이; 지금 전화를 막는 감시",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:5006b2fed1": {
+   "ko": "[Cloud sessions] 편집 된 일상을 조용히 움직여 자신의 삭제되거나 목록에 있지 않은 경우 다른 환경에 이동; 루틴은 이제 환경 유지",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:578d86d933": {
+   "ko": "고정 플러그인 후크는 매우 심하게 배열 된 도구 입력 또는 다음으로 메시지를 전달할 때 건너 뛰기 ()",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:5958357a7f": {
+   "ko": "api.anthropic.com에서 Anthropic의 첫 번째 파티 MCP 서버에서 MCP 도구 설명 및 서버 지침을 변경하여 4,096 문자로 절단 대신 Claude에 도달",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:5c2c4ff055": {
    "ko": "claude plugin eval에 --disallow-tools 추가 — 평가 실행에서 특정 내장 도구 제외",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:5d0bb4ffea": {
+   "ko": "MCP 서버는 일부 정책 체크 ran 전에 연결되는 실행 헤드리스 또는 SDK 세션에 추가; 차단 된 서버는 이제 접촉하지 않고 실패로보고",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:5db39f420b": {
+   "ko": "향상된 /reload-skills는 컴팩트 한 후 기술을 다시 얻을 수있는 방법 Claude에 전체 기술 목록을 다시 말",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:64064ca078": {
+   "ko": "호스트가 자동 모드를 지원하지 않는 모델로 전환 한 후 자동 모드에 머무는 SDK 및 헤드리스 세션",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.299:66859c3976": {
    "ko": "권한 우회가 켜져 plan mode가 대부분 묻지 않을 때 한 번 안내 문구 표시",
@@ -67,17 +211,113 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:6a8b87ad85": {
+   "ko": "고정 --worktree 세션은 git의 정제식 냉장 저장을 사용하여 저장소에 .git/worktrees의 뒤에 폴더를 남겨",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:6bdea71adf": {
+   "ko": "[VSCode] 다른 세션과 뒤로 전환 할 때 잃어버린 프롬프트와 그 첨부 파일을 고정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:6f2bea481d": {
+   "ko": "[Claude Tag] Slack에 Claude를 변경하여 100 명 이상의 회원과 함께 채널에 조용히 참여하고, intro 메시지가 없습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:76af8fad44": {
    "ko": "이름에 숨김·방향 전환 문자나 꺾쇠가 있는 스킬·명령은 이름을 바꿀 때까지 불러오지 않음",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:7759384d5f": {
+   "ko": "수정 된 베어 모드 알림 배경 세션에서 다시 시작 --bare, 모드 유지; 그들은 지금 이름 /stop 및 claude --resume, 안전한 모드 하나로",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:7a6bea4710": {
+   "ko": "인식되지 않은 모델 ID에 대한 시작 경고를 개선 : 그것은 이제 긴 원시 메시지 대신 docs 링크와 환영 배너에서 한 짧은 라인입니다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:7df5cd9b2b": {
+   "ko": "worktree가 기본 커밋이 해결되지 않기 때문에 생성 될 수 없을 때 오류가 개선되었습니다. 이제 커밋없이 저장소와 같은 결과가 종료되고 잠재적 인 이유가 무엇인지 알려줍니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:7f8da0e577": {
+   "ko": "[Code Review] 고정 코드 검토의 월간 지출 제한 논평 및 체크 실행 카드 전송 관리자를 Claude 코드 설정; 그들은 지금 사용 페이지를 연결, 그 제한 설정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:80166612ca": {
    "ko": "worktree 세션 종료 시 재개 명령이 화면 폭이 좁으면 -w·-r 짧은 옵션으로 표시",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:8d2ae51972": {
+   "ko": "고정 MCP 도구는 headless 및 SDK 세션에서 호출하는 경우 때때로 실패하거나 두 번 실행할 때 배경 재연결이 연결이 실행된 연결을 닫았을 때",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:8dd6eaeed9": {
+   "ko": "Windows: 메모리가 밖으로 ran까지 바쁜 기계에 뒤에 orphaned PowerShell 과정을 떠나는 과정 살아있는 체크를 고쳤습니다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:93d1adf2b2": {
+   "ko": "개선된 artifact 보고: 현지 세션은 이제까지 시계 할 수 있습니다 25 한 번에 게시 된 artifacts, 최대 10",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:94280d0efc": {
+   "ko": "--bg 또는 --background의 신속한 또는 응답을 고정하여 플래그를 위해 촬영되는 배경 세션으로, 새로운 세션을 전달하고 대신에 새로운 세션을 시작할 수 있습니다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:97122cd547": {
+   "ko": "이벤트의 큰 배치가 느린 연결에 업로드 할 수 없을 때 원격 제어 또는 클라우드 세션 냉동의 claude.ai보기를 고정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:971671d37a": {
+   "ko": "고정 클라우드 세션은 때때로 worker가 압축 후 올바른 교체 될 때 메시지가 unanswered를 떠나",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:a3eaf3da9f": {
+   "ko": "[VSCode] Python 확장 부하를 시작하면서 Claude를 시작으로 Python 환경 없이 워크스페이스에서 시작 시간 개선",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:a666c76769": {
+   "ko": "[VSCode] 새로운 대화를 시작 후 배경 Claude 프로세스를 유지하지 않는 빈 채팅을 고정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:a83f01e70e": {
+   "ko": "응답이 출력 토큰 제한을 명중한 후 응답이 완료되면 응답이 종료되지 않았을 때 클라우드 세션을 수정했습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.299:ad69586d21": {
    "ko": "claude.ai 커넥터 프록시와 Anthropic 호스팅 MCP 서버 요청이 더 이상 HTTP 리디렉션을 따르지 않음",
@@ -91,11 +331,65 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:b0ff394e65": {
+   "ko": "수정된 worktree-isolated sessions Accepting some awk programs the 고립 감시는 거부해야 합니다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:b209c7d8f5": {
+   "ko": "자동 모드의 고정 배경 시약은 때때로 그 최종 보고서를 두 번 전송, 한 번 결과와 한 번 메시지로",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:c4c1f1b25b": {
+   "ko": "고정 클라우드 세션과 CLAUDE_CODE_RESUME_INTERRUPTED_TURN는 재시작 후 다시 완료된 차례로 응답하여 도구가 차례로 종료되고 동일한 단계로 로드된 기술",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:c720dbb689": {
+   "ko": "plugin_loaded telemetry event reporting has_hooks 를 false로 수정하여 Hooks 모듈, 내장 플러그인이 포함된 플러그인",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:c967e3a509": {
+   "ko": "에이전트 teammate는 설명없이 시작된 부분의 자격 증명의 작업 설명에 표시된 작업 설명에서 그것의 신속한에서 시작",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:cad2f19574": {
    "ko": "스킬 자체에 정의한 UserPromptSubmit 훅은 스킬을 호출한 다음 프롬프트부터 실행",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:cd41913312": {
+   "ko": "Linux에서 sandboxed Bash 개선 : Esc 및 Ctrl-C는 이제 야생 카드 읽기 규칙이 명령에 확장되고 있습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:d3e4739b85": {
+   "ko": "비동기 세션의 /btw 측면 질문은 11 분 후에 여전히 중단되지 않을 때 타임 아웃 오류를 반환합니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:d4d00014ee": {
+   "ko": "수정 된 행동 플러그인 후크는 거부 할 수 있습니다, 을 통해하지, 을 통해 할 수 없습니다, 을 수 없거나 그 대답을 다시 할 수 없습니다; 이미 ran이 그 결과가 withheld",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:dfd6a2c8ea": {
+   "ko": "WebFetch 페이지는 웹 검색으로 자신의 노력을 기울여야 합니다. 콜러의 자신의 모델에 대한 콜러의 수준, 그렇지 않으면 레벨 설정은 작은 모델을 제공합니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.299:e3bc32c42b": {
    "ko": "MCP 허용 규칙이 이름이 정확히 같은 서버에만 적용됨 — mcp__서버이름__* 형태로 써야 함",
@@ -109,11 +403,23 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:e821322208": {
+   "ko": "[Cloud 세션] 기존의 출력 파일이 한 번에 다시 시작했을 때 세션을 충돌 할 수있는 메모리 스파이크를 고정",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:e94b4ed980": {
    "ko": "종료 시 출력되는 재개 명령이 세션 이름 대신 ID를 사용 — 붙여넣을 때 이름 속 명령 실행 방지",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:f36c0b6a4d": {
+   "ko": "클라우드 세션을 수정하는 경우, 권한 프롬프트 또는 답변이 부여된 경우, 세션의 노동자가 교체 된 동안 질문",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.299:f401cf0b5d": {
    "ko": "--safe-mode로 시작한 백그라운드 세션에 에이전트 화면에서 '안전 모드' 표시 추가",
@@ -121,11 +427,35 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.299:f432171e71": {
+   "ko": "원격 제어를 통해 전송되는 30~35 MiB의 고정 파일 또는 클라우드 세션에 도착하지 않음",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.299:fb1e4bc002": {
    "ko": "유휴 압축 추가 — 20만 토큰 이상 대화를 약 54분 쉬면 캐시 만료 전에 미리 압축해 재처리 비용 절감",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.299:fe0527e12a": {
+   "ko": "claude mcp list, claude mcp get and subagent MCP server starting the server that policy check block; 그것은 지금 시작 없이 차단으로 보고",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:fe7409e104": {
+   "ko": "PDF가 @-mentioned 때 향상된 메모리 및 디스크 사용: 그들의 바이트는 세션 성적에 더 이상 유지되지 않습니다",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.299:ff2e73cb31": {
+   "ko": "많은 시약을 실행한 클라우드 또는 원격 제어 세션을 다시 재배 한 후 높은 메모리 사용",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.300:090b8de897": {
    "ko": "백그라운드 세션이 이어받은 워크플로를 바로 실행하지 않고 Workflow 도구 승인을 거쳐 재개",
@@ -139,11 +469,101 @@
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
   },
+  "cc:2.1.300:1256543a50": {
+   "ko": "고정 --worktree는 기원의 기본 분지가 fetched 할 수 없을 때 벌거벗은 저장소의 worktree에서 실패합니다; 낙하 기초는 지금 현재 체크 아웃의 HEAD, 아니 주요 저장소의",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:163898e892": {
+   "ko": "\".invalid\"으로 표시된 지점을 고정하고 --worktree는 git의 reftable ref storage를 사용하여 저장소에 worktree를 다시 열지 못했습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:34fb89011b": {
+   "ko": "수정된 headless 또는 Agent SDK 세션을 잃는 것은 최근의 메시지가 압축이 유지되었을 때, 압축이 출력된 토큰 제한에 대한 답변을 따랐을 때 (이 버전의 사용)",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:36a8c136a0": {
+   "ko": "gen_ai.provider.name, gen_ai.conversation.id, gen_ai.tool.name 및 error.type과 같은 추적 스팬에 OpenTelemetry GenAI semantic-convention 속성을 추가했습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:6c0d3fabcf": {
+   "ko": "VS Code, Cursor 또는 Devin Desktop 통합 터미널에서 Claude Code를 시작으로 편집기의 명령줄 도구를 두 번 실행하여 확장을 확인합니다. 이제 한번 출시됩니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:6c34cf8577": {
+   "ko": "Fixed Claude는 백그라운드 에이전트가 손실되지 않았고, 클라우드 세션의 컨테이너가 교체 된 후, 에이전트가 이미 다시 한 번 다시 재개했을 때",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:71e913891c": {
+   "ko": "클라드 코드가 --worktree (not yet with --tmux)로 시작될 때 조정 플러그인 WorktreeCreate 및 WorktreeRemove 걸이를 고정하십시오.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:784f94b3de": {
+   "ko": "클라우드 세션을 수정하면 이미 응답된 메시지가 긴 응답 중 세션이 다시 시작된 후 두 번째 시간",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:a170e9ee28": {
+   "ko": "Fixed SessionEnd Hooks는 때때로 배경 명령이 여전히 실행되는 동안 실행되지 않습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:a650b0dfec": {
+   "ko": "/tasks에서 사라지는 메시지를 입력 한 후 수정 된 하위 시약, 대화로 다시 떠나지",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:ab4d3615b3": {
+   "ko": "cache_creation_5m_tokens 및 cache_creation_1h_tokens 를 OpenTelemetry api_request 이벤트에 추가, 캐시를 나누는 것은 일생에 의해 작성",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
   "cc:2.1.300:be701a1e66": {
    "ko": "PreToolUse·PermissionRequest 훅이 바꾼 입력도 검증 — 모르는 키는 버리고 잘못된 입력은 호출 거부",
    "model": "opus",
    "generated_at": "2026-10-19T07:51:30Z",
    "classified_by": "ai"
+  },
+  "cc:2.1.300:ce9c647763": {
+   "ko": "AWS에서 Claude Platform에 대한 추가 / 고문; 고문은 /advisor, advisorModel 또는 --advisor, 및 CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1로 선택 할 때까지 실행되지 않습니다.",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:df43a888f7": {
+   "ko": "고정 --worktree 세션은 태그 또는 지점이 커밋 ID와 같은 이름을 따서 잘못된 커밋에서 때때로 시작되며, 새로운 worktree 's보다 다른 지점을 naming하는 시작 git 상태",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:f278e57170": {
+   "ko": "참고 Claude 3 모델은 @-mentioned PDF에 대해 얻을 수 있도록, 그래서 그들은 더 자주 그것을 읽지 않고 응답",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
+  },
+  "cc:2.1.300:fe519637e1": {
+   "ko": "수정된 headless 또는 Agent SDK 세션은 컴팩트 요약을 잃거나 사전 컴파일 역사를 가져다 줄 때, 압축이 동일한 차례로 재조정 또는 실패한 응답을 따랐을 때",
+   "model": "argos-en_ko-1.1",
+   "generated_at": "2026-10-19T09:40:45Z",
+   "classified_by": "mt"
   },
   "cc:2.1.301:31ed5caea0": {
    "ko": "VS Code·JetBrains 패널의 사용량 한도 배너에 Pro·Max용 '사용량 더 받기' 링크 추가",

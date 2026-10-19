@@ -1,0 +1,738 @@
+{
+ "repos": {
+  "ComposioHQ/awesome-claude-skills": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 864,
+   "script_files": 65,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [
+     "artifacts-builder/SKILL.md"
+    ],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 40
+  },
+  "DietrichGebert/ponytail": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 13,
+   "script_files": 3,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [
+     ".openclaw/skills/ponytail-audit/SKILL.md",
+     ".openclaw/skills/ponytail-review/SKILL.md",
+     "skills/ponytail-audit/SKILL.md",
+     "skills/ponytail-review/SKILL.md"
+    ],
+    "shell": [
+     ".openclaw/skills/ponytail-help/SKILL.md",
+     "skills/ponytail-help/SKILL.md"
+    ],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 13
+  },
+  "Graphify-Labs/graphify": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 2,
+   "script_files": 96,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [
+     "graphify/skill.md",
+     "tools/skillgen/expected/graphify__skill.md"
+    ],
+    "shell": [
+     "graphify/skill.md",
+     "tools/skillgen/expected/graphify__skill.md"
+    ],
+    "injection": [
+     "graphify/skill.md",
+     "tools/skillgen/expected/graphify__skill.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 2
+  },
+  "JuliusBrussee/caveman": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 28,
+   "script_files": 17,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "skills/caveman-discover/SKILL.md",
+     "skills/caveman-setup/SKILL.md"
+    ],
+    "credentials": [
+     "plugins/caveman/skills/caveman-compress/SKILL.md",
+     "skills/caveman-compress/SKILL.md",
+     "skills/caveman-discover/SKILL.md",
+     "skills/caveman-setup/SKILL.md"
+    ],
+    "shell": [
+     "skills/caveman-evidence-review/SKILL.md",
+     "skills/caveman-help/SKILL.md",
+     "skills/caveman-manage/SKILL.md",
+     "skills/caveman-optimize/SKILL.md",
+     "skills/caveman-setup/SKILL.md"
+    ],
+    "injection": [
+     "skills/caveman-setup/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 28
+  },
+  "NousResearch/hermes-agent": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 212,
+   "script_files": 256,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "optional-skills/autonomous-ai-agents/grok/SKILL.md",
+     "optional-skills/blockchain/evm/SKILL.md",
+     "optional-skills/blockchain/hyperliquid/SKILL.md",
+     "optional-skills/blockchain/solana/SKILL.md",
+     "optional-skills/creative/ascii-art/SKILL.md",
+     "optional-skills/creative/baoyu-article-illustrator/SKILL.md",
+     "optional-skills/creative/baoyu-comic/SKILL.md",
+     "optional-skills/creative/comfyui/SKILL.md",
+     "optional-skills/creative/ip-as-logo/SKILL.md"
+    ],
+    "credentials": [
+     "optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md",
+     "optional-skills/autonomous-ai-agents/grok/SKILL.md",
+     "optional-skills/autonomous-ai-agents/honcho/SKILL.md",
+     "optional-skills/blockchain/hyperliquid/SKILL.md",
+     "optional-skills/creative/ai-presenter-video/SKILL.md",
+     "optional-skills/creative/auteur/SKILL.md",
+     "optional-skills/creative/baoyu-article-illustrator/SKILL.md",
+     "optional-skills/creative/baoyu-comic/SKILL.md",
+     "optional-skills/creative/brag/SKILL.md",
+     "optional-skills/creative/comfyui/SKILL.md",
+     "optional-skills/creative/concept-diagrams/SKILL.md",
+     "optional-skills/creative/kanban-video-orchestrator/SKILL.md"
+    ],
+    "shell": [
+     "optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md",
+     "optional-skills/autonomous-ai-agents/honcho/SKILL.md",
+     "optional-skills/autonomous-ai-agents/openhands/SKILL.md",
+     "optional-skills/blockchain/evm/SKILL.md",
+     "optional-skills/blockchain/hyperliquid/SKILL.md",
+     "optional-skills/blockchain/solana/SKILL.md",
+     "optional-skills/creative/ai-presenter-video/SKILL.md",
+     "optional-skills/creative/anatomy/SKILL.md",
+     "optional-skills/creative/ascii-art/SKILL.md",
+     "optional-skills/creative/audiocraft-audio-generation/SKILL.md",
+     "optional-skills/creative/comfyui/SKILL.md",
+     "optional-skills/creative/concept-diagrams/SKILL.md",
+     "optional-skills/creative/draw-your-font/SKILL.md",
+     "optional-skills/creative/excalidraw/SKILL.md",
+     "optional-skills/creative/heartmula/SKILL.md",
+     "optional-skills/creative/hyperframes/SKILL.md",
+     "optional-skills/creative/kanban-video-orchestrator/SKILL.md",
+     "optional-skills/creative/meme-generation/SKILL.md",
+     "optional-skills/creative/pixel-art/SKILL.md",
+     "optional-skills/creative/pretext/SKILL.md"
+    ],
+    "injection": [
+     "optional-skills/autonomous-ai-agents/grok/SKILL.md",
+     "optional-skills/creative/brag/SKILL.md",
+     "optional-skills/creative/concept-diagrams/SKILL.md",
+     "optional-skills/creative/pretext/SKILL.md",
+     "optional-skills/creative/sketch/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 38
+  },
+  "affaan-m/ECC": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 1062,
+   "script_files": 134,
+   "hook_configs": [
+    "hooks/hooks.json"
+   ],
+   "mcp_configs": [
+    ".mcp.json"
+   ],
+   "flags": {
+    "network": [
+     ".agents/skills/backend-patterns/SKILL.md",
+     ".agents/skills/bun-runtime/SKILL.md",
+     ".agents/skills/coding-standards/SKILL.md",
+     ".agents/skills/fal-ai-media/SKILL.md",
+     ".agents/skills/frontend-patterns/SKILL.md",
+     ".agents/skills/security-review/SKILL.md"
+    ],
+    "credentials": [
+     ".agents/skills/api-design/SKILL.md",
+     ".agents/skills/change-impact/SKILL.md",
+     ".agents/skills/documentation-lookup/SKILL.md",
+     ".agents/skills/eval-harness/SKILL.md",
+     ".agents/skills/fal-ai-media/SKILL.md",
+     ".agents/skills/frontend-patterns/SKILL.md",
+     ".agents/skills/mcp-dependency-review/SKILL.md",
+     ".agents/skills/mle-workflow/SKILL.md",
+     ".agents/skills/security-review/SKILL.md"
+    ],
+    "shell": [
+     ".agents/skills/agent-sort/SKILL.md",
+     ".agents/skills/bun-runtime/SKILL.md",
+     ".agents/skills/dmux-workflows/SKILL.md",
+     ".agents/skills/docs-governance/SKILL.md",
+     ".agents/skills/e2e-testing/SKILL.md",
+     ".agents/skills/eval-harness/SKILL.md",
+     ".agents/skills/mcp-server-patterns/SKILL.md",
+     ".agents/skills/mle-workflow/SKILL.md",
+     ".agents/skills/nextjs-turbopack/SKILL.md",
+     ".agents/skills/plan-canvas/SKILL.md",
+     ".agents/skills/security-review/SKILL.md",
+     ".agents/skills/skill-host-compat/SKILL.md"
+    ],
+    "injection": [
+     ".agents/skills/bun-runtime/SKILL.md",
+     ".agents/skills/coding-standards/SKILL.md",
+     ".agents/skills/frontend-patterns/SKILL.md",
+     ".agents/skills/skill-host-compat/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 40
+  },
+  "anomalyco/opencode": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 24,
+   "script_files": 9,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "packages/plugins/figma/skills/figma-implement-motion/SKILL.md"
+    ],
+    "credentials": [
+     ".opencode/skills/opencode-dev/SKILL.md",
+     ".opencode/skills/unit-tests/SKILL.md",
+     "packages/plugins/figma/skills/figma-generative-plugins/SKILL.md"
+    ],
+    "shell": [
+     ".opencode/skills/component-tests/SKILL.md",
+     ".opencode/skills/opencode-dev/SKILL.md",
+     ".opencode/skills/tui-tests/SKILL.md",
+     ".opencode/skills/unit-tests/SKILL.md"
+    ],
+    "injection": [
+     "packages/plugins/figma/skills/figma-generate-design/SKILL.md",
+     "packages/plugins/figma/skills/figma-implement-motion/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 24
+  },
+  "anthropics/claude-code": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 10,
+   "script_files": 10,
+   "hook_configs": [
+    "mods/agents-md/hooks/hooks.json",
+    "mods/diff/hooks/hooks.json",
+    "mods/sec-default/hooks/hooks.json",
+    "mods/telemetry/hooks/hooks.json",
+    "plugins/explanatory-output-style/hooks/hooks.json",
+    "plugins/hookify/hooks/hooks.json",
+    "plugins/learning-output-style/hooks/hooks.json",
+    "plugins/ralph-wiggum/hooks/hooks.json",
+    "plugins/security-guidance/hooks/hooks.json"
+   ],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [
+     "plugins/hookify/skills/writing-rules/SKILL.md",
+     "plugins/plugin-dev/skills/command-development/SKILL.md",
+     "plugins/plugin-dev/skills/hook-development/SKILL.md",
+     "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
+     "plugins/plugin-dev/skills/plugin-structure/SKILL.md"
+    ],
+    "shell": [
+     "plugins/hookify/skills/writing-rules/SKILL.md",
+     "plugins/plugin-dev/skills/agent-development/SKILL.md",
+     "plugins/plugin-dev/skills/command-development/SKILL.md",
+     "plugins/plugin-dev/skills/hook-development/SKILL.md",
+     "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
+     "plugins/plugin-dev/skills/plugin-settings/SKILL.md",
+     "plugins/plugin-dev/skills/plugin-structure/SKILL.md",
+     "plugins/plugin-dev/skills/skill-development/SKILL.md"
+    ],
+    "injection": [
+     "plugins/hookify/skills/writing-rules/SKILL.md",
+     "plugins/plugin-dev/skills/agent-development/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 10
+  },
+  "anthropics/claude-code-action": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [
+    ".claude/settings.json"
+   ],
+   "mcp_configs": [
+    "base-action/test/mcp-test/.mcp.json"
+   ],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
+  },
+  "anthropics/claude-plugins-official": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 33,
+   "script_files": 25,
+   "hook_configs": [
+    "plugins/claude-security/hooks/hooks.json",
+    "plugins/code-modernization/hooks/hooks.json",
+    "plugins/explanatory-output-style/hooks/hooks.json",
+    "plugins/hookify/hooks/hooks.json",
+    "plugins/learning-output-style/hooks/hooks.json",
+    "plugins/ralph-loop/hooks/hooks.json",
+    "plugins/security-guidance/hooks/hooks.json"
+   ],
+   "mcp_configs": [
+    "external_plugins/context7/.mcp.json",
+    "external_plugins/discord/.mcp.json",
+    "external_plugins/fakechat/.mcp.json",
+    "external_plugins/firebase/.mcp.json",
+    "external_plugins/github/.mcp.json",
+    "external_plugins/gitlab/.mcp.json",
+    "external_plugins/imessage/.mcp.json",
+    "external_plugins/laravel-boost/.mcp.json",
+    "external_plugins/linear/.mcp.json",
+    "external_plugins/playwright/.mcp.json"
+   ],
+   "flags": {
+    "network": [
+     "plugins/cwc-makers/skills/m5-onboard/SKILL.md",
+     "plugins/math-olympiad/skills/math-olympiad/SKILL.md",
+     "plugins/math-proof/skills/siege/SKILL.md",
+     "plugins/math-proof/skills/solo/SKILL.md",
+     "plugins/project-artifact/skills/project-artifact/SKILL.md"
+    ],
+    "credentials": [
+     "external_plugins/discord/skills/configure/SKILL.md",
+     "external_plugins/telegram/skills/configure/SKILL.md",
+     "plugins/cwc-makers/skills/m5-onboard/SKILL.md",
+     "plugins/hookify/skills/writing-rules/SKILL.md",
+     "plugins/mcp-server-dev/skills/build-mcpb/SKILL.md",
+     "plugins/plugin-dev/skills/command-development/SKILL.md",
+     "plugins/plugin-dev/skills/hook-development/SKILL.md",
+     "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
+     "plugins/plugin-dev/skills/plugin-structure/SKILL.md"
+    ],
+    "shell": [
+     "external_plugins/discord/skills/access/SKILL.md",
+     "external_plugins/discord/skills/configure/SKILL.md",
+     "external_plugins/imessage/skills/access/SKILL.md",
+     "external_plugins/imessage/skills/configure/SKILL.md",
+     "external_plugins/telegram/skills/access/SKILL.md",
+     "external_plugins/telegram/skills/configure/SKILL.md",
+     "plugins/claude-code-setup/skills/claude-automation-recommender/SKILL.md",
+     "plugins/claude-md-management/skills/claude-md-improver/SKILL.md",
+     "plugins/claude-security/skills/claude-security/SKILL.md",
+     "plugins/cwc-makers/skills/cardputer-buddy/SKILL.md",
+     "plugins/cwc-makers/skills/m5-onboard/SKILL.md",
+     "plugins/example-plugin/skills/example-command/SKILL.md",
+     "plugins/hookify/skills/writing-rules/SKILL.md",
+     "plugins/math-proof/skills/siege/SKILL.md",
+     "plugins/math-proof/skills/solo/SKILL.md",
+     "plugins/mcp-server-dev/skills/build-mcp-app/SKILL.md",
+     "plugins/mcp-server-dev/skills/build-mcpb/SKILL.md",
+     "plugins/plugin-dev/skills/agent-development/SKILL.md",
+     "plugins/plugin-dev/skills/command-development/SKILL.md",
+     "plugins/plugin-dev/skills/hook-development/SKILL.md"
+    ],
+    "injection": [
+     "plugins/hookify/skills/writing-rules/SKILL.md",
+     "plugins/mcp-server-dev/skills/build-mcp-app/SKILL.md",
+     "plugins/project-artifact/skills/project-artifact/SKILL.md",
+     "plugins/receipts/skills/receipts/SKILL.md",
+     "plugins/session-report/skills/session-report/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 33
+  },
+  "anthropics/skills": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 20,
+   "script_files": 77,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "skills/claude-api/SKILL.md",
+     "skills/mcp-builder/SKILL.md"
+    ],
+    "credentials": [
+     "skills/claude-api/SKILL.md",
+     "skills/pdf/SKILL.md"
+    ],
+    "shell": [
+     "skills/docx/SKILL.md",
+     "skills/pdf/SKILL.md",
+     "skills/pptx/SKILL.md",
+     "skills/skill-creator/SKILL.md",
+     "skills/slack-gif-creator/SKILL.md",
+     "skills/web-artifacts-builder/SKILL.md",
+     "skills/webapp-testing/SKILL.md",
+     "skills/xlsx/SKILL.md"
+    ],
+    "injection": [
+     "skills/algorithmic-art/SKILL.md",
+     "skills/claude-api/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 20
+  },
+  "garrytan/gstack": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 70,
+   "script_files": 417,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "benchmark/SKILL.md",
+     "browse/SKILL.md",
+     "canary/SKILL.md",
+     "capy/skill/gstack/SKILL.md",
+     "careful/SKILL.md",
+     "design-consultation/SKILL.md",
+     "design-review/SKILL.md",
+     "design-shotgun/SKILL.md",
+     "deslop-shared-libs/SKILL.md",
+     "devex-review/SKILL.md",
+     "gstack-upgrade/SKILL.md",
+     "ios-qa/SKILL.md",
+     "land-and-deploy/SKILL.md",
+     "make-pdf/SKILL.md",
+     "office-hours/SKILL.md",
+     "open-gstack-browser/SKILL.md"
+    ],
+    "credentials": [
+     "autoplan/SKILL.md",
+     "benchmark-models/SKILL.md",
+     "benchmark/SKILL.md",
+     "browse/SKILL.md",
+     "canary/SKILL.md",
+     "context-save/SKILL.md",
+     "cso/SKILL.md",
+     "design-consultation/SKILL.md",
+     "design-review/SKILL.md",
+     "devex-review/SKILL.md",
+     "document-generate/SKILL.md",
+     "health/SKILL.md",
+     "investigate/SKILL.md",
+     "land-and-deploy/SKILL.md",
+     "office-hours/SKILL.md",
+     "openclaw/skills/gstack-openclaw-ceo-review/SKILL.md"
+    ],
+    "shell": [
+     "SKILL.md",
+     "autoplan/SKILL.md",
+     "benchmark-models/SKILL.md",
+     "benchmark/SKILL.md",
+     "browse/SKILL.md",
+     "canary/SKILL.md",
+     "careful/SKILL.md",
+     "codex/SKILL.md",
+     "context-restore/SKILL.md",
+     "context-save/SKILL.md",
+     "cso/SKILL.md",
+     "design-consultation/SKILL.md",
+     "design-html/SKILL.md",
+     "design-review/SKILL.md",
+     "design-shotgun/SKILL.md",
+     "devex-review/SKILL.md",
+     "diagram/SKILL.md",
+     "document-generate/SKILL.md",
+     "document-release/SKILL.md",
+     "eval-plan/SKILL.md"
+    ],
+    "injection": [
+     "benchmark-models/SKILL.md",
+     "careful/SKILL.md",
+     "design-html/SKILL.md",
+     "eval-plan/SKILL.md",
+     "gstack-upgrade/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 40
+  },
+  "hesreallyhim/awesome-claude-code": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
+  },
+  "mattpocock/skills": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 38,
+   "script_files": 3,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "skills/engineering/diagnosing-bugs/SKILL.md"
+    ],
+    "credentials": [
+     "skills/engineering/ask-matt/SKILL.md",
+     "skills/engineering/diagnosing-bugs/SKILL.md",
+     "skills/engineering/wayfinder/SKILL.md",
+     "skills/engineering/wizard/SKILL.md",
+     "skills/in-progress/claude-handoff/SKILL.md",
+     "skills/productivity/handoff/SKILL.md"
+    ],
+    "shell": [
+     "skills/engineering/wizard/SKILL.md",
+     "skills/misc/git-guardrails-claude-code/SKILL.md",
+     "skills/misc/migrate-to-shoehorn/SKILL.md",
+     "skills/misc/scaffold-exercises/SKILL.md",
+     "skills/misc/setup-pre-commit/SKILL.md"
+    ],
+    "injection": [
+     "skills/engineering/wizard/SKILL.md",
+     "skills/misc/git-guardrails-claude-code/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 38
+  },
+  "microsoft/playwright-mcp": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
+  },
+  "modelcontextprotocol/servers": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 11,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [
+    ".mcp.json"
+   ],
+   "flags": {
+    "network": [
+     ".claude/skills/client-smoke/SKILL.md",
+     ".claude/skills/release/SKILL.md"
+    ],
+    "credentials": [
+     ".claude/skills/pre-push-gate/SKILL.md",
+     ".claude/skills/release/SKILL.md",
+     ".claude/skills/security-advisory/SKILL.md"
+    ],
+    "shell": [
+     ".claude/skills/board-ops/SKILL.md",
+     ".claude/skills/client-smoke/SKILL.md",
+     ".claude/skills/issue-create/SKILL.md",
+     ".claude/skills/issue-triage/SKILL.md",
+     ".claude/skills/local-dev/SKILL.md",
+     ".claude/skills/pr-flow/SKILL.md",
+     ".claude/skills/pre-push-gate/SKILL.md",
+     ".claude/skills/release/SKILL.md",
+     ".claude/skills/security-advisory/SKILL.md",
+     ".claude/skills/testing/SKILL.md"
+    ],
+    "injection": [
+     ".claude/skills/pre-push-gate/SKILL.md",
+     ".claude/skills/security-advisory/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 11
+  },
+  "morluto/rea": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 5,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [
+     ".agents/skills/rea-changelog-update/SKILL.md"
+    ],
+    "shell": [
+     ".agents/skills/rea-changelog-update/SKILL.md",
+     ".agents/skills/rea-ci-tests-audit/SKILL.md",
+     ".agents/skills/reverse-engineer-anything/SKILL.md"
+    ],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 5
+  },
+  "multica-ai/andrej-karpathy-skills": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 1,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 1
+  },
+  "nexu-io/open-design": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 553,
+   "script_files": 218,
+   "hook_configs": [],
+   "mcp_configs": [
+    "plugins/open-design/.mcp.json"
+   ],
+   "flags": {
+    "network": [
+     ".claude/skills/od-contribute/SKILL.md",
+     "design-templates/contact-widget/SKILL.md"
+    ],
+    "credentials": [
+     "design-templates/github-dashboard/SKILL.md",
+     "design-templates/html-ppt-zhangzara-block-frame/SKILL.md"
+    ],
+    "shell": [
+     ".claude/skills/od-contribute/SKILL.md",
+     "design-templates/audio-jingle/SKILL.md",
+     "design-templates/contact-widget/SKILL.md",
+     "design-templates/guizang-ppt/SKILL.md"
+    ],
+    "injection": [
+     ".claude/skills/od-contribute/SKILL.md",
+     "design-templates/contact-widget/SKILL.md",
+     "design-templates/html-ppt-course-module/SKILL.md",
+     "design-templates/html-ppt-graphify-dark-graph/SKILL.md",
+     "design-templates/html-ppt-hermes-cyber-terminal/SKILL.md",
+     "design-templates/html-ppt-knowledge-arch-blueprint/SKILL.md",
+     "design-templates/html-ppt-obsidian-claude-gradient/SKILL.md",
+     "design-templates/html-ppt-pitch-deck/SKILL.md",
+     "design-templates/html-ppt-presenter-mode-reveal/SKILL.md",
+     "design-templates/html-ppt-product-launch/SKILL.md",
+     "design-templates/html-ppt-tech-sharing/SKILL.md",
+     "design-templates/html-ppt-testing-safety-alert/SKILL.md",
+     "design-templates/html-ppt-weekly-report/SKILL.md",
+     "design-templates/html-ppt-xhs-pastel-card/SKILL.md",
+     "design-templates/html-ppt-xhs-white-editorial/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 40
+  },
+  "obra/superpowers": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 15,
+   "script_files": 6,
+   "hook_configs": [
+    "hooks/hooks.json"
+   ],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [
+     "skills/executing-plans/SKILL.md",
+     "skills/subagent-driven-development/SKILL.md",
+     "skills/systematic-debugging/SKILL.md"
+    ],
+    "shell": [
+     "skills/finishing-a-development-branch/SKILL.md",
+     "skills/requesting-code-review/SKILL.md",
+     "skills/subagent-driven-development/SKILL.md",
+     "skills/systematic-debugging/SKILL.md",
+     "skills/test-driven-development/SKILL.md",
+     "skills/using-git-worktrees/SKILL.md",
+     "skills/writing-plans/SKILL.md",
+     "skills/writing-skills/SKILL.md"
+    ],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 15
+  },
+  "travisvn/awesome-claude-skills": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
+  },
+  "yetone/magpie": {
+   "audited_at": "2026-10-19T09:40:45Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
+  }
+ },
+ "updated_at": "2026-10-19T09:40:45Z",
+ "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
+}

@@ -3,7 +3,7 @@
  "download": "https://epoch.ai/data/benchmark_data.zip",
  "license": "CC BY 4.0",
  "attribution": "Data: Epoch AI, Benchmarking Hub (epoch.ai/benchmarks), CC BY 4.0",
- "checked_at": "2026-10-19T08:55:20Z",
+ "checked_at": "2026-10-19T09:40:45Z",
  "missing": [],
  "sets": [
   {
@@ -18,84 +18,84 @@
      "org": "Anthropic",
      "score": 83.0,
      "released": "2026-04-16",
-     "extra": "0.016901169179529604"
+     "extra": "±2.0"
     },
     {
      "model": "gpt-5.5-pre-release_xhigh",
      "org": "OpenAI",
      "score": 81.0,
      "released": "2026-04-23",
-     "extra": "0.018000198869416815"
+     "extra": "±2.0"
     },
     {
      "model": "glm-5.2_max",
      "org": "Z.ai (Zhipu AI)",
      "score": 79.0,
      "released": "2026-06-16",
-     "extra": "0.018656911901656907"
+     "extra": "±2.0"
     },
     {
      "model": "gemini-3.5-flash_high",
      "org": "Google DeepMind",
      "score": 79.0,
      "released": "2026-05-19",
-     "extra": "0.018422420250424888"
+     "extra": "±2.0"
     },
     {
      "model": "claude-opus-4-6",
      "org": "Anthropic",
      "score": 79.0,
      "released": "2026-02-05",
-     "extra": "0.01862353730305288"
+     "extra": "±2.0"
     },
     {
      "model": "deepseek-v4-pro_max",
      "org": "DeepSeek",
      "score": 78.0,
      "released": "2026-04-24",
-     "extra": "0.01897828052158487"
+     "extra": "±2.0"
     },
     {
      "model": "qwen3.7-max",
      "org": "Alibaba",
      "score": 77.0,
      "released": "2026-05-19",
-     "extra": "0.01906835447169652"
+     "extra": "±2.0"
     },
     {
      "model": "qwen3.6-max-preview",
      "org": "Alibaba",
      "score": 77.0,
      "released": "2026-04-20",
-     "extra": "0.01924895909142592"
+     "extra": "±2.0"
     },
     {
      "model": "kimi-k2.6",
      "org": "Moonshot",
      "score": 77.0,
      "released": "2026-04-20",
-     "extra": "0.01924895909142592"
+     "extra": "±2.0"
     },
     {
      "model": "gpt-5.4-2026-03-05_high",
      "org": "OpenAI",
      "score": 77.0,
      "released": "2026-03-05",
-     "extra": "0.019189407003691976"
+     "extra": "±2.0"
     },
     {
      "model": "claude-opus-4-5-20251101",
      "org": "Anthropic",
      "score": 77.0,
      "released": "2025-11-24",
-     "extra": "0.01924895909142592"
+     "extra": "±2.0"
     },
     {
      "model": "gemini-3.1-pro-preview-customtools",
      "org": "Google DeepMind",
      "score": 76.0,
      "released": "2026-02-19",
-     "extra": "0.019537213360116365"
+     "extra": "±2.0"
     }
    ]
   },
@@ -111,84 +111,84 @@
      "org": "Anthropic",
      "score": 1820.31,
      "released": "2026-09-22",
-     "extra": "1887"
+     "extra": "1887표"
     },
     {
      "model": "gpt-6-astra_max",
      "org": "OpenAI",
      "score": 1800.28,
      "released": "2026-09-03",
-     "extra": "2281"
+     "extra": "2281표"
     },
     {
      "model": "claude-sonnet-5-5_xhigh",
      "org": "Anthropic",
      "score": 1786.26,
      "released": "2026-09-28",
-     "extra": "1531"
+     "extra": "1531표"
     },
     {
      "model": "gpt-6.1-sol_max",
      "org": "OpenAI",
      "score": 1758.72,
      "released": "2026-09-29",
-     "extra": "1264"
+     "extra": "1264표"
     },
     {
      "model": "claude-fable-5-1_max",
      "org": "Anthropic",
      "score": 1758.05,
      "released": "2026-09-01",
-     "extra": "3036"
+     "extra": "3036표"
     },
     {
      "model": "claude-sonnet-5-5_high",
      "org": "Anthropic",
      "score": 1698.82,
      "released": "2026-09-28",
-     "extra": "1205"
+     "extra": "1205표"
     },
     {
      "model": "gpt-6-sol_max",
      "org": "OpenAI",
      "score": 1689.33,
      "released": "2026-09-22",
-     "extra": "3197"
+     "extra": "3197표"
     },
     {
      "model": "claude-opus-5_max",
      "org": "Anthropic",
      "score": 1686.99,
      "released": "2026-07-24",
-     "extra": "12087"
+     "extra": "12087표"
     },
     {
      "model": "gemini-4-argon_high",
      "org": "Google DeepMind",
      "score": 1679.5,
      "released": "2026-09-30",
-     "extra": "2422"
+     "extra": "2422표"
     },
     {
      "model": "kimi-k3_max",
      "org": "Moonshot",
      "score": 1674.26,
      "released": "2026-07-16",
-     "extra": "4547"
+     "extra": "4547표"
     },
     {
      "model": "qwen3.8-max_unknown",
      "org": "Alibaba",
      "score": 1670.58,
      "released": "2026-08-02",
-     "extra": "3221"
+     "extra": "3221표"
     },
     {
      "model": "claude-opus-5_high",
      "org": "Anthropic",
      "score": 1660.45,
      "released": "2026-07-24",
-     "extra": "12566"
+     "extra": "12566표"
     }
    ]
   },

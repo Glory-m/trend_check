@@ -3,39 +3,39 @@
  "repos": {
   "AgriciDaniel/claude-obsidian": {
    "tier": "candidate",
-   "stars": 15633,
-   "forks": 1557,
+   "stars": 15639,
+   "forks": 1559,
    "open_issues": 34,
    "pushed_at": "2026-10-18T17:55:37Z",
    "created_at": "2026-04-07T08:59:37Z",
    "archived": false,
    "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pat",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Alishahryar1/free-claude-code": {
    "tier": "candidate",
-   "stars": 61669,
-   "forks": 9687,
-   "open_issues": 296,
+   "stars": 61717,
+   "forks": 9694,
+   "open_issues": 298,
    "pushed_at": "2026-10-18T15:41:07Z",
    "created_at": "2026-01-28T19:02:30Z",
    "archived": false,
    "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Arekejoker/qwen21-nsfw-pose-skill": {
    "tier": "candidate",
-   "stars": 3122,
-   "forks": 573,
+   "stars": 3249,
+   "forks": 587,
    "open_issues": 4,
    "pushed_at": "2026-10-19T04:48:15Z",
    "created_at": "2026-10-13T03:09:42Z",
    "archived": false,
    "description": "Qwen-Image 2.1 NSFW/姿势出图 skill:作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制;适用 Claude Code / Codex / Cursor / OpenClaw",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "CherryHQ/cherry-studio": {
    "tier": "candidate",
@@ -51,20 +51,20 @@
   },
   "ChromeDevTools/chrome-devtools-mcp": {
    "tier": "candidate",
-   "stars": 53814,
-   "forks": 6974,
-   "open_issues": 178,
-   "pushed_at": "2026-10-19T06:28:55Z",
+   "stars": 53822,
+   "forks": 6994,
+   "open_issues": 169,
+   "pushed_at": "2026-10-19T09:04:11Z",
    "created_at": "2025-09-11T10:39:55Z",
    "archived": false,
    "description": "Chrome DevTools for coding agents",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "ComposioHQ/awesome-claude-skills": {
    "tier": "core",
-   "stars": 77404,
-   "forks": 9190,
+   "stars": 77414,
+   "forks": 9191,
    "open_issues": 1789,
    "pushed_at": "2026-09-18T07:16:11Z",
    "created_at": "2025-10-17T07:15:01Z",
@@ -72,287 +72,287 @@
    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
    "language": "Python",
    "latest_release": null,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "D4Vinci/Scrapling": {
    "tier": "candidate",
-   "stars": 88541,
-   "forks": 9131,
+   "stars": 88573,
+   "forks": 9137,
    "open_issues": 6,
    "pushed_at": "2026-10-18T17:41:44Z",
    "created_at": "2024-10-13T20:29:53Z",
    "archived": false,
    "description": "🕷️ A Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "DayuanJiang/next-ai-draw-io": {
    "tier": "candidate",
-   "stars": 36318,
-   "forks": 3850,
+   "stars": 36322,
+   "forks": 3849,
    "open_issues": 37,
-   "pushed_at": "2026-10-18T08:22:16Z",
+   "pushed_at": "2026-10-19T08:59:56Z",
    "created_at": "2025-03-23T15:03:48Z",
    "archived": false,
    "description": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "DeusData/codebase-memory-mcp": {
    "tier": "candidate",
-   "stars": 46884,
-   "forks": 3875,
-   "open_issues": 649,
+   "stars": 46900,
+   "forks": 3879,
+   "open_issues": 650,
    "pushed_at": "2026-10-19T05:45:45Z",
    "created_at": "2026-02-24T22:01:00Z",
    "archived": false,
    "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 162 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
    "language": "C",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "DietrichGebert/ponytail": {
    "tier": "candidate",
-   "stars": 167264,
-   "forks": 9082,
+   "stars": 167426,
+   "forks": 9089,
    "open_issues": 34,
    "pushed_at": "2026-10-18T01:55:14Z",
    "created_at": "2026-06-12T00:52:37Z",
    "archived": false,
    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Donchitos/Claude-Code-Game-Studios": {
    "tier": "candidate",
-   "stars": 26844,
-   "forks": 3974,
+   "stars": 26851,
+   "forks": 3977,
    "open_issues": 66,
    "pushed_at": "2026-10-19T02:43:42Z",
    "created_at": "2026-02-12T05:21:38Z",
    "archived": false,
    "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
    "language": "Shell",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Egonex-AI/Understand-Anything": {
    "tier": "candidate",
-   "stars": 86918,
-   "forks": 7328,
+   "stars": 86930,
+   "forks": 7331,
    "open_issues": 330,
    "pushed_at": "2026-10-12T10:24:59Z",
    "created_at": "2026-03-15T02:30:51Z",
    "archived": false,
    "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "EveryInc/compound-engineering-plugin": {
    "tier": "candidate",
-   "stars": 25592,
+   "stars": 25605,
    "forks": 2084,
-   "open_issues": 110,
-   "pushed_at": "2026-10-17T07:52:52Z",
+   "open_issues": 111,
+   "pushed_at": "2026-10-19T09:37:18Z",
    "created_at": "2025-10-09T19:43:46Z",
    "archived": false,
    "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Folkbench/folkbench": {
    "tier": "candidate",
-   "stars": 1902,
+   "stars": 1914,
    "forks": 9,
    "open_issues": 0,
-   "pushed_at": "2026-10-18T07:05:56Z",
+   "pushed_at": "2026-10-19T08:08:25Z",
    "created_at": "2026-10-02T09:50:45Z",
    "archived": false,
    "description": "AI API 中转站评测排行与切换工具:实测可用率、延迟与价格 · Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
    "language": "Rust",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Gathin23/tv-vibehack": {
    "tier": "candidate",
-   "stars": 2644,
-   "forks": 317,
-   "open_issues": 37,
-   "pushed_at": "2026-10-19T06:48:30Z",
+   "stars": 3079,
+   "forks": 362,
+   "open_issues": 27,
+   "pushed_at": "2026-10-19T07:49:10Z",
    "created_at": "2026-10-17T08:12:35Z",
    "archived": false,
    "description": "Your TV, minus the ads. Debloat any Android TV or Google TV over Wi-Fi and swap the ad-filled home screen for a clean Apple TV-style launcher. No root, fully reversible.",
    "language": "Java",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Graphify-Labs/graphify": {
    "tier": "candidate",
-   "stars": 128589,
-   "forks": 12397,
-   "open_issues": 1557,
+   "stars": 128677,
+   "forks": 12400,
+   "open_issues": 1555,
    "pushed_at": "2026-10-16T17:57:21Z",
    "created_at": "2026-04-03T15:49:07Z",
    "archived": false,
    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "HarnessMD/munder-difflin": {
    "tier": "candidate",
-   "stars": 8894,
+   "stars": 8901,
    "forks": 1232,
-   "open_issues": 250,
-   "pushed_at": "2026-10-19T05:33:14Z",
+   "open_issues": 252,
+   "pushed_at": "2026-10-19T09:38:54Z",
    "created_at": "2026-05-31T15:25:05Z",
    "archived": false,
    "description": "an open-source alternative to the dots, bots and muses of the world, run an office of claude code/codex like agents on your laptop, sandboxes or anywhere, uses your existing subscriptions",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Imbad0202/academic-research-skills": {
    "tier": "candidate",
-   "stars": 52849,
-   "forks": 4052,
+   "stars": 52894,
+   "forks": 4053,
    "open_issues": 33,
    "pushed_at": "2026-10-18T01:25:37Z",
    "created_at": "2026-02-26T06:31:01Z",
    "archived": false,
    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Jakeschincariol/founder-skill": {
    "tier": "candidate",
-   "stars": 1011,
-   "forks": 113,
+   "stars": 1030,
+   "forks": 115,
    "open_issues": 4,
    "pushed_at": "2026-10-07T01:07:17Z",
    "created_at": "2026-10-07T01:07:13Z",
    "archived": false,
    "description": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marketing director, a CFO, and a consumer panel of 100 buyer agents. Free, MIT.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Jakeschincariol/replica-skill": {
    "tier": "candidate",
-   "stars": 3433,
-   "forks": 558,
+   "stars": 3460,
+   "forks": 564,
    "open_issues": 9,
    "pushed_at": "2026-10-03T12:07:53Z",
    "created_at": "2026-10-03T12:07:49Z",
    "archived": false,
    "description": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "JuliusBrussee/caveman": {
    "tier": "candidate",
-   "stars": 113523,
-   "forks": 6570,
-   "open_issues": 59,
-   "pushed_at": "2026-10-18T07:42:47Z",
+   "stars": 113552,
+   "forks": 6571,
+   "open_issues": 63,
+   "pushed_at": "2026-10-19T08:07:31Z",
    "created_at": "2026-04-04T10:03:00Z",
    "archived": false,
    "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "K-Dense-AI/scientific-agent-skills": {
    "tier": "candidate",
-   "stars": 52727,
-   "forks": 4674,
+   "stars": 52764,
+   "forks": 4676,
    "open_issues": 49,
-   "pushed_at": "2026-10-15T23:57:39Z",
+   "pushed_at": "2026-10-19T09:33:57Z",
    "created_at": "2025-10-19T20:54:15Z",
    "archived": false,
    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigrav",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Leonxlnx/earshot": {
    "tier": "candidate",
-   "stars": 967,
-   "forks": 55,
+   "stars": 1076,
+   "forks": 59,
    "open_issues": 0,
    "pushed_at": "2026-10-18T07:22:49Z",
    "created_at": "2026-10-15T06:52:46Z",
    "archived": false,
    "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Leonxlnx/taste-skill": {
    "tier": "candidate",
-   "stars": 98988,
-   "forks": 6728,
+   "stars": 99071,
+   "forks": 6736,
    "open_issues": 1,
    "pushed_at": "2026-10-19T05:47:12Z",
    "created_at": "2026-02-19T21:44:05Z",
    "archived": false,
    "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "LiCinCan/blender-ai-mcp-addon": {
    "tier": "candidate",
-   "stars": 790,
-   "forks": 377,
+   "stars": 792,
+   "forks": 378,
    "open_issues": 31,
    "pushed_at": "2026-10-18T19:03:22Z",
    "created_at": "2026-10-15T22:30:47Z",
    "archived": false,
    "description": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot for 3D, bpy Python scripting, MCP integration.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Louis-CFM/coucou": {
    "tier": "candidate",
-   "stars": 5547,
+   "stars": 5552,
    "forks": 970,
-   "open_issues": 420,
+   "open_issues": 421,
    "pushed_at": "2026-10-18T18:55:43Z",
    "created_at": "2026-09-27T21:54:12Z",
    "archived": false,
    "description": "A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI coding agents: Claude Code, Codex, Cursor, Gemini CLI, Antigravity and more. Approve from the notch or your Lock Screen.",
    "language": "Swift",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "MadsLorentzen/ai-job-search": {
    "tier": "candidate",
-   "stars": 54286,
-   "forks": 17578,
-   "open_issues": 49,
+   "stars": 54842,
+   "forks": 17688,
+   "open_issues": 52,
    "pushed_at": "2026-10-18T19:38:41Z",
    "created_at": "2026-03-18T14:33:04Z",
    "archived": false,
    "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "MaryCache/imozuru": {
    "tier": "candidate",
-   "stars": 485,
-   "forks": 16,
-   "open_issues": 0,
-   "pushed_at": "2026-10-19T06:51:29Z",
+   "stars": 576,
+   "forks": 23,
+   "open_issues": 2,
+   "pushed_at": "2026-10-19T09:34:58Z",
    "created_at": "2026-10-13T05:56:21Z",
    "archived": false,
    "description": "知らない分野を、原文にたどりつくまで芋づる式に掘る Claude Code のスキル",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "NVIDIA/SkillSpector": {
    "tier": "candidate",
-   "stars": 20513,
+   "stars": 20526,
    "forks": 1804,
-   "open_issues": 163,
-   "pushed_at": "2026-10-19T04:31:02Z",
+   "open_issues": 164,
+   "pushed_at": "2026-10-19T07:34:24Z",
    "created_at": "2026-03-21T00:28:43Z",
    "archived": false,
    "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Nanako0129/sepia": {
    "tier": "candidate",
-   "stars": 3236,
+   "stars": 3240,
    "forks": 211,
    "open_issues": 5,
    "pushed_at": "2026-10-15T02:19:17Z",
@@ -360,59 +360,59 @@
    "archived": false,
    "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "NanmiCoder/cc-haha": {
    "tier": "candidate",
-   "stars": 15065,
-   "forks": 8607,
-   "open_issues": 189,
+   "stars": 15072,
+   "forks": 8606,
+   "open_issues": 191,
    "pushed_at": "2026-10-18T15:48:47Z",
    "created_at": "2026-03-31T17:30:14Z",
    "archived": false,
    "description": "本地优先的跨平台 Claude Code / AI Agent 桌面工作台:多 Agent 协作、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、桌面宠物;支持微信、飞书、钉钉及 H5 等远程访问。 | Local-first Claude Code / AI Agent desktop workspace: multi-agent teams, Git worktrees, diffs, skills marketplace, multi-model, Computer Use, task-aware desktop pets; remote via W",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Noniv/web-ocean": {
    "tier": "candidate",
-   "stars": 700,
-   "forks": 109,
+   "stars": 714,
+   "forks": 110,
    "open_issues": 5,
    "pushed_at": "2026-10-17T00:39:56Z",
    "created_at": "2026-10-16T23:49:53Z",
    "archived": false,
    "description": "Real-time WebGPU ocean renderer written from scratch, no engine. FFT waves, whitecaps, sun glitter, physically based sunset sky with clouds, free camera. Built with Claude Code (Opus 5.5). Opens from a single 61 KB HTML file in Chrome.",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "NousResearch/hermes-agent": {
    "tier": "candidate",
-   "stars": 255023,
-   "forks": 55484,
-   "open_issues": 49978,
-   "pushed_at": "2026-10-19T06:33:48Z",
+   "stars": 255078,
+   "forks": 55494,
+   "open_issues": 49954,
+   "pushed_at": "2026-10-19T09:37:43Z",
    "created_at": "2025-07-22T22:22:28Z",
    "archived": false,
    "description": "The agent that grows with you",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Oldcircle/geo-sleuth": {
    "tier": "candidate",
-   "stars": 3397,
-   "forks": 457,
+   "stars": 3416,
+   "forks": 460,
    "open_issues": 14,
    "pushed_at": "2026-10-18T10:03:13Z",
    "created_at": "2026-09-18T08:51:34Z",
    "archived": false,
    "description": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "OthmanAdi/planning-with-files": {
    "tier": "candidate",
-   "stars": 27520,
+   "stars": 27527,
    "forks": 2290,
    "open_issues": 6,
    "pushed_at": "2026-10-17T21:51:12Z",
@@ -420,35 +420,35 @@
    "archived": false,
    "description": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx sk",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Panniantong/Agent-Reach": {
    "tier": "candidate",
-   "stars": 99208,
-   "forks": 8747,
+   "stars": 99321,
+   "forks": 8764,
    "open_issues": 230,
    "pushed_at": "2026-10-15T11:34:42Z",
    "created_at": "2026-02-24T02:10:24Z",
    "archived": false,
    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "QingYunA/answer-me-with-html": {
    "tier": "candidate",
-   "stars": 3736,
-   "forks": 262,
-   "open_issues": 7,
+   "stars": 3793,
+   "forks": 266,
+   "open_issues": 8,
    "pushed_at": "2026-10-19T06:15:11Z",
    "created_at": "2026-10-02T09:57:40Z",
    "archived": false,
    "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Ryze-AI-Adgent/open-seo-mcp-skills": {
    "tier": "candidate",
-   "stars": 6076,
+   "stars": 6086,
    "forks": 390,
    "open_issues": 4,
    "pushed_at": "2026-10-13T03:37:44Z",
@@ -456,81 +456,81 @@
    "archived": false,
    "description": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
    "language": "Shell",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Tejashmakwana/motionmaxxing": {
    "tier": "candidate",
-   "stars": 875,
-   "forks": 81,
+   "stars": 882,
+   "forks": 82,
    "open_issues": 1,
    "pushed_at": "2026-10-06T18:20:43Z",
    "created_at": "2026-10-06T18:18:49Z",
    "archived": false,
    "description": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Vincentwei1021/video-shotcraft": {
    "tier": "candidate",
-   "stars": 12439,
-   "forks": 1119,
+   "stars": 12472,
+   "forks": 1121,
    "open_issues": 10,
    "pushed_at": "2026-10-17T17:50:53Z",
    "created_at": "2026-07-19T11:44:41Z",
    "archived": false,
    "description": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "VoltAgent/awesome-agent-skills": {
    "tier": "candidate",
-   "stars": 35965,
-   "forks": 3907,
-   "open_issues": 47,
+   "stars": 35971,
+   "forks": 3910,
+   "open_issues": 49,
    "pushed_at": "2026-10-19T06:01:01Z",
    "created_at": "2025-10-28T08:55:32Z",
    "archived": false,
    "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "VoltAgent/awesome-openclaw-skills": {
    "tier": "candidate",
-   "stars": 53200,
+   "stars": 53203,
    "forks": 5056,
-   "open_issues": 1,
+   "open_issues": 2,
    "pushed_at": "2026-10-19T05:54:13Z",
    "created_at": "2026-01-25T09:22:32Z",
    "archived": false,
    "description": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Wei-Shaw/sub2api": {
    "tier": "candidate",
-   "stars": 44335,
-   "forks": 9514,
-   "open_issues": 3656,
-   "pushed_at": "2026-10-18T16:23:42Z",
+   "stars": 44349,
+   "forks": 9521,
+   "open_issues": 3663,
+   "pushed_at": "2026-10-19T08:26:04Z",
    "created_at": "2025-12-18T02:26:18Z",
    "archived": false,
    "description": "Sub2API 一站式开源中转服务,让 Claude、Openai 、Gemini、Grok订阅统一接入,支持拼车共享,更高效分摊成本,原生工具无缝使用。",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "Yeachan-Heo/oh-my-claudecode": {
    "tier": "candidate",
-   "stars": 40055,
-   "forks": 3591,
+   "stars": 40057,
+   "forks": 3592,
    "open_issues": 7,
    "pushed_at": "2026-10-19T06:30:27Z",
    "created_at": "2026-01-09T03:36:29Z",
    "archived": false,
    "description": "Teams-first Multi-agent orchestration for Claude Code",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "YeonwooSung/my-claude-code-mods": {
    "tier": "candidate",
-   "stars": 1045,
+   "stars": 1057,
    "forks": 6,
    "open_issues": 1,
    "pushed_at": "2026-10-18T15:45:32Z",
@@ -538,25 +538,25 @@
    "archived": false,
    "description": "Custom Claude Code Mods that I need",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "addyosmani/agent-skills": {
    "tier": "candidate",
-   "stars": 108305,
-   "forks": 11287,
+   "stars": 108383,
+   "forks": 11294,
    "open_issues": 134,
    "pushed_at": "2026-10-13T20:24:07Z",
    "created_at": "2026-02-15T20:20:26Z",
    "archived": false,
    "description": "Production-grade engineering skills for AI coding agents.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "affaan-m/ECC": {
    "tier": "core",
-   "stars": 283472,
-   "forks": 42105,
-   "open_issues": 243,
+   "stars": 283571,
+   "forks": 42121,
+   "open_issues": 245,
    "pushed_at": "2026-10-19T05:03:15Z",
    "created_at": "2026-01-18T00:51:51Z",
    "archived": false,
@@ -568,63 +568,63 @@
     "published_at": "2026-10-01T23:00:36Z",
     "url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.3"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "alchaincyf/huashu-design": {
    "tier": "candidate",
-   "stars": 25364,
-   "forks": 2844,
+   "stars": 25383,
+   "forks": 2845,
    "open_issues": 4,
    "pushed_at": "2026-10-17T11:40:40Z",
    "created_at": "2026-04-19T14:42:06Z",
    "archived": false,
    "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "alchaincyf/huashu-motion": {
    "tier": "candidate",
-   "stars": 577,
-   "forks": 57,
+   "stars": 696,
+   "forks": 72,
    "open_issues": 0,
    "pushed_at": "2026-10-18T12:59:04Z",
    "created_at": "2026-10-18T12:19:27Z",
    "archived": false,
    "description": "让你的agent一键直出商业级产品宣传片:会作曲,能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "alibaba/open-code-review": {
    "tier": "candidate",
-   "stars": 47619,
-   "forks": 3474,
-   "open_issues": 321,
-   "pushed_at": "2026-10-19T05:58:55Z",
+   "stars": 47628,
+   "forks": 3476,
+   "open_issues": 315,
+   "pushed_at": "2026-10-19T09:13:29Z",
    "created_at": "2026-05-18T02:16:36Z",
    "archived": false,
    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "android/skills": {
    "tier": "candidate",
-   "stars": 8900,
-   "forks": 571,
+   "stars": 8955,
+   "forks": 572,
    "description": "",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anomalyco/opencode": {
    "tier": "candidate",
-   "stars": 216895,
-   "forks": 29027,
+   "stars": 217065,
+   "forks": 29034,
    "description": "The open source coding agent.",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anthropics/claude-code": {
    "tier": "core",
-   "stars": 152296,
-   "forks": 27053,
-   "open_issues": 15252,
+   "stars": 152314,
+   "forks": 27086,
+   "open_issues": 15279,
    "pushed_at": "2026-10-18T22:26:53Z",
    "created_at": "2025-02-22T17:41:21Z",
    "archived": false,
@@ -636,7 +636,7 @@
     "published_at": "2026-10-18T22:26:54Z",
     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anthropics/claude-code-action": {
    "tier": "core",
@@ -654,24 +654,24 @@
     "published_at": "2025-08-26T17:01:10Z",
     "url": "https://github.com/anthropics/claude-code-action/releases/tag/v1"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anthropics/claude-plugins-official": {
    "tier": "core",
-   "stars": 42892,
-   "forks": 4545,
-   "open_issues": 1177,
-   "pushed_at": "2026-10-18T17:04:56Z",
+   "stars": 42997,
+   "forks": 4551,
+   "open_issues": 1181,
+   "pushed_at": "2026-10-19T07:52:14Z",
    "created_at": "2025-11-20T18:36:20Z",
    "archived": false,
    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
    "language": "Python",
    "latest_release": null,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anthropics/commerce-agents": {
    "tier": "candidate",
-   "stars": 3273,
+   "stars": 3275,
    "forks": 650,
    "open_issues": 27,
    "pushed_at": "2026-10-02T06:34:41Z",
@@ -679,59 +679,59 @@
    "description": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
    "language": "Python",
    "archived": false,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anthropics/oss-scanner": {
    "tier": "candidate",
-   "stars": 1125,
-   "forks": 643,
-   "open_issues": 216,
-   "pushed_at": "2026-10-19T02:41:08Z",
+   "stars": 1127,
+   "forks": 645,
+   "open_issues": 217,
+   "pushed_at": "2026-10-19T08:49:49Z",
    "created_at": "2026-10-08T17:25:19Z",
    "language": "Dockerfile",
    "archived": false,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "anthropics/skills": {
    "tier": "core",
-   "stars": 182060,
-   "forks": 21578,
-   "open_issues": 1426,
+   "stars": 182093,
+   "forks": 21582,
+   "open_issues": 1421,
    "pushed_at": "2026-10-09T18:45:52Z",
    "created_at": "2025-09-22T15:53:31Z",
    "archived": false,
    "description": "Public repository for Agent Skills",
    "language": "Python",
    "latest_release": null,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "asgeirtj/system_prompts_leaks": {
    "tier": "candidate",
-   "stars": 69879,
-   "forks": 11353,
+   "stars": 69889,
+   "forks": 11354,
    "open_issues": 59,
    "pushed_at": "2026-10-16T08:29:42Z",
    "created_at": "2025-05-03T02:43:56Z",
    "archived": false,
    "description": "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "blader/humanizer": {
    "tier": "candidate",
-   "stars": 58202,
-   "forks": 4619,
+   "stars": 58283,
+   "forks": 4623,
    "open_issues": 6,
    "pushed_at": "2026-10-16T19:12:03Z",
    "created_at": "2026-01-18T05:30:15Z",
    "archived": false,
    "description": "Agent skill that removes signs of AI-generated writing from text",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "browser-use/browser-harness": {
    "tier": "candidate",
-   "stars": 18491,
+   "stars": 18495,
    "forks": 1934,
    "open_issues": 412,
    "pushed_at": "2026-10-17T17:59:01Z",
@@ -739,47 +739,47 @@
    "archived": false,
    "description": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "career-ops-hq/career-ops": {
    "tier": "candidate",
-   "stars": 75545,
+   "stars": 75566,
    "forks": 14074,
-   "open_issues": 351,
-   "pushed_at": "2026-10-19T05:17:46Z",
+   "open_issues": 325,
+   "pushed_at": "2026-10-19T09:33:04Z",
    "created_at": "2026-04-04T18:21:18Z",
    "archived": false,
    "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and a job application tracker. It helps you fill in each application; you press Submit. Runs locally in your AI cod",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "cathrynlavery/diagram-design": {
    "tier": "candidate",
-   "stars": 57928,
-   "forks": 3715,
+   "stars": 58043,
+   "forks": 3722,
    "open_issues": 47,
    "pushed_at": "2026-10-16T19:42:46Z",
    "created_at": "2026-04-16T18:01:16Z",
    "archived": false,
    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "ccch1mneyyy/dsh-TUI": {
    "tier": "candidate",
-   "stars": 4837,
-   "forks": 265,
-   "open_issues": 122,
-   "pushed_at": "2026-10-19T06:34:01Z",
+   "stars": 4856,
+   "forks": 266,
+   "open_issues": 123,
+   "pushed_at": "2026-10-19T09:38:47Z",
    "created_at": "2026-08-13T12:49:31Z",
    "archived": false,
    "description": "DSH's officially top-recommended TUI plugin — high performance, low overhead, cute pixel whale, smooth mouse interaction. One-command install via npm. / DSH 官方首推的 TUI 插件,高性能低占用,可爱像素鲸鱼,流畅鼠标交互,npm 一键安装",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "chenhg5/cc-connect": {
    "tier": "candidate",
-   "stars": 15991,
+   "stars": 15995,
    "forks": 1641,
    "open_issues": 637,
    "pushed_at": "2026-10-16T08:57:26Z",
@@ -787,110 +787,110 @@
    "archived": false,
    "description": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "citrolabs/ego-lite": {
    "tier": "candidate",
-   "stars": 17654,
+   "stars": 17674,
    "forks": 964,
-   "open_issues": 204,
-   "pushed_at": "2026-10-16T09:10:21Z",
+   "open_issues": 206,
+   "pushed_at": "2026-10-19T07:50:59Z",
    "created_at": "2026-04-16T12:51:09Z",
    "archived": false,
    "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "cobusgreyling/loop-engineering": {
    "tier": "candidate",
-   "stars": 11578,
-   "forks": 1725,
+   "stars": 11581,
+   "forks": 1726,
    "open_issues": 13,
-   "pushed_at": "2026-10-19T02:38:23Z",
+   "pushed_at": "2026-10-19T08:06:17Z",
    "created_at": "2026-06-09T06:28:20Z",
    "archived": false,
    "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "code-yeongyu/oh-my-openagent": {
    "tier": "candidate",
-   "stars": 70179,
-   "forks": 5772,
-   "open_issues": 1503,
-   "pushed_at": "2026-10-19T06:38:51Z",
+   "stars": 70181,
+   "forks": 5771,
+   "open_issues": 1510,
+   "pushed_at": "2026-10-19T09:38:46Z",
    "created_at": "2025-12-03T01:40:05Z",
    "archived": false,
    "description": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "colbymchenry/codegraph": {
    "tier": "candidate",
-   "stars": 74409,
-   "forks": 4812,
-   "open_issues": 621,
-   "pushed_at": "2026-10-19T05:39:26Z",
+   "stars": 74416,
+   "forks": 4813,
+   "open_issues": 625,
+   "pushed_at": "2026-10-19T09:35:04Z",
    "created_at": "2026-01-18T21:45:37Z",
    "archived": false,
    "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
    "language": "C",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "coreyhaines31/marketingskills": {
    "tier": "candidate",
-   "stars": 55423,
-   "forks": 8204,
+   "stars": 55443,
+   "forks": 8208,
    "open_issues": 50,
    "pushed_at": "2026-10-15T21:33:21Z",
    "created_at": "2026-01-15T19:45:23Z",
    "archived": false,
    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "cursor/plugins": {
    "tier": "candidate",
-   "stars": 12861,
-   "forks": 1266,
+   "stars": 12910,
+   "forks": 1268,
    "description": "Cursor plugin specification and official plugins",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "davila7/claude-code-templates": {
    "tier": "candidate",
-   "stars": 32739,
-   "forks": 3795,
+   "stars": 32743,
+   "forks": 3794,
    "open_issues": 410,
    "pushed_at": "2026-10-19T04:27:18Z",
    "created_at": "2025-07-04T01:26:26Z",
    "archived": false,
    "description": "CLI tool for configuring and monitoring Claude Code",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "decolua/9router": {
    "tier": "candidate",
-   "stars": 31043,
+   "stars": 31048,
    "forks": 6213,
-   "open_issues": 2649,
+   "open_issues": 2651,
    "pushed_at": "2026-10-15T14:53:12Z",
    "created_at": "2026-01-05T02:59:30Z",
    "archived": false,
    "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "diegosouzapw/OmniRoute": {
    "tier": "candidate",
-   "stars": 78233,
-   "forks": 11365,
-   "open_issues": 230,
-   "pushed_at": "2026-10-19T06:15:47Z",
+   "stars": 78285,
+   "forks": 11372,
+   "open_issues": 235,
+   "pushed_at": "2026-10-19T09:32:38Z",
    "created_at": "2026-02-13T12:38:31Z",
    "archived": false,
    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "dmmulroy/anti-slop": {
    "tier": "candidate",
@@ -902,11 +902,11 @@
    "archived": false,
    "description": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "dzhng/jevgrep": {
    "tier": "candidate",
-   "stars": 2797,
+   "stars": 2802,
    "forks": 214,
    "open_issues": 7,
    "pushed_at": "2026-10-19T03:42:23Z",
@@ -914,43 +914,43 @@
    "archived": false,
    "description": "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "edenfunf/reelmimic": {
    "tier": "candidate",
-   "stars": 3638,
+   "stars": 3648,
    "forks": 367,
-   "open_issues": 45,
-   "pushed_at": "2026-10-16T06:37:19Z",
+   "open_issues": 42,
+   "pushed_at": "2026-10-19T07:40:35Z",
    "created_at": "2026-09-28T19:14:59Z",
    "archived": false,
    "description": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "eternityspring/shuohao-skills": {
    "tier": "candidate",
-   "stars": 4785,
-   "forks": 660,
+   "stars": 4794,
+   "forks": 661,
    "open_issues": 0,
    "pushed_at": "2026-10-15T02:36:58Z",
    "created_at": "2026-08-06T10:38:49Z",
    "archived": false,
    "description": "AI 短剧制作的 skill 集合:拆角色、排大纲、出场景与道具设定、写剧本、切分镜 | Agent skills for AI short-drama production — character bibles, adaptation outlines, art bibles, screenplays, storyboards. Runs in Claude Code & codex.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "farion1231/cc-switch": {
    "tier": "candidate",
-   "stars": 146051,
-   "forks": 9657,
-   "open_issues": 1488,
-   "pushed_at": "2026-10-19T03:48:25Z",
+   "stars": 146161,
+   "forks": 9660,
+   "open_issues": 1478,
+   "pushed_at": "2026-10-19T08:42:21Z",
    "created_at": "2025-08-04T14:16:16Z",
    "archived": false,
    "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
    "language": "Rust",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "feder-cr/invisible_playwright_mcp": {
    "tier": "candidate",
@@ -962,7 +962,7 @@
    "archived": false,
    "description": "Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer use.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "franzenzenhofer/big-arrow-on-the-screen": {
    "tier": "candidate",
@@ -974,47 +974,47 @@
    "archived": false,
    "description": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT.",
    "language": "Swift",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "garrytan/gstack": {
    "tier": "candidate",
-   "stars": 136886,
-   "forks": 20310,
-   "open_issues": 79,
-   "pushed_at": "2026-10-19T06:00:51Z",
+   "stars": 136896,
+   "forks": 20311,
+   "open_issues": 82,
+   "pushed_at": "2026-10-19T09:37:55Z",
    "created_at": "2026-03-11T21:22:45Z",
    "archived": false,
    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "gastownhall/beads": {
    "tier": "candidate",
-   "stars": 28000,
-   "forks": 1894,
-   "open_issues": 1514,
-   "pushed_at": "2026-10-19T06:30:39Z",
+   "stars": 28007,
+   "forks": 1895,
+   "open_issues": 1506,
+   "pushed_at": "2026-10-19T09:28:33Z",
    "created_at": "2025-10-12T03:09:46Z",
    "archived": false,
    "description": "Beads - A memory upgrade for your coding agent",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "genspark-ai/genoffice": {
    "tier": "candidate",
-   "stars": 9979,
+   "stars": 9992,
    "forks": 1272,
-   "open_issues": 76,
-   "pushed_at": "2026-10-19T03:39:09Z",
+   "open_issues": 71,
+   "pushed_at": "2026-10-19T08:16:43Z",
    "created_at": "2026-07-31T09:40:58Z",
    "archived": false,
    "description": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "getagentseal/codeburn": {
    "tier": "candidate",
-   "stars": 11511,
+   "stars": 11517,
    "forks": 965,
    "open_issues": 29,
    "pushed_at": "2026-10-17T15:32:55Z",
@@ -1022,23 +1022,23 @@
    "archived": false,
    "description": "Free, local tool to track AI coding token usage and cost across 37 tools and agents (Claude Code, Cursor, Codex, Gemini and more), by model, project, and task. npx codeburn",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "github/awesome-copilot": {
    "tier": "candidate",
-   "stars": 40169,
-   "forks": 5155,
-   "open_issues": 89,
+   "stars": 40175,
+   "forks": 5156,
+   "open_issues": 90,
    "pushed_at": "2026-10-16T22:21:03Z",
    "created_at": "2025-06-11T16:57:39Z",
    "archived": false,
    "description": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "google-gemini/gemini-cli": {
    "tier": "candidate",
-   "stars": 107443,
+   "stars": 107449,
    "forks": 14738,
    "open_issues": 744,
    "pushed_at": "2026-10-19T01:34:29Z",
@@ -1046,108 +1046,108 @@
    "archived": false,
    "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "headroomlabs-ai/headroom": {
    "tier": "candidate",
-   "stars": 75931,
-   "forks": 5904,
-   "open_issues": 468,
+   "stars": 75950,
+   "forks": 5909,
+   "open_issues": 469,
    "pushed_at": "2026-10-17T18:29:50Z",
    "created_at": "2026-01-07T19:58:51Z",
    "archived": false,
    "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "herdrdev/herdr": {
    "tier": "candidate",
-   "stars": 44692,
-   "forks": 3560,
-   "open_issues": 386,
+   "stars": 44727,
+   "forks": 3562,
+   "open_issues": 387,
    "pushed_at": "2026-10-18T18:57:09Z",
    "created_at": "2026-03-27T17:54:33Z",
    "archived": false,
    "description": "the runtime your coding agents live on",
    "language": "Rust",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "hesreallyhim/awesome-claude-code": {
    "tier": "core",
-   "stars": 55984,
-   "forks": 4838,
+   "stars": 55992,
+   "forks": 4839,
    "open_issues": 915,
-   "pushed_at": "2026-10-19T06:22:34Z",
+   "pushed_at": "2026-10-19T09:16:10Z",
    "created_at": "2025-04-19T20:55:59Z",
    "archived": false,
    "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top n",
    "language": "Python",
    "latest_release": null,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "hujjun/mcd-saver-strategist": {
    "tier": "candidate",
-   "stars": 619,
-   "forks": 12,
+   "stars": 633,
+   "forks": 15,
    "open_issues": 2,
-   "pushed_at": "2026-10-17T03:30:06Z",
+   "pushed_at": "2026-10-19T07:58:34Z",
    "created_at": "2026-10-09T03:21:52Z",
    "archived": false,
    "description": "麦当劳省钱点餐助手(麦门精算师)|麦当劳优惠券组合优化 Skill:拉取麦当劳菜单与全部可用优惠券,算出最省的点餐组合,巨无霸套餐 ¥47 → ¥21.9(省 53%)。McDonalds MCP(麦当劳 MCP)coupon optimizer · McDonalds China MCP Server · Agent Skill for WorkBuddy · 麦当劳程序员创意开发大赛参赛作品",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "iOfficeAI/AionUi": {
    "tier": "candidate",
-   "stars": 33624,
-   "forks": 3496,
+   "stars": 33629,
+   "forks": 3495,
    "open_issues": 875,
    "pushed_at": "2026-10-14T04:18:39Z",
    "created_at": "2025-08-07T10:29:51Z",
    "archived": false,
    "description": "Open-source 24/7 Cowork app for OpenClaw, Hermes, Claude Code, Codex, OpenCode and 20+ more CLI Agent | Customize your assistants | Team them up|Star if you like it!",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "iOfficeAI/OfficeCLI": {
    "tier": "candidate",
-   "stars": 32157,
-   "forks": 2191,
-   "open_issues": 108,
+   "stars": 32170,
+   "forks": 2192,
+   "open_issues": 110,
    "pushed_at": "2026-10-13T02:29:44Z",
    "created_at": "2026-03-15T07:39:12Z",
    "archived": false,
    "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
    "language": "C#",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "img2threejs/img2threejs": {
    "tier": "candidate",
-   "stars": 18400,
-   "forks": 1728,
-   "open_issues": 109,
+   "stars": 18412,
+   "forks": 1729,
+   "open_issues": 111,
    "pushed_at": "2026-10-17T21:41:15Z",
    "created_at": "2026-07-15T02:58:39Z",
    "archived": false,
    "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "jarrodwatts/claude-hud": {
    "tier": "candidate",
-   "stars": 28633,
+   "stars": 28642,
    "forks": 1404,
-   "open_issues": 0,
+   "open_issues": 2,
    "pushed_at": "2026-10-18T00:02:47Z",
    "created_at": "2026-01-02T01:35:07Z",
    "archived": false,
    "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "jatechan/ai-data-extractor": {
    "tier": "candidate",
-   "stars": 416,
+   "stars": 436,
    "forks": 96,
    "open_issues": 0,
    "pushed_at": "2026-10-17T16:50:15Z",
@@ -1155,47 +1155,59 @@
    "archived": false,
    "description": "Free open-source extractor for AI coding assistant chat histories. Supports Claude Code, Cursor, Windsurf, Aider, Cline/Roo Code and more",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "jnMetaCode/agency-agents-zh": {
    "tier": "candidate",
-   "stars": 21352,
+   "stars": 21357,
    "forks": 3593,
    "open_issues": 1,
-   "pushed_at": "2026-10-19T04:50:08Z",
+   "pushed_at": "2026-10-19T09:40:51Z",
    "created_at": "2026-03-06T11:11:51Z",
    "archived": false,
    "description": "🎭 277 个即插即用的 AI 专家角色 — 支持 Claude Code/Cursor/Copilot 等 20 种工具,覆盖工程/设计/营销/金融等 20 个部门。含 64 个中国市场原创智能体(小红书/抖音/微信/飞书/钉钉/Qt 上位机/机械设计)。搭配编排器 agency-orchestrator,一句话即可让多位专家按 DAG 自动协作。",
    "language": "Shell",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
+  },
+  "juliobsz/skills": {
+   "tier": "candidate",
+   "stars": 431,
+   "forks": 13,
+   "open_issues": 0,
+   "pushed_at": "2026-10-18T18:10:11Z",
+   "created_at": "2026-10-12T00:07:32Z",
+   "archived": false,
+   "description": "An agent skill that builds award-caliber websites from one line",
+   "language": "JavaScript",
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "kaankiziltug/logo-design-skill": {
    "tier": "candidate",
-   "stars": 3716,
-   "forks": 290,
+   "stars": 3727,
+   "forks": 291,
    "open_issues": 1,
    "pushed_at": "2026-09-30T18:16:50Z",
    "created_at": "2026-09-26T08:23:34Z",
    "archived": false,
    "description": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "koala73/worldmonitor": {
    "tier": "candidate",
-   "stars": 88768,
-   "forks": 13610,
-   "open_issues": 355,
-   "pushed_at": "2026-10-19T06:43:33Z",
+   "stars": 88792,
+   "forks": 13620,
+   "open_issues": 354,
+   "pushed_at": "2026-10-19T09:39:48Z",
    "created_at": "2026-01-08T17:26:06Z",
    "archived": false,
    "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "larashero3-dotcom/lieflat-charts": {
    "tier": "candidate",
-   "stars": 6225,
+   "stars": 6239,
    "forks": 375,
    "open_issues": 0,
    "pushed_at": "2026-10-15T10:59:32Z",
@@ -1203,84 +1215,84 @@
    "archived": false,
    "description": "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill,将数据快速生成精致、可交互的 HTML 图表。",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "latent-spaces/brag": {
    "tier": "candidate",
-   "stars": 16788,
-   "forks": 1248,
+   "stars": 16833,
+   "forks": 1250,
    "open_issues": 16,
    "pushed_at": "2026-10-13T11:08:09Z",
    "created_at": "2026-06-16T19:36:36Z",
    "archived": false,
    "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "lemomo-ai/lemo-opuscar": {
    "tier": "candidate",
-   "stars": 3296,
-   "forks": 363,
+   "stars": 3447,
+   "forks": 378,
    "open_issues": 0,
    "pushed_at": "2026-10-18T10:18:33Z",
    "created_at": "2026-09-26T10:10:41Z",
    "archived": false,
    "description": "Claude Code skill for short films with no video model: 51 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98 and the new Evidence Films). By Lemomo. · Opus5.5 x 51 种影片风格:风格提示词 + 纯代码样片 + 导演与技术指南(新增「实证影像」)",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "lidge-jun/opencodex": {
    "tier": "candidate",
-   "stars": 17581,
-   "forks": 1353,
-   "open_issues": 113,
-   "pushed_at": "2026-10-19T06:48:38Z",
+   "stars": 17592,
+   "forks": 1354,
+   "open_issues": 111,
+   "pushed_at": "2026-10-19T08:58:00Z",
    "created_at": "2026-06-18T23:03:18Z",
    "archived": false,
    "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama...) with Codex CLI, App, SDK, and Claude Code",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "luongnv89/claude-howto": {
    "tier": "candidate",
-   "stars": 41949,
-   "forks": 5155,
-   "open_issues": 33,
-   "pushed_at": "2026-10-19T06:48:50Z",
+   "stars": 41951,
+   "forks": 5156,
+   "open_issues": 34,
+   "pushed_at": "2026-10-19T07:56:39Z",
    "created_at": "2025-11-07T22:59:34Z",
    "archived": false,
    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "manaflow-ai/cmux": {
    "tier": "candidate",
-   "stars": 28251,
-   "forks": 2539,
-   "open_issues": 3373,
-   "pushed_at": "2026-10-19T06:53:11Z",
+   "stars": 28261,
+   "forks": 2540,
+   "open_issues": 3369,
+   "pushed_at": "2026-10-19T09:40:36Z",
    "created_at": "2026-01-28T10:03:24Z",
    "archived": false,
    "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
    "language": "Swift",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "marclou/mailcheap": {
    "tier": "candidate",
-   "stars": 1237,
+   "stars": 1240,
    "forks": 316,
    "open_issues": 12,
-   "pushed_at": "2026-10-19T04:47:20Z",
+   "pushed_at": "2026-10-19T08:56:44Z",
    "created_at": "2026-10-10T12:55:36Z",
    "archived": false,
    "description": "Newsletters where you pay for the emails you send, not for dormant subscribers, at a fraction of the price of beehiiv and the like. Open source: self-host it, or use mailcheap.ai.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "mattpocock/skills": {
    "tier": "core",
-   "stars": 296546,
-   "forks": 24895,
+   "stars": 296755,
+   "forks": 24917,
    "open_issues": 194,
    "pushed_at": "2026-10-13T08:46:40Z",
    "created_at": "2026-02-03T11:15:53Z",
@@ -1293,11 +1305,11 @@
     "published_at": "2026-10-04T12:48:18Z",
     "url": "https://github.com/mattpocock/skills/releases/tag/v1.3.1"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "microsoft/SkillOpt": {
    "tier": "candidate",
-   "stars": 18546,
+   "stars": 18547,
    "forks": 1762,
    "open_issues": 55,
    "pushed_at": "2026-10-18T17:03:51Z",
@@ -1305,12 +1317,12 @@
    "archived": false,
    "description": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "microsoft/playwright-mcp": {
    "tier": "core",
-   "stars": 38351,
-   "forks": 3281,
+   "stars": 38355,
+   "forks": 3283,
    "open_issues": 5,
    "pushed_at": "2026-10-16T22:43:43Z",
    "created_at": "2025-03-21T17:48:36Z",
@@ -1323,23 +1335,23 @@
     "published_at": "2026-09-28T23:17:11Z",
     "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.83"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "milind-soni/OpenMausBot": {
    "tier": "candidate",
-   "stars": 5144,
-   "forks": 868,
-   "open_issues": 404,
-   "pushed_at": "2026-10-19T06:51:25Z",
+   "stars": 5154,
+   "forks": 867,
+   "open_issues": 407,
+   "pushed_at": "2026-10-19T09:37:02Z",
    "created_at": "2026-08-11T18:58:55Z",
    "archived": false,
    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "miqdadbadjuber/anti-slop": {
    "tier": "candidate",
-   "stars": 6469,
+   "stars": 6481,
    "forks": 459,
    "open_issues": 1,
    "pushed_at": "2026-10-16T11:43:22Z",
@@ -1347,25 +1359,25 @@
    "archived": false,
    "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "mksglu/context-mode": {
    "tier": "candidate",
-   "stars": 30855,
-   "forks": 2297,
+   "stars": 30891,
+   "forks": 2300,
    "open_issues": 356,
-   "pushed_at": "2026-10-19T06:51:55Z",
+   "pushed_at": "2026-10-19T09:41:33Z",
    "created_at": "2026-02-23T05:56:28Z",
    "archived": false,
    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "modelcontextprotocol/servers": {
    "tier": "core",
-   "stars": 91363,
-   "forks": 11816,
-   "open_issues": 484,
+   "stars": 91367,
+   "forks": 11817,
+   "open_issues": 486,
    "pushed_at": "2026-10-19T06:46:48Z",
    "created_at": "2024-11-19T01:10:17Z",
    "archived": false,
@@ -1377,35 +1389,35 @@
     "published_at": "2026-10-19T06:46:48Z",
     "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.0.0"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "morluto/awesome-reverse-engineering": {
    "tier": "candidate",
-   "stars": 862,
-   "forks": 188,
+   "stars": 878,
+   "forks": 189,
    "open_issues": 1,
    "pushed_at": "2026-10-18T11:01:19Z",
    "created_at": "2026-10-09T14:58:20Z",
    "archived": false,
    "description": "Curated reverse-engineering tools and learning resources for binaries, apps, firmware, formats, and protocols.",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "morluto/rea": {
    "tier": "candidate",
-   "stars": 326706,
-   "forks": 82728,
-   "open_issues": 1220,
-   "pushed_at": "2026-10-19T06:38:20Z",
+   "stars": 328973,
+   "forks": 83263,
+   "open_issues": 1239,
+   "pushed_at": "2026-10-19T09:36:17Z",
    "created_at": "2026-04-14T00:51:32Z",
    "archived": false,
    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "multica-ai/andrej-karpathy-skills": {
    "tier": "core",
-   "stars": 221034,
-   "forks": 22201,
+   "stars": 221067,
+   "forks": 22207,
    "open_issues": 135,
    "pushed_at": "2026-04-20T10:05:04Z",
    "created_at": "2026-01-27T03:53:13Z",
@@ -1413,35 +1425,35 @@
    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
    "language": null,
    "latest_release": null,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "mvanhorn/last30days-skill": {
    "tier": "candidate",
-   "stars": 64687,
-   "forks": 5646,
-   "open_issues": 26,
+   "stars": 64704,
+   "forks": 5649,
+   "open_issues": 27,
    "pushed_at": "2026-10-18T20:12:47Z",
    "created_at": "2026-01-23T20:37:37Z",
    "archived": false,
    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "n8n-io/n8n": {
    "tier": "candidate",
-   "stars": 207962,
-   "forks": 61180,
-   "open_issues": 1201,
-   "pushed_at": "2026-10-19T06:51:51Z",
+   "stars": 207981,
+   "forks": 61183,
+   "open_issues": 1214,
+   "pushed_at": "2026-10-19T09:41:56Z",
    "created_at": "2019-06-22T09:24:21Z",
    "archived": false,
    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nanaism/yomiyasu": {
    "tier": "candidate",
-   "stars": 2243,
+   "stars": 2249,
    "forks": 77,
    "open_issues": 0,
    "pushed_at": "2026-10-19T02:37:06Z",
@@ -1449,70 +1461,70 @@
    "archived": false,
    "description": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nanocoai/nanoclaw": {
    "tier": "candidate",
-   "stars": 30966,
+   "stars": 30967,
    "forks": 12906,
-   "open_issues": 1017,
-   "pushed_at": "2026-10-18T13:44:15Z",
+   "open_issues": 1016,
+   "pushed_at": "2026-10-19T09:07:19Z",
    "created_at": "2026-01-31T15:47:22Z",
    "archived": false,
    "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nateherkai/roast-room": {
    "tier": "candidate",
-   "stars": 800,
-   "forks": 180,
+   "stars": 805,
+   "forks": 182,
    "open_issues": 5,
    "pushed_at": "2026-10-13T02:59:59Z",
    "created_at": "2026-10-10T20:38:58Z",
    "archived": false,
    "description": "Seven AI advisors (Bezos, Paul Graham, Hormozi, Gary Vee, Dan Martell, Gino Wickman, Buffett) debate your business decision in Claude Code, live around a table.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
    "tier": "candidate",
-   "stars": 137338,
-   "forks": 14587,
+   "stars": 137412,
+   "forks": 14593,
    "open_issues": 91,
    "pushed_at": "2026-10-15T02:04:34Z",
    "created_at": "2025-11-30T11:36:31Z",
    "archived": false,
    "description": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nexu-io/open-design": {
    "tier": "candidate",
-   "stars": 102289,
-   "forks": 11734,
-   "open_issues": 1203,
-   "pushed_at": "2026-10-19T06:38:26Z",
+   "stars": 102342,
+   "forks": 11741,
+   "open_issues": 1207,
+   "pushed_at": "2026-10-19T09:36:30Z",
    "created_at": "2026-04-28T04:25:20Z",
    "archived": false,
    "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nidhinjs/prompt-master": {
    "tier": "candidate",
-   "stars": 14616,
-   "forks": 1822,
-   "open_issues": 26,
+   "stars": 14622,
+   "forks": 1823,
+   "open_issues": 27,
    "pushed_at": "2026-10-16T07:24:11Z",
    "created_at": "2026-03-11T16:25:43Z",
    "archived": false,
    "description": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "nykooi1/vibe-wise": {
    "tier": "candidate",
-   "stars": 3761,
+   "stars": 3768,
    "forks": 149,
    "open_issues": 24,
    "pushed_at": "2026-10-09T09:37:21Z",
@@ -1520,13 +1532,13 @@
    "archived": false,
    "description": "A Claude Code / Codex plugin that helps you learn how to build while AI writes the code.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "obra/superpowers": {
    "tier": "core",
-   "stars": 301763,
-   "forks": 26947,
-   "open_issues": 382,
+   "stars": 301829,
+   "forks": 26952,
+   "open_issues": 378,
    "pushed_at": "2026-10-10T03:03:30Z",
    "created_at": "2025-10-09T19:45:18Z",
    "archived": false,
@@ -1538,83 +1550,83 @@
     "published_at": "2026-10-10T00:28:58Z",
     "url": "https://github.com/obra/superpowers/releases/tag/v7.0.0"
    },
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "oil-oil/oil-ui": {
    "tier": "candidate",
-   "stars": 1794,
-   "forks": 98,
+   "stars": 1811,
+   "forks": 97,
    "open_issues": 0,
    "pushed_at": "2026-10-18T17:31:05Z",
    "created_at": "2026-09-30T03:55:35Z",
    "archived": false,
    "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "omnigent-ai/omnigent": {
    "tier": "candidate",
-   "stars": 10885,
-   "forks": 1765,
-   "open_issues": 2273,
-   "pushed_at": "2026-10-19T06:52:36Z",
+   "stars": 10895,
+   "forks": 1766,
+   "open_issues": 2244,
+   "pushed_at": "2026-10-19T09:39:52Z",
    "created_at": "2026-06-11T12:18:13Z",
    "archived": false,
    "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "open-gsd/gsd-core": {
    "tier": "candidate",
-   "stars": 10663,
-   "forks": 761,
-   "open_issues": 284,
-   "pushed_at": "2026-10-19T04:02:21Z",
+   "stars": 10671,
+   "forks": 762,
+   "open_issues": 286,
+   "pushed_at": "2026-10-19T07:43:43Z",
    "created_at": "2026-05-22T11:36:21Z",
    "archived": false,
    "description": "Git. Ship. Done - Core",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "openfilm/openfilm": {
    "tier": "candidate",
-   "stars": 1066,
-   "forks": 115,
-   "open_issues": 10,
-   "pushed_at": "2026-10-19T00:02:53Z",
+   "stars": 1113,
+   "forks": 116,
+   "open_issues": 8,
+   "pushed_at": "2026-10-19T09:30:45Z",
    "created_at": "2026-10-04T09:29:07Z",
    "archived": false,
    "description": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "pacifio/atlas": {
    "tier": "candidate",
-   "stars": 9621,
-   "forks": 377,
+   "stars": 9622,
+   "forks": 378,
    "open_issues": 42,
-   "pushed_at": "2026-10-19T05:59:38Z",
+   "pushed_at": "2026-10-19T09:34:09Z",
    "created_at": "2026-05-14T16:48:52Z",
    "archived": false,
    "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
    "language": "Rust",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "paperclipai/paperclip": {
    "tier": "candidate",
-   "stars": 104284,
-   "forks": 17413,
-   "open_issues": 6192,
-   "pushed_at": "2026-10-19T05:59:36Z",
+   "stars": 104371,
+   "forks": 17426,
+   "open_issues": 6197,
+   "pushed_at": "2026-10-19T07:36:03Z",
    "created_at": "2026-03-02T15:01:51Z",
    "archived": false,
    "description": "The open-source app everyone uses to manage agents at work",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "pascalorg/editor": {
    "tier": "candidate",
-   "stars": 24974,
+   "stars": 24976,
    "forks": 3106,
    "open_issues": 61,
    "pushed_at": "2026-10-18T19:29:31Z",
@@ -1622,82 +1634,82 @@
    "archived": false,
    "description": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "phuryn/pm-skills": {
    "tier": "candidate",
-   "stars": 27191,
+   "stars": 27201,
    "forks": 2869,
    "open_issues": 45,
    "pushed_at": "2026-10-16T12:28:37Z",
    "created_at": "2026-03-01T23:33:44Z",
    "archived": false,
    "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "rehan-remade/universal-modder": {
    "tier": "candidate",
-   "stars": 8373,
-   "forks": 915,
-   "open_issues": 25,
+   "stars": 8389,
+   "forks": 920,
+   "open_issues": 26,
    "pushed_at": "2026-10-19T04:36:13Z",
    "created_at": "2026-09-30T05:00:35Z",
    "archived": false,
    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "router-for-me/CLIProxyAPI": {
    "tier": "candidate",
-   "stars": 55642,
-   "forks": 8503,
-   "open_issues": 732,
-   "pushed_at": "2026-10-19T04:26:18Z",
+   "stars": 55666,
+   "forks": 8504,
+   "open_issues": 735,
+   "pushed_at": "2026-10-19T08:59:59Z",
    "created_at": "2025-07-01T19:43:27Z",
    "archived": false,
    "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "rtk-ai/rtk": {
    "tier": "candidate",
-   "stars": 83903,
+   "stars": 83926,
    "forks": 5333,
-   "open_issues": 1540,
+   "open_issues": 1543,
    "pushed_at": "2026-10-19T00:38:06Z",
    "created_at": "2026-01-22T16:54:16Z",
    "archived": false,
    "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
    "language": "Rust",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "ruvnet/ruflo": {
    "tier": "candidate",
-   "stars": 76709,
-   "forks": 9066,
-   "open_issues": 1061,
-   "pushed_at": "2026-10-19T06:30:38Z",
+   "stars": 76786,
+   "forks": 9070,
+   "open_issues": 1064,
+   "pushed_at": "2026-10-19T09:16:48Z",
    "created_at": "2025-06-02T21:24:20Z",
    "archived": false,
    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "sansan0/TrendRadar": {
    "tier": "candidate",
-   "stars": 63010,
-   "forks": 24907,
+   "stars": 63019,
+   "forks": 24909,
    "open_issues": 32,
    "pushed_at": "2026-10-15T11:24:14Z",
    "created_at": "2025-04-28T11:42:16Z",
    "archived": false,
    "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载,你的 AI 舆情监控助手与热点筛选工具!聚合多平台热点 +  RSS 订阅,支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机,也支持接入 MCP 架构,赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ,数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "shanraisshan/claude-code-best-practice": {
    "tier": "candidate",
-   "stars": 67721,
+   "stars": 67728,
    "forks": 6748,
    "open_issues": 24,
    "pushed_at": "2026-10-19T06:34:20Z",
@@ -1705,47 +1717,47 @@
    "archived": false,
    "description": "from vibe coding to agentic engineering - practice makes claude perfect",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "sickn33/agentic-awesome-skills": {
    "tier": "candidate",
-   "stars": 47916,
+   "stars": 47929,
    "forks": 6999,
-   "open_issues": 5,
-   "pushed_at": "2026-10-18T22:26:45Z",
+   "open_issues": 3,
+   "pushed_at": "2026-10-19T08:59:40Z",
    "created_at": "2026-01-14T17:48:09Z",
    "archived": false,
    "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "stablyai/orca": {
    "tier": "candidate",
-   "stars": 97131,
-   "forks": 6198,
-   "open_issues": 8528,
-   "pushed_at": "2026-10-19T06:52:48Z",
+   "stars": 97355,
+   "forks": 6208,
+   "open_issues": 8577,
+   "pushed_at": "2026-10-19T09:41:23Z",
    "created_at": "2026-03-17T03:28:57Z",
    "archived": false,
    "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "steipete/CodexBar": {
    "tier": "candidate",
-   "stars": 22644,
-   "forks": 2137,
-   "open_issues": 65,
-   "pushed_at": "2026-10-19T06:20:10Z",
+   "stars": 22646,
+   "forks": 2136,
+   "open_issues": 61,
+   "pushed_at": "2026-10-19T09:20:06Z",
    "created_at": "2025-11-16T17:00:44Z",
    "archived": false,
    "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
    "language": "Swift",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "teng-lin/notebooklm-py": {
    "tier": "candidate",
-   "stars": 19794,
+   "stars": 19798,
    "forks": 2636,
    "open_issues": 27,
    "pushed_at": "2026-10-18T22:07:14Z",
@@ -1753,35 +1765,35 @@
    "archived": false,
    "description": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to Gemini Notebook's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "thedotmack/claude-mem": {
    "tier": "candidate",
-   "stars": 101664,
-   "forks": 8934,
-   "open_issues": 105,
-   "pushed_at": "2026-10-19T06:52:42Z",
+   "stars": 101696,
+   "forks": 8938,
+   "open_issues": 87,
+   "pushed_at": "2026-10-19T08:10:06Z",
    "created_at": "2025-08-31T20:50:03Z",
    "archived": false,
    "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "tigerless-labs/agent-memory": {
    "tier": "candidate",
-   "stars": 4319,
-   "forks": 185,
+   "stars": 4356,
+   "forks": 186,
    "open_issues": 57,
    "pushed_at": "2026-10-16T17:10:08Z",
    "created_at": "2026-09-01T21:52:29Z",
    "archived": false,
    "description": "Long-term memory runtime for AI agents — plain Markdown as the source of truth, local ranked retrieval, and an independent sleep-time Manage layer. Claude Code and Codex share one store. No API key.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "tigerless-labs/autoharness": {
    "tier": "candidate",
-   "stars": 11140,
+   "stars": 11144,
    "forks": 629,
    "open_issues": 65,
    "pushed_at": "2026-10-15T16:22:50Z",
@@ -1789,7 +1801,7 @@
    "archived": false,
    "description": "Autoharness — a self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon, no benchmark.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "tirth8205/code-review-graph": {
    "tier": "candidate",
@@ -1801,11 +1813,11 @@
    "archived": false,
    "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "titanwings/distilly": {
    "tier": "candidate",
-   "stars": 25773,
+   "stars": 25779,
    "forks": 2379,
    "open_issues": 71,
    "pushed_at": "2026-10-13T05:57:17Z",
@@ -1813,44 +1825,44 @@
    "archived": false,
    "description": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill(原同事 Skill).",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "trailhq/Trail-Code": {
    "tier": "candidate",
-   "stars": 10410,
+   "stars": 10423,
    "forks": 915,
-   "open_issues": 263,
+   "open_issues": 265,
    "pushed_at": "2026-10-18T11:33:26Z",
    "created_at": "2026-07-03T13:44:21Z",
    "archived": false,
    "description": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "travisvn/awesome-claude-skills": {
    "tier": "core",
-   "stars": 15457,
-   "forks": 2119,
-   "open_issues": 870,
+   "stars": 15459,
+   "forks": 2122,
+   "open_issues": 873,
    "pushed_at": "2026-04-28T19:30:24Z",
    "created_at": "2025-10-16T20:42:39Z",
    "archived": false,
    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
    "language": null,
    "latest_release": null,
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "tt-a1i/archify": {
    "tier": "candidate",
-   "stars": 85531,
-   "forks": 5815,
-   "open_issues": 251,
+   "stars": 85603,
+   "forks": 5823,
+   "open_issues": 253,
    "pushed_at": "2026-10-19T04:44:53Z",
    "created_at": "2026-04-15T05:27:37Z",
    "archived": false,
    "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
    "language": "JavaScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "tw93/Kami": {
    "tier": "candidate",
@@ -1862,118 +1874,118 @@
    "archived": false,
    "description": "👩‍🚒 Good content deserves good paper. Layout rules and templates that let AI agents export PDF, PNG and editable PowerPoint.",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "upstash/context7": {
    "tier": "candidate",
-   "stars": 63272,
-   "forks": 3114,
-   "open_issues": 52,
-   "pushed_at": "2026-10-17T14:44:22Z",
+   "stars": 63279,
+   "forks": 3115,
+   "open_issues": 50,
+   "pushed_at": "2026-10-19T09:29:36Z",
    "created_at": "2025-03-26T23:40:39Z",
    "archived": false,
    "description": "Context7 Platform -- Up-to-date docs for AI agents",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "vinzdg/codenotch": {
    "tier": "candidate",
-   "stars": 2859,
-   "forks": 469,
-   "open_issues": 73,
+   "stars": 2861,
+   "forks": 470,
+   "open_issues": 74,
    "pushed_at": "2026-10-14T05:21:59Z",
    "created_at": "2026-09-05T14:55:35Z",
    "archived": false,
    "description": "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.",
    "language": "Swift",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "virgiliojr94/book-to-skill": {
    "tier": "candidate",
-   "stars": 35298,
-   "forks": 3718,
+   "stars": 35314,
+   "forks": 3720,
    "open_issues": 24,
    "pushed_at": "2026-10-18T21:24:32Z",
    "created_at": "2026-05-01T02:09:39Z",
    "archived": false,
    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "wanshuiyin/Auto-claude-code-research-in-sleep": {
    "tier": "candidate",
-   "stars": 17689,
-   "forks": 1650,
+   "stars": 17700,
+   "forks": 1651,
    "open_issues": 74,
    "pushed_at": "2026-10-19T06:20:47Z",
    "created_at": "2026-03-10T07:31:45Z",
    "archived": false,
    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "wshobson/agents": {
    "tier": "candidate",
-   "stars": 41048,
-   "forks": 4367,
-   "open_issues": 2,
+   "stars": 41067,
+   "forks": 4368,
+   "open_issues": 3,
    "pushed_at": "2026-10-19T01:07:28Z",
    "created_at": "2025-07-24T23:28:14Z",
    "archived": false,
    "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "x1xhlol/system-prompts-and-models-of-ai-tools": {
    "tier": "candidate",
-   "stars": 144084,
-   "forks": 34731,
+   "stars": 144089,
+   "forks": 34729,
    "open_issues": 162,
    "pushed_at": "2026-10-12T15:19:01Z",
    "created_at": "2025-03-05T16:38:29Z",
    "archived": false,
    "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "xbtlin/ai-berkshire": {
    "tier": "candidate",
-   "stars": 16790,
+   "stars": 16797,
    "forks": 2618,
-   "open_issues": 35,
-   "pushed_at": "2026-10-19T06:46:51Z",
+   "open_issues": 36,
+   "pushed_at": "2026-10-19T09:17:01Z",
    "created_at": "2026-04-07T11:19:51Z",
    "archived": false,
    "description": "AI 时代的伯克希尔:基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
    "language": "HTML",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "yetone/cumora": {
    "tier": "candidate",
-   "stars": 3995,
+   "stars": 3996,
    "forks": 527,
-   "open_issues": 25,
-   "pushed_at": "2026-10-16T02:39:47Z",
+   "open_issues": 23,
+   "pushed_at": "2026-10-19T08:45:17Z",
    "created_at": "2026-08-17T09:13:52Z",
    "archived": false,
    "description": "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.",
    "language": "TypeScript",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "yetone/magpie": {
    "tier": "candidate",
-   "stars": 16381,
-   "forks": 1182,
-   "open_issues": 1147,
-   "pushed_at": "2026-10-19T06:51:26Z",
+   "stars": 16585,
+   "forks": 1194,
+   "open_issues": 1163,
+   "pushed_at": "2026-10-19T09:28:02Z",
    "created_at": "2026-09-23T16:22:35Z",
    "archived": false,
    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
    "language": "Go",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   },
   "zhuyansen/new-term-radar": {
    "tier": "candidate",
-   "stars": 1115,
+   "stars": 1117,
    "forks": 425,
    "open_issues": 2,
    "pushed_at": "2026-10-18T07:47:52Z",
@@ -1981,7 +1993,7 @@
    "archived": false,
    "description": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
    "language": "Python",
-   "collected_at": "2026-10-19T06:52:21Z"
+   "collected_at": "2026-10-19T09:40:45Z"
   }
  }
 }

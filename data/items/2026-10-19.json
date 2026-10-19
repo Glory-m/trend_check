@@ -8172,6 +8172,24 @@
    "classified_by": "rule",
    "category_reason": "생태계 레포",
    "headline_ko": "스타 패턴 참고 경고 · YeonwooSung/my-claude-code-mods"
+  },
+  {
+   "id": "cand:juliobsz/skills",
+   "type": "candidate_new",
+   "title": "신규 발견: juliobsz/skills (★431, 하루 ★61.57)",
+   "body": "An agent skill that builds award-caliber websites from one line",
+   "url": "https://github.com/juliobsz/skills",
+   "repo": "juliobsz/skills",
+   "version": null,
+   "source": "topic",
+   "published_at": "2026-10-12T00:07:32Z",
+   "collected_at": "2026-10-19T09:40:45Z",
+   "category": "스킬·플러그인·MCP",
+   "importance": "보통",
+   "importance_reason": "신규 발견 (별 속도 상위)",
+   "classified_by": "rule",
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새로 뜨는 저장소 · juliobsz/skills · ★431"
   }
  ]
 }
