@@ -72,3 +72,52 @@ relevance_keywords:
   - cursor
   - copilot
   - ai coding
+
+# ---- 분석 (collector/analyze.py) ----
+stars:
+  surge:                 # 급등: 절대값 또는 비율 (작은 레포의 급성장도 잡히게)
+    d1_abs: 200
+    d1_pct: 10           # %, 단 d1_min_abs 이상일 때만
+    d1_min_abs: 30
+    d7_abs: 500
+    d7_pct: 20
+    d7_min_abs: 50
+    min_stars: 100       # 비율 판정은 이 별 수 이상 레포만
+  suspicious:            # '참고 경고'만 — 바이럴과 구분이 어렵다
+    star_fork_ratio: 60          # 별/포크 비율이 이보다 크고
+    star_fork_min_stars: 1000    # 별이 이 이상
+    young_days: 14               # 생성 N일 이내에
+    young_stars: 2000            # 별이 이 이상이고 포크 비율 1% 미만
+    step_share: 0.8              # 7일 증가분의 80% 이상이 하루에 몰림
+    step_min_abs: 300
+  promote:               # 후보 → 핵심 watchlist 승격 '제안'
+    d7_abs: 300
+    d7_pct: 30
+    min_stars: 100
+    pushed_within_days: 30
+  demote:                # 핵심 → 강등 '제안'
+    no_push_days: 90
+    d30_pct_below: 0.5
+  series_days: 90        # 사이트 차트용 이력 길이
+  series_top_candidates: 20
+
+# ---- 분류 (collector/classify.py) — 규칙 기반 1차 판정, AI 판단은 digest에 따로 ----
+classify:
+  reclassify_days: 14    # 규칙이 바뀌면 최근 N일 항목도 다시 판정 (결과가 같으면 파일 변화 없음)
+  # 키워드 매칭: 단어 단위(복수·과거형 허용, launch→launched), 끝이 * 이면 접두어 (deprecat* → deprecated)
+  category_keywords:     # 우선순위: 보안 → 스킬·플러그인·MCP → 신기술 → 사용법·워크플로 → 기타
+    보안: [security, vulnerab*, cve-, exploit, prompt injection, sandbox escape, credential leak, secret leak,
+          malicious, malware, supply chain, xss, csrf, rce, privilege escalation, permission bypass, 보안, 취약]
+    스킬·플러그인·MCP: [skill, plugin, mcp, marketplace, connector, extension]
+    신기술: [new model, launch, introducing, now available, research preview, beta, protocol, sdk, managed agents,
+           claude opus, claude sonnet, claude haiku, claude fable, api]
+    사용법·워크플로: [claude.md, workflow, hook, subagent, best practice, settings, config, slash command, plan mode,
+               memory, context, guide, how we, how to, tips, code review, permission]
+  high_signals:          # 중요도 높음 신호
+    # 실제 보안 이슈 (단순히 'security'가 언급된 것은 분류만 보안, 중요도는 보통)
+    security_issue: [vulnerab*, cve-, exploit, prompt injection, malicious, malware, supply chain, rce, xss, csrf,
+                     privilege escalation, permission bypass, credential leak, secret leak, sandbox escape, 취약]
+    # 기존 사용법을 바꾸는 변경 — Changed/Removed/Deprecated 항목과 공식 노트에만 적용 (Improved·Fixed 제외)
+    breaking: [breaking, deprecat*, no longer, now requires, can break, migrat*, removed, default is now, now defaults]
+    model_launch: [launched claude, launch, new model, introducing claude]
+  low_types: [npm_unlisted]

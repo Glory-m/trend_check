@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from . import claude_code, discovery, official, repos
+from . import analyze, classify, claude_code, discovery, official, repos
 from .net import Client
 from .store import Store
 from .timeutil import now_utc, parse_iso
@@ -31,6 +31,7 @@ STEPS = [
     ("official_engineering", official.engineering, False),
     ("official_org_repos", official.org_repos, False),
     ("candidates", repos.finalize_candidates, False),
+    ("analyze", analyze.run, False),
 ]
 
 
@@ -41,6 +42,7 @@ class Context:
         self.client = Client.from_env()
         self.rules = yaml.safe_load((ROOT / "config/rules.yml").read_text(encoding="utf-8"))
         self.watchlist = yaml.safe_load((ROOT / "watchlist.yml").read_text(encoding="utf-8"))["repos"]
+        self.profile = yaml.safe_load((ROOT / "profile.yml").read_text(encoding="utf-8"))
         cands = self.store.load_json("candidates.json", None)
         self.candidates_bootstrap = cands is None
         self.candidates = cands or {"repos": {}}
@@ -86,6 +88,17 @@ def main(argv=None):
         steps[name]["seconds"] = round(time.time() - t, 1)
 
     added = ctx.store.flush()
+
+    # 분류는 저장 후 최근 N일 파일 전체에 적용 — 새 항목과 규칙 변경을 같은 경로로 처리
+    t = time.time()
+    try:
+        steps["classify"] = {"status": "ok", "detail": classify.reclassify_recent(ctx)}
+        print(f"  ✓ classify: {steps['classify']['detail']}")
+    except Exception as e:
+        steps["classify"] = {"status": "fail", "detail": f"{type(e).__name__}: {e}"[:500]}
+        ctx.warn("classify", f"{type(e).__name__}: {e}")
+        traceback.print_exc(file=sys.stderr)
+    steps["classify"]["seconds"] = round(time.time() - t, 1)
 
     health = ctx.store.load_json("health.json", {"errors": []})
     statuses = {s["status"] for s in steps.values()}
