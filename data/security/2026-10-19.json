@@ -1,0 +1,53 @@
+{
+ "date": "2026-10-19",
+ "flagged": [
+  {
+   "ref": "repo:AskTheWay/dsh-auto-memory",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "role_injection"
+   ],
+   "sha256_16": "fd7ec1ca529c3e6c",
+   "length": 172,
+   "url": "https://github.com/AskTheWay/dsh-auto-memory"
+  },
+  {
+   "ref": "repo:klsoen/opus-js-animations",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "markup"
+   ],
+   "sha256_16": "dad222799732a38e",
+   "length": 186,
+   "url": "https://github.com/klsoen/opus-js-animations"
+  },
+  {
+   "ref": "repo:alexgetmancom/claudecut",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "role_injection"
+   ],
+   "sha256_16": "0592ac7a7cfb1368",
+   "length": 119,
+   "url": "https://github.com/alexgetmancom/claudecut"
+  },
+  {
+   "ref": "repo:Piebald-AI/claude-code-system-prompts",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "role_injection"
+   ],
+   "sha256_16": "535959df3666745a",
+   "length": 265,
+   "url": "https://github.com/Piebald-AI/claude-code-system-prompts"
+  }
+ ],
+ "last_scan_at": "2026-10-19T06:33:13Z",
+ "scanned_last_run": 9812,
+ "flagged_count": 4,
+ "rules": "collector/safety.py (규칙 기반, AI 미사용)"
+}
