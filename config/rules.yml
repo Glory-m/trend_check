@@ -121,3 +121,10 @@ classify:
     breaking: [breaking, deprecat*, no longer, now requires, can break, migrat*, removed, default is now, now defaults]
     model_launch: [launched claude, launch, new model, introducing claude]
   low_types: [npm_unlisted]
+
+# ---- SKILL.md 위험 신호 감사 (collector/audit.py) — Actions에서만, 원문 저장 안 함 ----
+audit:
+  top_candidates: 30          # 핵심 watchlist + 별 속도 상위 후보 N개
+  refresh_days: 7             # 감사 후 N일이 지났거나 새 push가 있으면 다시
+  max_files_per_repo: 40
+  max_raw_fetches_per_run: 400

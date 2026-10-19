@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from . import analyze, classify, claude_code, discovery, official, repos
+from . import analyze, audit, classify, claude_code, discovery, official, repos
 from .net import Client
 from .store import Store
 from .timeutil import now_utc, parse_iso
@@ -32,6 +32,7 @@ STEPS = [
     ("official_org_repos", official.org_repos, False),
     ("candidates", repos.finalize_candidates, False),
     ("analyze", analyze.run, False),
+    ("audit", audit.run, False),
 ]
 
 
