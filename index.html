@@ -44,15 +44,20 @@
     <!-- ===== 히어로: 오늘의 브리핑 ===== -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap">
-        <p class="eyebrow" id="hero-date" data-reveal>&nbsp;</p>
-        <h1 class="hero-title" id="hero-title" data-reveal>오늘의 브리핑</h1>
-        <p class="hero-lead" id="hero-lead" data-reveal><span class="skeleton sk-line sk-wide"></span><span class="skeleton sk-line"></span></p>
-        <div class="hero-cta" data-reveal>
-          <button class="btn btn-primary" id="play-btn" type="button" disabled>
-            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg>
-            1분 브리핑 보기
-          </button>
-          <a class="btn btn-link" href="#glance">자세히 보기 <span aria-hidden="true">↓</span></a>
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow" id="hero-date" data-reveal>&nbsp;</p>
+            <h1 class="hero-title" id="hero-title" data-reveal>오늘의 브리핑</h1>
+            <p class="hero-lead" id="hero-lead" data-reveal><span class="skeleton sk-line sk-wide"></span><span class="skeleton sk-line"></span></p>
+            <div class="hero-cta" data-reveal>
+              <button class="btn btn-primary" id="play-btn" type="button" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg>
+                1분 브리핑 보기
+              </button>
+              <a class="btn btn-link" href="#glance">자세히 보기 <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <aside class="hero-side" id="hero-side" aria-label="지금 주목할 소식" data-reveal></aside>
         </div>
         <dl class="stats" id="stats" data-reveal></dl>
       </div>

@@ -103,6 +103,37 @@ function origLine(x) {
   return el("span", { class: "orig", title: x.title, text: x.title });
 }
 const catTag = (x) => { const c = CAT[x.category] || CAT["기타"]; return el("span", { class: "tag" }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), x.category || "기타"); };
+/** 규칙 판정 근거를 사람이 읽는 한국어로 (원래 근거는 title 속성에 남긴다) */
+const ENV_KO = { windows: "Windows", vscode: "VS Code", "vs code": "VS Code", powershell: "PowerShell" };
+const WHY = [
+  [/^보안 이슈/, () => "보안과 직접 관련된 이슈예요"],
+  [/^보안 관련 언급/, () => "보안과 관련된 소식이에요"],
+  [/^스타 급등/, () => "별이 빠르게 늘고 있는 저장소예요"],
+  [/^새 모델·제품 출시/, () => "새로운 모델이나 기능이 출시됐어요"],
+  [/^기존 사용법을 바꾸는/, () => "지금 쓰는 방식이 바뀔 수 있어요 — 한 번 확인해 보세요"],
+  [/^내 요금제\((.+?)\)/, (m) => `내 요금제(${m[1]})에 해당하는 소식이에요`],
+  [/^설치된 도구 '([^']+)'/, (m) => `내가 설치한 ${m[1]}와 관련 있어요`],
+  [/^관심 분야 '([^']+)' 키워드/, (m) => `관심 분야(${m[1]})와 관련 있어요`],
+  [/^관심 분야 '([^']+)' 버그 수정/, (m) => `관심 분야(${m[1]})의 문제가 고쳐졌어요`],
+  [/^관심 분야 '([^']+)' 소소한 개선/, (m) => `관심 분야(${m[1]})가 조금 나아졌어요`],
+  [/^내 환경\(([^)]+)\) 버그 수정/, (m) => `내 환경(${ENV_KO[m[1]] || m[1]})의 문제가 고쳐졌어요`],
+  [/^내 환경\(([^)]+)\) 관련 변경/, (m) => `내 환경(${ENV_KO[m[1]] || m[1]})에 해당하는 변경이에요`],
+  [/^내 스택 '([^']+)'/, (m) => `내 스택(${m[1]})과 관련 있어요`],
+  [/^신규 발견/, () => "새로 빠르게 뜨고 있는 저장소예요"],
+  [/^GitHub 트렌딩/, () => "GitHub 트렌딩에 올랐어요"],
+  [/^watchlist 변경 제안/, () => "관심 저장소에 넣거나 뺄지 검토해 볼 만해요"],
+  [/^스타 패턴 참고 경고/, () => "별 증가 패턴이 특이해요 (참고만 하세요)"],
+  [/^인젝션 의심/, () => "의심 문구가 있어 격리했어요 — 원문은 직접 확인하세요"],
+  [/^단순 버그 수정/, () => "일반적인 버그 수정이에요"],
+  [/^내가 쓰지 않는 기능·환경 '([^']+)'/, (m) => `내가 쓰지 않는 ${m[1]} 관련이에요`],
+  [/^관심 없는 분야/, () => "관심 밖 분야예요"],
+  [/^개발 주제와 무관/, () => "개발과 직접 관련 없는 소식이에요"],
+];
+function friendlyWhy(r) {
+  if (!r) return null;
+  for (const [rx, fn] of WHY) { const m = r.match(rx); if (m) return fn(m); }
+  return r;
+}
 const aiMark = (x) => (koOf(x) ? el("span", { class: "ai-mark", title: "PC의 Claude가 번역한 문장 (classified_by: ai)" }, "AI 번역") : null);
 const sortItems = (a, b) => (IMP[a.importance] ?? 3) - (IMP[b.importance] ?? 3)
   || (TYPE_RANK[a.type] ?? 9) - (TYPE_RANK[b.type] ?? 9)
@@ -242,6 +273,12 @@ function renderHero(items, r) {
     s.note ? el("span", { class: "stat-note", text: s.note }) : null)));
   const play = document.getElementById("play-btn");
   play.disabled = !items.length;
+  const top3 = pickTop(items, 3);
+  document.getElementById("hero-side").replaceChildren(el("div", { class: "spot" },
+    el("div", { class: "spot-head" }, el("b", { text: "지금 주목할 소식" }), el("span", { text: r.label })),
+    top3.length ? el("ol", {}, top3.map((x) => el("li", {}, link(safeUrl(x.url), mainText(x), "t"),
+      el("span", { class: "w", title: x.importance_reason || "", text: friendlyWhy(x.importance_reason) || kicker(x) }))))
+      : el("p", { class: "muted", text: "이 기간에는 특별히 중요한 소식이 없어요." })));
 }
 
 // ======================= 한눈에 보기 =======================
@@ -263,7 +300,7 @@ function renderGlance(items) {
   ol.replaceChildren(...top.map((x) => el("li", {},
     el("div", { class: "g-main" },
       link(safeUrl(x.url), mainText(x), "g-title"),
-      x.importance_reason ? el("div", { class: "g-why", text: `왜 중요? ${x.importance_reason}` }) : null,
+      x.importance_reason ? el("div", { class: "g-why", title: `판정 근거: ${x.importance_reason}`, text: `왜 중요? ${friendlyWhy(x.importance_reason)}` }) : null,
       el("div", { class: "g-meta" }, catTag(x), kicker(x) ? el("span", { text: kicker(x) }) : null,
         x.published_at ? el("span", { text: `${mdKo(parseIso(x.published_at))} 발표` }) : null, aiMark(x)),
       origLine(x)))));
@@ -522,50 +559,80 @@ function toggleCat(k) {
 
 // ======================= 1분 브리핑 (영상처럼) =======================
 const story = { slides: [], i: 0, timer: 0, t0: 0, paused: false, dur: 6500, raf: 0, last: null };
+/** 오른쪽 시각 패널용 정보 카드 (넓은 화면에서만 보임) */
+function sideCard(rows, extra) {
+  return el("div", { class: "s-card" }, extra || null,
+    el("dl", { class: "s-rows" }, rows.filter(([, v]) => v).map(([k, v]) => el("div", {}, el("dt", { text: k }), el("dd", {}, v)))));
+}
 function buildSlides(items) {
   const r = range(), p = kp(new Date());
   const high = items.filter((x) => x.importance === "높음");
   const cc = items.filter((x) => x.type === "claude_code_change");
   const vers = [...new Set(cc.map((x) => x.version))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+  const top = pickTop(items, 6);
   const slides = [];
-  slides.push({ tint: "rgba(41,151,255,.32)", build: () => [
-    el("span", { class: "s-kicker", text: `${p.m}월 ${p.d}일 ${"일월화수목금토"[p.w]}요일 · ${r.label}` }),
-    el("h2", { class: "s-title huge", text: state.days === 1 ? "오늘의 브리핑" : `${r.label} 브리핑` }),
-    el("p", { class: "s-body" }, leadSentence(items)),
-    el("div", { class: "s-stats" }, [[high.length, "중요한 변화"], [vers.length, "Claude Code 버전"], [items.length, "수집된 소식"]]
-      .map(([n, l]) => el("div", {}, el("b", { "data-count": n, text: "0" }), el("span", { text: l })))),
-    el("span", { class: "s-hint", text: "화면을 누르면 다음으로 · 누르고 있으면 멈춤" })] });
-  pickTop(items, 6).forEach((x, k) => {
+  slides.push({ tint: "rgba(41,151,255,.34)",
+    main: () => [
+      el("span", { class: "s-kicker", text: `${p.m}월 ${p.d}일 ${"일월화수목금토"[p.w]}요일 · ${r.label}` }),
+      el("h2", { class: "s-title huge", text: state.days === 1 ? "오늘의 브리핑" : `${r.label} 브리핑` }),
+      el("p", { class: "s-body" }, leadSentence(items)),
+      el("div", { class: "s-stats" }, [[high.length, "중요한 변화"], [vers.length, "Claude Code 버전"], [items.length, "수집된 소식"]]
+        .map(([n, l]) => el("div", {}, el("b", { "data-count": n, text: "0" }), el("span", { text: l })))),
+      el("span", { class: "s-hint", text: "화면을 누르면 다음으로 · 누르고 있으면 멈춤 · ← → 키" })],
+    side: () => el("div", { class: "s-card" }, el("p", { class: "s-card-title", text: "오늘 다룰 내용" }),
+      el("ol", { class: "s-agenda" }, top.slice(0, 5).map((x) => el("li", {}, el("i", { class: `dot ${(CAT[x.category] || CAT["기타"]).cls}`, "aria-hidden": "true" }), el("span", { text: mainText(x) }))))) });
+  top.forEach((x, k) => {
     const c = CAT[x.category] || CAT["기타"];
-    slides.push({ tint: `color-mix(in srgb, ${cssVar(`--${c.cls}`)} 38%, transparent)`, solid: cssVar(`--${c.cls}`), build: () => [
-      el("span", { class: "s-kicker" }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), `중요 ${k + 1} · ${x.category} · ${kicker(x)}`),
-      el("h2", { class: "s-title", text: mainText(x) }),
-      x.importance_reason ? el("p", { class: "s-body", text: `왜 중요? ${x.importance_reason}` }) : null,
-      x.title && mainText(x) !== x.title ? el("p", { class: "s-orig", text: `원문 · ${x.title.slice(0, 180)}${x.title.length > 180 ? "…" : ""}` }) : null,
-      safeUrl(x.url) ? el("a", { class: "s-link", href: safeUrl(x.url), rel: "noopener noreferrer", target: "_blank" }, "원문 보기", icon("arrow", 16)) : null].filter(Boolean) });
+    const why = friendlyWhy(x.importance_reason);
+    slides.push({ tint: `color-mix(in srgb, ${cssVar(`--${c.cls}`)} 40%, transparent)`, solid: cssVar(`--${c.cls}`),
+      main: () => [
+        el("span", { class: "s-kicker" }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), `중요 ${k + 1} · ${kicker(x) || x.category}`),
+        el("h2", { class: "s-title", text: mainText(x) }),
+        why ? el("p", { class: "s-body s-why", title: x.importance_reason || "" }, el("b", { text: "왜 중요? " }), why) : null,
+        x.title && mainText(x) !== x.title ? el("p", { class: "s-orig", text: `원문 · ${x.title.slice(0, 200)}${x.title.length > 200 ? "…" : ""}` }) : null,
+        safeUrl(x.url) ? el("a", { class: "s-link", href: safeUrl(x.url), rel: "noopener noreferrer", target: "_blank" }, "원문 보기", icon("arrow", 16)) : null].filter(Boolean),
+      side: () => sideCard([
+        ["분류", el("span", { class: "s-cat" }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), x.category || "기타")],
+        ["중요도", x.importance], ["종류", kicker(x)],
+        ["발표", x.published_at ? `${mdKo(parseIso(x.published_at))}` : null],
+        ["버전", x.version && x.type === "claude_code_change" ? `Claude Code ${x.version}` : null],
+        ["저장소", x.repo && x.type !== "claude_code_change" ? x.repo : null],
+        ["문장", koOf(x) ? "AI 번역" : "규칙 요약 (원문은 영어)"]], el("span", { class: "s-num", "aria-hidden": "true", text: String(k + 1).padStart(2, "0") })) });
   });
   if (vers.length) {
     const tops = cc.filter((x) => x.importance === "높음").sort(sortItems).slice(0, 4);
-    slides.push({ tint: "rgba(42,120,214,.30)", build: () => [
-      el("span", { class: "s-kicker", text: "Claude Code" }),
-      el("h2", { class: "s-title", text: vers.length > 1 ? `${vers[0]} → ${vers[vers.length - 1]}` : vers[0] }),
-      el("p", { class: "s-body", text: `${vers.length}개 버전, 변경 ${cc.length}건. 그중 내게 중요한 것:` }),
-      el("ul", { class: "s-list" }, (tops.length ? tops : cc.slice(0, 3)).map((x) => el("li", { text: koOf(x) || x.headline_ko || x.title })))] });
+    const byVer = vers.slice().reverse().slice(0, 6).map((v) => {
+      const list = cc.filter((x) => x.version === v);
+      return { v, n: list.length, hi: list.filter((x) => x.importance === "높음").length, pub: parseIso(list[0]?.published_at) };
+    });
+    slides.push({ tint: "rgba(42,120,214,.32)",
+      main: () => [
+        el("span", { class: "s-kicker", text: "Claude Code 업데이트" }),
+        el("h2", { class: "s-title", text: vers.length > 1 ? `${vers[0]} → ${vers[vers.length - 1]}` : vers[0] }),
+        el("p", { class: "s-body", text: `${vers.length}개 버전, 변경 ${cc.length}건. 그중 내게 중요한 것:` }),
+        el("ul", { class: "s-list" }, (tops.length ? tops : cc.slice(0, 3)).map((x) => el("li", { text: koOf(x) || x.headline_ko || x.title })))],
+      side: () => el("div", { class: "s-card" }, el("p", { class: "s-card-title", text: "버전별 변경" }),
+        el("ol", { class: "s-timeline" }, byVer.map((b) => el("li", {},
+          el("b", { text: b.v }), el("span", { text: `${b.pub ? mdKo(b.pub) : ""} · ${b.n}건${b.hi ? ` · 중요 ${b.hi}` : ""}` }))))) });
   }
   const off = items.filter((x) => x.type === "official_release_note" && x.importance === "높음").sort(sortItems).slice(0, 4);
-  if (off.length) slides.push({ tint: "rgba(27,175,122,.28)", build: () => [
-    el("span", { class: "s-kicker", text: "새 모델 · 공식 발표" }),
-    el("ul", { class: "s-list" }, off.map((x) => el("li", { text: mainText(x) })))] });
+  if (off.length) slides.push({ tint: "rgba(27,175,122,.30)",
+    main: () => [el("span", { class: "s-kicker", text: "새 모델 · 공식 발표" }), el("h2", { class: "s-title", text: "Anthropic이 발표한 것" }),
+      el("ul", { class: "s-list" }, off.map((x) => el("li", { text: mainText(x) })))],
+    side: () => sideCard([["출처", "Claude 플랫폼·앱 릴리스 노트"], ["기간", r.label]],
+      el("div", { class: "s-big" }, el("b", { "data-count": items.filter((x) => x.type === "official_release_note").length, text: "0" }), el("span", { text: "건의 공식 발표" }))) });
   const eco = items.filter((x) => (x.type === "trending" || x.type === "candidate_new") && x.importance !== "낮음").sort(sortItems).slice(0, 4);
-  if (eco.length) slides.push({ tint: "rgba(235,104,52,.26)", build: () => [
-    el("span", { class: "s-kicker", text: "생태계 트렌드" }),
-    el("h2", { class: "s-title", text: "지금 GitHub에서 뜨는 것" }),
-    el("ul", { class: "s-list" }, eco.map((x) => el("li", { text: koOf(x) || x.headline_ko || x.title })))] });
-  slides.push({ tint: "rgba(255,255,255,.10)", build: () => [
-    el("span", { class: "s-kicker", text: "끝" }),
-    el("h2", { class: "s-title huge", text: "여기까지예요." }),
-    el("p", { class: "s-body", text: "자세한 내용과 전체 목록은 페이지에서 볼 수 있어요." }),
-    el("button", { class: "s-link", type: "button", onclick: closeStory }, "페이지로 돌아가기")] });
+  const mr = cache.metrics?.repos || {};
+  if (eco.length) slides.push({ tint: "rgba(235,104,52,.28)",
+    main: () => [el("span", { class: "s-kicker", text: "생태계 트렌드" }), el("h2", { class: "s-title", text: "지금 GitHub에서 뜨는 것" }),
+      el("ul", { class: "s-list" }, eco.map((x) => el("li", { text: koOf(x) || x.headline_ko || x.title })))],
+    side: () => el("div", { class: "s-card" }, el("p", { class: "s-card-title", text: "저장소" }),
+      el("ol", { class: "s-timeline" }, eco.map((x) => el("li", {}, el("b", { text: x.repo || "" }),
+        el("span", { text: mr[x.repo]?.stars ? `★ ${compact(mr[x.repo].stars)}` : kicker(x) }))))) });
+  slides.push({ tint: "rgba(255,255,255,.12)",
+    main: () => [el("span", { class: "s-kicker", text: "끝" }), el("h2", { class: "s-title huge", text: "여기까지예요." }),
+      el("p", { class: "s-body", text: "자세한 내용과 전체 목록은 페이지에서 볼 수 있어요." }),
+      el("button", { class: "s-link", type: "button", onclick: closeStory }, "페이지로 돌아가기")] });
   return slides;
 }
 function openStory() {
@@ -593,7 +660,8 @@ function showSlide(i) {
   box.style.setProperty("--tint", s.tint);
   if (s.solid) box.style.setProperty("--tint-solid", s.solid); else box.style.removeProperty("--tint-solid");
   box.style.setProperty("--bx", `${20 + ((i * 37) % 60)}%`); box.style.setProperty("--by", `${15 + ((i * 23) % 50)}%`);
-  const slide = el("div", { class: "slide" }, s.build());
+  const side = s.side ? s.side() : null;
+  const slide = el("div", { class: `slide${side ? " has-side" : ""}` }, el("div", { class: "s-main" }, s.main()), side ? el("div", { class: "s-side" }, side) : null);
   document.getElementById("story-stage").replaceChildren(slide);
   slide.querySelectorAll("[data-count]").forEach((c) => countTo(c, Number(c.dataset.count)));
   document.querySelectorAll("#story-bars span").forEach((b, k) => { b.classList.toggle("done", k < i); b.firstChild.style.width = k < i ? "100%" : "0"; });
