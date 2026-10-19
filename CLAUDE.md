@@ -68,7 +68,7 @@
 ## 7. digest 저장 규칙
 - `/brief`·`/weekly` 결과는 사용자 확인 후 `data/digests/YYYY-MM-DD.md`(KST 날짜)로 저장한다. 같은 날 여러 번이면 덮어쓰지 말고 아래에 이어 쓴다.
 - 파일 맨 위 frontmatter: `classified_by: ai`, `kind: brief|weekly`, `window_kst`, `generated_at`(UTC), `model`.
-- `/brief`는 매번 `scripts/ko.py`로 핵심 항목의 한국어 번역을 `data/ko/`에 저장한다(검증 통과분만, `classified_by: ai`).
+- `/brief`는 매번 `translator` 서브에이전트(Haiku, `.claude/agents/translator.md`)에게 맡겨 `scripts/ko.py`로 한국어 번역을 `data/ko/`에 저장한다(검증 통과분만, `classified_by: ai`). "번역해줘"로 따로 돌릴 수도 있다.
   수집기의 `headline_ko`는 규칙 기반 머리말이고, 자연스러운 번역은 `data/ko/`다 — 둘을 섞지 않는다.
 - 커밋·push는 사용자 확인 후에만. 커밋 대상은 `data/digests/`, `data/ko/`, `state/last_seen.json`뿐이다.
 

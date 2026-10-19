@@ -33,21 +33,12 @@ jobs:
       - name: Tests
         run: python -m unittest discover -s tests
 
-      # 무료 기계 번역(오픈소스 Argos 영→한) — 키 불필요. 실패해도 번역만 건너뛰고 수집은 계속.
-      # 모델 zip 해시는 수집기가 config/rules.yml translate.argos.sha256 과 대조한다.
-      - name: Translation model (open-source, no key)
-        continue-on-error: true
-        run: |
-          pip install --disable-pip-version-check -r requirements-mt.txt
-          curl -fsSL --retry 3 --max-time 300 -o "$RUNNER_TEMP/argos-en_ko.zip" https://argos-net.com/v1/translate-en_ko-1_1.argosmodel
-
       - name: Collect
         id: collect
         continue-on-error: true   # 필수 단계 실패여도 health.json은 커밋하고, 마지막에 실패 처리
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # 무료 기계 번역 — Azure 비밀값이 있으면 Azure, 없으면 오픈소스 Argos 모델. 둘 다 없으면 건너뜀
-          TREND_MT_MODEL_ZIP: ${{ runner.temp }}/argos-en_ko.zip
+          # 기계 번역(선택) — Azure 비밀값이 있을 때만. 기본 번역은 /brief 때 Claude(Haiku)가 한다
           AZURE_TRANSLATOR_KEY: ${{ secrets.AZURE_TRANSLATOR_KEY }}
           AZURE_TRANSLATOR_REGION: ${{ secrets.AZURE_TRANSLATOR_REGION }}
         run: python -m collector

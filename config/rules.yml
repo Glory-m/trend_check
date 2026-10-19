@@ -135,4 +135,4 @@ translate:
   max_items_per_run: 80
   max_chars_per_run: 20000   # 하루 약 2만 자 → 월 60만 자 (Azure 무료 200만 자 안)
   argos:
-    sha256: ""               # 모델 zip 해시 — 첫 실행 health.json(steps.translate)에 찍힌 값을 여기에 고정
+    sha256: "e03d8e65e6d44525ec5808c3409fcf8728c76c2c76925372b6d3dc3278de17fc"   # translate-en_ko-1_1, 2026-10-19 첫 실행에서 고정
