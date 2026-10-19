@@ -24,6 +24,7 @@ class Store:
         self.seen = self.load_json("seen_ids.json", {})
         self.index = self.load_json("index.json", {"item_dates": {}, "snapshot_dates": []})
         self.pending = []
+        self._seen_dirty = False
         self.snapshot = self.load_json(f"snapshots/{self.today}.json", {"date": self.today, "repos": {}})
         self._prev_snapshot = None
         self.scanned = 0
@@ -87,6 +88,12 @@ class Store:
         self.pending.append(base)
         return True
 
+    def mark_seen(self, item_id):
+        """항목을 만들지 않고 '이미 본 것'으로만 기록 (첫 실행 때 건너뛴 과거 글이 다음 실행에 새 항목으로 들어오지 않게)."""
+        if item_id not in self.seen:
+            self.seen[item_id] = "bootstrap"
+            self._seen_dirty = True
+
     # ---- 스냅샷 ----
     def set_snapshot(self, repo, entry):
         entry = dict(entry)
@@ -117,8 +124,11 @@ class Store:
             self.write_json(rel, day)
             for x in self.pending:
                 self.seen[x["id"]] = self.today
-            self.write_json("seen_ids.json", dict(sorted(self.seen.items())))
+            self._seen_dirty = True
             self.index["item_dates"][self.today] = len(day["items"])
+        if self._seen_dirty:
+            self.write_json("seen_ids.json", dict(sorted(self.seen.items())))
+            self._seen_dirty = False
         if self.snapshot["repos"]:
             self.snapshot["repos"] = dict(sorted(self.snapshot["repos"].items()))
             self.write_json(f"snapshots/{self.today}.json", self.snapshot)

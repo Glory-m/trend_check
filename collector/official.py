@@ -63,6 +63,13 @@ class SourceState:
         p = parse_iso(published)
         return p is not None and self.ctx.now - p <= self.window
 
+    def offer(self, item):
+        """첫 실행이면 최근 글만 항목으로, 나머지는 '이미 본 것'으로 기록. 이후에는 새 글 전부 항목으로."""
+        if self.should_emit(item.get("published_at")):
+            return self.ctx.store.add_item(item)
+        self.ctx.store.mark_seen(item["id"])
+        return False
+
     def done(self, count):
         self.state = self.ctx.store.load_json("official/state.json", {})
         rec = self.state.get(self.name) or {"first_run_at": self.ctx.store.now_iso}
@@ -92,12 +99,11 @@ def platform_notes(ctx):
                 bullets[-1] = f"{bullets[-1]} {md_to_text(line)}"
         for b in bullets:
             parsed += 1
-            if st.should_emit(published):
-                added += ctx.store.add_item({
-                    "id": f"platform-rn:{published[:10]}:{h10(b)}", "type": "official_release_note",
-                    "title": b, "url": PLATFORM_NOTES_URL, "source": "anthropic_release_notes",
-                    "published_at": published, "repo": None,
-                })
+            added += st.offer({
+                "id": f"platform-rn:{published[:10]}:{h10(b)}", "type": "official_release_note",
+                "title": b, "url": PLATFORM_NOTES_URL, "source": "anthropic_release_notes",
+                "published_at": published, "repo": None,
+            })
     st.done(parsed)
     return f"parsed={parsed} new_items={added} bootstrap={st.bootstrap}"
 
@@ -130,12 +136,11 @@ def apps_notes(ctx):
                 features.append(cur := {"title": txt[:120], "body": [txt]})
         for f in features:
             parsed += 1
-            if st.should_emit(published):
-                added += ctx.store.add_item({
-                    "id": f"apps-rn:{published[:10]}:{h10(f['title'])}", "type": "official_release_note",
-                    "title": f"Claude 앱: {f['title']}", "body": " ".join(f["body"]),
-                    "url": APPS_NOTES, "source": "anthropic_apps_notes", "published_at": published,
-                })
+            added += st.offer({
+                "id": f"apps-rn:{published[:10]}:{h10(f['title'])}", "type": "official_release_note",
+                "title": f"Claude 앱: {f['title']}", "body": " ".join(f["body"]),
+                "url": APPS_NOTES, "source": "anthropic_apps_notes", "published_at": published,
+            })
     st.done(parsed)
     return f"parsed={parsed} new_items={added} bootstrap={st.bootstrap}"
 
@@ -157,12 +162,11 @@ def _listing(ctx, url, prefix, name, source, label):
         title = words[0]
         summary = next((t for t in words[1:] if len(t) > 60), None)
         parsed += 1
-        if st.should_emit(published):
-            added += ctx.store.add_item({
-                "id": f"{name}:{path.rsplit('/', 1)[-1]}", "type": "official_post",
-                "title": f"{label}: {title}", "body": summary, "url": f"https://www.anthropic.com{path}",
-                "source": source, "published_at": published,
-            })
+        added += st.offer({
+            "id": f"{name}:{path.rsplit('/', 1)[-1]}", "type": "official_post",
+            "title": f"{label}: {title}", "body": summary, "url": f"https://www.anthropic.com{path}",
+            "source": source, "published_at": published,
+        })
     if parsed == 0:
         raise RuntimeError(f"{url} 구조 변경 — 글 링크를 찾지 못함")
     st.done(parsed)
@@ -187,13 +191,12 @@ def org_repos(ctx):
         if r.get("fork") or r.get("archived") or r.get("private"):
             continue
         name = r["full_name"]
-        if st.should_emit(r.get("created_at")):
-            added += ctx.store.add_item({
-                "id": f"org-repo:{name}", "type": "official_repo", "repo": name,
-                "title": f"anthropics 새 레포: {name} (★{r.get('stargazers_count')})",
-                "body": r.get("description"), "url": r.get("html_url"), "source": "github_org",
-                "published_at": r.get("created_at"),
-            })
+        added += st.offer({
+            "id": f"org-repo:{name}", "type": "official_repo", "repo": name,
+            "title": f"anthropics 새 레포: {name} (★{r.get('stargazers_count')})",
+            "body": r.get("description"), "url": r.get("html_url"), "source": "github_org",
+            "published_at": r.get("created_at"),
+        })
         ctx.found.setdefault(name, {"info": {}, "labels": set()})
         ctx.found[name]["info"].update({k: v for k, v in {
             "tier": "candidate", "stars": r.get("stargazers_count"), "forks": r.get("forks_count"),
