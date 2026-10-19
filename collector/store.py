@@ -38,6 +38,7 @@ class Store:
         out, flags = safety.clean(text, maxlen, source)
         if flags:
             self.flagged.append({"ref": ref, "field": field, "source": source, "flags": flags,
+                                 "quarantined": safety.must_quarantine(flags),
                                  "sha256_16": safety.fingerprint(str(text)), "length": len(str(text)),
                                  "url": safety.safe_url(url)})
         return out
@@ -76,7 +77,7 @@ class Store:
         n_before = len(self.flagged)
         base["title"] = self.clean(base["title"], TITLE_MAX, base["source"], base["id"], "title", base["url"])
         base["body"] = self.clean(base["body"], BODY_MAX, base["source"], base["id"], "body", base["url"])
-        if len(self.flagged) > n_before:
+        if any(x["quarantined"] for x in self.flagged[n_before:]):
             flags = sorted({f for x in self.flagged[n_before:] for f in x["flags"]})
             base["security_flags"] = flags
             base["quarantined"] = True
@@ -140,6 +141,7 @@ class Store:
         rep["flagged"].extend(x for x in self.flagged if (x["ref"], x["field"], x["sha256_16"]) not in known)
         rep.update({"last_scan_at": self.now_iso, "scanned_last_run": self.scanned,
                     "flagged_count": len(rep["flagged"]),
+                    "quarantined_count": sum(1 for x in rep["flagged"] if x.get("quarantined", True)),
                     "rules": "collector/safety.py (규칙 기반, AI 미사용)"})
         self.write_json(rel, rep)
         dates = set(self.index.get("security_dates", []))

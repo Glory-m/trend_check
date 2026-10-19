@@ -21,7 +21,7 @@ HIDDEN_CHARS = re.compile(
 # 의심 신호: 방향 뒤집기(Trojan Source) · 유니코드 태그 문자(보이지 않는 ASCII 밀반입)
 SUSPICIOUS_HIDDEN = re.compile("[\u202a-\u202e\u2066-\u2069\U000e0000-\U000e007f]")
 
-# (코드, 심각도, 정규식) — high는 모든 출처, normal은 비공식 출처에만 적용
+# (코드, 심각도, 정규식) — high는 모든 출처, normal은 비공식 출처에만 적용, info는 기록만(격리 안 함)
 RULES = [
     ("instruction_override", "high", re.compile(
         r"\b(ignore|disregard|forget|override)\b[^.\n]{0,40}\b(previous|prior|above|earlier|all|any|your)\b[^.\n]{0,20}"
@@ -33,7 +33,8 @@ RULES = [
         r"<\|?(im_start|im_end|system|endoftext)\|?>|\[/?INST\]|</?(system|assistant|user)_?(prompt|message)?>", re.I)),
     ("role_injection", "normal", re.compile(
         r"(^|\n)\s*(system|assistant|human)\s*:|\byou are (now )?(claude|chatgpt|an? (ai|assistant|llm))\b", re.I)),
-    ("role_injection", "normal", re.compile(r"\b(system prompt|developer message)\b", re.I)),
+    # 'system prompt'라는 단어만으로는 공격이 아님 (시스템 프롬프트 연구·모음 레포가 흔함) → 기록만, 격리 안 함
+    ("mentions_system_prompt", "info", re.compile(r"\b(system prompt|developer message)s?\b", re.I)),
     ("shell_exec", "high", re.compile(
         r"\b(curl|wget|iwr|irm|invoke-webrequest|invoke-restmethod)\b[^\n|]{0,200}\|\s*(sudo\s+)?(ba|z|da)?sh\b|"
         r"\|\s*(iex|invoke-expression)\b|powershell[^\n]{0,30}-e(nc|ncodedcommand)?\s+[a-z0-9+/=]{20,}", re.I)),
@@ -51,7 +52,12 @@ RULES = [
     ("encoded_blob", "normal", re.compile(r"[A-Za-z0-9+/]{120,}={0,2}")),
 ]
 
+INFO_CODES = {code for code, severity, _ in RULES if severity == "info"}
 QUARANTINE_TEXT = "[격리됨: 의심 문구 감지 — 원문은 출처 링크에서 직접 확인]"
+
+
+def must_quarantine(flags):
+    return bool(set(flags) - INFO_CODES)
 
 
 def normalize(text):
@@ -84,16 +90,16 @@ def scan(text, source=None):
 
 
 def clean(text, maxlen, source=None):
-    """(안전한 텍스트, flags). flags가 있으면 텍스트는 격리 문구로 대체된다."""
+    """(안전한 텍스트, flags). info가 아닌 flag가 있으면 텍스트는 격리 문구로 대체된다."""
     if text is None:
         return None, []
     flags = scan(text, source)
-    if flags:
+    if must_quarantine(flags):
         return QUARANTINE_TEXT, flags
     s, _ = normalize(text)
     if len(s) > maxlen:
         s = s[:maxlen - 1].rstrip() + "…"
-    return s, []
+    return s, flags
 
 
 def safe_url(url):
