@@ -1,271 +1,183 @@
-/* trend-watch 사이트 — 빌드 도구·외부 라이브러리 없음.
- * 보안: 수집된 외부 텍스트는 모두 textContent/setAttribute로만 넣는다(innerHTML 미사용). 링크는 http(s)만 허용.
- * 모션: CSS + Web Animations. prefers-reduced-motion이면 즉시 최종 상태로 그린다.
+/* trend-watch — 흰색 브리핑 사이트 (빌드 도구·외부 라이브러리 없음)
+ * 보안: 외부 텍스트는 textContent/setAttribute로만 넣는다(HTML 문자열 삽입 없음). 링크는 http(s)만 허용.
+ * 한국어 우선: AI 번역(data/ko, classified_by: ai) → 규칙 머리말(headline_ko) → 원문 순서로 보여 준다.
+ * 모션: CSS + requestAnimationFrame. prefers-reduced-motion이면 즉시 최종 상태, 브리핑 자동 넘김도 끈다.
  */
 "use strict";
 
 // ======================= 상수 =======================
 const CATS = [
-  { key: "신기술", cls: "cat-1", v: "--cat-1" },
-  { key: "스킬·플러그인·MCP", cls: "cat-2", v: "--cat-2" },
-  { key: "사용법·워크플로", cls: "cat-3", v: "--cat-3" },
-  { key: "보안", cls: "cat-4", v: "--cat-4" },
-  { key: "기타", cls: "cat-0", v: "--cat-0" },
+  { key: "신기술", cls: "cat-1" }, { key: "스킬·플러그인·MCP", cls: "cat-2" },
+  { key: "사용법·워크플로", cls: "cat-3" }, { key: "보안", cls: "cat-4" }, { key: "기타", cls: "cat-0" },
 ];
-const CAT_BY_KEY = Object.fromEntries(CATS.map((c) => [c.key, c]));
-const IMP_ORDER = { 높음: 0, 보통: 1, 낮음: 2 };
-const SERIES_VARS = ["--cat-1", "--cat-2", "--cat-3", "--cat-4"]; // 비교 그래프 최대 4계열 (검증된 순서)
-const OFFICIAL_TYPES = new Set(["official_release_note", "official_post", "official_repo", "hn_mention"]);
-const DISCOVER_TYPES = new Set(["repo_surge", "candidate_new", "trending", "promote_suggest", "demote_suggest",
-  "suspicious", "repo_release", "repo_renamed", "repo_archived", "npm_unlisted"]);
-const KST = 9 * 3600e3;
-const DAY = 864e5;
-const SVG_NS = "http://www.w3.org/2000/svg";
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const CAT = Object.fromEntries(CATS.map((c) => [c.key, c]));
+const IMP = { 높음: 0, 보통: 1, 낮음: 2 };
+const TYPE_RANK = { official_release_note: 0, official_repo: 1, claude_code_change: 2, repo_surge: 3, official_post: 4,
+  hn_mention: 5, trending: 6, candidate_new: 7, repo_release: 8 };
+const OFFICIAL = new Set(["official_release_note", "official_post", "official_repo", "hn_mention"]);
+const ECO = new Set(["trending", "candidate_new", "repo_release", "repo_surge", "promote_suggest", "demote_suggest", "suspicious", "repo_archived", "repo_renamed"]);
+const KST = 9 * 3600e3, DAY = 864e5, NS = "http://www.w3.org/2000/svg";
+const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+const state = { days: 7, imp: "mid", cats: new Set(CATS.map((c) => c.key)), q: "", allLimit: 30 };
+const cache = { index: null, health: null, metrics: null, series: null, days: new Map(), ko: new Map(), digest: undefined, items: [] };
 
-const state = { days: 7, imp: "mid", cats: new Set(CATS.map((c) => c.key)), q: "", showAllHigh: false };
-const cache = { index: null, health: null, metrics: null, series: null, days: new Map(), digest: undefined };
-
-// ======================= DOM 도우미 =======================
-function el(tag, attrs, ...children) {
+// ======================= DOM =======================
+function el(tag, attrs, ...kids) {
   const n = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs || {})) {
-    if (v === null || v === undefined || v === false) continue;
+    if (v == null || v === false) continue;
     if (k === "class") n.className = v;
     else if (k === "text") n.textContent = v;
     else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
     else n.setAttribute(k, v === true ? "" : String(v));
   }
-  for (const c of children.flat()) {
-    if (c === null || c === undefined || c === false) continue;
-    n.append(c instanceof Node ? c : document.createTextNode(String(c)));
-  }
+  for (const c of kids.flat()) if (c != null && c !== false) n.append(c instanceof Node ? c : document.createTextNode(String(c)));
   return n;
 }
-function svg(tag, attrs, ...children) {
-  const n = document.createElementNS(SVG_NS, tag);
-  for (const [k, v] of Object.entries(attrs || {})) if (v !== null && v !== undefined) n.setAttribute(k, String(v));
-  for (const c of children.flat()) if (c) n.append(c instanceof Node ? c : document.createTextNode(String(c)));
+function svg(tag, attrs, ...kids) {
+  const n = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs || {})) if (v != null) n.setAttribute(k, String(v));
+  for (const c of kids.flat()) if (c) n.append(c instanceof Node ? c : document.createTextNode(String(c)));
   return n;
 }
-const ICONS = {
-  clock: ["circle:12,12,9", "M12 7v5l3 2"],
-  alert: ["M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z", "M12 9v4", "M12 17h.01"],
-  shield: ["M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"],
-  spark: ["M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4z"],
-  layers: ["M12 2l9 5-9 5-9-5z", "M3 12l9 5 9-5", "M3 17l9 5 9-5"],
-  code: ["M16 18l6-6-6-6", "M8 6l-6 6 6 6"],
-  star: ["M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"],
-  sun: ["circle:12,12,4", "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"],
-  moon: ["M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"],
-  monitor: ["M3 4h18v12H3z", "M8 20h8M12 16v4"],
-  play: ["M7 4l13 8-13 8z"],
-  pause: ["M7 5h3v14H7zM14 5h3v14h-3z"],
-  doc: ["M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z", "M14 2v6h6", "M8 13h8", "M8 17h5"],
+const ICON = {
+  play: [["path", { d: "M7 4.5v15l13-7.5z", fill: "currentColor", stroke: "none" }]],
+  pause: [["path", { d: "M7 5h3.5v14H7zM13.5 5H17v14h-3.5z", fill: "currentColor", stroke: "none" }]],
+  close: [["path", { d: "M6 6l12 12M18 6L6 18" }]],
+  sun: [["circle", { cx: 12, cy: 12, r: 4 }], ["path", { d: "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" }]],
+  moon: [["path", { d: "M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" }]],
+  doc: [["path", { d: "M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" }], ["path", { d: "M14 2v6h6M8 13h8M8 17h5" }]],
+  inbox: [["path", { d: "M22 12h-6l-2 3h-4l-2-3H2" }], ["path", { d: "M5.5 5h13L22 12v6a2 2 0 01-2 2H4a2 2 0 01-2-2v-6z" }]],
+  alert: [["path", { d: "M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z" }], ["path", { d: "M12 9v4M12 17h.01" }]],
+  arrow: [["path", { d: "M7 17L17 7M9 7h8v8" }]],
+  shield: [["path", { d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" }]],
+  send: [["path", { d: "M12 19V5M5 12l7-7 7 7" }]],
+  stop: [["rect", { x: 7, y: 7, width: 10, height: 10, rx: 2, fill: "currentColor", stroke: "none" }]],
+  plus: [["path", { d: "M12 5v14M5 12h14" }]],
 };
-function icon(name, size = 16) {
+function icon(name, size = 18) {
   const s = svg("svg", { width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor",
     "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true" });
-  for (const p of ICONS[name] || []) {
-    if (p.startsWith("circle:")) { const [cx, cy, r] = p.slice(7).split(","); s.append(svg("circle", { cx, cy, r })); }
-    else s.append(svg("path", { d: p }));
-  }
-  return s;
-}
-/** 중요도 = 신호 막대 모양 (색이 아닌 모양으로 구분) */
-function impGlyph(level) {
-  const n = level === "높음" ? 3 : level === "보통" ? 2 : 1;
-  const s = svg("svg", { width: 16, height: 16, viewBox: "0 0 16 16", "aria-hidden": "true" });
-  [[1.5, 10, 4.5], [6.5, 6, 8.5], [11.5, 2, 12.5]].forEach(([x, y, h], i) => {
-    s.append(svg("rect", { x, y, width: 3, height: h, rx: 1.2, fill: i < n ? "currentColor" : "none",
-      stroke: "currentColor", "stroke-width": i < n ? 0 : 1, opacity: i < n ? 1 : 0.35 }));
-  });
+  for (const [t, a] of ICON[name] || []) s.append(svg(t, a));
   return s;
 }
 function safeUrl(u) {
   if (typeof u !== "string") return null;
-  try { const url = new URL(u.trim()); return url.protocol === "https:" || url.protocol === "http:" ? url.href : null; }
-  catch { return null; }
+  try { const x = new URL(u.trim()); return x.protocol === "https:" || x.protocol === "http:" ? x.href : null; } catch { return null; }
 }
-const extLink = (href, text, cls) => (href ? el("a", { href, rel: "noopener noreferrer", target: "_blank", class: cls, text }) : document.createTextNode(text));
+const link = (href, text, cls) => (href ? el("a", { href, rel: "noopener noreferrer", target: "_blank", class: cls, text })
+  : el("span", { class: cls, text }));
 
 // ======================= 시간·숫자 =======================
 const parseIso = (s) => { const d = s ? new Date(s) : null; return d && !isNaN(d) ? d : null; };
 const pad = (n) => String(n).padStart(2, "0");
 function kp(d) { const k = new Date(d.getTime() + KST); return { y: k.getUTCFullYear(), m: k.getUTCMonth() + 1, d: k.getUTCDate(), w: k.getUTCDay(), hh: k.getUTCHours(), mm: k.getUTCMinutes() }; }
 const kstDate = (d) => { const p = kp(d); return `${p.y}-${pad(p.m)}-${pad(p.d)}`; };
-const fmtKst = (d) => { if (!d) return "—"; const p = kp(d); return `${p.y}-${pad(p.m)}-${pad(p.d)} ${pad(p.hh)}:${pad(p.mm)}`; };
-const fmtHM = (d) => { const p = kp(d); return `${pad(p.hh)}:${pad(p.mm)}`; };
-function relTime(d) {
+const mdKo = (d) => { const p = kp(d); return `${p.m}월 ${p.d}일`; };
+const hm = (d) => { const p = kp(d); return `${pad(p.hh)}:${pad(p.mm)}`; };
+const fmtKst = (d) => (d ? `${kstDate(d)} ${hm(d)}` : "—");
+function rel(d) {
   if (!d) return "";
-  const m = Math.round((Date.now() - d.getTime()) / 60000);
+  const m = Math.round((Date.now() - d) / 6e4);
   if (m < 1) return "방금";
   if (m < 60) return `${m}분 전`;
   const h = Math.round(m / 60);
   return h < 48 ? `${h}시간 전` : `${Math.round(h / 24)}일 전`;
 }
 function compact(n) {
-  if (n === null || n === undefined) return "—";
+  if (n == null) return "—";
   const a = Math.abs(n);
-  if (a >= 1e6) return (n / 1e6).toFixed(a >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M";
-  if (a >= 1e4) return (n / 1e3).toFixed(a >= 1e5 ? 0 : 1).replace(/\.0$/, "") + "K";
+  if (a >= 1e6) return `${(n / 1e6).toFixed(1).replace(/\.0$/, "")}M`;
+  if (a >= 1e4) return `${(n / 1e3).toFixed(a >= 1e5 ? 0 : 1).replace(/\.0$/, "")}K`;
   return Math.round(n).toLocaleString("ko-KR");
 }
-const signed = (n) => (n === null || n === undefined ? "—" : (n > 0 ? "+" : "") + Math.round(n).toLocaleString("ko-KR"));
-const cssVar = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const signed = (n) => (n == null ? "—" : `${n > 0 ? "+" : ""}${Math.round(n).toLocaleString("ko-KR")}`);
+const cssVar = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+// ======================= 표시 문장 (한국어 우선) =======================
+const koOf = (x) => cache.ko.get(x.id)?.ko || null;
+const mainText = (x) => koOf(x) || x.headline_ko || x.title || "(제목 없음)";
+const kicker = (x) => (x.headline_ko || "").split(" · ")[0].split(" — ")[0];
+function origLine(x) {
+  if (!x.title || mainText(x) === x.title) return null;
+  return el("span", { class: "orig", title: x.title, text: x.title });
+}
+const catTag = (x) => { const c = CAT[x.category] || CAT["기타"]; return el("span", { class: "tag" }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), x.category || "기타"); };
+const aiMark = (x) => (koOf(x) ? el("span", { class: "ai-mark", title: "PC의 Claude가 번역한 문장 (classified_by: ai)" }, "AI 번역") : null);
+const sortItems = (a, b) => (IMP[a.importance] ?? 3) - (IMP[b.importance] ?? 3)
+  || (TYPE_RANK[a.type] ?? 9) - (TYPE_RANK[b.type] ?? 9)
+  || String(b.published_at || b.collected_at).localeCompare(String(a.published_at || a.collected_at));
 
 // ======================= 모션 도우미 =======================
-const easeOutExpo = (t) => (t === 1 ? 1 : 1 - 2 ** (-10 * t));
-/** 숫자를 이전 값에서 새 값으로 굴린다 */
-function countTo(node, to, fmt = (v) => Math.round(v).toLocaleString("ko-KR"), dur = 900) {
-  const from = Number(node.dataset.v || 0);
-  node.dataset.v = String(to);
-  if (reduceMotion.matches || from === to || !Number.isFinite(to)) { node.textContent = fmt(to); return; }
+const easeOut = (t) => (t === 1 ? 1 : 1 - 2 ** (-10 * t));
+function countTo(node, to, fmt = (v) => Math.round(v).toLocaleString("ko-KR"), dur = 1100) {
+  if (reduce.matches || !Number.isFinite(to)) { node.textContent = fmt(to); return; }
   const t0 = performance.now();
-  const step = (now) => {
-    const t = Math.min(1, (now - t0) / dur);
-    node.textContent = fmt(from + (to - from) * easeOutExpo(t));
-    if (t < 1) requestAnimationFrame(step);
-  };
+  const step = (now) => { const t = Math.min(1, (now - t0) / dur); node.textContent = fmt(to * easeOut(t)); if (t < 1) requestAnimationFrame(step); };
   requestAnimationFrame(step);
 }
-/** 화면에 들어올 때 순서대로 떠오르게 */
-const revealer = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => {
   let i = 0;
-  for (const e of entries) {
-    if (!e.isIntersecting) continue;
-    e.target.style.setProperty("--delay", `${Math.min(i++, 6) * 70}ms`);
-    e.target.classList.add("is-revealed");
-    e.target.querySelectorAll(".chart").forEach((c) => c.classList.add("is-drawn"));
-    revealer.unobserve(e.target);
-  }
-}, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }) : null;
-function revealNow(n, i = 0) {
-  n.style.setProperty("--delay", `${Math.min(i, 8) * 80}ms`);
-  n.classList.add("is-revealed");
-  n.querySelectorAll(".chart").forEach((c) => c.classList.add("is-drawn"));
+  for (const e of es) if (e.isIntersecting) { reveal(e.target, i++); io.unobserve(e.target); }
+}, { rootMargin: "0px 0px -10% 0px", threshold: 0.06 }) : null;
+function reveal(n, i = 0) {
+  n.style.setProperty("--delay", `${Math.min(i, 6) * 90}ms`);
+  n.classList.add("is-revealed", "is-drawn");
+  n.querySelectorAll("[data-count]").forEach((c) => { if (!c.dataset.done) { c.dataset.done = 1; countTo(c, Number(c.dataset.count), c.dataset.signed ? signed : undefined); } });
 }
-/** 첫 화면 안의 요소는 바로(순서대로) 등장, 아래쪽은 스크롤할 때 등장. 어떤 경우에도 내용이 숨은 채로 남지 않게 안전장치를 둔다. */
-function observeReveal(root = document) {
-  const nodes = [...root.querySelectorAll("[data-reveal]:not(.is-revealed)")];
+function observe() {
   let i = 0;
-  for (const n of nodes) {
-    if (!revealer || reduceMotion.matches || n.getBoundingClientRect().top < innerHeight) revealNow(n, i++);
-    else revealer.observe(n);
-  }
-  setTimeout(() => document.querySelectorAll("[data-reveal]:not(.is-revealed)").forEach((n) => revealNow(n)), 2500);
-}
-
-// ======================= 상태 화면 (로딩·빈·오류) =======================
-function emptyState(msg, hint, ic = "layers") {
-  return el("li", { class: "state-empty" }, el("span", { class: "state-icon" }, icon(ic, 18)),
-    el("span", {}, msg, hint ? el("small", { text: hint }) : null));
-}
-function renderSkeleton() {
-  document.getElementById("kpis").replaceChildren(...[0, 1, 2, 3].map(() => el("div", { class: "kpi", "aria-hidden": "true" },
-    el("div", { class: "skeleton sk-line", style: null }), el("div", { class: "skeleton sk-value" }))));
-  ["high-list", "official-list", "discover-list"].forEach((id) => document.getElementById(id).replaceChildren(
-    ...[0, 1, 2].map(() => el("li", { class: "item", "aria-hidden": "true" }, el("span"), el("div", {},
-      el("div", { class: "skeleton sk-line" }), el("div", { class: "skeleton sk-line" }))))));
-}
-function renderError(err) {
-  const isFile = location.protocol === "file:";
-  const status = Number((String(err?.message).match(/HTTP (\d+)/) || [])[1]);
-  const cause = isFile
-    ? ["이 페이지를 파일로 직접 열었어요.", ["폴더에서 ", el("code", { text: "python -m http.server" }), " 실행 후 http://localhost:8000 으로 여세요."]]
-    : status === 404
-      ? ["아직 수집된 데이터가 없어요.", ["첫 수집(매일 06:17 KST) 전이거나, GitHub Pages가 아직 배포 중일 수 있어요."]]
-      : ["데이터 서버에 연결하지 못했어요.", ["인터넷 연결을 확인하거나 잠시 뒤 다시 시도하세요."]];
-  const sig = svg("svg", { class: "signal", viewBox: "0 0 400 120", "aria-hidden": "true", preserveAspectRatio: "none" },
-    svg("path", { class: "flat", d: "M8 70 H150 L165 40 L180 96 L195 70 H392", pathLength: 1 }),
-    svg("path", { class: "blip", d: "M150 70 L165 40 L180 96 L195 70", pathLength: 1 }),
-    svg("circle", { class: "dot-end", cx: 392, cy: 70, r: 5 }));
-  const retry = el("button", { class: "btn btn-primary", type: "button" }, "다시 시도");
-  retry.addEventListener("click", () => location.reload());
-  const box = el("section", { class: "state-error", role: "alert", "aria-live": "assertive" },
-    el("div", {},
-      el("h2", {}, "신호가 잠시 끊겼어요.", el("br"), el("span", { class: "dim", text: cause[0] })),
-      el("p", {}, ...cause[1]),
-      el("ul", {},
-        el("li", {}, "수집 상태는 GitHub Actions의 ", el("code", { text: "collect" }), " 실행 기록에서 볼 수 있어요."),
-        el("li", { text: "PC에서는 이 폴더에서 git pull 후 /brief 로도 같은 데이터를 볼 수 있어요." })),
-      el("div", { class: "state-actions" }, retry,
-        el("a", { class: "btn btn-ghost", href: "https://github.com/Glory-m/trend_check/actions/workflows/collect.yml", rel: "noopener noreferrer", target: "_blank" }, "수집 상태 보기"))),
-    sig);
-  document.getElementById("filters").hidden = true;
-  document.querySelector(".hero").hidden = true;
-  document.querySelector(".bento").hidden = true;
-  document.getElementById("digest").hidden = true;
-  document.querySelector(".content").prepend(box);
-  const f = document.querySelector("#fresh .fresh-text");
-  f.textContent = "연결 끊김";
-  document.getElementById("fresh").className = "fresh is-stale";
-  document.documentElement.classList.remove("is-booting");
-}
-function staggerItems(ul) {
-  if (reduceMotion.matches) return;
-  [...ul.children].slice(0, 14).forEach((li, i) => { li.style.setProperty("--delay", `${i * 28}ms`); li.classList.add("enter"); });
+  document.querySelectorAll("[data-reveal]:not(.is-revealed)").forEach((n) => {
+    if (!io || reduce.matches || n.getBoundingClientRect().top < innerHeight * 0.92) reveal(n, i++);
+    else io.observe(n);
+  });
+  setTimeout(() => document.querySelectorAll("[data-reveal]:not(.is-revealed)").forEach((n) => reveal(n)), 3000); // 안전장치
 }
 function moveThumb(seg) {
-  const on = seg.querySelector('button[aria-pressed="true"]');
-  const thumb = seg.querySelector(".seg-thumb");
-  if (!on || !thumb || !on.offsetWidth) return;
-  thumb.style.width = `${on.offsetWidth}px`;
-  thumb.style.transform = `translateX(${on.offsetLeft}px)`;
+  const on = seg.querySelector('button[aria-pressed="true"]'), th = seg.querySelector(".seg-thumb");
+  if (!on || !th || !on.offsetWidth) return;
+  th.style.width = `${on.offsetWidth}px`;
+  th.style.transform = `translateX(${on.offsetLeft - 2}px)`;
   seg.classList.add("has-thumb");
 }
 
 // ======================= 데이터 =======================
-async function getJSON(path) {
-  const r = await fetch(path, { cache: "no-cache" });
-  if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
-  return r.json();
-}
-async function getText(path) {
-  try { const r = await fetch(path, { cache: "no-cache" }); return r.ok ? r.text() : null; } catch { return null; }
-}
-function windowRange(days = state.days) {
+async function getJSON(p) { const r = await fetch(p, { cache: "no-cache" }); if (!r.ok) throw new Error(`${p}: HTTP ${r.status}`); return r.json(); }
+async function getText(p) { try { const r = await fetch(p, { cache: "no-cache" }); return r.ok ? r.text() : null; } catch { return null; } }
+function range(days = state.days) {
   const now = new Date();
   if (days === 1) { const p = kp(now); return { start: new Date(Date.UTC(p.y, p.m - 1, p.d) - KST), end: now, label: "오늘" }; }
-  return { start: new Date(now.getTime() - days * DAY), end: now, label: `최근 ${days}일` };
+  return { start: new Date(now - days * DAY), end: now, label: `최근 ${days}일` };
 }
-function datesBetween(start, end) {
-  const out = new Set();
-  for (let t = start.getTime() - DAY; t <= end.getTime() + DAY; t += DAY) out.add(kstDate(new Date(t)));
-  return [...out];
-}
-async function loadItems(range) {
+function datesIn(r) { const s = new Set(); for (let t = r.start - DAY; t <= +r.end + DAY; t += DAY) s.add(kstDate(new Date(t))); return [...s]; }
+async function loadItems(r) {
   const known = cache.index.item_dates || {};
-  const dates = datesBetween(range.start, range.end).filter((d) => d in known);
+  const dates = datesIn(r).filter((d) => d in known);
   await Promise.all(dates.filter((d) => !cache.days.has(d)).map(async (d) => {
-    try { cache.days.set(d, (await getJSON(`data/items/${d}.json`)).items || []); } catch { cache.days.set(d, []); }
+    const [items, ko] = await Promise.all([getJSON(`data/items/${d}.json`).then((j) => j.items || []).catch(() => []),
+      getJSON(`data/ko/${d}.json`).then((j) => j.items || {}).catch(() => ({}))]);
+    cache.days.set(d, items);
+    for (const [id, v] of Object.entries(ko)) cache.ko.set(id, v);
   }));
   const out = [];
-  for (const d of dates) for (const x of cache.days.get(d) || []) {
-    const c = parseIso(x.collected_at);
-    if (c && c >= range.start && c < range.end) out.push(x);
-  }
+  for (const d of dates) for (const x of cache.days.get(d) || []) { const c = parseIso(x.collected_at); if (c && c >= r.start && c < r.end) out.push(x); }
   return out;
 }
-async function loadDigest() {
-  if (cache.digest !== undefined) return cache.digest;
-  const now = Date.now();
-  for (let i = 0; i < 7; i++) {
-    const d = kstDate(new Date(now - i * DAY));
-    const text = await getText(`data/digests/${d}.md`);
-    if (text) return (cache.digest = { date: d, text });
-  }
-  return (cache.digest = null);
+async function loadDigest() {   // 최근 7일 digest를 동시에 요청하고 가장 최근 것을 쓴다
+  const dates = [...Array(7)].map((_, i) => kstDate(new Date(Date.now() - i * DAY)));
+  const texts = await Promise.all(dates.map((d) => getText(`data/digests/${d}.md`)));
+  const i = texts.findIndex(Boolean);
+  return i < 0 ? null : { date: dates[i], text: texts[i] };
 }
 
-// ======================= 상태 <-> 주소(#) =======================
+// ======================= 주소(#) 상태 =======================
 function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
-  const days = Number(p.get("days"));
-  state.days = [1, 3, 7, 30].includes(days) ? days : 7;
+  const d = Number(p.get("days"));
+  state.days = [1, 3, 7, 30].includes(d) ? d : 7;
   state.imp = ["high", "mid", "all"].includes(p.get("imp")) ? p.get("imp") : "mid";
-  const keys = (p.get("cat") || "").split(",").filter((k) => CAT_BY_KEY[k]);
-  state.cats = new Set(keys.length ? keys : CATS.map((c) => c.key));
+  const ks = (p.get("cat") || "").split(",").filter((k) => CAT[k]);
+  state.cats = new Set(ks.length ? ks : CATS.map((c) => c.key));
   state.q = p.get("q") || "";
 }
 function writeHash() {
@@ -274,620 +186,703 @@ function writeHash() {
   if (state.imp !== "mid") p.set("imp", state.imp);
   if (state.cats.size !== CATS.length) p.set("cat", [...state.cats].join(","));
   if (state.q) p.set("q", state.q);
-  const h = p.toString();
-  history.replaceState(null, "", h ? `#${h}` : location.pathname + location.search);
+  history.replaceState(null, "", p.toString() ? `#${p}` : location.pathname + location.search);
 }
-
-// ======================= 필터 =======================
-const matchQ = (x) => !state.q || [x.title, x.body, x.repo, x.importance_reason, x.version]
-  .some((v) => v && String(v).toLowerCase().includes(state.q.toLowerCase()));
 const passImp = (x) => state.imp === "all" || x.importance === "높음" || (state.imp === "mid" && x.importance === "보통");
 const passCat = (x) => state.cats.has(x.category || "기타");
-const sortItems = (a, b) => (IMP_ORDER[a.importance] ?? 3) - (IMP_ORDER[b.importance] ?? 3)
-  || String(b.published_at || b.collected_at).localeCompare(String(a.published_at || a.collected_at));
-function toggleCat(key) {
-  if (state.cats.size === CATS.length) state.cats = new Set([key]);               // 전체 상태에서 누르면 그것만
-  else if (state.cats.has(key)) { state.cats.delete(key); if (!state.cats.size) state.cats = new Set(CATS.map((c) => c.key)); }
-  else state.cats.add(key);
-  update();
-}
+const passQ = (x) => !state.q || [mainText(x), x.title, x.body, x.repo, x.importance_reason, x.version]
+  .some((v) => v && String(v).toLowerCase().includes(state.q.toLowerCase()));
 
 // ======================= 상단 신선도 =======================
-function renderFresh(items) {
+function renderFresh() {
   const box = document.getElementById("fresh");
   const last = parseIso(cache.index?.last_collected_at);
-  const stale = !last || Date.now() - last.getTime() >= 24 * 3600e3;
-  const failed = Object.entries(cache.health?.steps || {}).filter(([, v]) => v.status === "fail").map(([k]) => k);
-  box.className = `fresh ${stale || failed.length ? "is-stale" : "is-fresh"}`;
-  const q = items.filter((x) => x.quarantined).length;
-  const text = box.querySelector(".fresh-text");
-  text.replaceChildren(
-    stale ? "수집 오래됨 · " : "", el("strong", { text: last ? `${fmtHM(last)} 수집` : "수집 없음" }),
-    last ? ` · ${relTime(last)}` : "", failed.length ? ` · 실패 ${failed.length}` : "", q ? ` · 격리 ${q}` : "");
-  box.title = [`마지막 수집 ${fmtKst(last)} KST`, stale ? "24시간 넘게 갱신 안 됨 — git pull 또는 Actions 수동 실행" : "",
-    failed.length ? `실패 단계: ${failed.join(", ")}` : "", `보안 검사: 격리 ${q}건`].filter(Boolean).join("\n");
+  const stale = !last || Date.now() - last >= 24 * 3600e3;
+  const failed = Object.values(cache.health?.steps || {}).filter((v) => v.status === "fail").length;
+  box.className = `fresh ${stale || failed ? "is-stale" : "is-fresh"}`;
+  box.querySelector(".fresh-text").replaceChildren(stale ? "업데이트 지연 · " : "", el("strong", { text: last ? `${hm(last)} 업데이트` : "데이터 없음" }), last ? ` · ${rel(last)}` : "");
+  box.title = `마지막 수집 ${fmtKst(last)} (한국시간)${stale ? "\n24시간 넘게 갱신되지 않았어요" : ""}${failed ? `\n수집 실패 단계 ${failed}개` : ""}`;
 }
 
 // ======================= 히어로 =======================
-function renderHero(items, range) {
-  const now = new Date(), p = kp(now);
-  document.getElementById("hero-date").textContent =
-    `${p.y}. ${p.m}. ${p.d}. (${"일월화수목금토"[p.w]}) · ${range.label} · KST`;
+function leadSentence(items) {
   const high = items.filter((x) => x.importance === "높음");
-  const ccVers = new Set(items.filter((x) => x.type === "claude_code_change").map((x) => x.version));
-  const models = items.filter((x) => /새 모델|출시 신호/.test(x.importance_reason || "")).length;
-  const title = document.getElementById("hero-title");
-  const line2 = [ccVers.size ? `Claude Code ${ccVers.size}개 버전` : "", models ? `출시 소식 ${models}건` : "",
-    `${items.length.toLocaleString("ko-KR")}건 수집`].filter(Boolean).join(" · ");
-  if (!items.length) title.replaceChildren(el("span", { class: "hl", text: "조용한 하루." }), el("span", { class: "line2", text: "이 기간에 새로 수집된 소식이 없어요" }));
-  else if (!high.length) title.replaceChildren("중요한 변화 없음.", el("span", { class: "line2", text: line2 }));
-  else title.replaceChildren(el("span", { class: "hl", text: `주목할 변화 ${high.length}건.` }), el("span", { class: "line2", text: line2 }));
-  document.getElementById("hero-sub").textContent =
-    `${fmtKst(range.start)} – ${fmtKst(range.end)} KST · 내 프로필 기준으로 분류한 소식`;
-  renderKpis(items, high, ccVers);
-  renderCatbar(items);
-  renderTicker(high);
+  const cc = new Set(items.filter((x) => x.type === "claude_code_change").map((x) => x.version));
+  const launches = items.filter((x) => /새 모델·제품 출시/.test(x.headline_ko || ""));
+  const names = [...new Set(launches.map((x) => (x.headline_ko.split(" · ")[1] || "").trim()).filter(Boolean))];
+  const breaking = items.filter((x) => /호환성 주의|지원 중단|동작 변경|제거/.test(x.headline_ko || "") && x.importance === "높음").length;
+  const parts = [];
+  if (names.length) parts.push([el("b", { text: names.slice(0, 2).join(", ") }), " 출시 소식이 있고"]);
+  if (cc.size) parts.push(["Claude Code가 ", el("b", { text: `${cc.size}개 버전` }), " 업데이트됐어요"]);
+  const frag = document.createDocumentFragment();
+  if (!items.length) { frag.append("이 기간에는 새로 수집된 소식이 없어요. 기간을 넓혀 보세요."); return frag; }
+  parts.forEach((p, i) => { frag.append(...p, i < parts.length - 1 ? " " : ". "); });
+  frag.append("내 관심사와 맞닿은 중요한 변화는 ", el("b", { text: `${high.length}건` }), breaking ? `, 그중 기존 사용법이 바뀌는 변경이 ${breaking}건이에요.` : "이에요.");
+  return frag;
 }
-
-function kpiSpark(values) {
-  if (values.length < 2) return null;
-  const W = 64, H = 22, max = Math.max(...values, 1);
-  const d = values.map((v, i) => `${i ? "L" : "M"}${(i / (values.length - 1)) * W},${H - 2 - (v / max) * (H - 4)}`).join("");
-  return svg("svg", { class: "kpi-spark", viewBox: `0 0 ${W} ${H}`, "aria-hidden": "true" }, svg("path", { d }));
-}
-function renderKpis(items, high, ccVers) {
-  const box = document.getElementById("kpis");
-  const dates = Object.entries(cache.index?.item_dates || {}).sort(([a], [b]) => a.localeCompare(b)).slice(-14);
-  const latest = ((cache.health?.steps?.claude_code?.detail || "").match(/latest=([\d.]+)/) || [])[1] || "—";
-  const m = cache.metrics || { repos: {} };
-  const core = Object.values(m.repos || {}).filter((r) => r.tier === "core");
-  const hasD1 = core.some((r) => r.d1 !== null && r.d1 !== undefined);
-  const d1 = core.reduce((s, r) => s + (r.d1 || 0), 0);
-  const surges = Object.values(m.repos || {}).filter((r) => (r.surge || []).length).length;
-  const defs = [
-    { id: "k-new", ic: "layers", label: "새 항목", value: items.length, foot: `높음 ${high.length} · 보통 ${items.filter((x) => x.importance === "보통").length}`, spark: dates.map(([, n]) => n) },
-    { id: "k-high", ic: "spark", label: "중요도 높음", value: high.length, foot: high.length ? "아래 '핵심 변경'" : "높음 없음" },
-    { id: "k-cc", ic: "code", label: "Claude Code 최신", text: latest, foot: ccVers.size ? `기간 내 ${ccVers.size}개 버전` : "기간 내 새 버전 없음" },
-    { id: "k-star", ic: "star", label: "핵심 레포 별 · 1일", value: hasD1 ? d1 : null, signedV: true,
-      foot: hasD1 ? `${core.length}개 합계${surges ? ` · 급등 ${surges}` : ""}` : `이력 ${m.history_days || 0}일 — 내일부터 계산` },
+function renderHero(items, r) {
+  const now = new Date(), p = kp(now);
+  document.getElementById("hero-date").textContent = `${p.m}월 ${p.d}일 ${"일월화수목금토"[p.w]}요일 · ${r.label}`;
+  document.getElementById("hero-title").textContent = state.days === 1 ? "오늘의 브리핑" : `${r.label} 브리핑`;
+  document.getElementById("hero-lead").replaceChildren(leadSentence(items));
+  const high = items.filter((x) => x.importance === "높음").length;
+  const cc = new Set(items.filter((x) => x.type === "claude_code_change").map((x) => x.version)).size;
+  const official = items.filter((x) => x.type === "official_release_note" || x.type === "official_post").length;
+  const latest = ((cache.health?.steps?.claude_code?.detail || "").match(/latest=([\d.]+)/) || [])[1];
+  const stats = [
+    { n: high, label: "중요한 변화" },
+    { n: cc, unit: "개", label: "Claude Code 버전", note: latest ? `최신 ${latest}` : null },
+    { n: official, unit: "건", label: "공식 발표" },
+    { n: items.length, unit: "건", label: "수집된 소식" },
   ];
-  if (!box.querySelector(".kpi[id]")) {
-    box.replaceChildren(...defs.map((k) => el("div", { class: "kpi", id: k.id },
-      el("div", { class: "kpi-label" }, icon(k.ic, 14), k.label),
-      el("div", { class: "kpi-value" }, el("span", { class: "num", text: "0" })),
-      el("div", { class: "kpi-foot" }))));
-  }
-  for (const k of defs) {
-    const card = document.getElementById(k.id);
-    const num = card.querySelector(".num");
-    if (k.text !== undefined) num.textContent = k.text;
-    else if (k.value === null) num.textContent = "—";
-    else countTo(num, k.value, k.signedV ? signed : undefined);
-    card.querySelector(".kpi-foot").textContent = k.foot;
-    card.querySelector(".kpi-spark")?.remove();
-    if (k.spark) { const s = kpiSpark(k.spark); if (s) card.append(s); }
-  }
+  const box = document.getElementById("stats");
+  box.classList.remove("is-revealed");
+  box.replaceChildren(...stats.map((s) => el("div", { class: "stat" },
+    el("dt", { text: s.label }), el("dd", {}, el("span", { "data-count": s.n, text: reduce.matches ? s.n : "0" }), s.unit ? el("small", { text: s.unit }) : null),
+    s.note ? el("span", { class: "stat-note", text: s.note }) : null)));
+  const play = document.getElementById("play-btn");
+  play.disabled = !items.length;
 }
 
-/** 펄스 차트 — 실제 데이터: 최근 14일 동안 '발표된' 항목 수 (published_at 기준, 없으면 수집 시각) */
-function renderPulse(items14) {
-  const fig = document.getElementById("pulse-chart");
-  fig.querySelector("svg")?.remove();
-  fig.querySelector(".tooltip")?.remove();
-  const today = new Date();
-  const days = [...Array(14)].map((_, i) => kstDate(new Date(today.getTime() - (13 - i) * DAY)));
-  const counts = Object.fromEntries(days.map((d) => [d, 0]));
-  for (const x of items14) {
-    const d = kstDate(parseIso(x.published_at) || parseIso(x.collected_at));
-    if (d in counts) counts[d]++;
+// ======================= 한눈에 보기 =======================
+function pickTop(items, n = 5) {
+  const per = {}, out = [];
+  for (const x of items.filter((y) => y.importance === "높음" && !y.quarantined).sort(sortItems)) {
+    const t = x.type === "claude_code_change" ? "cc" : x.type;
+    if ((per[t] = (per[t] || 0) + 1) > 2) continue;   // 한 종류가 독차지하지 않게 (종류당 최대 2)
+    out.push(x);
+    if (out.length === n) break;
   }
-  const vals = days.map((d) => counts[d]);
-  const peak = Math.max(...vals);
-  document.getElementById("pulse-caption-note").textContent = peak
-    ? `최대 ${peak}건 (${days[vals.indexOf(peak)].slice(5)}) · 발표일 기준` : "데이터 없음";
-  const W = 700, H = 120, P = { l: 4, r: 14, t: 12, b: 18 };
-  const x = (i) => P.l + (i / 13) * (W - P.l - P.r);
-  const y = (v) => P.t + (1 - v / Math.max(peak, 1)) * (H - P.t - P.b);
-  // 부드러운 곡선 (monotone 근사)
-  let d = `M${x(0)},${y(vals[0])}`;
-  for (let i = 1; i < 14; i++) {
-    const cx = (x(i - 1) + x(i)) / 2;
-    d += ` C${cx},${y(vals[i - 1])} ${cx},${y(vals[i])} ${x(i)},${y(vals[i])}`;
-  }
-  const area = `${d} L${x(13)},${H - P.b} L${x(0)},${H - P.b} Z`;
-  const color = cssVar("--cat-1");
-  const s = svg("svg", { viewBox: `0 0 ${W} ${H}`, preserveAspectRatio: "none", role: "img", tabindex: 0,
-    "aria-label": `최근 14일 발표량. ${days.map((dd, i) => `${dd.slice(5)} ${vals[i]}건`).join(", ")}` },
-    svg("defs", {}, svg("linearGradient", { id: "pulse-grad", x1: 0, x2: 0, y1: 0, y2: 1 },
-      svg("stop", { offset: "0%", "stop-color": color, "stop-opacity": 0.32 }),
-      svg("stop", { offset: "100%", "stop-color": color, "stop-opacity": 0 }))),
-    svg("line", { class: "pulse-base", x1: P.l, x2: W - P.r, y1: H - P.b, y2: H - P.b }),
-    svg("path", { class: "pulse-area", d: area }),
-    svg("path", { class: "pulse-line", d, pathLength: 1 }),
-    svg("circle", { class: "pulse-dot-halo", cx: x(13), cy: y(vals[13]), r: 4 }),
-    svg("circle", { class: "pulse-dot", cx: x(13), cy: y(vals[13]), r: 4 }),
-    ...[0, 7, 13].map((i) => svg("text", { class: "pulse-tick", x: x(i), y: H - 3, "text-anchor": i === 0 ? "start" : i === 13 ? "end" : "middle" },
-      i === 13 ? "오늘" : days[i].slice(5))));
-  const cross = svg("line", { class: "pulse-cross", y1: P.t, y2: H - P.b, visibility: "hidden" });
-  s.append(cross);
-  s.append(svg("rect", { class: "pulse-hit", x: 0, y: 0, width: W, height: H }));
-  const tip = el("div", { class: "tooltip", role: "status" });
-  tip.hidden = true;
-  let cur = 13;
-  const show = (i) => {
-    cur = Math.max(0, Math.min(13, i));
-    cross.setAttribute("x1", x(cur)); cross.setAttribute("x2", x(cur)); cross.setAttribute("visibility", "visible");
-    tip.replaceChildren(el("div", { class: "t-date", text: days[cur] }), el("div", { class: "t-row" }, el("strong", { text: `${vals[cur]}건` }), el("span", { text: "발표" })));
-    tip.hidden = false;
-    const b = s.getBoundingClientRect();
-    tip.style.left = `${Math.min(Math.max((x(cur) / W) * b.width + 10, 0), b.width - 120)}px`;
-    tip.style.top = "30px";
-  };
-  const hide = () => { cross.setAttribute("visibility", "hidden"); tip.hidden = true; };
-  s.addEventListener("pointermove", (e) => { const b = s.getBoundingClientRect(); show(Math.round(((e.clientX - b.left) / b.width) * 13)); });
-  s.addEventListener("pointerleave", hide);
-  s.addEventListener("focus", () => show(13));
-  s.addEventListener("blur", hide);
-  s.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") show(cur - 1); if (e.key === "ArrowRight") show(cur + 1); });
-  fig.append(s, tip);
+  return out;
 }
-
-function renderCatbar(items) {
-  const bar = document.getElementById("catbar"), legend = document.getElementById("catbar-legend");
-  const base = items.filter((x) => passImp(x) && matchQ(x));
-  const counts = Object.fromEntries(CATS.map((c) => [c.key, 0]));
-  base.forEach((x) => { counts[x.category || "기타"] = (counts[x.category || "기타"] || 0) + 1; });
-  const total = Math.max(1, base.length);
-  if (!bar.children.length) {
-    for (const c of CATS) {
-      const b = el("button", { type: "button", class: c.cls });
-      b.addEventListener("click", () => toggleCat(c.key));
-      bar.append(b);
-    }
-  }
-  [...bar.children].forEach((b, i) => {
-    const c = CATS[i], n = counts[c.key];
-    b.style.width = n ? `calc(${(n / total) * 100}% - 2px)` : "0px";
-    b.hidden = !n;
-    b.classList.toggle("is-off", !state.cats.has(c.key));
-    b.setAttribute("aria-label", `${c.key} ${n}건 (${Math.round((n / total) * 100)}%) — 누르면 필터`);
-    b.setAttribute("aria-pressed", String(state.cats.has(c.key) && state.cats.size !== CATS.length));
-  });
-  legend.replaceChildren(...CATS.filter((c) => counts[c.key]).map((c) =>
-    el("span", {}, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), c.key, el("b", { text: counts[c.key] }))));
+function renderGlance(items) {
+  const top = pickTop(items);
+  const ol = document.getElementById("glance-list");
+  document.getElementById("glance-sub").textContent = top.length ? "내 관심사 기준으로 가장 중요한 소식이에요" : "";
+  if (!top.length) { ol.replaceChildren(stateRow("지금은 특별히 중요한 소식이 없어요.", "기간을 넓히거나 아래 전체 목록을 보세요.", "inbox")); return; }
+  ol.replaceChildren(...top.map((x) => el("li", {},
+    el("div", { class: "g-main" },
+      link(safeUrl(x.url), mainText(x), "g-title"),
+      x.importance_reason ? el("div", { class: "g-why", text: `왜 중요? ${x.importance_reason}` }) : null,
+      el("div", { class: "g-meta" }, catTag(x), kicker(x) ? el("span", { text: kicker(x) }) : null,
+        x.published_at ? el("span", { text: `${mdKo(parseIso(x.published_at))} 발표` }) : null, aiMark(x)),
+      origLine(x)))));
 }
-
-function renderTicker(high) {
-  const track = document.getElementById("ticker-track");
-  const list = high.slice().sort(sortItems).slice(0, 14);
-  const mk = (hidden) => list.map((x) => el("li", hidden ? { "aria-hidden": "true" } : {},
-    el("i", { class: `dot ${(CAT_BY_KEY[x.category] || CAT_BY_KEY["기타"]).cls}`, "aria-hidden": "true" }),
-    extLink(safeUrl(x.url), (x.title || "").slice(0, 90) + ((x.title || "").length > 90 ? "…" : ""))));
-  if (!list.length) { track.replaceChildren(el("li", { text: "이 기간에 중요도 높음 항목이 없습니다." })); return; }
-  track.replaceChildren(...mk(false), ...mk(true)); // 끊김 없는 반복을 위해 두 벌 (두 번째는 보조기기에서 숨김)
-  track.querySelectorAll('[aria-hidden="true"] a').forEach((a) => a.setAttribute("tabindex", "-1"));
-  requestAnimationFrame(() => {
-    const w = track.scrollWidth / 2;
-    track.style.setProperty("--ticker-dur", `${Math.max(30, w / 55)}s`);
-  });
+function stateRow(msg, hint, ic = "inbox") {
+  return el("li", { class: "state" }, el("span", { class: "state-icon" }, icon(ic, 20)), el("span", {}, msg, hint ? el("small", { text: hint }) : null));
 }
 
 // ======================= digest =======================
-function parseFrontmatter(text) {
-  const meta = {};
-  let body = text;
-  const m = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
-  if (m) {
-    body = text.slice(m[0].length);
-    for (const line of m[1].split(/\r?\n/)) { const kv = line.match(/^([\w-]+):\s*(.*)$/); if (kv) meta[kv[1]] = kv[2].replace(/^["']|["']$/g, ""); }
-  }
+function parseFront(t) {
+  const meta = {}; let body = t;
+  const m = t.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+  if (m) { body = t.slice(m[0].length); for (const l of m[1].split(/\r?\n/)) { const kv = l.match(/^([\w-]+):\s*(.*)$/); if (kv) meta[kv[1]] = kv[2].replace(/^["']|["']$/g, ""); } }
   return { meta, body };
 }
-/** 안전한 최소 마크다운 → DOM (제목·목록·문단·구분선·굵게·코드·http(s) 링크만) */
-function renderMarkdown(src) {
+function markdown(src) {
   const root = el("div", { class: "digest-body" });
   let list = null;
-  const inline = (text) => {
-    const frag = document.createDocumentFragment();
+  const inline = (s) => {
+    const f = document.createDocumentFragment();
     const rx = /(`[^`]+`)|(\*\*[^*]+\*\*)|(\[([^\]]+)\]\((\S+?)\))|(https?:\/\/[^\s)<>]+)/g;
-    let last = 0, mm;
-    while ((mm = rx.exec(text))) {
-      if (mm.index > last) frag.append(text.slice(last, mm.index));
-      if (mm[1]) frag.append(el("code", { text: mm[1].slice(1, -1) }));
-      else if (mm[2]) frag.append(el("strong", { text: mm[2].slice(2, -2) }));
-      else if (mm[3]) frag.append(extLink(safeUrl(mm[5]), mm[4]));
-      else frag.append(extLink(safeUrl(mm[6]), mm[6]));
+    let last = 0, m;
+    while ((m = rx.exec(s))) {
+      if (m.index > last) f.append(s.slice(last, m.index));
+      if (m[1]) f.append(el("code", { text: m[1].slice(1, -1) }));
+      else if (m[2]) f.append(el("strong", { text: m[2].slice(2, -2) }));
+      else if (m[3]) f.append(link(safeUrl(m[5]), m[4]));
+      else f.append(link(safeUrl(m[6]), m[6]));
       last = rx.lastIndex;
     }
-    if (last < text.length) frag.append(text.slice(last));
-    return frag;
+    if (last < s.length) f.append(s.slice(last));
+    return f;
   };
   for (const raw of src.split(/\r?\n/)) {
-    const line = raw.trimEnd();
-    const h = line.match(/^(#{1,3})\s+(.*)$/);
-    const li = line.match(/^\s*(?:[-*]|\d+\.)\s+(.*)$/);
+    const line = raw.trimEnd(), h = line.match(/^(#{1,3})\s+(.*)$/), li = line.match(/^\s*(?:[-*]|\d+\.)\s+(.*)$/);
     if (!li) list = null;
     if (!line.trim()) continue;
     if (h) root.append(el(`h${h[1].length}`, {}, inline(h[2])));
     else if (/^-{3,}$/.test(line.trim())) root.append(el("hr"));
-    else if (li) { if (!list) { list = el(/^\s*\d+\./.test(line) ? "ol" : "ul"); root.append(list); } list.append(el("li", {}, inline(li[1]))); }
+    else if (li) { if (!list) root.append(list = el(/^\s*\d+\./.test(line) ? "ol" : "ul")); list.append(el("li", {}, inline(li[1]))); }
     else root.append(el("p", {}, inline(line)));
   }
   return root;
 }
 function renderDigest() {
-  const box = document.getElementById("digest");
-  const dg = cache.digest;
+  const box = document.getElementById("digest"), dg = cache.digest;
   box.hidden = false;
   if (!dg) {
-    box.replaceChildren(el("div", { class: "digest-empty" }, icon("doc", 20),
-      el("div", {}, el("strong", { text: "AI 요약(digest)이 아직 없습니다." }), " 아래는 규칙 기반 결과입니다. PC에서 ",
-        el("code", { text: "/brief" }), " 실행 후 저장하면 여기에 표시됩니다.")));
+    box.replaceChildren(el("div", { class: "digest-empty" }, icon("doc", 20), el("div", {},
+      el("strong", { text: "AI 요약은 아직 없어요." }), " PC에서 ", el("code", { text: "/brief" }),
+      "를 실행해 저장하면 여기에 Claude가 쓴 요약이 나타나요. 그때 번역도 함께 갱신돼요.")));
     return;
   }
-  const { meta, body } = parseFrontmatter(dg.text);
-  const gen = parseIso(meta.generated_at);
-  box.classList.add("digest-collapsed");
-  const btn = el("button", { class: "btn-text", type: "button", "aria-expanded": "false", text: "전체 보기" });
-  btn.addEventListener("click", () => {
-    const open = !box.classList.toggle("digest-collapsed");
-    btn.setAttribute("aria-expanded", String(open));
-    btn.textContent = open ? "접기" : "전체 보기";
-  });
-  box.replaceChildren(
-    el("div", { class: "digest-meta" }, el("span", { class: "ai-badge" }, icon("spark", 12), "AI 요약"),
-      el("span", { text: `${meta.kind || "brief"} · ${dg.date}` }),
-      meta.window_kst ? el("span", { text: `구간 ${meta.window_kst}` }) : null,
-      gen ? el("span", { text: `작성 ${fmtKst(gen)} KST` }) : null,
-      meta.model ? el("span", { text: `모델 ${meta.model}` }) : null,
-      el("span", { text: "classified_by: ai" })),
-    renderMarkdown(body), btn);
+  const { meta, body } = parseFront(dg.text), gen = parseIso(meta.generated_at);
+  const btn = el("button", { class: "btn-text", type: "button", "aria-expanded": "false", text: "전체 요약 보기" });
+  btn.addEventListener("click", () => { const open = !box.classList.toggle("collapsed"); btn.setAttribute("aria-expanded", open); btn.textContent = open ? "접기" : "전체 요약 보기"; });
+  box.classList.add("collapsed");
+  box.replaceChildren(el("div", { class: "digest-meta" }, el("span", { class: "ai-mark", text: "AI 요약" }),
+    el("span", { text: `${dg.date}${gen ? ` ${hm(gen)}` : ""} 작성` }), meta.model ? el("span", { text: meta.model }) : null), markdown(body), btn);
 }
 
-// ======================= 항목 =======================
-function itemNode(x, { inTimeline = false } = {}) {
-  const cat = CAT_BY_KEY[x.category] || CAT_BY_KEY["기타"];
-  const level = x.importance || "미분류";
-  const pub = parseIso(x.published_at), col = parseIso(x.collected_at);
-  return el("li", { class: `item ${level === "높음" ? "is-high" : level === "낮음" ? "is-low" : ""} ${x.quarantined ? "is-quarantined" : ""}` },
-    el("span", { class: "imp", title: `중요도 ${level}` }, x.quarantined ? icon("shield", 16) : impGlyph(level),
-      el("span", { class: "visually-hidden", text: `중요도 ${level}. ` })),
-    el("div", { class: "item-title", title: x.title || "" }, extLink(safeUrl(x.url), x.title || "(제목 없음)")),
-    el("div", { class: "item-meta" },
-      el("span", { class: "cat" }, el("i", { class: `dot ${cat.cls}`, "aria-hidden": "true" }), x.category || "미분류"),
-      x.version && !inTimeline ? el("span", { class: "mono", text: `v${x.version}` }) : null,
-      x.repo && !(x.title || "").includes(x.repo) ? el("span", { text: x.repo }) : null,
-      pub ? el("span", { text: `발표 ${kstDate(pub)}` }) : col ? el("span", { text: `수집 ${fmtKst(col)}` }) : null),
-    x.importance_reason ? el("div", { class: "item-reason", text: x.importance_reason }) : null);
+// ======================= 흐름 =======================
+function renderPulse(items14) {
+  const fig = document.getElementById("pulse-chart");
+  fig.querySelectorAll("svg, .tooltip").forEach((n) => n.remove());
+  const days = [...Array(14)].map((_, i) => kstDate(new Date(Date.now() - (13 - i) * DAY)));
+  const cnt = Object.fromEntries(days.map((d) => [d, 0]));
+  for (const x of items14) { const d = kstDate(parseIso(x.published_at) || parseIso(x.collected_at)); if (d in cnt) cnt[d]++; }
+  const v = days.map((d) => cnt[d]), peak = Math.max(...v, 1);
+  document.getElementById("pulse-note").textContent = Math.max(...v) ? `가장 많았던 날 ${days[v.indexOf(Math.max(...v))].slice(5).replace("-", "/")} · ${Math.max(...v)}건` : "아직 데이터가 적어요";
+  const W = 720, H = 170, L = 6, R = 12, T = 14, B = 24;
+  const x = (i) => L + (i / 13) * (W - L - R), y = (n) => T + (1 - n / peak) * (H - T - B);
+  let d = `M${x(0)},${y(v[0])}`;
+  for (let i = 1; i < 14; i++) { const cx = (x(i - 1) + x(i)) / 2; d += ` C${cx},${y(v[i - 1])} ${cx},${y(v[i])} ${x(i)},${y(v[i])}`; }
+  const accent = cssVar("--accent");
+  const s = svg("svg", { viewBox: `0 0 ${W} ${H}`, preserveAspectRatio: "none", role: "img", tabindex: 0,
+    "aria-label": `최근 14일 일별 발표량: ${days.map((dd, i) => `${dd.slice(5)} ${v[i]}건`).join(", ")}` },
+    svg("defs", {}, svg("linearGradient", { id: "pulse-grad", x1: 0, x2: 0, y1: 0, y2: 1 },
+      svg("stop", { offset: "0", "stop-color": accent, "stop-opacity": 0.18 }), svg("stop", { offset: "1", "stop-color": accent, "stop-opacity": 0 }))),
+    ...[0.5, 1].map((f) => svg("line", { class: "grid-line", x1: L, x2: W - R, y1: T + (1 - f) * (H - T - B), y2: T + (1 - f) * (H - T - B) })),
+    svg("line", { class: "grid-line", x1: L, x2: W - R, y1: H - B, y2: H - B }),
+    svg("path", { class: "pulse-area", d: `${d} L${x(13)},${H - B} L${x(0)},${H - B} Z` }),
+    svg("path", { class: "pulse-line", d, pathLength: 1 }),
+    svg("circle", { class: "pulse-halo", cx: x(13), cy: y(v[13]), r: 5 }),
+    svg("circle", { class: "pulse-dot", cx: x(13), cy: y(v[13]), r: 5 }),
+    ...[0, 7, 13].map((i) => svg("text", { class: "axis-text", x: x(i), y: H - 5, "text-anchor": i ? (i === 13 ? "end" : "middle") : "start" }, i === 13 ? "오늘" : days[i].slice(5).replace("-", "/"))));
+  const cross = svg("line", { class: "cross", y1: T, y2: H - B, visibility: "hidden" });
+  s.append(cross, svg("rect", { class: "hit", x: 0, y: 0, width: W, height: H }));
+  const tip = el("div", { class: "tooltip", role: "status" }); tip.hidden = true;
+  let cur = 13;
+  const show = (i) => {
+    cur = Math.max(0, Math.min(13, i));
+    cross.setAttribute("x1", x(cur)); cross.setAttribute("x2", x(cur)); cross.setAttribute("visibility", "visible");
+    tip.replaceChildren(el("div", { class: "t-date", text: days[cur].slice(5).replace("-", "월 ") + "일" }), el("strong", { text: `${v[cur]}건` }));
+    tip.hidden = false;
+    const b = s.getBoundingClientRect();
+    tip.style.left = `${Math.min(Math.max((x(cur) / W) * b.width + 12, 0), b.width - 120)}px`; tip.style.top = "40px";
+  };
+  const hide = () => { cross.setAttribute("visibility", "hidden"); tip.hidden = true; };
+  s.addEventListener("pointermove", (e) => { const b = s.getBoundingClientRect(); show(Math.round(((e.clientX - b.left) / b.width) * 13)); });
+  s.addEventListener("pointerleave", hide); s.addEventListener("focus", () => show(13)); s.addEventListener("blur", hide);
+  s.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") show(cur - 1); if (e.key === "ArrowRight") show(cur + 1); });
+  fig.append(s, tip);
 }
-function renderList(id, items, empty, hint = "기간을 늘리거나 중요도·분류 필터를 넓혀 보세요.") {
-  const ul = document.getElementById(id);
-  ul.replaceChildren(...(items.length ? items.map((x) => itemNode(x)) : [emptyState(empty, hint)]));
-  staggerItems(ul);
-}
-function renderHigh(items) {
-  const high = items.filter((x) => x.importance === "높음" && passCat(x) && matchQ(x)).sort(sortItems);
-  const limit = state.showAllHigh ? high.length : 10;
-  renderList("high-list", high.slice(0, limit), "이 기간·필터에 '높음' 항목이 없습니다.");
-  document.getElementById("high-sub").textContent = `중요도 높음 ${high.length}건`;
-  const more = document.getElementById("high-more");
-  more.replaceChildren(high.length > 10 ? el("button", { class: "btn-text", type: "button",
-    text: state.showAllHigh ? "접기" : `나머지 ${high.length - 10}건 더 보기`,
-    onclick: () => { state.showAllHigh = !state.showAllHigh; renderHigh(items); } }) : "");
-}
-function renderTimeline(items) {
-  const box = document.getElementById("cc-timeline");
-  const cc = items.filter((x) => x.type === "claude_code_change" && passCat(x) && matchQ(x));
-  const byVer = new Map();
-  cc.forEach((x) => { if (!byVer.has(x.version)) byVer.set(x.version, []); byVer.get(x.version).push(x); });
-  const vkey = (v) => (v || "0").split(".").map((n) => n.padStart(5, "0")).join(".");
-  const versions = [...byVer.keys()].sort((a, b) => vkey(b).localeCompare(vkey(a)));
-  document.getElementById("cc-sub").textContent = `${versions.length}개 버전 · ${cc.length}건`;
-  if (!versions.length) { box.replaceChildren(el("ul", { class: "items" }, emptyState("이 기간에 Claude Code 새 버전이 없어요.", "기간을 30일로 늘려 보세요.", "code"))); return; }
-  box.replaceChildren(...versions.map((v) => {
-    const list = byVer.get(v).sort(sortItems);
-    const shown = list.filter(passImp);
-    const hidden = list.length - shown.length;
-    const pub = parseIso(list[0].published_at);
-    const counts = ["높음", "보통", "낮음"].map((l) => [l, list.filter((x) => x.importance === l).length])
-      .filter(([, n]) => n).map(([l, n]) => `${l} ${n}`).join(" · ");
-    const ul = el("ul", { class: "items" }, shown.map((x) => itemNode(x, { inTimeline: true })));
-    const node = el("div", { class: "version" }, el("span", { class: "version-marker", "aria-hidden": "true" }),
-      el("div", { class: "version-head" }, el("span", { class: "ver", text: `v${v}` }),
-        pub ? el("span", { class: "when", text: `${fmtKst(pub)} KST` }) : null, el("span", { class: "counts", text: counts })), ul);
-    if (hidden) {
-      const btn = el("button", { class: "btn-text", type: "button", text: `낮음 등 ${hidden}건 펼치기` });
-      btn.addEventListener("click", () => { ul.replaceChildren(...list.map((x) => itemNode(x, { inTimeline: true }))); staggerItems(ul); btn.remove(); });
-      node.append(btn);
-    }
-    return node;
+function renderRank(items) {
+  const ul = document.getElementById("cat-rank");
+  const base = items.filter((x) => passImp(x) && passQ(x));
+  const rows = CATS.map((c) => ({ ...c, n: base.filter((x) => (x.category || "기타") === c.key).length })).sort((a, b) => b.n - a.n);
+  const max = Math.max(1, ...rows.map((r) => r.n));
+  ul.replaceChildren(...rows.map((r) => {
+    const li = el("li", { class: state.cats.size !== CATS.length && !state.cats.has(r.key) ? "is-off" : "" });
+    const btn = el("button", { type: "button", "aria-label": `${r.key} ${r.n}건 — 누르면 전체 목록을 이 분류로 거르기`, "aria-pressed": String(state.cats.size !== CATS.length && state.cats.has(r.key)) },
+      el("span", { class: "r-name" }, el("i", { class: `dot ${r.cls}`, "aria-hidden": "true" }), r.key), el("span", { class: "r-val", text: `${r.n}건` }));
+    btn.addEventListener("click", () => { toggleCat(r.key); document.getElementById("h-all").scrollIntoView({ behavior: reduce.matches ? "auto" : "smooth" }); });
+    const bar = el("span", { class: "r-bar" }, el("span"));
+    bar.firstChild.style.setProperty("--w", `${(r.n / max) * 100}%`);
+    li.append(btn, bar);
+    return li;
   }));
 }
 
-// ======================= 스타 =======================
-function niceTicks(max, count = 4) {
-  if (max <= 0) return [0, 1];
-  const raw = max / count, mag = 10 ** Math.floor(Math.log10(raw));
-  const step = [1, 2, 2.5, 5, 10].map((s) => s * mag).find((s) => raw <= s);
-  const t = [];
-  for (let v = 0; v <= max + step * 0.5; v += step) t.push(Math.round(v));
-  return t;
-}
-function lineChart(container, dates, series) {
-  const W = 640, H = 240, M = { t: 12, r: 118, b: 26, l: 44 };
-  const pw = W - M.l - M.r, ph = H - M.t - M.b;
-  const ticks = niceTicks(Math.max(1, ...series.flatMap((s) => s.values.filter((v) => v !== null))));
-  const top = ticks[ticks.length - 1];
-  const x = (i) => M.l + (dates.length === 1 ? pw / 2 : (i / (dates.length - 1)) * pw);
-  const y = (v) => M.t + ph - (v / top) * ph;
-  const root = svg("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", tabindex: 0,
-    "aria-label": "별 증가량 추이 — 방향키로 날짜 이동, 값은 아래 표에도 있음" });
-  ticks.forEach((t) => {
-    root.append(svg("line", { class: t === 0 ? "baseline" : "gridline", x1: M.l, x2: M.l + pw, y1: y(t), y2: y(t) }));
-    root.append(svg("text", { class: "tick", x: M.l - 6, y: y(t) + 4, "text-anchor": "end" }, compact(t)));
-  });
-  (dates.length <= 4 ? dates.map((_, i) => i) : [0, Math.floor((dates.length - 1) / 2), dates.length - 1])
-    .forEach((i) => root.append(svg("text", { class: "tick", x: x(i), y: H - 6, "text-anchor": "middle" }, dates[i].slice(5))));
-  const ends = [];
-  series.forEach((s, si) => {
-    const color = cssVar(SERIES_VARS[si]);
-    let d = "";
-    s.values.forEach((v, i) => { if (v !== null) d += `${d ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`; });
-    root.append(svg("path", { class: "series", d, stroke: color, pathLength: 1, style: null }));
-    const li = s.values.map((v, i) => (v !== null ? i : -1)).filter((i) => i >= 0).pop();
-    if (li !== undefined) {
-      root.append(svg("circle", { class: "end-dot", cx: x(li), cy: y(s.values[li]), r: 4, fill: color }));
-      ends.push({ y: y(s.values[li]), label: `${s.name.split("/")[1] || s.name} ${signed(s.values[li])}` });
+// ======================= Claude Code 버전 카드 =======================
+function verbOf(x) { const k = kicker(x); return k.replace(/\(.*\)/, "").trim() || "변경"; }
+function renderVersions(items) {
+  const box = document.getElementById("cc-versions");
+  const cc = items.filter((x) => x.type === "claude_code_change");
+  const by = new Map();
+  cc.forEach((x) => { if (!by.has(x.version)) by.set(x.version, []); by.get(x.version).push(x); });
+  const vkey = (v) => (v || "0").split(".").map((n) => n.padStart(5, "0")).join(".");
+  const vers = [...by.keys()].sort((a, b) => vkey(b).localeCompare(vkey(a)));
+  const latest = ((cache.health?.steps?.claude_code?.detail || "").match(/latest=([\d.]+)/) || [])[1];
+  document.getElementById("cc-sub").textContent = vers.length ? `${vers.length}개 버전 · 변경 ${cc.length}건${latest ? ` · 최신 ${latest}` : ""}` : "이 기간에는 새 버전이 없어요";
+  if (!vers.length) { box.replaceChildren(el("ul", { class: "list" }, stateRow("이 기간에 Claude Code 새 버전이 없어요.", "기간을 30일로 넓혀 보세요.", "inbox"))); return; }
+  box.replaceChildren(...vers.map((v) => {
+    const list = by.get(v).sort(sortItems);
+    const pub = parseIso(list[0].published_at);
+    const counts = {};
+    list.forEach((x) => { const k = verbOf(x); counts[k] = (counts[k] || 0) + 1; });
+    const order = ["새 기능", "동작 변경", "제거", "지원 중단 예고", "개선", "버그 수정"];
+    const pills = Object.entries(counts).sort(([a], [b]) => (order.indexOf(a) + 99) % 99 - (order.indexOf(b) + 99) % 99);
+    const top = list.filter((x) => x.importance !== "낮음").slice(0, 4);
+    const ul = el("ul", { class: "v-list" }, (top.length ? top : list.slice(0, 3)).map((x) => vItem(x)));
+    const card = el("article", { class: "version" },
+      el("div", { class: "v-head" }, el("span", { class: "v-num", text: v }), el("span", { class: "v-date", text: pub ? `${mdKo(pub)} 배포` : "" })),
+      el("div", { class: "v-counts" }, pills.map(([k, n]) => el("span", { class: `v-pill ${k === "새 기능" || k === "동작 변경" ? "hl" : ""}`, text: `${k} ${n}` }))),
+      ul);
+    if (list.length > ul.children.length) {
+      const more = el("button", { class: "btn-text v-more", type: "button", text: `전체 ${list.length}건 보기` });
+      more.addEventListener("click", () => { ul.replaceChildren(...list.map((x) => vItem(x))); more.remove(); });
+      card.append(more);
     }
-  });
-  ends.sort((a, b) => a.y - b.y);
-  let prev = -Infinity;
-  for (const e of ends) {   // 겹치는 끝 라벨은 연결선(leader)으로 잇는다
-    const ly = Math.max(e.y, prev + 14);
-    prev = ly;
-    if (Math.abs(ly - e.y) > 2) root.append(svg("line", { class: "gridline", x1: M.l + pw + 6, y1: e.y, x2: M.l + pw + 12, y2: ly }));
-    root.append(svg("text", { class: "end-label", x: M.l + pw + 14, y: ly + 4 }, e.label.length > 18 ? e.label.slice(0, 17) + "…" : e.label));
-  }
-  const cross = svg("line", { class: "crosshair", y1: M.t, y2: M.t + ph, visibility: "hidden" });
-  root.append(cross, svg("rect", { x: M.l, y: M.t, width: pw, height: ph, fill: "transparent" }));
-  const wrap = el("div", { class: "chart-wrap chart" }, root);
-  const tip = el("div", { class: "tooltip", role: "status" });
-  tip.hidden = true;
-  wrap.append(tip);
-  let cur = dates.length - 1;
-  const keyOf = (si) => { const k = el("span", { class: "key" }); k.style.background = cssVar(SERIES_VARS[si]); return k; };
-  const show = (i) => {
-    cur = Math.max(0, Math.min(dates.length - 1, i));
-    cross.setAttribute("x1", x(cur)); cross.setAttribute("x2", x(cur)); cross.setAttribute("visibility", "visible");
-    tip.replaceChildren(el("div", { class: "t-date", text: dates[cur] }),
-      ...series.map((s, si) => el("div", { class: "t-row" }, keyOf(si), el("strong", { text: signed(s.values[cur]) }), el("span", { text: s.name }))));
-    tip.hidden = false;
-    const b = root.getBoundingClientRect();
-    tip.style.left = `${Math.min(Math.max((x(cur) / W) * b.width + 12, 0), b.width - 190)}px`;
-    tip.style.top = "8px";
-  };
-  const hide = () => { cross.setAttribute("visibility", "hidden"); tip.hidden = true; };
-  root.addEventListener("pointermove", (ev) => { const b = root.getBoundingClientRect(); show(Math.round((((ev.clientX - b.left) / b.width) * W - M.l) / pw * (dates.length - 1))); });
-  root.addEventListener("pointerleave", hide);
-  root.addEventListener("focus", () => show(dates.length - 1));
-  root.addEventListener("blur", hide);
-  root.addEventListener("keydown", (ev) => {
-    if (ev.key === "ArrowLeft") { show(cur - 1); ev.preventDefault(); }
-    if (ev.key === "ArrowRight") { show(cur + 1); ev.preventDefault(); }
-    if (ev.key === "Escape") hide();
-  });
-  container.append(
-    el("div", { class: "legend" }, series.map((s, si) => el("span", {}, keyOf(si), s.name))),
-    wrap,
-    el("details", { class: "table-view" }, el("summary", { text: "표로 보기" }),
-      el("div", { class: "table-scroll" }, el("table", { class: "repo-table" },
-        el("thead", {}, el("tr", {}, el("th", { text: "날짜" }), series.map((s) => el("th", { class: "num", text: s.name })))),
-        el("tbody", {}, dates.map((d, i) => el("tr", {}, el("td", { text: d }), series.map((s) => el("td", { class: "num", text: signed(s.values[i]) })))))))));
+    return card;
+  }));
 }
-function sparkline(values) {
-  const pts = values.map((v, i) => [i, v]).filter(([, v]) => v !== null);
-  if (pts.length < 2) return el("span", { class: "spark-empty", text: `이력 ${pts.length}일` });
-  const W = 100, H = 28, P = 3, vs = pts.map(([, v]) => v);
-  const min = Math.min(...vs), max = Math.max(...vs);
-  const x = (i) => P + (i / (values.length - 1)) * (W - 2 * P);
-  const y = (v) => (max === min ? H / 2 : P + (1 - (v - min) / (max - min)) * (H - 2 * P));
-  const [li, lv] = pts[pts.length - 1];
-  return svg("svg", { class: "spark", viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, "aria-hidden": "true" },
-    svg("path", { d: pts.map(([i, v], k) => `${k ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("") }),
-    svg("circle", { cx: x(li), cy: y(lv), r: 3 }));
-}
-function renderStars() {
-  const m = cache.metrics || { repos: {}, history_days: 0 };
-  const s = cache.series || { dates: [], repos: {} };
-  const hist = s.dates.length;
-  document.getElementById("stars-sub").textContent = `이력 ${hist}일 · 오늘부터 쌓음`;
-  const box = document.getElementById("movers");
-  box.replaceChildren();
-  const n = Math.min(hist, Math.max(state.days, 2) + 1);
-  const dates = s.dates.slice(-n);
-  if (dates.length < 4) {
-    // 이력이 4일 미만이면 선 그래프 대신 진행 상태 + 별 상위 막대 (데이터가 적을 땐 숫자가 정답)
-    const prog = el("span");
-    const core = Object.entries(m.repos || {}).filter(([, r]) => r.tier === "core").sort(([, a], [, b]) => b.stars - a.stars).slice(0, 5);
-    const max = Math.max(1, ...core.map(([, r]) => r.stars));
-    const meters = core.map(([name, r]) => {
-      const fill = el("span");
-      requestAnimationFrame(() => requestAnimationFrame(() => { fill.style.width = `${(r.stars / max) * 100}%`; }));
-      return el("li", {}, el("span", { class: "nm", text: name }), el("span", { class: "vl", text: `★${compact(r.stars)}` }), el("span", { class: "meter" }, fill));
-    });
-    box.append(el("div", { class: "wait-card" },
-      el("p", {}, el("strong", { text: `추이 그래프까지 ${Math.max(0, 4 - hist)}일` }), ` — 매일 06:17 수집될 때마다 하루씩 쌓입니다 (${hist}/4일).`),
-      el("div", { class: "bar" }, prog)),
-      el("h3", { class: "mini-title", text: "별 상위 5 (핵심 watchlist)" }), el("ul", { class: "top-stars" }, meters));
-    requestAnimationFrame(() => requestAnimationFrame(() => { prog.style.width = `${(hist / 4) * 100}%`; }));
-  } else {
-    const off = hist - dates.length;
-    const gains = Object.entries(s.repos).map(([name, vals]) => {
-      const w = vals.slice(off), base = w.find((v) => v !== null);
-      if (base === undefined) return null;
-      const g = w.map((v) => (v === null ? null : v - base));
-      return { name, values: g, last: g.filter((v) => v !== null).pop() || 0 };
-    }).filter(Boolean).sort((a, b) => b.last - a.last).slice(0, 4);
-    box.append(el("p", { class: "footnote", text: "기간 시작 대비 누적 별 증가 상위 4 — 레포 크기가 달라도 한 축에서 비교되도록 증가량으로 맞춤" }));
-    lineChart(box, dates, gains);
-    if (box.closest(".is-revealed") || reduceMotion.matches) box.querySelector(".chart")?.classList.add("is-drawn");
-  }
-  renderRepos(m, s);
-}
-function renderRepos(m, s) {
-  const box = document.getElementById("repos");
-  const ord = ([, a], [, b]) => (b.d7 ?? b.d1 ?? 0) - (a.d7 ?? a.d1 ?? 0) || b.stars - a.stars;
-  const core = Object.entries(m.repos || {}).filter(([, r]) => r.tier === "core").sort(ord);
-  const cand = Object.entries(m.repos || {}).filter(([, r]) => r.tier === "candidate").sort(ord).slice(0, 10);
-  document.getElementById("repos-sub").textContent = `${core.length}개 · 기준 ${m.date || "—"}`;
-  const table = (list) => el("div", { class: "table-scroll" }, el("table", { class: "repo-table" },
-    el("colgroup", {}, el("col", { class: "col-name" }), el("col", { class: "col-num" }), el("col", { class: "col-num" }),
-      el("col", { class: "col-num hide-sm" }), el("col", { class: "col-spark" })),
-    el("thead", {}, el("tr", {}, el("th", { text: "레포" }), el("th", { class: "num", text: "★" }), el("th", { class: "num", text: "1일" }),
-      el("th", { class: "num hide-sm", text: "7일" }), el("th", { text: "추이" }))),
-    el("tbody", {}, list.map(([name, r]) => {
-      const [owner, repo] = name.split("/");
-      return el("tr", {},
-        el("td", { class: "name" }, el("a", { href: safeUrl(`https://github.com/${name}`), rel: "noopener noreferrer", target: "_blank" },
-          el("span", { class: "owner", text: `${owner}/` }), repo),
-          (r.warnings || []).length ? el("span", { class: "sub" }, el("span", { class: "warn-tag" }, icon("alert", 12), `참고 경고 · ${r.warnings[0]}`)) : null),
-        el("td", { class: "num", text: compact(r.stars) }),
-        el("td", { class: `num ${r.d1 > 0 ? "up" : ""}`, text: signed(r.d1) }),
-        el("td", { class: `num hide-sm ${r.d7 > 0 ? "up" : ""}`, text: signed(r.d7) }),
-        el("td", {}, sparkline((s.repos[name] || []).slice(-30))));
-    }))));
-  box.replaceChildren(table(core),
-    el("details", { class: "table-view" }, el("summary", { text: `자동 추적 후보 상위 ${cand.length} 보기` }), table(cand)));
+function vItem(x) {
+  return el("li", { class: x.importance === "높음" ? "is-high" : "" }, link(safeUrl(x.url), koOf(x) || x.title, "v-text"),
+    koOf(x) ? null : el("span", { class: "orig", text: kicker(x) }));
 }
 
-// ======================= 필터 UI =======================
+// ======================= 공식 소식 · 생태계 =======================
+function renderOfficial(items) {
+  const list = items.filter((x) => OFFICIAL.has(x.type) && passImp(x)).sort(sortItems).slice(0, 12);
+  const ul = document.getElementById("official-list");
+  ul.replaceChildren(...(list.length ? list.map((x) => el("li", {},
+    el("div", { class: "n-kicker" }, el("span", { text: kicker(x) || "공식 소식" }), x.published_at ? el("span", { text: mdKo(parseIso(x.published_at)) }) : null, aiMark(x)),
+    link(safeUrl(x.url), mainText(x), "n-title"), origLine(x))) : [stateRow("이 기간에 공식 소식이 없어요.", "기간을 넓혀 보세요.")]));
+}
+function renderEco(items) {
+  const m = cache.metrics?.repos || {};
+  const list = items.filter((x) => ECO.has(x.type) && x.importance !== "낮음" && !x.quarantined).sort(sortItems).slice(0, 9);
+  const grid = document.getElementById("eco-grid");
+  grid.replaceChildren(...(list.length ? list.map((x) => {
+    const [owner, name] = (x.repo || "/").split("/");
+    const r = m[x.repo] || {};
+    const desc = koOf(x) || (x.body && !x.body.startsWith("[격리됨") ? x.body : "");
+    return el("article", { class: "eco" },
+      el("span", { class: "eco-kicker", text: kicker(x) }),
+      el("a", { class: "eco-name", href: safeUrl(`https://github.com/${x.repo}`), rel: "noopener noreferrer", target: "_blank" }, el("span", { class: "owner", text: `${owner}/` }), name),
+      desc ? el("p", { class: "eco-desc", text: desc }) : null,
+      el("div", { class: "eco-foot" }, r.stars ? el("span", { text: `★ ${compact(r.stars)}` }) : null,
+        r.d1 ? el("span", { class: "up", text: `${signed(r.d1)} 오늘` }) : null, aiMark(x),
+        (r.warnings || []).length ? el("span", { class: "warn" }, icon("alert", 13), "참고 경고") : null));
+  }) : [el("ul", { class: "list" }, stateRow("이 기간에 눈에 띄는 저장소가 없어요.", "기간을 넓혀 보세요."))]));
+}
+
+// ======================= 관심 저장소 =======================
+function spark(vals) {
+  const pts = vals.map((v, i) => [i, v]).filter(([, v]) => v != null);
+  if (pts.length < 2) return el("span", { class: "spark-empty", text: `이력 ${pts.length}일` });
+  const W = 100, H = 26, P = 3, ys = pts.map(([, v]) => v), mn = Math.min(...ys), mx = Math.max(...ys);
+  const x = (i) => P + (i / (vals.length - 1)) * (W - 2 * P), y = (v) => (mx === mn ? H / 2 : P + (1 - (v - mn) / (mx - mn)) * (H - 2 * P));
+  const [li, lv] = pts[pts.length - 1];
+  return svg("svg", { class: "spark", viewBox: `0 0 ${W} ${H}`, width: "100%", height: H, "aria-hidden": "true" },
+    svg("path", { d: pts.map(([i, v], k) => `${k ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("") }), svg("circle", { cx: x(li), cy: y(lv), r: 2.6 }));
+}
+function renderWatch() {
+  const m = cache.metrics || { repos: {} }, s = cache.series || { dates: [], repos: {} };
+  const box = document.getElementById("watch");
+  const core = Object.entries(m.repos || {}).filter(([, r]) => r.tier === "core").sort(([, a], [, b]) => (b.d7 ?? b.d1 ?? 0) - (a.d7 ?? a.d1 ?? 0) || b.stars - a.stars);
+  const hist = s.dates.length;
+  document.getElementById("watch-sub").textContent = `핵심 ${core.length}개 · 별 이력 ${hist}일째 (매일 하루씩 쌓여요)`;
+  const parts = [];
+  if (hist < 4) {
+    const w = el("div", { class: "wait" }, el("p", {}, el("b", { text: `별 추이 그래프까지 ${4 - hist}일` }), ` 남았어요 (${hist}/4일).`), el("div", { class: "bar" }, el("span")));
+    w.querySelector(".bar span").style.setProperty("--w", `${(hist / 4) * 100}%`);
+    parts.push(w);
+  }
+  const table = (list) => el("div", { class: "table-scroll" }, el("table", { class: "tbl" },
+    el("colgroup", {}, el("col"), el("col", { class: "col-num" }), el("col", { class: "col-num" }), el("col", { class: "col-num hide-sm" }), el("col", { class: "col-spark" })),
+    el("thead", {}, el("tr", {}, el("th", { text: "저장소" }), el("th", { class: "num", text: "별" }), el("th", { class: "num", text: "1일" }), el("th", { class: "num hide-sm", text: "7일" }), el("th", { text: "추이" }))),
+    el("tbody", {}, list.map(([n, r]) => { const [o, nm] = n.split("/");
+      return el("tr", {}, el("td", { class: "name" }, el("a", { href: safeUrl(`https://github.com/${n}`), rel: "noopener noreferrer", target: "_blank" }, el("span", { class: "owner", text: `${o}/` }), nm)),
+        el("td", { class: "num", text: compact(r.stars) }), el("td", { class: `num ${r.d1 > 0 ? "up" : ""}`, text: signed(r.d1) }),
+        el("td", { class: `num hide-sm ${r.d7 > 0 ? "up" : ""}`, text: signed(r.d7) }), el("td", {}, spark((s.repos[n] || []).slice(-30)))); }))));
+  parts.push(table(core));
+  const cand = Object.entries(m.repos || {}).filter(([, r]) => r.tier === "candidate").sort(([, a], [, b]) => (b.d7 ?? b.d1 ?? 0) - (a.d7 ?? a.d1 ?? 0) || b.stars - a.stars).slice(0, 10);
+  if (cand.length) parts.push(el("details", { class: "more" }, el("summary", { text: `자동 추적 중인 후보 상위 ${cand.length}개` }), table(cand)));
+  box.replaceChildren(...parts);
+  if (box.classList.contains("is-drawn")) { box.classList.remove("is-drawn"); requestAnimationFrame(() => requestAnimationFrame(() => box.classList.add("is-drawn"))); }
+}
+
+// ======================= 전체 목록 =======================
+function renderAll(items) {
+  const list = items.filter((x) => passImp(x) && passCat(x) && passQ(x)).sort(sortItems);
+  document.getElementById("all-sub").textContent = `${list.length}건 · 중요도·분류·검색으로 거를 수 있어요`;
+  const ul = document.getElementById("all-list");
+  ul.replaceChildren(...(list.length ? list.slice(0, state.allLimit).map((x) => el("li", { class: `row ${x.importance === "낮음" ? "is-low" : ""} ${x.quarantined ? "is-quarantined" : ""}` },
+    link(safeUrl(x.url), mainText(x), "row-title"),
+    el("div", { class: "row-meta" }, x.importance === "높음" ? el("span", { class: "imp-high", text: "중요" }) : null, catTag(x),
+      el("span", { text: kicker(x) }), x.published_at ? el("span", { text: mdKo(parseIso(x.published_at)) }) : null, aiMark(x)),
+    origLine(x))) : [stateRow("조건에 맞는 소식이 없어요.", "검색어를 지우거나 필터를 넓혀 보세요.")]));
+  const more = document.getElementById("all-more");
+  more.replaceChildren(list.length > state.allLimit ? el("button", { class: "btn-text", type: "button", text: `${list.length - state.allLimit}건 더 보기`,
+    onclick: () => { state.allLimit += 30; renderAll(items); } }) : "");
+}
 function buildChips(items) {
   const box = document.getElementById("f-cat");
-  const counts = Object.fromEntries(CATS.map((c) => [c.key, 0]));
-  items.filter((x) => passImp(x) && matchQ(x)).forEach((x) => { counts[x.category || "기타"]++; });
-  if (!box.children.length) {
-    for (const c of CATS) {
-      const chip = el("button", { class: "chip", type: "button", "data-key": c.key },
-        el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), c.key, el("span", { class: "count" }));
-      chip.addEventListener("click", () => toggleCat(c.key));
-      box.append(chip);
-    }
-  }
-  box.querySelectorAll(".chip").forEach((chip) => {
-    const k = chip.dataset.key;
-    chip.setAttribute("aria-pressed", String(state.cats.has(k)));
-    chip.querySelector(".count").textContent = counts[k];
+  const base = items.filter((x) => passImp(x) && passQ(x));
+  if (!box.children.length) CATS.forEach((c) => {
+    const b = el("button", { class: "chip", type: "button", "data-key": c.key }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), c.key, el("span", { class: "count" }));
+    b.addEventListener("click", () => toggleCat(c.key));
+    box.append(b);
+  });
+  box.querySelectorAll(".chip").forEach((b) => {
+    b.setAttribute("aria-pressed", String(state.cats.size !== CATS.length && state.cats.has(b.dataset.key)));
+    b.querySelector(".count").textContent = base.filter((x) => (x.category || "기타") === b.dataset.key).length;
   });
 }
-function wireControls() {
-  document.querySelectorAll("#f-range button").forEach((b) => b.addEventListener("click", () => { state.days = Number(b.dataset.days); state.showAllHigh = false; update(); }));
-  document.querySelectorAll("#f-imp button").forEach((b) => b.addEventListener("click", () => { state.imp = b.dataset.imp; update(); }));
+function toggleCat(k) {
+  if (state.cats.size === CATS.length) state.cats = new Set([k]);
+  else if (state.cats.has(k)) { state.cats.delete(k); if (!state.cats.size) state.cats = new Set(CATS.map((c) => c.key)); }
+  else state.cats.add(k);
+  state.allLimit = 30;
+  render();
+}
+
+// ======================= 1분 브리핑 (영상처럼) =======================
+const story = { slides: [], i: 0, timer: 0, t0: 0, paused: false, dur: 6500, raf: 0, last: null };
+function buildSlides(items) {
+  const r = range(), p = kp(new Date());
+  const high = items.filter((x) => x.importance === "높음");
+  const cc = items.filter((x) => x.type === "claude_code_change");
+  const vers = [...new Set(cc.map((x) => x.version))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+  const slides = [];
+  slides.push({ tint: "rgba(41,151,255,.32)", build: () => [
+    el("span", { class: "s-kicker", text: `${p.m}월 ${p.d}일 ${"일월화수목금토"[p.w]}요일 · ${r.label}` }),
+    el("h2", { class: "s-title huge", text: state.days === 1 ? "오늘의 브리핑" : `${r.label} 브리핑` }),
+    el("p", { class: "s-body" }, leadSentence(items)),
+    el("div", { class: "s-stats" }, [[high.length, "중요한 변화"], [vers.length, "Claude Code 버전"], [items.length, "수집된 소식"]]
+      .map(([n, l]) => el("div", {}, el("b", { "data-count": n, text: "0" }), el("span", { text: l })))),
+    el("span", { class: "s-hint", text: "화면을 누르면 다음으로 · 누르고 있으면 멈춤" })] });
+  pickTop(items, 6).forEach((x, k) => {
+    const c = CAT[x.category] || CAT["기타"];
+    slides.push({ tint: `color-mix(in srgb, ${cssVar(`--${c.cls}`)} 38%, transparent)`, solid: cssVar(`--${c.cls}`), build: () => [
+      el("span", { class: "s-kicker" }, el("i", { class: `dot ${c.cls}`, "aria-hidden": "true" }), `중요 ${k + 1} · ${x.category} · ${kicker(x)}`),
+      el("h2", { class: "s-title", text: mainText(x) }),
+      x.importance_reason ? el("p", { class: "s-body", text: `왜 중요? ${x.importance_reason}` }) : null,
+      x.title && mainText(x) !== x.title ? el("p", { class: "s-orig", text: `원문 · ${x.title.slice(0, 180)}${x.title.length > 180 ? "…" : ""}` }) : null,
+      safeUrl(x.url) ? el("a", { class: "s-link", href: safeUrl(x.url), rel: "noopener noreferrer", target: "_blank" }, "원문 보기", icon("arrow", 16)) : null].filter(Boolean) });
+  });
+  if (vers.length) {
+    const tops = cc.filter((x) => x.importance === "높음").sort(sortItems).slice(0, 4);
+    slides.push({ tint: "rgba(42,120,214,.30)", build: () => [
+      el("span", { class: "s-kicker", text: "Claude Code" }),
+      el("h2", { class: "s-title", text: vers.length > 1 ? `${vers[0]} → ${vers[vers.length - 1]}` : vers[0] }),
+      el("p", { class: "s-body", text: `${vers.length}개 버전, 변경 ${cc.length}건. 그중 내게 중요한 것:` }),
+      el("ul", { class: "s-list" }, (tops.length ? tops : cc.slice(0, 3)).map((x) => el("li", { text: koOf(x) || x.headline_ko || x.title })))] });
+  }
+  const off = items.filter((x) => x.type === "official_release_note" && x.importance === "높음").sort(sortItems).slice(0, 4);
+  if (off.length) slides.push({ tint: "rgba(27,175,122,.28)", build: () => [
+    el("span", { class: "s-kicker", text: "새 모델 · 공식 발표" }),
+    el("ul", { class: "s-list" }, off.map((x) => el("li", { text: mainText(x) })))] });
+  const eco = items.filter((x) => (x.type === "trending" || x.type === "candidate_new") && x.importance !== "낮음").sort(sortItems).slice(0, 4);
+  if (eco.length) slides.push({ tint: "rgba(235,104,52,.26)", build: () => [
+    el("span", { class: "s-kicker", text: "생태계 트렌드" }),
+    el("h2", { class: "s-title", text: "지금 GitHub에서 뜨는 것" }),
+    el("ul", { class: "s-list" }, eco.map((x) => el("li", { text: koOf(x) || x.headline_ko || x.title })))] });
+  slides.push({ tint: "rgba(255,255,255,.10)", build: () => [
+    el("span", { class: "s-kicker", text: "끝" }),
+    el("h2", { class: "s-title huge", text: "여기까지예요." }),
+    el("p", { class: "s-body", text: "자세한 내용과 전체 목록은 페이지에서 볼 수 있어요." }),
+    el("button", { class: "s-link", type: "button", onclick: closeStory }, "페이지로 돌아가기")] });
+  return slides;
+}
+function openStory() {
+  story.slides = buildSlides(cache.items);
+  story.i = 0; story.paused = reduce.matches; story.last = document.activeElement;
+  const box = document.getElementById("story");
+  document.getElementById("story-bars").replaceChildren(...story.slides.map(() => el("span", {}, el("i"))));
+  box.hidden = false;
+  document.body.classList.add("story-open");
+  setPauseIcon();
+  showSlide(0);
+  document.getElementById("story-close").focus();
+}
+function closeStory() {
+  cancelAnimationFrame(story.raf);
+  document.getElementById("story").hidden = true;
+  document.body.classList.remove("story-open");
+  story.last?.focus?.();
+}
+function showSlide(i) {
+  if (i < 0) i = 0;
+  if (i >= story.slides.length) { closeStory(); return; }
+  story.i = i;
+  const s = story.slides[i], box = document.getElementById("story");
+  box.style.setProperty("--tint", s.tint);
+  if (s.solid) box.style.setProperty("--tint-solid", s.solid); else box.style.removeProperty("--tint-solid");
+  box.style.setProperty("--bx", `${20 + ((i * 37) % 60)}%`); box.style.setProperty("--by", `${15 + ((i * 23) % 50)}%`);
+  const slide = el("div", { class: "slide" }, s.build());
+  document.getElementById("story-stage").replaceChildren(slide);
+  slide.querySelectorAll("[data-count]").forEach((c) => countTo(c, Number(c.dataset.count)));
+  document.querySelectorAll("#story-bars span").forEach((b, k) => { b.classList.toggle("done", k < i); b.firstChild.style.width = k < i ? "100%" : "0"; });
+  story.t0 = performance.now(); story.elapsed = 0;
+  tick();
+}
+function tick() {
+  cancelAnimationFrame(story.raf);
+  const bar = document.querySelectorAll("#story-bars i")[story.i];
+  const loop = (now) => {
+    if (document.getElementById("story").hidden) return;
+    if (!story.paused) {
+      const e = story.elapsed + (now - story.t0);
+      bar.style.width = `${Math.min(100, (e / story.dur) * 100)}%`;
+      if (e >= story.dur) { showSlide(story.i + 1); return; }
+    }
+    story.raf = requestAnimationFrame(loop);
+  };
+  story.raf = requestAnimationFrame(loop);
+}
+function setPaused(p) {
+  if (p === story.paused) return;
+  if (p) story.elapsed += performance.now() - story.t0; else story.t0 = performance.now();
+  story.paused = p;
+  setPauseIcon();
+}
+function setPauseIcon() {
+  const b = document.getElementById("story-pause");
+  b.replaceChildren(icon(story.paused ? "play" : "pause", 16));
+  b.setAttribute("aria-label", story.paused ? "재생" : "일시정지");
+}
+function wireStory() {
+  document.getElementById("play-btn").addEventListener("click", openStory);
+  document.getElementById("story-close").replaceChildren(icon("close", 18));
+  document.getElementById("story-close").addEventListener("click", closeStory);
+  document.getElementById("story-pause").addEventListener("click", () => setPaused(!story.paused));
+  document.getElementById("story-prev").addEventListener("click", () => showSlide(story.i - 1));
+  document.getElementById("story-next").addEventListener("click", () => showSlide(story.i + 1));
+  const stage = document.getElementById("story");
+  let hold = 0, sx = 0;
+  stage.addEventListener("pointerdown", (e) => { sx = e.clientX; hold = setTimeout(() => setPaused(true), 220); });
+  stage.addEventListener("pointerup", (e) => {
+    clearTimeout(hold);
+    if (Math.abs(e.clientX - sx) > 60) showSlide(story.i + (e.clientX < sx ? 1 : -1));   // 스와이프
+  });
+  document.addEventListener("keydown", (e) => {
+    if (stage.hidden) return;
+    if (e.key === "Escape") closeStory();
+    else if (e.key === "ArrowRight") showSlide(story.i + 1);
+    else if (e.key === "ArrowLeft") showSlide(story.i - 1);
+    else if (e.key === " ") { e.preventDefault(); setPaused(!story.paused); }
+    else if (e.key === "Tab") {   // 대화상자 안에서만 포커스 이동
+      const f = [...stage.querySelectorAll("button, a[href]")].filter((n) => n.offsetParent !== null);
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    }
+  });
+  document.addEventListener("visibilitychange", () => { if (document.hidden && !stage.hidden) setPaused(true); });
+}
+
+// ======================= 컨트롤 =======================
+function wire() {
+  document.querySelectorAll("#f-range button").forEach((b) => b.addEventListener("click", () => { state.days = +b.dataset.days; state.allLimit = 30; update(); }));
+  document.querySelectorAll("#f-imp button").forEach((b) => b.addEventListener("click", () => { state.imp = b.dataset.imp; state.allLimit = 30; render(); }));
   const q = document.getElementById("f-q");
   q.value = state.q;
   let t;
-  q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { state.q = q.value.trim(); update(); }, 180); });
+  q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(() => { state.q = q.value.trim(); state.allLimit = 30; render(); }, 180); });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "/" && !/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName)) { e.preventDefault(); q.focus(); }
-    if (e.key === "Escape" && document.activeElement === q && q.value) { q.value = ""; state.q = ""; update(); }
+    if (e.key === "/" && document.getElementById("story").hidden && !/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName)) { e.preventDefault(); q.focus(); }
   });
-  // 티커 일시정지 (자동으로 움직이는 콘텐츠는 멈출 수 있어야 한다)
-  const ticker = document.getElementById("ticker"), tb = document.getElementById("ticker-btn");
-  tb.addEventListener("click", () => {
-    const paused = ticker.classList.toggle("is-paused");
-    tb.setAttribute("aria-pressed", String(paused));
-    tb.setAttribute("aria-label", paused ? "흐르는 소식 다시 재생" : "흐르는 소식 일시정지");
-    tb.replaceChildren(icon(paused ? "play" : "pause", 16));
-  });
-  // 테마: 시스템 → 라이트 → 다크, 버튼 위치에서 원형으로 퍼지는 전환
-  const themeBtn = document.getElementById("theme-toggle");
+  const tb = document.getElementById("theme-toggle");
   const label = () => {
-    const cur = document.documentElement.getAttribute("data-theme") || "system";
-    themeBtn.setAttribute("aria-label", `테마 바꾸기 (현재: ${{ system: "시스템", light: "라이트", dark: "다크" }[cur]})`);
-    themeBtn.replaceChildren(icon(cur === "dark" ? "moon" : cur === "light" ? "sun" : "monitor", 20));
+    const dark = document.documentElement.getAttribute("data-theme") === "dark";
+    tb.replaceChildren(icon(dark ? "sun" : "moon", 18));
+    tb.setAttribute("aria-label", dark ? "밝은 화면으로" : "어두운 화면으로");
   };
-  themeBtn.addEventListener("click", () => {
-    const order = ["system", "light", "dark"];
-    const cur = document.documentElement.getAttribute("data-theme") || "system";
-    const next = order[(order.indexOf(cur) + 1) % 3];
+  tb.addEventListener("click", () => {
+    const toDark = document.documentElement.getAttribute("data-theme") !== "dark";
     const apply = () => {
-      if (next === "system") document.documentElement.removeAttribute("data-theme");
-      else document.documentElement.setAttribute("data-theme", next);
-      try { next === "system" ? localStorage.removeItem("tw-theme") : localStorage.setItem("tw-theme", next); } catch { /* 저장소 차단 */ }
-      label();
-      renderStars(); renderPulse(cache.items14 || []); // 차트 색은 CSS 변수에서 다시 읽는다
+      if (toDark) document.documentElement.setAttribute("data-theme", "dark"); else document.documentElement.removeAttribute("data-theme");
+      try { toDark ? localStorage.setItem("tw-theme", "dark") : localStorage.removeItem("tw-theme"); } catch { /* 저장소 차단 */ }
+      label(); renderPulse(cache.items14 || []); document.getElementById("pulse-chart").classList.add("is-drawn");
     };
-    if (document.startViewTransition && !reduceMotion.matches) {
-      const r = themeBtn.getBoundingClientRect();
-      const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
-      const root = document.documentElement.style;
-      root.setProperty("--vt-x", `${cx}px`); root.setProperty("--vt-y", `${cy}px`);
-      root.setProperty("--vt-r", `${Math.hypot(Math.max(cx, innerWidth - cx), Math.max(cy, innerHeight - cy))}px`);
+    if (document.startViewTransition && !reduce.matches) {
+      const b = tb.getBoundingClientRect(), cx = b.left + b.width / 2, cy = b.top + b.height / 2, st = document.documentElement.style;
+      st.setProperty("--vt-x", `${cx}px`); st.setProperty("--vt-y", `${cy}px`);
+      st.setProperty("--vt-r", `${Math.hypot(Math.max(cx, innerWidth - cx), Math.max(cy, innerHeight - cy))}px`);
       document.startViewTransition(apply);
     } else apply();
   });
   label();
-  // 스크롤 시 상단 바 경계선
-  const topbar = document.getElementById("topbar");
-  const onScroll = () => topbar.classList.toggle("is-scrolled", scrollY > 8);
-  addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-  addEventListener("resize", () => document.querySelectorAll(".seg").forEach(moveThumb));
+  const top = document.getElementById("topbar");
+  const onScroll = () => top.classList.toggle("is-scrolled", scrollY > 4);
+  addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  addEventListener("resize", () => document.querySelectorAll(".range, .seg").forEach(moveThumb));
+  wireStory();
 }
 function syncPressed() {
-  document.querySelectorAll("#f-range button").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.days) === state.days)));
+  document.querySelectorAll("#f-range button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.days === state.days)));
   document.querySelectorAll("#f-imp button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.imp === state.imp)));
-  document.querySelectorAll(".seg").forEach(moveThumb);
+  document.querySelectorAll(".range, .seg").forEach(moveThumb);
 }
 
-// ======================= 갱신 =======================
+// ======================= 렌더 =======================
+function render() {
+  writeHash(); syncPressed();
+  const items = cache.items;
+  buildChips(items); renderRank(items); renderAll(items);
+  document.getElementById("live").textContent = `전체 목록 ${items.filter((x) => passImp(x) && passCat(x) && passQ(x)).length}건`;
+}
 let ticket = 0;
 async function update() {
   const my = ++ticket;
-  writeHash();
-  syncPressed();
-  const main = document.getElementById("main");
-  main.classList.add("loading");   // 다시 불러오는 동안 이전 화면 유지 (깜빡임·레이아웃 이동 없음)
-  const range = windowRange();
-  const items = await loadItems(range);
+  writeHash(); syncPressed();
+  const r = range();
+  const items = await loadItems(r);
   if (my !== ticket) return;
-  main.classList.remove("loading");
-  const scoped = items.filter((x) => passCat(x) && matchQ(x));
-  renderFresh(items);
-  renderHero(items, range);
-  buildChips(items);
-  renderHigh(items);
-  renderTimeline(items);
-  const official = scoped.filter((x) => OFFICIAL_TYPES.has(x.type) && passImp(x)).sort(sortItems);
-  renderList("official-list", official.slice(0, 20), "이 기간·필터에 공식 소식이 없습니다.");
-  document.getElementById("official-sub").textContent = `${official.length}건`;
-  const disc = scoped.filter((x) => DISCOVER_TYPES.has(x.type) && passImp(x)).sort(sortItems);
-  renderList("discover-list", disc, "이 기간·필터에 급등·신규 발견이 없습니다.");
-  document.getElementById("discover-sub").textContent = `${disc.length}건`;
-  renderStars();
-  document.getElementById("live").textContent = `${range.label} 항목 ${scoped.filter(passImp).length}건 표시`;
+  cache.items = items;
+  renderFresh(); renderHero(items, r); renderGlance(items); renderVersions(items);
+  renderOfficial(items); renderEco(items); renderWatch(); render();
+  document.querySelectorAll("#stats [data-count]").forEach((c) => { c.dataset.done = ""; });
+  reveal(document.getElementById("stats"));
+}
+function renderError(err) {
+  const file = location.protocol === "file:", st = +((String(err?.message).match(/HTTP (\d+)/) || [])[1]);
+  const why = file ? ["파일로 직접 열었어요.", "폴더에서 python -m http.server 실행 후 http://localhost:8000 으로 열어 주세요."]
+    : st === 404 ? ["아직 수집된 데이터가 없어요.", "첫 수집(매일 오전 6시 17분) 전이거나 GitHub Pages가 배포 중일 수 있어요."]
+      : ["데이터에 연결하지 못했어요.", "인터넷 연결을 확인하고 잠시 후 다시 시도해 주세요."];
+  const retry = el("button", { class: "btn btn-primary", type: "button", text: "다시 시도" });
+  retry.addEventListener("click", () => location.reload());
+  document.getElementById("main").replaceChildren(el("section", { class: "error-view", role: "alert" }, el("div", { class: "wrap" },
+    el("p", { class: "eyebrow", text: "trend-watch" }),
+    el("h1", {}, "신호가 잠시 끊겼어요.", el("br"), el("span", { class: "dim", text: why[0] })),
+    el("p", { text: why[1] }),
+    svg("svg", { class: "signal", viewBox: "0 0 520 90", preserveAspectRatio: "none", "aria-hidden": "true" },
+      svg("path", { class: "flat", d: "M10 45 H200 L215 20 L232 72 L248 45 H500" }),
+      svg("path", { class: "beat", d: "M10 45 H200 L215 20 L232 72 L248 45 H500", pathLength: 1 }),
+      svg("circle", { class: "end", cx: 505, cy: 45, r: 5 })),
+    el("div", { class: "hero-cta" }, retry, el("a", { class: "btn btn-ghost", href: "https://github.com/Glory-m/trend_check/actions/workflows/collect.yml", rel: "noopener noreferrer", target: "_blank", text: "수집 상태 보기" })),
+    el("ul", {}, el("li", {}, el("b", { text: "매일 자동 수집" }), " — GitHub Actions가 매일 오전 6시 17분에 모아요."),
+      el("li", {}, el("b", { text: "PC에서도 볼 수 있어요" }), " — 폴더에서 git pull 후 /brief 를 실행하세요.")))));
+  const f = document.getElementById("fresh"); f.className = "fresh is-stale"; f.querySelector(".fresh-text").textContent = "연결 끊김";
+}
+
+// ======================= AI 비서 (로컬 서버에서만) =======================
+// scripts/serve.py 가 /api/status 에 답할 때만 나타난다. GitHub Pages에서는 404라서 보이지 않는다.
+const assist = { token: null, sid: null, model: "sonnet", ctrl: null, busy: false, opened: false };
+const QUICK = [
+  ["마지막 확인 이후 뭐 바뀌었어?", "/brief", "sonnet"],
+  ["이번 주 정리해 줘", "/weekly", "sonnet"],
+  ["나한테 맞는 추천", "/recommend", "opus"],
+  ["브라우저 테스트 관련 모아 줘", "/explore 브라우저 테스트", "sonnet"],
+  ["내 세팅 점검해 줘", "/design-my-setup", "opus"],
+  ["한국어 번역 갱신", "scripts/ko.py로 최근 7일 번역이 없는 핵심 항목을 번역해서 저장해 줘", "sonnet"],
+];
+const TOOL_KO = { Bash: "스크립트 실행", PowerShell: "스크립트 실행", Read: "파일 읽기", Write: "저장", Edit: "저장", Grep: "검색", Glob: "파일 찾기", Skill: "스킬 실행" };
+async function initAssist() {
+  let st;
+  try { const r = await fetch("api/status", { cache: "no-store" }); if (!r.ok) return; st = await r.json(); } catch { return; }
+  if (!st || st.local !== true || typeof st.token !== "string") return;
+  assist.token = st.token;
+  try { assist.sid = sessionStorage.getItem("tw-sid"); } catch { /* 저장소 차단 */ }
+  const fab = document.getElementById("assist-fab"), panel = document.getElementById("assist");
+  fab.hidden = false;
+  document.getElementById("assist-sub").textContent = st.claude ? `내 PC의 Claude Code ${st.claude} · 로컬 전용` : "claude CLI를 찾지 못했어요";
+  document.getElementById("assist-close").replaceChildren(icon("close", 18));
+  document.getElementById("assist-new").replaceChildren(icon("plus", 18));
+  setSendIcon();
+  const open = (v) => {
+    panel.hidden = !v; fab.hidden = v; fab.setAttribute("aria-expanded", String(v));
+    if (v) { if (!assist.opened) hello(); assist.opened = true; moveThumb(document.getElementById("assist-model")); document.getElementById("assist-input").focus(); }
+    else fab.focus();
+  };
+  fab.addEventListener("click", () => open(true));
+  document.getElementById("assist-close").addEventListener("click", () => open(false));
+  document.getElementById("assist-new").addEventListener("click", () => {
+    if (assist.busy) assist.ctrl?.abort();
+    assist.sid = null; try { sessionStorage.removeItem("tw-sid"); } catch { /* 무시 */ }
+    document.getElementById("assist-log").replaceChildren(); hello();
+  });
+  panel.addEventListener("keydown", (e) => { if (e.key === "Escape") open(false); });
+  document.querySelectorAll("#assist-model button").forEach((b) => b.addEventListener("click", () => {
+    assist.model = b.dataset.model;
+    document.querySelectorAll("#assist-model button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    moveThumb(document.getElementById("assist-model"));
+  }));
+  document.getElementById("assist-quick").replaceChildren(...QUICK.map(([label, prompt, model]) =>
+    el("button", { type: "button", onclick: () => ask(prompt, model, label) }, label)));
+  const input = document.getElementById("assist-input");
+  const grow = () => { input.style.height = "auto"; input.style.height = `${Math.min(input.scrollHeight, 140)}px`; };
+  input.addEventListener("input", grow);
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); document.getElementById("assist-form").requestSubmit(); } });
+  document.getElementById("assist-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (assist.busy) { assist.ctrl?.abort(); return; }
+    const q = input.value.trim();
+    if (!q) return;
+    input.value = ""; grow();
+    ask(q, assist.model);
+  });
+}
+function hello() {
+  document.getElementById("assist-log").append(el("div", { class: "assist-hello" },
+    el("b", { text: "무엇을 도와드릴까요?" }),
+    el("span", { text: "수집된 트렌드 데이터를 근거로 답해요. 아래 버튼으로 바로 시작하거나 자유롭게 물어보세요." })));
+}
+function setSendIcon() {
+  const b = document.getElementById("assist-send");
+  b.replaceChildren(icon(assist.busy ? "stop" : "send", 18));
+  b.classList.toggle("is-stop", assist.busy);
+  b.setAttribute("aria-label", assist.busy ? "답변 중지" : "보내기");
+}
+const scrollLog = () => { const l = document.getElementById("assist-log"); l.scrollTop = l.scrollHeight; };
+async function ask(prompt, model, label) {
+  if (assist.busy || !assist.token) return;
+  const log = document.getElementById("assist-log");
+  log.querySelector(".assist-hello")?.remove();
+  log.append(el("div", { class: "msg user", text: label || prompt }));
+  const live = el("span", { class: "streaming" }), caret = el("span", { class: "caret", "aria-hidden": "true" });
+  const ai = el("div", { class: "msg ai" }, live, caret);
+  const tools = el("div", { class: "tools" });
+  log.append(tools, ai);
+  scrollLog();
+  assist.busy = true; assist.ctrl = new AbortController(); setSendIcon();
+  let text = "", done = null, toolLine = null;
+  const fail = (m) => { ai.replaceWith(el("div", { class: "msg err", role: "alert", text: m })); };
+  try {
+    const r = await fetch("api/ask", { method: "POST", signal: assist.ctrl.signal,
+      headers: { "Content-Type": "application/json", "X-TW-Token": assist.token },
+      body: JSON.stringify({ message: prompt, model: model || assist.model, session_id: assist.sid }) });
+    if (!r.ok) { const j = await r.json().catch(() => ({})); fail(j.error || `요청 실패 (${r.status})`); return; }
+    const reader = r.body.getReader(), dec = new TextDecoder();
+    let buf = "";
+    for (;;) {
+      const { value, done: end } = await reader.read();
+      if (end) break;
+      buf += dec.decode(value, { stream: true });
+      let k;
+      while ((k = buf.indexOf("\n\n")) >= 0) {
+        const chunk = buf.slice(0, k); buf = buf.slice(k + 2);
+        const name = (chunk.match(/^event: (.*)$/m) || [])[1], data = (chunk.match(/^data: (.*)$/m) || [])[1];
+        if (!name || !data) continue;
+        let d; try { d = JSON.parse(data); } catch { continue; }
+        if (name === "delta") { text += d.t; live.textContent = text; toolLine?.remove(); toolLine = null; scrollLog(); }
+        else if (name === "tool" || name === "tool_input") {
+          const label2 = `${TOOL_KO[d.name] || d.name}${d.detail ? ` · ${d.detail}` : ""}`;
+          if (!toolLine) { toolLine = el("div", { class: "tool-line" }, el("i", { class: "spin", "aria-hidden": "true" }), el("span")); tools.append(toolLine); }
+          toolLine.lastChild.textContent = label2; scrollLog();
+        } else if (name === "done") done = d;
+        else if (name === "error") fail(d.message || "오류가 났어요.");
+      }
+    }
+  } catch (e) {
+    if (e.name === "AbortError") { caret.remove(); ai.append(el("span", { class: "muted", text: text ? " (중지됨)" : "중지했어요." })); }
+    else fail("로컬 서버에 연결하지 못했어요. 터미널에서 python scripts/serve.py 가 실행 중인지 확인하세요.");
+  } finally {
+    assist.busy = false; setSendIcon(); toolLine?.querySelector(".spin")?.remove();
+    if (done) {
+      if (done.session_id && /^[0-9a-f-]{36}$/.test(done.session_id)) { assist.sid = done.session_id; try { sessionStorage.setItem("tw-sid", assist.sid); } catch { /* 무시 */ } }
+      ai.replaceChildren(text ? markdown(text) : el("span", { class: "muted", text: "(빈 답변)" }));
+      if (done.denied) ai.append(el("p", { class: "muted", text: `허용되지 않은 작업 ${done.denied}건은 실행하지 않았어요 (로컬 비서 안전 설정).` }));
+      tools.replaceChildren();
+      refreshData();
+    } else caret.remove();
+    scrollLog();
+  }
+}
+async function refreshData() {   // 비서가 번역·요약을 저장했을 수 있으니 데이터를 다시 읽는다
+  cache.days.clear(); cache.ko.clear();
+  cache.digest = await loadDigest(); renderDigest();
+  await update();
 }
 
 async function init() {
-  readHash();
-  wireControls();
-  syncPressed();
-  renderSkeleton();
+  readHash(); wire(); syncPressed();
+  initAssist();
   try {
-    [cache.index, cache.health, cache.metrics, cache.series] = await Promise.all([
-      getJSON("data/index.json"), getJSON("data/health.json").catch(() => null),
-      getJSON("data/metrics.json").catch(() => null), getJSON("data/series.json").catch(() => null)]);
-  } catch (e) {
-    renderError(e);
-    observeReveal();
-    return;
-  }
-  cache.items14 = await loadItems(windowRange(14));
-  renderPulse(cache.items14);
-  await loadDigest();
-  renderDigest();
+    [cache.index, cache.health, cache.metrics, cache.series] = await Promise.all([getJSON("data/index.json"),
+      getJSON("data/health.json").catch(() => null), getJSON("data/metrics.json").catch(() => null), getJSON("data/series.json").catch(() => null)]);
+  } catch (e) { renderError(e); return; }
+  // 본문을 먼저 그리고, 그래프·AI 요약은 준비되는 대로 채운다
+  const pulse = loadItems(range(14)).then((xs) => { cache.items14 = xs; renderPulse(xs); });
+  const digest = loadDigest().then((d) => { cache.digest = d; renderDigest(); });
   await update();
-  document.documentElement.classList.remove("is-booting");
-  observeReveal();
+  observe();
+  await Promise.all([pulse, digest]);
+  observe();
 }
 addEventListener("hashchange", () => { readHash(); document.getElementById("f-q").value = state.q; update(); });
 init();
