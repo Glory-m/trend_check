@@ -1,13 +1,23 @@
-"""무료 기계 번역 — Azure AI Translator 무료 등급(F0, 월 200만 자, 초과 시 과금 없이 거절).
+"""무료 기계 번역 — 키 없이 도는 오픈소스 Argos(기본), 키가 있으면 Azure Translator 무료 등급(F0).
 
-키는 GitHub 비밀값 AZURE_TRANSLATOR_KEY / AZURE_TRANSLATOR_REGION 으로만 받는다(파일·로그에 남기지 않음).
-키가 없으면 이 단계는 건너뛴다. 번역 대상은 최근 며칠의 '높음·보통' 항목 중 아직 한국어 문장이 없는 것.
+엔진 선택:
+  1) GitHub 비밀값 AZURE_TRANSLATOR_KEY 가 있으면 Azure (품질 ↑, 무료 등급은 초과 시 과금 없이 거절).
+     키는 환경변수로만 받는다(파일·로그에 남기지 않음).
+  2) 없으면 Argos 오픈소스 모델(영→한, MIT). 워크플로가 모델 zip을 받아 TREND_MT_MODEL_ZIP 으로 넘긴다.
+     번역은 Actions 서버 안에서만 일어나고 문장을 외부로 보내지 않는다. 키·가입 불필요.
+     zip은 rules.yml translate.argos.sha256 과 대조한다(비어 있으면 결과에 해시를 남겨 고정하게 한다).
+  3) 둘 다 없으면 이 단계는 건너뛴다.
+번역 대상은 최근 며칠의 '높음·보통' 항목 중 아직 한국어 문장이 없는 것.
 결과는 data/ko/<날짜>.json에 classified_by: "mt" 로 저장 — /brief의 Claude 번역(classified_by: "ai")이 오면 그것으로 덮어쓴다.
 번역문도 외부 출력이므로 validate()를 통과해야만 저장한다.
 """
+import hashlib
 import html
+import json
 import os
 import re
+import tempfile
+import zipfile
 from datetime import timedelta
 
 from . import safety
@@ -60,15 +70,11 @@ def source_text(x):
     return re.sub(r"^(HN|GitHub 트렌딩\([^)]*\)|Claude 앱|Anthropic 뉴스|Anthropic 엔지니어링 블로그):\s*", "", title)
 
 
-def run(ctx):
-    key = os.environ.get("AZURE_TRANSLATOR_KEY")
-    if not key:
-        return "skipped (AZURE_TRANSLATOR_KEY 없음 — 기계 번역 꺼짐)"
-    region = os.environ.get("AZURE_TRANSLATOR_REGION", "").strip()
+def pick(ctx):
+    """번역 대상 고르기 — 최근 N일, 높음 먼저, 개수·글자 수 한도."""
     cfg = ctx.rules.get("translate", {})
     store = ctx.store
-    days = cfg.get("days", 3)
-    dates = [kst_date(ctx.now - timedelta(days=i)) for i in range(days)]
+    dates = [kst_date(ctx.now - timedelta(days=i)) for i in range(cfg.get("days", 3))]
     have, todo = {}, []
     for d in dates:
         have[d] = store.load_json(f"ko/{d}.json", {"date": d, "items": {}})
@@ -88,26 +94,154 @@ def run(ctx):
             break
         budget -= len(t[2])
         picked.append(t)
-    if not picked:
-        return "nothing to translate"
-    headers = {"Ocp-Apim-Subscription-Key": key, "Content-Type": "application/json; charset=UTF-8"}
-    if region:
-        headers["Ocp-Apim-Subscription-Region"] = region
-    saved = rejected = chars = 0
-    for i in range(0, len(picked), BATCH):
-        chunk = picked[i:i + BATCH]
-        res = ctx.client.post_json(ENDPOINT, [{"Text": to_html(src)} for _, _, src in chunk], headers)
-        chars += sum(len(src) for _, _, src in chunk)
-        for (d, x, _), r in zip(chunk, res):
-            ko = from_html(((r or {}).get("translations") or [{}])[0].get("text"))
-            if validate(ko):
-                rejected += 1
+    return have, picked
+
+
+class Azure:
+    model = "azure-translator"
+
+    def __init__(self, client, key, region):
+        self.client = client
+        self.headers = {"Ocp-Apim-Subscription-Key": key, "Content-Type": "application/json; charset=UTF-8"}
+        if region:
+            self.headers["Ocp-Apim-Subscription-Region"] = region
+
+    def translate(self, srcs):
+        out = []
+        for i in range(0, len(srcs), BATCH):
+            chunk = srcs[i:i + BATCH]
+            res = self.client.post_json(ENDPOINT, [{"Text": to_html(s)} for s in chunk], self.headers)
+            out += [from_html(((r or {}).get("translations") or [{}])[0].get("text")) for r in res]
+        return out
+
+
+MAX_MODEL_BYTES = 1_500_000_000
+
+
+def sha256_file(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for b in iter(lambda: f.read(1 << 20), b""):
+            h.update(b)
+    return h.hexdigest()
+
+
+def extract_model(zip_path, dest):
+    """Argos 패키지 zip에서 필요한 파일만 꺼낸다 — 경로는 파일 이름만 쓰므로 zip 경로 조작이 통하지 않는다.
+    반환: (CTranslate2 모델 폴더, sentencepiece 모델 경로, metadata dict)"""
+    with zipfile.ZipFile(zip_path) as z:
+        infos = [i for i in z.infolist() if not i.is_dir()]
+        if sum(i.file_size for i in infos) > MAX_MODEL_BYTES:
+            raise ValueError("모델 zip이 너무 큼")
+        bins = [i.filename for i in infos if i.filename.endswith("model/model.bin")]
+        if len(bins) != 1:
+            raise ValueError("model/model.bin 을 찾지 못함")
+        mdir = bins[0][:-len("model.bin")]
+        root = mdir[:-len("model/")]
+        model_out = os.path.join(dest, "model")
+        os.makedirs(model_out, exist_ok=True)
+        spm = meta = None
+        for i in infos:
+            n = i.filename
+            if n.startswith(mdir):
+                base = n[len(mdir):]
+                if not base or os.path.basename(base) != base or "/" in base or base.startswith("."):
+                    continue
+                target = os.path.join(model_out, base)
+            elif n == root + "sentencepiece.model":
+                target = spm = os.path.join(dest, "sentencepiece.model")
+            elif n == root + "metadata.json":
+                meta = json.loads(z.read(i).decode("utf-8"))
                 continue
-            have[d]["items"][x["id"]] = {"ko": ko, "model": "azure-translator", "generated_at": store.now_iso,
-                                         "classified_by": "mt"}
-            saved += 1
+            else:
+                continue
+            with z.open(i) as src, open(target, "wb") as f:
+                for b in iter(lambda: src.read(1 << 20), b""):
+                    f.write(b)
+        if not spm:
+            raise ValueError("sentencepiece.model 을 찾지 못함")
+    return model_out, spm, meta if isinstance(meta, dict) else {}
+
+
+class Argos:
+    BATCH = 16
+
+    def __init__(self, zip_path, expected_sha=""):
+        self.sha = sha256_file(zip_path)
+        if expected_sha and self.sha != expected_sha.lower():
+            raise ValueError(f"모델 해시 불일치 (받은 것 {self.sha[:12]}…) — 번역 중단")
+        self.pinned = bool(expected_sha)
+        import ctranslate2            # 워크플로에서만 설치(requirements-mt.txt) — 로컬·테스트엔 필요 없음
+        import sentencepiece
+        self._tmp = tempfile.TemporaryDirectory()
+        model_dir, spm, meta = extract_model(zip_path, self._tmp.name)
+        self.prefix = str(meta.get("target_prefix") or "")
+        self.sp = sentencepiece.SentencePieceProcessor(model_file=spm)
+        self.tr = ctranslate2.Translator(model_dir, device="cpu")
+        ver = re.sub(r"[^0-9A-Za-z._-]", "", str(meta.get("package_version") or ""))[:20]
+        self.model = "argos-en_ko" + (f"-{ver}" if ver else "")
+
+    def translate(self, srcs):
+        out = []
+        for i in range(0, len(srcs), self.BATCH):
+            chunk = srcs[i:i + self.BATCH]
+            toks = [self.sp.encode(CODE.sub(lambda m: m.group(1), s), out_type=str) for s in chunk]
+            kw = {"target_prefix": [[self.prefix]] * len(toks)} if self.prefix else {}
+            res = self.tr.translate_batch(toks, beam_size=2, max_decoding_length=200, **kw)
+            for s, r in zip(chunk, res):
+                hyp = r.hypotheses[0][1:] if self.prefix else r.hypotheses[0]
+                ko = " ".join(self.sp.decode(hyp).split())
+                # 코드 표기(`...`)는 원문 그대로 남아 있어야 한다 — 기계 번역이 뭉개면 버린다
+                out.append(ko if all(c in ko for c in CODE.findall(s)) else None)
+        return out
+
+    def close(self):
+        self._tmp.cleanup()
+
+
+def engine_for(ctx):
+    key = os.environ.get("AZURE_TRANSLATOR_KEY")
+    if key:
+        return Azure(ctx.client, key, os.environ.get("AZURE_TRANSLATOR_REGION", "").strip()), "azure"
+    zp = os.environ.get("TREND_MT_MODEL_ZIP")
+    if zp and os.path.isfile(zp):
+        try:
+            sha = (ctx.rules.get("translate", {}).get("argos") or {}).get("sha256") or ""
+            return Argos(zp, sha), "argos"
+        except ImportError:
+            return None, "skipped (ctranslate2·sentencepiece 미설치 — 기계 번역 꺼짐)"
+    return None, "skipped (번역 엔진 없음 — 모델 zip도 Azure 키도 없음)"
+
+
+def run(ctx, engine=None):
+    if engine is None:
+        engine, name = engine_for(ctx)
+        if engine is None:
+            return name
+    else:
+        name = getattr(engine, "name", "test")
+    store = ctx.store
+    have, picked = pick(ctx)
+    if not picked:
+        return f"engine={name} nothing to translate"
+    try:
+        results = engine.translate([src for _, _, src in picked])
+    finally:
+        if hasattr(engine, "close"):
+            engine.close()
+    saved = rejected = 0
+    for (d, x, _), ko in zip(picked, results):
+        if not ko or validate(ko):
+            rejected += 1
+            continue
+        have[d]["items"][x["id"]] = {"ko": ko, "model": engine.model, "generated_at": store.now_iso,
+                                     "classified_by": "mt"}
+        saved += 1
     for d, data in have.items():
         if data["items"]:
             data["items"] = dict(sorted(data["items"].items()))
             store.write_json(f"ko/{d}.json", data)
-    return f"translated={saved} rejected={rejected} chars={chars}"
+    out = f"engine={name} translated={saved} rejected={rejected} chars={sum(len(s) for _, _, s in picked)}"
+    if name == "argos" and not engine.pinned:
+        out += f" model_sha256={engine.sha} (rules.yml translate.argos.sha256 에 고정하세요)"
+    return out

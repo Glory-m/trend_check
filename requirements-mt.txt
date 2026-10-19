@@ -1,0 +1,3 @@
+# 무료 기계 번역(오픈소스 Argos 모델 실행)용 — GitHub Actions에서만 설치. 로컬·테스트엔 필요 없음.
+ctranslate2==4.8.3
+sentencepiece==0.2.2

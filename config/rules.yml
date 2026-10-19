@@ -129,8 +129,10 @@ audit:
   max_files_per_repo: 40
   max_raw_fetches_per_run: 400
 
-# ---- 무료 기계 번역 (collector/translate.py) — Azure Translator F0, 키는 GitHub 비밀값으로만 ----
+# ---- 무료 기계 번역 (collector/translate.py) — 기본: 오픈소스 Argos(키 불필요), Azure 키가 있으면 Azure ----
 translate:
   days: 3                 # 최근 N일(KST) 항목 중 한국어 문장이 없는 '높음·보통'
   max_items_per_run: 80
-  max_chars_per_run: 20000   # 하루 약 2만 자 → 월 60만 자 (무료 200만 자 안)
+  max_chars_per_run: 20000   # 하루 약 2만 자 → 월 60만 자 (Azure 무료 200만 자 안)
+  argos:
+    sha256: ""               # 모델 zip 해시 — 첫 실행 health.json(steps.translate)에 찍힌 값을 여기에 고정

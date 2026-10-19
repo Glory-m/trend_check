@@ -140,7 +140,7 @@ const aiMark = (x) => {
   const k = cache.ko.get(x.id);
   if (!k) return null;
   return k.classified_by === "mt"
-    ? el("span", { class: "ai-mark mt", title: "무료 기계 번역 (Azure Translator) — /brief 실행 시 Claude 번역으로 다듬어져요" }, "기계 번역")
+    ? el("span", { class: "ai-mark mt", title: "무료 기계 번역 (오픈소스 Argos 또는 Azure) — 딱딱할 수 있어요. /brief 실행 시 Claude 번역으로 다듬어져요" }, "기계 번역")
     : el("span", { class: "ai-mark", title: "Claude가 번역한 문장 (classified_by: ai)" }, "AI 번역");
 };
 const sortItems = (a, b) => (IMP[a.importance] ?? 3) - (IMP[b.importance] ?? 3)
