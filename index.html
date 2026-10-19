@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- 보안: 이 사이트 자신의 파일만 불러오고 실행한다. 외부 스크립트·글꼴·인라인 스크립트 금지. -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Claude Code·AI 코딩 트렌드 개인 관제실 — 매일 06:17 KST 자동 수집">
+  <title>trend-watch</title>
+  <link rel="icon" href="site/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site/style.css">
+  <script src="site/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./" aria-label="trend-watch 처음으로">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28"><path class="brand-line" d="M3 19h6l3-8 5 14 4-10 2 4h6" pathLength="1"/></svg>
+        </span>
+        <span class="brand-name">trend<span>-</span>watch</span>
+      </a>
+      <div class="fresh" id="fresh" aria-live="polite">
+        <span class="pulse" aria-hidden="true"></span><span class="fresh-text">불러오는 중…</span>
+      </div>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="테마 바꾸기">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ===== 히어로 ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span><span class="grid-fade"></span></div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow" id="hero-date" data-reveal>—</p>
+        <h1 class="hero-title" id="hero-title" data-reveal>오늘의 트렌드 펄스</h1>
+        <p class="hero-sub" id="hero-sub" data-reveal>Claude Code · 새 모델 · 스킬·MCP · 사용법 — 매일 06:17 KST 자동 수집</p>
+
+        <div class="kpis" id="kpis" data-reveal></div>
+
+        <figure class="pulse-chart" id="pulse-chart" data-reveal>
+          <figcaption class="pulse-caption"><span>최근 14일 발표량</span><span id="pulse-caption-note" class="muted"></span></figcaption>
+        </figure>
+
+        <div class="catbar-block" data-reveal>
+          <div class="catbar-head"><h2 class="mini-title">분류 분포</h2><span class="muted" id="catbar-note">막대를 누르면 그 분류만 봅니다</span></div>
+          <div class="catbar" id="catbar" role="group" aria-label="분류 분포 — 누르면 필터"></div>
+          <div class="catbar-legend" id="catbar-legend"></div>
+        </div>
+      </div>
+
+      <div class="ticker" id="ticker" data-reveal>
+        <div class="wrap ticker-inner">
+          <span class="ticker-label">높음</span>
+          <div class="ticker-viewport"><ul class="ticker-track" id="ticker-track"></ul></div>
+          <button class="ticker-btn" id="ticker-btn" type="button" aria-pressed="false" aria-label="흐르는 소식 일시정지">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 필터 (스크롤 시 상단 고정) ===== -->
+    <nav class="filters" id="filters" aria-label="필터">
+      <div class="wrap filters-inner">
+        <div class="seg" id="f-range" role="group" aria-label="기간">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button type="button" data-days="1" aria-pressed="false">오늘</button>
+          <button type="button" data-days="3" aria-pressed="false">3일</button>
+          <button type="button" data-days="7" aria-pressed="true">7일</button>
+          <button type="button" data-days="30" aria-pressed="false">30일</button>
+        </div>
+        <div class="seg" id="f-imp" role="group" aria-label="중요도">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button type="button" data-imp="high" aria-pressed="false">높음</button>
+          <button type="button" data-imp="mid" aria-pressed="true">보통+</button>
+          <button type="button" data-imp="all" aria-pressed="false">전체</button>
+        </div>
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <label class="visually-hidden" for="f-q">검색</label>
+          <input id="f-q" type="search" placeholder="검색 — hooks, playwright…" autocomplete="off" enterkeyhint="search">
+          <kbd aria-hidden="true">/</kbd>
+        </div>
+        <div class="cat-chips" id="f-cat" role="group" aria-label="분류 필터"></div>
+      </div>
+    </nav>
+
+    <div class="wrap content">
+      <p class="visually-hidden" id="live" aria-live="polite"></p>
+
+      <section class="panel digest-panel" id="digest" aria-label="AI 요약" data-reveal hidden></section>
+
+      <div class="bento">
+        <section class="panel span-2" aria-labelledby="h-high" data-reveal>
+          <header class="panel-head"><h2 id="h-high">핵심 변경</h2><span class="panel-sub" id="high-sub"></span></header>
+          <ul class="items" id="high-list"></ul>
+          <div id="high-more"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="h-stars" data-reveal>
+          <header class="panel-head"><h2 id="h-stars">스타 추이</h2><span class="panel-sub" id="stars-sub"></span></header>
+          <div id="movers"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="h-official" data-reveal>
+          <header class="panel-head"><h2 id="h-official">공식 소식 · 커뮤니티</h2><span class="panel-sub" id="official-sub"></span></header>
+          <ul class="items" id="official-list"></ul>
+        </section>
+
+        <section class="panel span-2" aria-labelledby="h-cc" data-reveal>
+          <header class="panel-head"><h2 id="h-cc">Claude Code 변경 타임라인</h2><span class="panel-sub" id="cc-sub"></span></header>
+          <div class="timeline" id="cc-timeline"></div>
+        </section>
+
+        <section class="panel span-2" aria-labelledby="h-repos" data-reveal>
+          <header class="panel-head"><h2 id="h-repos">핵심 watchlist</h2><span class="panel-sub" id="repos-sub"></span></header>
+          <div id="repos"></div>
+        </section>
+
+        <section class="panel span-2" aria-labelledby="h-discover" data-reveal>
+          <header class="panel-head"><h2 id="h-discover">급등 · 신규 발견</h2><span class="panel-sub" id="discover-sub"></span></header>
+          <ul class="items" id="discover-list"></ul>
+          <p class="footnote">스타 '참고 경고'는 바이럴로 생긴 급성장과 구분하기 어렵습니다. 판단 근거로만 참고하세요. watchlist 추가는 자동으로 하지 않습니다.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>GitHub Actions가 매일 06:17 KST에 AI 없이 수집 · 분류·중요도는 규칙 기반(<code>classified_by: rule</code>) · 요약은 digest(<code>classified_by: ai</code>)</p>
+      <p>모든 외부 텍스트는 저장 전 프롬프트 인젝션 검사를 거치며, 이 페이지는 외부 스크립트를 불러오지 않습니다.</p>
+      <p><a href="https://github.com/Glory-m/trend_check" rel="noopener noreferrer">소스 · 데이터 (GitHub)</a></p>
+    </div>
+  </footer>
+
+  <script src="site/app.js" defer></script>
+</body>
+</html>
