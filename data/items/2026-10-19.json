@@ -16,7 +16,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · CLAUDE_CODE_DISABLE_FILE_MENTIONS — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:fb1e4bc002",
@@ -33,7 +34,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b08518e314",
@@ -50,7 +52,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b624f7d969",
@@ -67,7 +70,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · $.prompt.media — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:2b6f32a416",
@@ -84,7 +88,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · $.session.identity() — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6b743e1519",
@@ -101,7 +106,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · size — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:26ce5b812e",
@@ -118,7 +124,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted-runner')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · --shutdown-drain-sec — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:639bb3edab",
@@ -135,7 +142,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새 기능 · skill.prompt — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:3f163f2f8e",
@@ -152,7 +160,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · /effort — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f401cf0b5d",
@@ -169,7 +178,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 키워드 'background session*'",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · --safe-mode — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:66859c3976",
@@ -186,7 +196,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'plan mode'",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5c2c4ff055",
@@ -203,7 +214,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "새 기능 · --disallow-tools — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:2461120b9e",
@@ -220,7 +232,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · CLAUDE_CODE_ATTRIBUTION_HEADER=0 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:199903b6e5",
@@ -237,7 +250,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · CLAUDE_CODE_ATTRIBUTION_HEADER=0 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:bcfc833478",
@@ -254,7 +268,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · queue — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d64a885d3e",
@@ -271,7 +286,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "새 기능 · /plugin — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:2d7b211606",
@@ -288,7 +304,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'workflow'",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · /usage — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:4410c16494",
@@ -305,7 +322,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · apiKeyHelper — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c8b7e62b66",
@@ -322,7 +340,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · ANTHROPIC_BASE_URL — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:afc7b41ba7",
@@ -339,7 +358,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('a mod')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --max-turns — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:37b332929c",
@@ -356,7 +376,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:391aeb947e",
@@ -373,7 +394,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('a mod')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · .claude — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6a16c5689b",
@@ -390,7 +412,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mods')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:7e32b4e1a1",
@@ -407,7 +430,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · UserPromptSubmit — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c967e3a509",
@@ -424,7 +448,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:97122cd547",
@@ -441,7 +466,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:55e46d8662",
@@ -458,7 +484,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · --plugin-dir — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:7b38a58450",
@@ -475,7 +502,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --debug — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:bc5dedfbff",
@@ -492,7 +520,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d734f8c0ea",
@@ -509,7 +538,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · -c — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c2703c93d0",
@@ -526,7 +556,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:04eaa9e20c",
@@ -543,7 +574,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · claude mcp list — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b64e1b94ad",
@@ -560,7 +592,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /btw — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b259602924",
@@ -577,7 +610,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · bwrap: Can't mkdir /mnt/c/Program Files/ClaudeCode — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:9f8881bcb6",
@@ -594,7 +628,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude remote-control — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d0fb912276",
@@ -611,7 +646,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · prompt.submit — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e4f0d6f485",
@@ -628,7 +664,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0e63ffb087",
@@ -645,7 +682,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ed72dc8e38",
@@ -662,7 +700,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · .config.json — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d8f66dfd76",
@@ -679,7 +718,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /sandbox — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:64064ca078",
@@ -696,7 +736,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c066506f87",
@@ -713,7 +754,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · constructor — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e6f906678f",
@@ -730,7 +772,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · constructor — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:cb9d7c2b03",
@@ -747,7 +790,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · Claude Code — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b03108e6c5",
@@ -764,7 +808,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'connector'"
+   "category_reason": "키워드 'connector'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:512584734d",
@@ -781,7 +826,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:450bac85be",
@@ -798,7 +844,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6a1ae8867b",
@@ -815,7 +862,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'extension'"
+   "category_reason": "키워드 'extension'",
+   "headline_ko": "버그 수정 · Claude in Chrome — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:1d23f2ef95",
@@ -832,7 +880,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a667131ab4",
@@ -849,7 +898,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · .catch — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:84c6d1d4db",
@@ -866,7 +916,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · availableModelsMatch: exact — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:67f85001b8",
@@ -883,7 +934,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · ANTHROPIC_BASE_URL — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:547cedb1bc",
@@ -900,7 +952,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · ANTHROPIC_BASE_URL — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:81888f99f4",
@@ -917,7 +970,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · tool.describe — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5009c6e41a",
@@ -934,7 +988,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · enabledMcpjsonServers — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:70dd70946a",
@@ -951,7 +1006,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · claude plugin test — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ff2e73cb31",
@@ -968,7 +1024,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:578d86d933",
@@ -985,7 +1042,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c9fe2fc293",
@@ -1002,7 +1060,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · next() — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:22c0418f82",
@@ -1019,7 +1078,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vs code) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /usage — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:1e2585ac81",
@@ -1036,7 +1096,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f36c0b6a4d",
@@ -1053,7 +1114,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:9aef967403",
@@ -1070,7 +1132,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:263aabea99",
@@ -1087,7 +1150,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:eca8c0900e",
@@ -1104,7 +1168,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · mcp__<server> — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:43913494b9",
@@ -1121,7 +1186,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c720dbb689",
@@ -1138,7 +1204,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · plugin_loaded — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:08c863c330",
@@ -1155,7 +1222,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vs code) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:2a20029f4e",
@@ -1172,7 +1240,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:20a9c0ca62",
@@ -1189,7 +1258,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · ANTHROPIC_BASE_URL — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:bbb613e9b6",
@@ -1206,7 +1276,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:8f244d95d9",
@@ -1223,7 +1294,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mods')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:38fa6f0393",
@@ -1240,7 +1312,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f20fbfc43f",
@@ -1257,7 +1330,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:85320cb4d0",
@@ -1274,7 +1348,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mods')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · __proto__ — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:95f0f8a6ae",
@@ -1291,7 +1366,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude -p — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:de4f7de551",
@@ -1308,7 +1384,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:1afca87212",
@@ -1325,7 +1402,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · forceLoginOrgUUID — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b87299a483",
@@ -1342,7 +1420,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · MCP — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5d0bb4ffea",
@@ -1359,7 +1438,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · MCP — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:fe0527e12a",
@@ -1376,7 +1456,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · claude mcp list — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:8e2ee0d7fd",
@@ -1393,7 +1474,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · /reload-plugins — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b4e473c7bc",
@@ -1410,7 +1492,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:acb8524058",
@@ -1427,7 +1510,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:7759384d5f",
@@ -1444,7 +1528,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --bare — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:205a9a2924",
@@ -1461,7 +1546,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:dcd04a4497",
@@ -1478,7 +1564,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mods')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · $.http.fetch — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6770e9a3cc",
@@ -1495,7 +1582,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /config — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a83f01e70e",
@@ -1512,7 +1600,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ee9d9ab51e",
@@ -1529,7 +1618,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0a05a86b76",
@@ -1546,7 +1636,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f0dd4fd642",
@@ -1563,7 +1654,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0b6bdb0f03",
@@ -1580,7 +1672,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --input-format stream-json — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f8a94993fe",
@@ -1597,7 +1690,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · --exec-path — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:695a72fe65",
@@ -1614,7 +1708,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · claude plugin eval — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:605c78f4e7",
@@ -1631,7 +1726,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:3fc2d2feab",
@@ -1648,7 +1744,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · forceLoginOrgUUID — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:cc76daedc2",
@@ -1665,7 +1762,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · --bare — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c1d1f4e235",
@@ -1682,7 +1780,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /clear — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:16607658aa",
@@ -1699,7 +1798,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · , sent with the Agent SDK's  — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:3d235bfc6f",
@@ -1716,7 +1816,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --safe-mode — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0b8a0daf99",
@@ -1733,7 +1834,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0a2775620a",
@@ -1750,7 +1852,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:8d2ae51972",
@@ -1767,7 +1870,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · MCP — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:9d1fc6c0e5",
@@ -1784,7 +1888,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /btw — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5b0906dc05",
@@ -1801,7 +1906,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:3501baca1c",
@@ -1818,7 +1924,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · denyRead — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:742558d987",
@@ -1835,7 +1942,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · allowRead — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b0ff394e65",
@@ -1852,7 +1960,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:391a37ffdb",
@@ -1869,7 +1978,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · claude mcp add <name> -- <command> --background — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:94280d0efc",
@@ -1886,7 +1996,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --bg — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:432612a9c8",
@@ -1903,7 +2014,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6a8b87ad85",
@@ -1920,7 +2032,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --worktree — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:77cebc1cf0",
@@ -1937,7 +2050,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted-runner')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude self-hosted-runner — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:06100cde10",
@@ -1954,7 +2068,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · ultracode — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a894f9be5a",
@@ -1971,7 +2086,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · headers — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6932bb745c",
@@ -1988,7 +2104,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · <head> — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ae6dd19995",
@@ -2005,7 +2122,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · $.ui.open — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f050aa0f05",
@@ -2022,7 +2140,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · agent.spawn — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:1e5756299a",
@@ -2039,7 +2158,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · claude plugin validate — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:bc321d4a41",
@@ -2056,7 +2176,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · dimColor — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:8ed393d282",
@@ -2073,7 +2194,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · PreToolUse — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b209c7d8f5",
@@ -2090,7 +2212,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:16cafe80f2",
@@ -2107,7 +2230,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · SendMessage — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:9d6e84eca8",
@@ -2124,7 +2248,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:062300cb82",
@@ -2141,7 +2266,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:971671d37a",
@@ -2158,7 +2284,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:c4c1f1b25b",
@@ -2175,7 +2302,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "버그 수정 · CLAUDE_CODE_RESUME_INTERRUPTED_TURN — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ac446331e7",
@@ -2192,7 +2320,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:b3dc3b7378",
@@ -2209,7 +2338,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:f432171e71",
@@ -2226,7 +2356,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d303394c4d",
@@ -2243,7 +2374,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · $.env.set — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:8dd6eaeed9",
@@ -2260,7 +2392,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Windows) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:4d12a3ce6f",
@@ -2277,7 +2410,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Windows) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:03092103e1",
@@ -2294,7 +2428,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Windows) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:4a29b12b80",
@@ -2311,7 +2446,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(자체 호스팅 러너) · setup — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a0043223a5",
@@ -2328,7 +2464,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(자체 호스팅 러너) · --retire-at — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a1209aace9",
@@ -2345,7 +2482,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 · claude auth login — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:4b16cb13a1",
@@ -2362,7 +2500,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "개선 · MCP — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:fe7409e104",
@@ -2379,7 +2518,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'memory'"
+   "category_reason": "키워드 'memory'",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:cd41913312",
@@ -2396,7 +2536,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:7a6bea4710",
@@ -2413,7 +2554,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:85e26dbae1",
@@ -2430,7 +2572,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('a mod')",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:174ef0f117",
@@ -2447,7 +2590,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "개선 · anthropic-skills: — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5db39f420b",
@@ -2464,7 +2608,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "개선 · /reload-skills — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:7df5cd9b2b",
@@ -2481,7 +2626,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0db9a066bc",
@@ -2498,7 +2644,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:93d1adf2b2",
@@ -2515,7 +2662,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(Improved artifact watching) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0f3aeae64d",
@@ -2532,7 +2680,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e77d45483d",
@@ -2549,7 +2698,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'workflow'",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "동작 변경 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d4d00014ee",
@@ -2566,7 +2716,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "동작 변경 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ad69586d21",
@@ -2583,7 +2734,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'no longer'",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · MCP — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:3845281110",
@@ -2600,7 +2752,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · MCP — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:76af8fad44",
@@ -2617,7 +2770,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'no longer'",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "동작 변경 ·  or  — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:2300196720",
@@ -2634,7 +2788,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "동작 변경 · ui.render — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:dfd6a2c8ea",
@@ -2651,7 +2806,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5d8eb5813f",
@@ -2668,7 +2824,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "동작 변경 · claude plugin test — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e3bc32c42b",
@@ -2685,7 +2842,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'no longer'",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · mcp__a — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:06c9052f41",
@@ -2702,7 +2860,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · tools: — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0c3ceb5ec6",
@@ -2719,7 +2878,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · Claude in Chrome — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:4ac76969fb",
@@ -2736,7 +2896,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 키워드 'cloud session*'",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · MCP_PROTOCOL_NEGOTIATION=legacy — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5958357a7f",
@@ -2753,7 +2914,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · api.anthropic.com — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a0d2891ce5",
@@ -2770,7 +2932,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · PermissionRequest — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e94b4ed980",
@@ -2787,7 +2950,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'no longer'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:80166612ca",
@@ -2804,7 +2968,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 키워드 'worktree*'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · -w — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:d3e4739b85",
@@ -2821,7 +2986,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · /btw — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:295e6eb2ec",
@@ -2838,7 +3004,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'hooks'",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "동작 변경 · UserPromptSubmit — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:cad2f19574",
@@ -2855,7 +3022,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'userpromptsubmit'",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "동작 변경 · UserPromptSubmit — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a27e37cf04",
@@ -2872,7 +3040,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · turn.start — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:3e9c3b0ee0",
@@ -2889,7 +3058,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · /ultrareview — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0e9c79047f",
@@ -2906,7 +3076,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'no longer'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6bdea71adf",
@@ -2923,7 +3094,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a666c76769",
@@ -2940,7 +3112,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:1ddab4bbbc",
@@ -2957,7 +3130,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:a3eaf3da9f",
@@ -2974,7 +3148,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 관련 변경",
    "classified_by": "rule",
-   "category_reason": "키워드 'extension'"
+   "category_reason": "키워드 'extension'",
+   "headline_ko": "개선(VS Code) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:22b014746a",
@@ -2991,7 +3166,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "키워드 'slash command'"
+   "category_reason": "키워드 'slash command'",
+   "headline_ko": "개선(VS Code) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e821322208",
@@ -3008,7 +3184,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:5006b2fed1",
@@ -3025,7 +3202,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:0cbd903387",
@@ -3042,7 +3220,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted environment*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:ff4127f2e2",
@@ -3059,7 +3238,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted environment*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:e09f80324a",
@@ -3076,7 +3256,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted environment*')",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(클라우드 세션) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:40f940c874",
@@ -3093,7 +3274,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted environment*')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경(클라우드 세션) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:15a048db80",
@@ -3110,7 +3292,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Remote Control) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:2098ccf896",
@@ -3127,7 +3310,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(Claude Tag) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:9334c522d0",
@@ -3144,7 +3328,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:255c39ebe8",
@@ -3161,7 +3346,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:466b7b0bd4",
@@ -3178,7 +3364,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:4bc0dafbe8",
@@ -3195,7 +3382,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경(Claude Tag) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:6f2bea481d",
@@ -3212,7 +3400,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경(Claude Tag) — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.299:7f8da0e577",
@@ -3229,7 +3418,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Code Review) · Claude Code — Claude Code 2.1.299"
   },
   {
    "id": "cc:2.1.300:e9eeb7bf37",
@@ -3246,7 +3436,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · virtualText — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:ab4d3615b3",
@@ -3263,7 +3454,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · cache_creation_5m_tokens — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:7e0f3ca5c1",
@@ -3280,7 +3472,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mods')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · $.ui.view({ agentId }) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:53d767026d",
@@ -3297,7 +3490,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · dir — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:ce9c647763",
@@ -3314,7 +3508,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · /advisor — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:36a8c136a0",
@@ -3331,7 +3526,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · gen_ai.provider.name — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:15c06e6fa7",
@@ -3348,7 +3544,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · prompt — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:8ad776645e",
@@ -3365,7 +3562,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "새 기능 · prompt.change — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:14eae90b69",
@@ -3382,7 +3580,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:105d7bce00",
@@ -3399,7 +3598,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /autocompact — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:a170e9ee28",
@@ -3416,7 +3616,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:873057b531",
@@ -3433,7 +3634,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude --help — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:c2c503b907",
@@ -3450,7 +3652,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude agents — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:6c34cf8577",
@@ -3467,7 +3670,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:a650b0dfec",
@@ -3484,7 +3688,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /tasks — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:9e7d29f6cd",
@@ -3501,7 +3706,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:c0a96f785c",
@@ -3518,7 +3724,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:af6677de0b",
@@ -3535,7 +3742,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · ENABLE_TOOL_SEARCH=auto — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:f85ce7b19b",
@@ -3552,7 +3760,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · forceLoginOrgUUID — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:83954418e8",
@@ -3569,7 +3778,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:dd2f61911a",
@@ -3586,7 +3796,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · Artifact(\"(unprintable path)\") — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:108228f906",
@@ -3603,7 +3814,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:43dee0736a",
@@ -3620,7 +3832,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /branch — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:71e913891c",
@@ -3637,7 +3850,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · WorktreeCreate — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:85fe17d2c0",
@@ -3654,7 +3868,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · tool_result — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:c673acaf7d",
@@ -3671,7 +3886,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · prompt.submit — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:e17428750d",
@@ -3688,7 +3904,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:4ade942a33",
@@ -3705,7 +3922,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · model — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:df43a888f7",
@@ -3722,7 +3940,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --worktree — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:163898e892",
@@ -3739,7 +3958,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --worktree — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:19649b9a55",
@@ -3756,7 +3976,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:affbd896d3",
@@ -3773,7 +3994,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude remote-control — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:1256543a50",
@@ -3790,7 +4012,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · --worktree — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:6c0d3fabcf",
@@ -3807,7 +4030,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vs code) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'extension'"
+   "category_reason": "키워드 'extension'",
+   "headline_ko": "버그 수정 · Claude Code — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:b8d2da8679",
@@ -3824,7 +4048,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · prompt.edit — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:eb82c7269a",
@@ -3841,7 +4066,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · MCP — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:34fb89011b",
@@ -3858,7 +4084,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · Agent SDK — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:8a36ced399",
@@ -3875,7 +4102,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · MCP — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:5ca326306b",
@@ -3892,7 +4120,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:fe519637e1",
@@ -3909,7 +4138,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · Agent SDK — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:767ef662b6",
@@ -3926,7 +4156,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:350922bd26",
@@ -3943,7 +4174,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:c9b8f33f5b",
@@ -3960,7 +4192,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude daemon stop --any — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:f48b31612f",
@@ -3977,7 +4210,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude daemon stop — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:f83b6a1681",
@@ -3994,7 +4228,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:b443b94aa7",
@@ -4011,7 +4246,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:999b18a5dd",
@@ -4028,7 +4264,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:694a8ba36b",
@@ -4045,7 +4282,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:784f94b3de",
@@ -4062,7 +4300,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:40a047bae3",
@@ -4079,7 +4318,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(자체 호스팅 러너) · /healthz — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:6eee73dc64",
@@ -4096,7 +4336,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:3534693759",
@@ -4113,7 +4354,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "개선 · plugin-authoring — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:f278e57170",
@@ -4130,7 +4372,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:763255458f",
@@ -4147,7 +4390,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(Improved artifact updates) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:f5163dd7c5",
@@ -4164,7 +4408,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:6f4fcf6960",
@@ -4181,7 +4426,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:9ee98535b5",
@@ -4198,7 +4444,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · forceLoginGatewayUrl — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:bd3e8421db",
@@ -4215,7 +4462,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · claude gateway — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:df7b75e5d8",
@@ -4232,7 +4480,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · CLAUDE_CODE_GZIP_REQUEST_BODIES=0 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:d58dd51659",
@@ -4249,7 +4498,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "동작 변경 · claude-api — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:090b8de897",
@@ -4266,7 +4516,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'workflow'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:5c3a8082fd",
@@ -4283,7 +4534,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:0d7643465a",
@@ -4300,7 +4552,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · /sandbox — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:9be33a31be",
@@ -4317,7 +4570,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('cowork')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · PermissionRequest — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:be701a1e66",
@@ -4334,7 +4588,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'hooks'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경(Changed hooks) · updatedInput — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:0fe1ae2fd3",
@@ -4351,7 +4606,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'removed'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Removed)"
+   "category_reason": "동작 변경(Removed)",
+   "headline_ko": "제거 · --sandbox — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:15542b6c84",
@@ -4368,7 +4624,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 관련 변경",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(VS Code) · claudeCode.attachSelection — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:aeec01d6c8",
@@ -4385,7 +4642,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:fda39d0194",
@@ -4402,7 +4660,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:b10a649164",
@@ -4419,7 +4678,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:c11fa4e4f0",
@@ -4436,7 +4696,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) · /c:/... — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:faffe3259a",
@@ -4453,7 +4714,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:542a3037e4",
@@ -4470,7 +4732,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:a0fe8659fb",
@@ -4487,7 +4750,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:b37ca93403",
@@ -4504,7 +4768,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:df669fef70",
@@ -4521,7 +4786,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:6297d6c28c",
@@ -4538,7 +4804,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) · /bin/ps — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:5a680ca562",
@@ -4555,7 +4822,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 관련 변경",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "변경(VS Code) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:cf9a6ee07c",
@@ -4572,7 +4840,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "키워드 'connector'"
+   "category_reason": "키워드 'connector'",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:4a95f658cd",
@@ -4589,7 +4858,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:77d148176e",
@@ -4606,7 +4876,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Remote Control) · Claude Code — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:dc11dd24f3",
@@ -4623,7 +4894,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(Claude Tag) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:4c04a503f5",
@@ -4640,7 +4912,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'connector'"
+   "category_reason": "키워드 'connector'",
+   "headline_ko": "새 기능(Claude Tag) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:4222a610ef",
@@ -4657,7 +4930,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(Claude Tag) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:5d10454280",
@@ -4674,7 +4948,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:3a57236671",
@@ -4691,7 +4966,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경(Claude Tag) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:d8d2f22bba",
@@ -4708,7 +4984,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Code Review) · @claude review — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.300:62487e2441",
@@ -4725,7 +5002,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Code Review) — Claude Code 2.1.300"
   },
   {
    "id": "cc:2.1.301:4f4cb210a4",
@@ -4742,7 +5020,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:635aeace66",
@@ -4759,7 +5038,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새 기능 · claude-api — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:89be213c14",
@@ -4776,7 +5056,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:d5bc6cd703",
@@ -4793,7 +5074,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · rows — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:becd9e12e9",
@@ -4810,7 +5092,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · classifier_verdict — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:3cfa118fe8",
@@ -4827,7 +5110,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · classifier_category — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:76a42aa41b",
@@ -4844,7 +5128,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · WorktreeCreate — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:a7450a3e51",
@@ -4861,7 +5146,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · fable — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:1ad7326acc",
@@ -4878,7 +5164,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:a1e0e420db",
@@ -4895,7 +5182,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:bfc831613c",
@@ -4912,7 +5200,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:f6b2d6d78b",
@@ -4929,7 +5218,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:04807b0944",
@@ -4946,7 +5236,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:d95a07157a",
@@ -4963,7 +5254,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:d51843fcf6",
@@ -4980,7 +5272,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · >0q — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:6b7097a9ee",
@@ -4997,7 +5290,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · GOK — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:510b1e5383",
@@ -5014,7 +5308,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '클라우드 제공자 경유 사용' ('bedrock')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · application-inference-profile — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:98a22d6eff",
@@ -5031,7 +5326,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · claude auth status — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:632746aa15",
@@ -5048,7 +5344,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:f0755cdb10",
@@ -5065,7 +5362,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:92eb1efd73",
@@ -5082,7 +5380,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:c3efe2f410",
@@ -5099,7 +5398,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:b29dd5479a",
@@ -5116,7 +5416,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:7747aefc40",
@@ -5133,7 +5434,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:b847853a34",
@@ -5150,7 +5452,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:e588c40c37",
@@ -5167,7 +5470,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:d825ae5146",
@@ -5184,7 +5488,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "버그 수정 · /rewind — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:056b82c165",
@@ -5201,7 +5506,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:6f9854cb97",
@@ -5218,7 +5524,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:fd03d056ef",
@@ -5235,7 +5542,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "버그 수정 · ask — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:921fec36f2",
@@ -5252,7 +5560,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /diff — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:404ae15c3f",
@@ -5269,7 +5578,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · cd — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:02c6e89e2d",
@@ -5286,7 +5596,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:b6e4273f8a",
@@ -5303,7 +5614,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · $.model.fork — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:d7801da05f",
@@ -5320,7 +5632,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Fullscreen mode) · /compact — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:eef4c728f1",
@@ -5337,7 +5650,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('managed settings')",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정(자체 호스팅 러너) · deniedMcpServers — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:5be03a8245",
@@ -5354,7 +5668,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(자체 호스팅 러너) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:a1f8e20817",
@@ -5371,7 +5686,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(자체 호스팅 러너) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:bc453031fd",
@@ -5388,7 +5704,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Windows) · [killed] — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:55535b8f62",
@@ -5405,7 +5722,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'new model'"
+   "category_reason": "키워드 'new model'",
+   "headline_ko": "개선 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:0c01bbd644",
@@ -5422,7 +5740,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "키워드 'subagent'"
+   "category_reason": "키워드 'subagent'",
+   "headline_ko": "개선 — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:ea74a721a8",
@@ -5439,7 +5758,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(Improved artifacts) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:3f9f4f8e80",
@@ -5456,7 +5776,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mods')",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(Improved mods) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:947eba741b",
@@ -5473,7 +5794,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod hook*')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · .catch — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:fcd76a6567",
@@ -5490,7 +5812,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '플러그인 mod 제작 API' ('mod's')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · $.env.set — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:07f26cdda1",
@@ -5507,7 +5830,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 관련 변경",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(VS Code) · $$ — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:31ed5caea0",
@@ -5524,7 +5848,8 @@
    "importance": "높음",
    "importance_reason": "내 요금제(Max) 관련",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(VS Code) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:20feac6736",
@@ -5541,7 +5866,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:f4b8fc3f58",
@@ -5558,7 +5884,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:ba58f2d53b",
@@ -5575,7 +5902,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.301:42e048c7bd",
@@ -5592,7 +5920,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.301"
   },
   {
    "id": "cc:2.1.302:02ea33ff5d",
@@ -5609,7 +5938,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · CLAUDE_CODE_AUTO_MODE_MODEL — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:b83bda6092",
@@ -5626,7 +5956,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · Idle compaction — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:965085ba0d",
@@ -5643,7 +5974,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능 · /design-sync — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:8e5ccf47d8",
@@ -5660,7 +5992,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:d10ab138eb",
@@ -5677,7 +6010,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '클라우드 제공자 경유 사용' ('bedrock')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ff4126bf22",
@@ -5694,7 +6028,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:456e8326ca",
@@ -5711,7 +6046,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /autocompact — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:de428fd09e",
@@ -5728,7 +6064,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:69a4ee2a61",
@@ -5745,7 +6082,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · claude plugin — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:5b02625732",
@@ -5762,7 +6100,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:2da45ad5c1",
@@ -5779,7 +6118,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(powershell) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · bin/ — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:83a3e25e98",
@@ -5796,7 +6136,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · /mcp — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:39eaf7e8cc",
@@ -5813,7 +6154,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:6922e67323",
@@ -5830,7 +6172,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · classifier_category — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:258b9d3043",
@@ -5847,7 +6190,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:4b2f3c2ff9",
@@ -5864,7 +6208,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · claude remote-control --help — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:46f3b92b50",
@@ -5881,7 +6226,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · /design consent — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:da1ab511c1",
@@ -5898,7 +6244,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정 · resultType — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:5baee017e6",
@@ -5915,7 +6262,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ff74a58e38",
@@ -5932,7 +6280,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:54ffb9a337",
@@ -5949,7 +6298,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정 · claude plugin details <name>@builtin — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:4b972b1eb9",
@@ -5966,7 +6316,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:8efd50daf8",
@@ -5983,7 +6334,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 · .git — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:79fdfd9e78",
@@ -6000,7 +6352,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:18a817392f",
@@ -6017,7 +6370,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(자체 호스팅 러너) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:0a4a18482c",
@@ -6034,7 +6388,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "버그 수정(Windows) · --plugin-dir — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:9fb97b2484",
@@ -6051,7 +6406,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(windows) 관련 변경",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "개선 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:cdc0134520",
@@ -6068,7 +6424,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:e0fab68e52",
@@ -6085,7 +6442,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:a8fd39b941",
@@ -6102,7 +6460,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 키워드 'agent sdk'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · claude -p — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:559940d851",
@@ -6119,7 +6478,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 키워드 'subagent*'",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "동작 변경 · subagent_type: \"fork\" — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:5957228a0b",
@@ -6136,7 +6496,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 키워드 'subagent*'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · claude -p — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:50004f1117",
@@ -6153,7 +6514,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · ← for agents — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:cd39ef9ec7",
@@ -6170,7 +6532,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · Claude in Chrome — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:b5596e3a70",
@@ -6187,7 +6550,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'hooks'",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:0a835107cf",
@@ -6204,7 +6568,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경 · /feedback — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:3370e0eab5",
@@ -6221,7 +6586,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(VS Code) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:d9ee0613d5",
@@ -6238,7 +6604,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정(VS Code) · MCP — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:efdc59a42c",
@@ -6255,7 +6622,8 @@
    "importance": "보통",
    "importance_reason": "내 환경(vscode) 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'extension'"
+   "category_reason": "키워드 'extension'",
+   "headline_ko": "버그 수정(VS Code) · @browser — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:d8e939ca86",
@@ -6272,7 +6640,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "새 기능(Added)"
+   "category_reason": "새 기능(Added)",
+   "headline_ko": "새 기능(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ed769a9c76",
@@ -6289,7 +6658,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 'Cowork·자체 호스팅 러너' ('self-hosted runner*')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) · Claude Code — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ebdd31c58a",
@@ -6306,7 +6676,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:053db24c13",
@@ -6323,7 +6694,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:a29a72f115",
@@ -6340,7 +6712,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ed54f60546",
@@ -6357,7 +6730,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:1f0b4eae23",
@@ -6374,7 +6748,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:e3ddba4eca",
@@ -6391,7 +6766,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 소소한 개선",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "개선(클라우드 세션) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:c7134dd1ea",
@@ -6408,7 +6784,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '병렬·자율 에이전트' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Remote Control) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:f4a9884dc4",
@@ -6425,7 +6802,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:5312f52e1a",
@@ -6442,7 +6820,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:83cbcb2a44",
@@ -6459,7 +6838,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ab9a3bf6cd",
@@ -6476,7 +6856,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:a522eb1cd3",
@@ -6493,7 +6874,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "버그 수정(Claude Tag) · MCP — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:1a5ab50376",
@@ -6510,7 +6892,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:55f856a448",
@@ -6527,7 +6910,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('enterprise')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:038230e37a",
@@ -6544,7 +6928,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:a64801b25e",
@@ -6561,7 +6946,8 @@
    "importance": "낮음",
    "importance_reason": "단순 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:38c46f20bc",
@@ -6578,7 +6964,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'settings'"
+   "category_reason": "키워드 'settings'",
+   "headline_ko": "개선(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:dc8c4db2a9",
@@ -6595,7 +6982,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "키워드 'settings'"
+   "category_reason": "키워드 'settings'",
+   "headline_ko": "개선(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:413bffc38e",
@@ -6612,7 +7000,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'settings'"
+   "category_reason": "키워드 'settings'",
+   "headline_ko": "개선(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:ad50358612",
@@ -6629,7 +7018,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "동작 변경(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:c309ba1147",
@@ -6646,7 +7036,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('organization')",
    "classified_by": "rule",
-   "category_reason": "동작 변경(Changed)"
+   "category_reason": "동작 변경(Changed)",
+   "headline_ko": "동작 변경(Claude Tag) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.302:2c38d29230",
@@ -6663,7 +7054,8 @@
    "importance": "보통",
    "importance_reason": "관심 분야 '워크플로·품질' 버그 수정",
    "classified_by": "rule",
-   "category_reason": "버그 수정"
+   "category_reason": "버그 수정",
+   "headline_ko": "버그 수정(Code Review) — Claude Code 2.1.302"
   },
   {
    "id": "cc:2.1.303:47ea2d006b",
@@ -6680,7 +7072,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "변경 — Claude Code 2.1.303"
   },
   {
    "id": "trend:MadsLorentzen/ai-job-search:daily:2026-W43",
@@ -6697,7 +7090,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "GitHub 트렌딩(일간) · MadsLorentzen/ai-job-search · ★2,232"
   },
   {
    "id": "trend:anthropics/claude-plugins-official:daily:2026-W43",
@@ -6714,7 +7108,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "GitHub 트렌딩(일간) · anthropics/claude-plugins-official · ★1,175"
   },
   {
    "id": "trend:anomalyco/opencode:daily:2026-W43",
@@ -6731,7 +7126,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "GitHub 트렌딩(일간) · anomalyco/opencode · ★1,414"
   },
   {
    "id": "trend:cursor/plugins:daily:2026-W43",
@@ -6748,7 +7144,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "GitHub 트렌딩(일간) · cursor/plugins · ★350"
   },
   {
    "id": "trend:ruvnet/ruflo:daily:2026-W43",
@@ -6765,7 +7162,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'workflow'",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "GitHub 트렌딩(일간) · ruvnet/ruflo · ★513"
   },
   {
    "id": "trend:stablyai/orca:daily:2026-W43",
@@ -6782,7 +7180,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "GitHub 트렌딩(일간) · stablyai/orca · ★1,146"
   },
   {
    "id": "trend:android/skills:daily:2026-W43",
@@ -6799,7 +7198,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "GitHub 트렌딩(일간) · android/skills · ★375"
   },
   {
    "id": "trend:anthropics/claude-plugins-official:weekly:2026-W43",
@@ -6816,7 +7216,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "GitHub 트렌딩(주간) · anthropics/claude-plugins-official · ★4,774"
   },
   {
    "id": "trend:mksglu/context-mode:weekly:2026-W43",
@@ -6833,7 +7234,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'hooks'",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "GitHub 트렌딩(주간) · mksglu/context-mode · ★4,138"
   },
   {
    "id": "trend:cathrynlavery/diagram-design:weekly:2026-W43",
@@ -6850,7 +7252,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "GitHub 트렌딩(주간) · cathrynlavery/diagram-design · ★7,901"
   },
   {
    "id": "trend:cursor/plugins:weekly:2026-W43",
@@ -6867,7 +7270,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "GitHub 트렌딩(주간) · cursor/plugins · ★1,717"
   },
   {
    "id": "trend:MadsLorentzen/ai-job-search:weekly:2026-W43",
@@ -6884,7 +7288,8 @@
    "importance": "보통",
    "importance_reason": "GitHub 트렌딩",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "GitHub 트렌딩(주간) · MadsLorentzen/ai-job-search · ★5,742"
   },
   {
    "id": "hn:50122951",
@@ -6901,7 +7306,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'code review'",
    "classified_by": "rule",
-   "category_reason": "키워드 'code review'"
+   "category_reason": "키워드 'code review'",
+   "headline_ko": "Hacker News 화제 · 475점"
   },
   {
    "id": "hn:50145715",
@@ -6918,7 +7324,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'mcp'"
+   "category_reason": "키워드 'mcp'",
+   "headline_ko": "Hacker News 화제 · 81점"
   },
   {
    "id": "hn:50122112",
@@ -6935,7 +7342,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Hacker News 화제 · 297점"
   },
   {
    "id": "hn:50141429",
@@ -6952,7 +7360,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Hacker News 화제 · 159점"
   },
   {
    "id": "hn:50139873",
@@ -6969,7 +7378,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Hacker News 화제 · 110점"
   },
   {
    "id": "hn:50122800",
@@ -6986,7 +7396,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Hacker News 화제 · 1051점"
   },
   {
    "id": "hn:50121939",
@@ -7003,7 +7414,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Hacker News 화제 · 172점"
   },
   {
    "id": "platform-rn:2026-10-15:f6af5ea072",
@@ -7020,7 +7432,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('enterprise')",
    "classified_by": "rule",
-   "category_reason": "키워드 'beta'"
+   "category_reason": "키워드 'beta'",
+   "headline_ko": "Claude 플랫폼 베타 공개 · Compliance API"
   },
   {
    "id": "platform-rn:2026-10-15:8534d46d8a",
@@ -7037,7 +7450,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'no longer'",
    "classified_by": "rule",
-   "category_reason": "키워드 'research preview'"
+   "category_reason": "키워드 'research preview'",
+   "headline_ko": "Claude 플랫폼 정식 제공 · Fast mode"
   },
   {
    "id": "platform-rn:2026-10-15:c1d12411ff",
@@ -7054,7 +7468,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '클라우드 제공자 경유 사용' ('foundry')",
    "classified_by": "rule",
-   "category_reason": "키워드 'now available'"
+   "category_reason": "키워드 'now available'",
+   "headline_ko": "Claude 플랫폼 정식 제공 · Fast mode"
   },
   {
    "id": "platform-rn:2026-10-14:6e382fcf3c",
@@ -7071,7 +7486,8 @@
    "importance": "높음",
    "importance_reason": "새 모델·제품 출시 신호 'launch'",
    "classified_by": "rule",
-   "category_reason": "키워드 'launch'"
+   "category_reason": "키워드 'launch'",
+   "headline_ko": "Claude 플랫폼 출시 · OpenTelemetry"
   },
   {
    "id": "platform-rn:2026-10-14:7a09f61b63",
@@ -7088,7 +7504,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'now available'"
+   "category_reason": "키워드 'now available'",
+   "headline_ko": "Claude 플랫폼 정식 제공 · Claude Managed Agents"
   },
   {
    "id": "platform-rn:2026-10-09:0f9d27ab52",
@@ -7105,7 +7522,8 @@
    "importance": "높음",
    "importance_reason": "관심 분야 '워크플로·품질' 키워드 'workflow'",
    "classified_by": "rule",
-   "category_reason": "키워드 'beta'"
+   "category_reason": "키워드 'beta'",
+   "headline_ko": "Claude 플랫폼 베타 공개 · Claude Managed Agents"
   },
   {
    "id": "platform-rn:2026-10-08:5d2eb2d47b",
@@ -7122,7 +7540,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('enterprise')",
    "classified_by": "rule",
-   "category_reason": "키워드 'beta'"
+   "category_reason": "키워드 'beta'",
+   "headline_ko": "Claude 플랫폼 베타 공개 · Compliance API"
   },
   {
    "id": "platform-rn:2026-10-08:f84a540be9",
@@ -7139,7 +7558,8 @@
    "importance": "낮음",
    "importance_reason": "내가 쓰지 않는 기능·환경 '조직·엔터프라이즈 관리 기능' ('compliance api')",
    "classified_by": "rule",
-   "category_reason": "키워드 'beta'"
+   "category_reason": "키워드 'beta'",
+   "headline_ko": "Claude 플랫폼 베타 공개 · Compliance API"
   },
   {
    "id": "platform-rn:2026-10-07:8d93b4676d",
@@ -7156,7 +7576,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'claude sonnet'"
+   "category_reason": "키워드 'claude sonnet'",
+   "headline_ko": "Claude 플랫폼 요금·크레딧 · Claude Sonnet 5.5"
   },
   {
    "id": "platform-rn:2026-10-07:7b1a3bc24f",
@@ -7173,7 +7594,8 @@
    "importance": "높음",
    "importance_reason": "새 모델·제품 출시 신호 'launched claude'",
    "classified_by": "rule",
-   "category_reason": "키워드 'launch'"
+   "category_reason": "키워드 'launch'",
+   "headline_ko": "새 모델·제품 출시 · Claude Haiku 5.5"
   },
   {
    "id": "platform-rn:2026-10-07:601aae22e4",
@@ -7190,7 +7612,8 @@
    "importance": "높음",
    "importance_reason": "기존 사용법을 바꾸는 변경 신호 'can break'",
    "classified_by": "rule",
-   "category_reason": "키워드 'claude haiku'"
+   "category_reason": "키워드 'claude haiku'",
+   "headline_ko": "Claude 플랫폼 호환성 주의 · Claude Haiku 4.5"
   },
   {
    "id": "platform-rn:2026-10-07:549d1b4127",
@@ -7207,7 +7630,8 @@
    "importance": "보통",
    "importance_reason": "내 스택 'typescript' 관련",
    "classified_by": "rule",
-   "category_reason": "키워드 'beta'"
+   "category_reason": "키워드 'beta'",
+   "headline_ko": "Claude 플랫폼 베타 공개"
   },
   {
    "id": "platform-rn:2026-10-07:506325ea09",
@@ -7224,7 +7648,8 @@
    "importance": "높음",
    "importance_reason": "내 요금제(Max) 관련",
    "classified_by": "rule",
-   "category_reason": "키워드 'api'"
+   "category_reason": "키워드 'api'",
+   "headline_ko": "Claude 플랫폼 요금·크레딧"
   },
   {
    "id": "platform-rn:2026-10-07:14ef27a735",
@@ -7241,7 +7666,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'managed agents'"
+   "category_reason": "키워드 'managed agents'",
+   "headline_ko": "Claude 플랫폼 업데이트 · Claude Managed Agents"
   },
   {
    "id": "platform-rn:2026-10-07:c0fbb9a281",
@@ -7258,7 +7684,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "공식 릴리스 노트"
+   "category_reason": "공식 릴리스 노트",
+   "headline_ko": "Claude 플랫폼 업데이트 · limited"
   },
   {
    "id": "platform-rn:2026-10-07:b963c0c0f3",
@@ -7275,7 +7702,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'managed agents'"
+   "category_reason": "키워드 'managed agents'",
+   "headline_ko": "Claude 플랫폼 업데이트 · Claude Managed Agents"
   },
   {
    "id": "platform-rn:2026-10-06:af5eb8a79b",
@@ -7292,7 +7720,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'api'"
+   "category_reason": "키워드 'api'",
+   "headline_ko": "Claude 플랫폼 업데이트 · Models API"
   },
   {
    "id": "apps-rn:2026-10-07:6dbfbf171e",
@@ -7309,7 +7738,8 @@
    "importance": "높음",
    "importance_reason": "새 모델·제품 출시 신호 'launched claude'",
    "classified_by": "rule",
-   "category_reason": "키워드 'launch'"
+   "category_reason": "키워드 'launch'",
+   "headline_ko": "새 모델·제품 출시 · Claude Haiku 5.5"
   },
   {
    "id": "apps-rn:2026-10-07:0a8d96b874",
@@ -7326,7 +7756,8 @@
    "importance": "높음",
    "importance_reason": "내 요금제(Max) 관련",
    "classified_by": "rule",
-   "category_reason": "키워드 'api'"
+   "category_reason": "키워드 'api'",
+   "headline_ko": "Claude 앱 요금·크레딧"
   },
   {
    "id": "anthropic_news:cyber-verification-program",
@@ -7343,7 +7774,8 @@
    "importance": "보통",
    "importance_reason": "보안 관련 언급 (구체적 이슈 신호 없음)",
    "classified_by": "rule",
-   "category_reason": "키워드 'security'"
+   "category_reason": "키워드 'security'",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:public-benefit-fund",
@@ -7360,7 +7792,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:an-update-on-independent-evaluators",
@@ -7377,7 +7810,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:2026-us-midterms",
@@ -7394,7 +7828,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:singapore-office-opening",
@@ -7411,7 +7846,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:2026-usage-policy-update",
@@ -7428,7 +7864,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:genesis-mission-commitment",
@@ -7445,7 +7882,8 @@
    "importance": "낮음",
    "importance_reason": "개발 주제와 무관한 일반 소식",
    "classified_by": "rule",
-   "category_reason": "해당 분류 키워드 없음"
+   "category_reason": "해당 분류 키워드 없음",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "anthropic_news:anthropic-cyber-mission",
@@ -7462,7 +7900,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "키워드 'introducing'"
+   "category_reason": "키워드 'introducing'",
+   "headline_ko": "Anthropic 뉴스 · 새 글"
   },
   {
    "id": "org-repo:anthropics/oss-scanner",
@@ -7479,7 +7918,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "anthropics 공식 새 레포"
+   "category_reason": "anthropics 공식 새 레포",
+   "headline_ko": "Anthropic 새 공개 저장소 · anthropics/oss-scanner"
   },
   {
    "id": "org-repo:anthropics/snix",
@@ -7496,7 +7936,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "anthropics 공식 새 레포"
+   "category_reason": "anthropics 공식 새 레포",
+   "headline_ko": "Anthropic 새 공개 저장소 · anthropics/snix"
   },
   {
    "id": "cand:yetone/magpie",
@@ -7513,7 +7954,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "새로 뜨는 저장소 · yetone/magpie · ★16,353"
   },
   {
    "id": "cand:Arekejoker/qwen21-nsfw-pose-skill",
@@ -7530,7 +7972,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새로 뜨는 저장소 · Arekejoker/qwen21-nsfw-pose-skill · ★3,104"
   },
   {
    "id": "cand:rehan-remade/universal-modder",
@@ -7547,7 +7990,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새로 뜨는 저장소 · rehan-remade/universal-modder · ★8,372"
   },
   {
    "id": "cand:Gathin23/tv-vibehack",
@@ -7564,7 +8008,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "새로 뜨는 저장소 · Gathin23/tv-vibehack · ★2,592"
   },
   {
    "id": "cand:Louis-CFM/coucou",
@@ -7581,7 +8026,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "새로 뜨는 저장소 · Louis-CFM/coucou · ★5,547"
   },
   {
    "id": "cand:QingYunA/answer-me-with-html",
@@ -7598,7 +8044,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새로 뜨는 저장소 · QingYunA/answer-me-with-html · ★3,730"
   },
   {
    "id": "cand:Jakeschincariol/replica-skill",
@@ -7615,7 +8062,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새로 뜨는 저장소 · Jakeschincariol/replica-skill · ★3,430"
   },
   {
    "id": "cand:nykooi1/vibe-wise",
@@ -7632,7 +8080,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "키워드 'plugin'"
+   "category_reason": "키워드 'plugin'",
+   "headline_ko": "새로 뜨는 저장소 · nykooi1/vibe-wise · ★3,760"
   },
   {
    "id": "cand:edenfunf/reelmimic",
@@ -7649,7 +8098,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "새로 뜨는 저장소 · edenfunf/reelmimic · ★3,638"
   },
   {
    "id": "cand:kaankiziltug/logo-design-skill",
@@ -7666,7 +8116,8 @@
    "importance": "보통",
    "importance_reason": "신규 발견 (별 속도 상위)",
    "classified_by": "rule",
-   "category_reason": "키워드 'skill'"
+   "category_reason": "키워드 'skill'",
+   "headline_ko": "새로 뜨는 저장소 · kaankiziltug/logo-design-skill · ★3,709"
   },
   {
    "id": "rel:modelcontextprotocol/servers:v2.0.0",
@@ -7683,7 +8134,8 @@
    "importance": "보통",
    "importance_reason": "특이 신호 없음 (기본값)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "새 릴리스 · modelcontextprotocol/servers v2.0.0"
   },
   {
    "id": "susp:Folkbench/folkbench:2026-W43",
@@ -7700,7 +8152,8 @@
    "importance": "보통",
    "importance_reason": "스타 패턴 참고 경고 (바이럴과 구분 어려움)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "스타 패턴 참고 경고 · Folkbench/folkbench"
   },
   {
    "id": "susp:YeonwooSung/my-claude-code-mods:2026-W43",
@@ -7717,7 +8170,8 @@
    "importance": "보통",
    "importance_reason": "스타 패턴 참고 경고 (바이럴과 구분 어려움)",
    "classified_by": "rule",
-   "category_reason": "생태계 레포"
+   "category_reason": "생태계 레포",
+   "headline_ko": "스타 패턴 참고 경고 · YeonwooSung/my-claude-code-mods"
   }
  ]
 }

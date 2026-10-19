@@ -5,6 +5,7 @@
       "Bash(python scripts/window.py *)",
       "Bash(python scripts/explore.py *)",
       "Bash(python scripts/context.py *)",
+      "Bash(python scripts/ko.py *)",
       "Bash(python scripts/watch.py list)",
       "Bash(git pull)",
       "Bash(git pull --rebase)",

@@ -7,6 +7,8 @@ AI 판단은 digest(data/digests/)에 따로 저장하고 여기 결과(classifi
 import re
 from datetime import date, timedelta
 
+from . import korean
+
 CATEGORIES = ["보안", "스킬·플러그인·MCP", "신기술", "사용법·워크플로", "기타"]
 # 'Windows: Fixed …', '[VSCode] Added …' 같은 플랫폼 접두어 뒤의 동사
 VERB = re.compile(r"^\s*(?:\[[^\]]{1,30}\]\s*|[A-Za-z][\w .-]{0,30}:\s*)?"
@@ -154,8 +156,8 @@ class Classifier:
         verb = m.group(1) if m else None
         category, why_cat = self.category(item, text, verb)
         level, why = self.importance(item, text, verb, category)
-        return {"category": category, "importance": level,
-                "importance_reason": why, "category_reason": why_cat, "classified_by": "rule"}
+        return {"category": category, "importance": level, "importance_reason": why, "category_reason": why_cat,
+                "headline_ko": korean.headline(item, verb), "classified_by": "rule"}
 
 
 def reclassify_recent(ctx):

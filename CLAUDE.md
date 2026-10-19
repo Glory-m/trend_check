@@ -68,9 +68,16 @@
 ## 7. digest 저장 규칙
 - `/brief`·`/weekly` 결과는 사용자 확인 후 `data/digests/YYYY-MM-DD.md`(KST 날짜)로 저장한다. 같은 날 여러 번이면 덮어쓰지 말고 아래에 이어 쓴다.
 - 파일 맨 위 frontmatter: `classified_by: ai`, `kind: brief|weekly`, `window_kst`, `generated_at`(UTC), `model`.
-- 커밋·push는 사용자 확인 후에만. 커밋 대상은 `data/digests/`와 `state/last_seen.json`뿐이다.
+- `/brief`는 매번 `scripts/ko.py`로 핵심 항목의 한국어 번역을 `data/ko/`에 저장한다(검증 통과분만, `classified_by: ai`).
+  수집기의 `headline_ko`는 규칙 기반 머리말이고, 자연스러운 번역은 `data/ko/`다 — 둘을 섞지 않는다.
+- 커밋·push는 사용자 확인 후에만. 커밋 대상은 `data/digests/`, `data/ko/`, `state/last_seen.json`뿐이다.
 
-## 8. 개발 메모
+## 8. 로컬 웹 비서
+- `python scripts/serve.py` → http://127.0.0.1:8765 . 사이트 + 오른쪽 아래 "비서" 채팅(로컬에서만, GitHub Pages에는 안 보임).
+- 채팅은 `claude -p --permission-mode dontAsk`로 실행된다. 허용 도구는 serve.py의 `ALLOWED_TOOLS`뿐(조회 스크립트, 번역·digest 저장).
+  커밋·push·설치·외부 접속은 채팅에서 하지 않는다 — 필요하면 터미널 명령만 안내한다.
+
+## 9. 개발 메모
 - 테스트: `python -m unittest discover -s tests` (pre-commit 훅이 테스트 + `scripts/guard.py` 비밀·숨김문자 검사를 실행)
 - 수집기 수동 실행(개발용): `python -m collector --data-dir <임시 폴더>` — 로컬은 토큰 없이 돌면 API 한도가 낮다. 실제 데이터는 Actions가 만든다.
 - 규칙 조정: 분류 키워드는 `profile.yml`(관심·환경·안 쓰는 것)과 `config/rules.yml`. 판정 근거는 각 항목의 `importance_reason`.
