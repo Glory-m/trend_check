@@ -1,3 +1,5 @@
 #!/bin/sh
-# 로컬 커밋 전 안전 검사 (git config core.hooksPath .githooks 로 활성화)
+# 로컬 커밋 전 검사 (git config core.hooksPath .githooks 로 활성화)
+# 1) 테스트 실패 시 커밋 중단  2) 비밀·숨김문자·금지파일·개인 키워드 검사
+python -m unittest discover -s tests -q || { echo "pre-commit: 테스트 실패 — 커밋 중단" >&2; exit 1; }
 exec python scripts/guard.py --staged
