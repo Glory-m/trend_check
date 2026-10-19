@@ -1,0 +1,25 @@
+# 비밀·로컬 전용 — 절대 커밋 금지
+.env
+.env.*
+*.local.*
+.claude/settings.local.json
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# OS·에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 로컬 실험용
+/tmp/
+/scratch/

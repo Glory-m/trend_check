@@ -1,0 +1,4 @@
+# 모든 텍스트 파일은 LF로 저장 (Windows ↔ Actions 간 불필요한 diff 방지)
+* text=auto eol=lf
+*.png binary
+*.jpg binary

@@ -1,0 +1,51 @@
+# trend-watch 개인 프로필 — /profile 스킬로 갱신
+# 추천·중요도 판정의 기준. 사실만 기록하고, 바뀌면 updated_at도 갱신한다.
+updated_at: 2026-10-19
+
+stack:
+  primary:
+    - name: Java / Spring Boot
+      notes: Gradle, JPA, Flyway, actuator
+    - name: TypeScript 웹
+      notes: React / Next.js 프론트엔드, Node
+  secondary: []
+
+builds:            # 만드는 것의 종류
+  - 웹서비스·SaaS
+  - 개인 자동화·도구
+
+skill_level: 중급   # 매일 사용, CLAUDE.md·스킬·MCP 일부 경험, hooks·subagent는 아직 익숙하지 않음
+
+goals:             # 3~6개월
+  - 실제 서비스 출시
+  - 안정적인 개발 환경 (테스트·리뷰·배포 최소 워크플로)
+  - 생산성 극대화
+  - 실력 향상·학습
+
+installed:         # 2026-10-19 ~/.claude 설정 파일 기준으로 확인
+  skills:
+    - find-skills
+    - ui-ux-pro-max
+  plugins: []      # 마켓플레이스 claude-plugins-official 등록만 됨, 활성 플러그인 없음
+  plugin_marketplaces:
+    - claude-plugins-official
+  mcp_servers: []
+  connectors:      # claude.ai 커넥터
+    - Claude Docs
+
+model:
+  default: opus
+  effort: high
+plan: Max          # 사용량 여유 있음 — 단, 매일 쓰는 /brief·/weekly는 가볍게 유지
+
+interests:         # 중요도 '높음' 후보
+  - 워크플로·품질 (계획→구현→리뷰, TDD, 코드 리뷰, CLAUDE.md 작성법, hooks)
+  - 테스트·배포 자동화 (Playwright, CI/CD, GitHub Actions, DB 마이그레이션)
+  - 병렬·자율 에이전트 (subagent, worktree, 백그라운드·클라우드 실행)
+  - UI/UX·디자인 (디자인 시스템, Figma 연동, 프론트 품질)
+
+not_interested:    # 중요도 '낮음'으로 내리고 추천에서 제외
+  - 타 언어 생태계 (Rust, Go, .NET, PHP, Elixir 등)
+  - 데이터과학·ML
+
+answer_length: 간결  # /brief는 화면 한두 개, 항목당 1~2줄, '높음'만 자세히

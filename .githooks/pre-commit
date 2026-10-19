@@ -1,0 +1,3 @@
+#!/bin/sh
+# 로컬 커밋 전 안전 검사 (git config core.hooksPath .githooks 로 활성화)
+exec python scripts/guard.py --staged

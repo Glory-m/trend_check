@@ -1,0 +1,32 @@
+# 핵심 watchlist — 수동으로만 변경 (/watch 스킬 사용)
+# 자동 발견 후보는 data/candidates.json에서 따로 관리하며, 기준을 넘으면 승격을 "제안"만 한다.
+# note: 레포 이름 변경 시 옛 이름을 aliases에 남긴다.
+repos:
+  - repo: obra/superpowers
+    note: 워크플로 프레임워크
+  - repo: mattpocock/skills
+    note: 스킬 모음
+  - repo: multica-ai/andrej-karpathy-skills
+    aliases: [forrestchang/andrej-karpathy-skills]
+    note: 스킬 모음 (2026-10-19 기준 마지막 push 2026-04)
+  - repo: affaan-m/ECC
+    aliases: [affaan-m/everything-claude-code]
+    note: Claude Code 설정 모음
+  - repo: anthropics/skills
+    note: 공식 스킬
+  - repo: anthropics/claude-code
+    note: 공식 CLI (CHANGELOG는 별도 수집)
+  - repo: hesreallyhim/awesome-claude-code
+    note: 큐레이션 목록
+  - repo: travisvn/awesome-claude-skills
+    note: 큐레이션 목록 (2026-10-19 기준 마지막 push 2026-04)
+  - repo: ComposioHQ/awesome-claude-skills
+    note: 큐레이션 목록
+  - repo: anthropics/claude-plugins-official
+    note: 공식 플러그인 마켓플레이스 (등록되어 있음)
+  - repo: microsoft/playwright-mcp
+    note: 브라우저 테스트 MCP — 관심 분야 테스트·배포
+  - repo: anthropics/claude-code-action
+    note: GitHub Actions 연동 — 관심 분야 CI
+  - repo: modelcontextprotocol/servers
+    note: MCP 레퍼런스 서버 모음
