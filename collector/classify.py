@@ -77,6 +77,8 @@ class Classifier:
                 return "기타", "버그 수정"
         if t == "official_repo":
             return "신기술", "anthropics 공식 새 레포"
+        if t == "benchmark_update":
+            return "신기술", "AI 코딩 벤치마크"
         if t in REPO_TYPES:
             return "스킬·플러그인·MCP", "생태계 레포"
         if t == "official_post" and item.get("source") == "anthropic_engineering":
@@ -99,6 +101,8 @@ class Classifier:
             return "보통", "보안 관련 언급 (구체적 이슈 신호 없음)"
         if t == "repo_surge":
             return "높음", "스타 급등"
+        if t == "benchmark_update":
+            return ("높음", "벤치마크 1위 변경") if "1위 변경" in (item.get("title") or "") else ("보통", "벤치마크 새 기록")
         if t in ("promote_suggest", "demote_suggest"):
             return "보통", "watchlist 변경 제안 (자동 반영 안 함)"
         if t == "suspicious":

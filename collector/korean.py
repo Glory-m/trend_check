@@ -84,6 +84,8 @@ def headline(item, verb=None):
         return f"새로 뜨는 저장소 · {repo}" + (f" · ★{int(stars.group(1)):,}" if stars else "")
     if t == "repo_release":
         return f"새 릴리스 · {repo} {ver or ''}".strip()
+    if t == "benchmark_update":
+        return "벤치마크 1위 변경" if "1위 변경" in title else "벤치마크 새 기록"
     if t == "repo_surge":
         return f"스타 급등 · {repo}"
     if t == "suspicious":

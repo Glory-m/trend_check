@@ -1,0 +1,289 @@
+{
+ "source": "https://epoch.ai/benchmarks",
+ "download": "https://epoch.ai/data/benchmark_data.zip",
+ "license": "CC BY 4.0",
+ "attribution": "Data: Epoch AI, Benchmarking Hub (epoch.ai/benchmarks), CC BY 4.0",
+ "checked_at": "2026-10-19T08:55:20Z",
+ "missing": [],
+ "sets": [
+  {
+   "benchmark": "SWE-bench Verified",
+   "measures": "실제 GitHub 이슈를 고쳐 테스트를 통과시키는 비율",
+   "unit": "%",
+   "file": "swe_bench_verified.csv",
+   "models": 33,
+   "top": [
+    {
+     "model": "claude-opus-4-7_max",
+     "org": "Anthropic",
+     "score": 83.0,
+     "released": "2026-04-16",
+     "extra": "0.016901169179529604"
+    },
+    {
+     "model": "gpt-5.5-pre-release_xhigh",
+     "org": "OpenAI",
+     "score": 81.0,
+     "released": "2026-04-23",
+     "extra": "0.018000198869416815"
+    },
+    {
+     "model": "glm-5.2_max",
+     "org": "Z.ai (Zhipu AI)",
+     "score": 79.0,
+     "released": "2026-06-16",
+     "extra": "0.018656911901656907"
+    },
+    {
+     "model": "gemini-3.5-flash_high",
+     "org": "Google DeepMind",
+     "score": 79.0,
+     "released": "2026-05-19",
+     "extra": "0.018422420250424888"
+    },
+    {
+     "model": "claude-opus-4-6",
+     "org": "Anthropic",
+     "score": 79.0,
+     "released": "2026-02-05",
+     "extra": "0.01862353730305288"
+    },
+    {
+     "model": "deepseek-v4-pro_max",
+     "org": "DeepSeek",
+     "score": 78.0,
+     "released": "2026-04-24",
+     "extra": "0.01897828052158487"
+    },
+    {
+     "model": "qwen3.7-max",
+     "org": "Alibaba",
+     "score": 77.0,
+     "released": "2026-05-19",
+     "extra": "0.01906835447169652"
+    },
+    {
+     "model": "qwen3.6-max-preview",
+     "org": "Alibaba",
+     "score": 77.0,
+     "released": "2026-04-20",
+     "extra": "0.01924895909142592"
+    },
+    {
+     "model": "kimi-k2.6",
+     "org": "Moonshot",
+     "score": 77.0,
+     "released": "2026-04-20",
+     "extra": "0.01924895909142592"
+    },
+    {
+     "model": "gpt-5.4-2026-03-05_high",
+     "org": "OpenAI",
+     "score": 77.0,
+     "released": "2026-03-05",
+     "extra": "0.019189407003691976"
+    },
+    {
+     "model": "claude-opus-4-5-20251101",
+     "org": "Anthropic",
+     "score": 77.0,
+     "released": "2025-11-24",
+     "extra": "0.01924895909142592"
+    },
+    {
+     "model": "gemini-3.1-pro-preview-customtools",
+     "org": "Google DeepMind",
+     "score": 76.0,
+     "released": "2026-02-19",
+     "extra": "0.019537213360116365"
+    }
+   ]
+  },
+  {
+   "benchmark": "WebDev Arena",
+   "measures": "웹앱 만들기 결과를 사람이 비교해 매긴 점수",
+   "unit": "점",
+   "file": "webdev_arena_external.csv",
+   "models": 134,
+   "top": [
+    {
+     "model": "claude-opus-5-5_max",
+     "org": "Anthropic",
+     "score": 1820.31,
+     "released": "2026-09-22",
+     "extra": "1887"
+    },
+    {
+     "model": "gpt-6-astra_max",
+     "org": "OpenAI",
+     "score": 1800.28,
+     "released": "2026-09-03",
+     "extra": "2281"
+    },
+    {
+     "model": "claude-sonnet-5-5_xhigh",
+     "org": "Anthropic",
+     "score": 1786.26,
+     "released": "2026-09-28",
+     "extra": "1531"
+    },
+    {
+     "model": "gpt-6.1-sol_max",
+     "org": "OpenAI",
+     "score": 1758.72,
+     "released": "2026-09-29",
+     "extra": "1264"
+    },
+    {
+     "model": "claude-fable-5-1_max",
+     "org": "Anthropic",
+     "score": 1758.05,
+     "released": "2026-09-01",
+     "extra": "3036"
+    },
+    {
+     "model": "claude-sonnet-5-5_high",
+     "org": "Anthropic",
+     "score": 1698.82,
+     "released": "2026-09-28",
+     "extra": "1205"
+    },
+    {
+     "model": "gpt-6-sol_max",
+     "org": "OpenAI",
+     "score": 1689.33,
+     "released": "2026-09-22",
+     "extra": "3197"
+    },
+    {
+     "model": "claude-opus-5_max",
+     "org": "Anthropic",
+     "score": 1686.99,
+     "released": "2026-07-24",
+     "extra": "12087"
+    },
+    {
+     "model": "gemini-4-argon_high",
+     "org": "Google DeepMind",
+     "score": 1679.5,
+     "released": "2026-09-30",
+     "extra": "2422"
+    },
+    {
+     "model": "kimi-k3_max",
+     "org": "Moonshot",
+     "score": 1674.26,
+     "released": "2026-07-16",
+     "extra": "4547"
+    },
+    {
+     "model": "qwen3.8-max_unknown",
+     "org": "Alibaba",
+     "score": 1670.58,
+     "released": "2026-08-02",
+     "extra": "3221"
+    },
+    {
+     "model": "claude-opus-5_high",
+     "org": "Anthropic",
+     "score": 1660.45,
+     "released": "2026-07-24",
+     "extra": "12566"
+    }
+   ]
+  },
+  {
+   "benchmark": "FrontierSWE",
+   "measures": "구현·성능·연구가 섞인 어려운 소프트웨어 작업 점수",
+   "unit": "%",
+   "file": "frontierswe_external.csv",
+   "models": 21,
+   "top": [
+    {
+     "model": "gpt-6-astra_max",
+     "org": "OpenAI",
+     "score": 66.0,
+     "released": "2026-09-03",
+     "extra": "proximus"
+    },
+    {
+     "model": "claude-opus-5-5_max",
+     "org": "Anthropic",
+     "score": 62.0,
+     "released": "2026-09-22",
+     "extra": "proximus"
+    },
+    {
+     "model": "claude-sonnet-5-5_max",
+     "org": "Anthropic",
+     "score": 62.0,
+     "released": "2026-09-28",
+     "extra": "proximus"
+    },
+    {
+     "model": "claude-fable-5-1_max",
+     "org": "Anthropic",
+     "score": 56.0,
+     "released": "2026-09-01",
+     "extra": "proximus"
+    },
+    {
+     "model": "gemini-4-argon_high",
+     "org": "Google DeepMind",
+     "score": 55.0,
+     "released": "2026-09-30",
+     "extra": "proximus"
+    },
+    {
+     "model": "claude-opus-5_max",
+     "org": "Anthropic",
+     "score": 52.0,
+     "released": "2026-07-24",
+     "extra": "proximus"
+    },
+    {
+     "model": "claude-fable-5_max",
+     "org": "Anthropic",
+     "score": 47.0,
+     "released": "2026-06-09",
+     "extra": "proximus"
+    },
+    {
+     "model": "claude-haiku-5-5_max",
+     "org": "Anthropic",
+     "score": 44.0,
+     "released": "2026-10-07",
+     "extra": "proximus"
+    },
+    {
+     "model": "gpt-5.6-sol_max",
+     "org": "OpenAI",
+     "score": 32.0,
+     "released": "2026-07-09",
+     "extra": "proximus"
+    },
+    {
+     "model": "glm-5.3_max",
+     "org": "Z.ai (Zhipu AI)",
+     "score": 30.0,
+     "released": "2026-08-14",
+     "extra": "proximus"
+    },
+    {
+     "model": "grok-4.7_xhigh",
+     "org": "xAI",
+     "score": 30.0,
+     "released": "2026-09-21",
+     "extra": "proximus"
+    },
+    {
+     "model": "kimi-k3_max",
+     "org": "Moonshot",
+     "score": 26.0,
+     "released": "2026-07-16",
+     "extra": "proximus"
+    }
+   ]
+  }
+ ]
+}

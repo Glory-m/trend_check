@@ -1,0 +1,362 @@
+{
+ "files": {
+  "2026-05-01-anthropic-claude-opus-4-7-max-claude-code.json": {
+   "sha": "f83d755a729472ece22b696b1d7b8cb730f38e04",
+   "model": "Opus 4.7",
+   "agent": "Claude Code",
+   "effort": "max",
+   "date": "2026-05-01",
+   "accuracy": 68.9,
+   "stderr": 1.41,
+   "trials": 447,
+   "cost_usd": 599.52
+  },
+  "2026-05-01-anthropic-claude-opus-4-7-max-terminus-2.json": {
+   "sha": "f55f1642534d93601b2c04fcca13141b745e9342",
+   "model": "Opus 4.7",
+   "agent": "Terminus 2",
+   "effort": "max",
+   "date": "2026-05-01",
+   "accuracy": 66.07,
+   "stderr": 1.37,
+   "trials": 445,
+   "cost_usd": 582.26
+  },
+  "2026-05-01-gemini-gemini-3-pro-preview-high-gemini-cli.json": {
+   "sha": "632faf445a265f3d67c2b3e700135af010a5a15a",
+   "model": "Gemini 3 Pro",
+   "agent": "Gemini CLI",
+   "effort": "high",
+   "date": "2026-05-01",
+   "accuracy": 65.84,
+   "stderr": 1.38,
+   "trials": 445,
+   "cost_usd": 247.76
+  },
+  "2026-05-01-gemini-gemini-3-pro-preview-high-terminus-2.json": {
+   "sha": "48e36809e370187784c0f0d04b6be5c69d37d7b3",
+   "model": "Gemini 3 Pro",
+   "agent": "Terminus 2",
+   "effort": "high",
+   "date": "2026-05-01",
+   "accuracy": 73.93,
+   "stderr": 1.29,
+   "trials": 445,
+   "cost_usd": 224.44
+  },
+  "2026-05-01-glm-5-1-max-claude-code.json": {
+   "sha": "209f79c6aba3ea3ea08acf66b970eda7c031dda2",
+   "model": "GLM-5.1",
+   "agent": "Claude Code",
+   "effort": "max",
+   "date": "2026-05-01",
+   "accuracy": 58.65,
+   "stderr": 1.24,
+   "trials": 445,
+   "cost_usd": 277.14
+  },
+  "2026-05-01-openai-gpt-5-5-xhigh-codex.json": {
+   "sha": "cd37bf648d2bdc74742a0d17d24350c4570bf5c4",
+   "model": "GPT-5.5",
+   "agent": "Codex",
+   "effort": "xhigh",
+   "date": "2026-05-01",
+   "accuracy": 83.15,
+   "stderr": 1.13,
+   "trials": 445,
+   "cost_usd": 2059.19
+  },
+  "2026-05-01-openai-gpt-5-5-xhigh-terminus-2.json": {
+   "sha": "67a1a17eba3384272b8b85e491e7224353d77e41",
+   "model": "GPT-5.5",
+   "agent": "Terminus 2",
+   "effort": "xhigh",
+   "date": "2026-05-01",
+   "accuracy": 77.98,
+   "stderr": 1.22,
+   "trials": 445,
+   "cost_usd": 493.85
+  },
+  "2026-05-05-gemini-gemini-3-1-pro-preview-high-gemini-cli.json": {
+   "sha": "3a82575eec33a90f9224501adcab983e099f72b7",
+   "model": "Gemini 3.1 Pro",
+   "agent": "Gemini CLI",
+   "effort": "high",
+   "date": "2026-05-05",
+   "accuracy": 65.84,
+   "stderr": 1.67,
+   "trials": 445,
+   "cost_usd": 236.49
+  },
+  "2026-05-05-gemini-gemini-3-1-pro-preview-high-terminus-2.json": {
+   "sha": "d53ef417cfee1528093424cde5b26f846ac38ef6",
+   "model": "Gemini 3.1 Pro",
+   "agent": "Terminus 2",
+   "effort": "high",
+   "date": "2026-05-05",
+   "accuracy": 65.62,
+   "stderr": 1.65,
+   "trials": 445,
+   "cost_usd": 229.99
+  },
+  "2026-06-05-anthropic-claude-fable-5-high-terminus-2.json": {
+   "sha": "79e056a390dfb336e2d261410ddece773593dc5d",
+   "model": "Fable 5",
+   "agent": "Terminus 2",
+   "effort": "high",
+   "date": "2026-06-05",
+   "accuracy": 80.45,
+   "stderr": 1.16,
+   "trials": 445,
+   "cost_usd": 438.64
+  },
+  "2026-06-07-anthropic-claude-fable-5-xhigh-claude-code.json": {
+   "sha": "1a2302dfeccee835e6aa254133c0f5a45803d397",
+   "model": "Fable 5",
+   "agent": "Claude Code",
+   "effort": "xhigh",
+   "date": "2026-06-07",
+   "accuracy": 83.82,
+   "stderr": 1.16,
+   "trials": 445,
+   "cost_usd": 552.67
+  },
+  "2026-07-09-anthropic-claude-opus-4-8-high-claude-code.json": {
+   "sha": "90e3900d335ae9fc5a79855fe0a6ad2cc295b3c2",
+   "model": "Opus 4.8",
+   "agent": "Claude Code",
+   "effort": "high",
+   "date": "2026-07-09",
+   "accuracy": 78.88,
+   "stderr": 1.31,
+   "trials": 445,
+   "cost_usd": 286.94
+  },
+  "2026-07-09-anthropic-claude-sonnet-5-high-claude-code.json": {
+   "sha": "16d50d22b46f513c7e888e643382f2c1524904de",
+   "model": "Sonnet 5",
+   "agent": "Claude Code",
+   "effort": "high",
+   "date": "2026-07-09",
+   "accuracy": 74.61,
+   "stderr": 1.64,
+   "trials": 445,
+   "cost_usd": 288.18
+  },
+  "2026-07-09-cursor-grok-4-5-none-cursor-cli.json": {
+   "sha": "dd2098c3245c7ac0fc68a1b4b8b8319f8a82ec0e",
+   "model": "Grok 4.5",
+   "agent": "Cursor CLI",
+   "effort": "high",
+   "date": "2026-07-09",
+   "accuracy": 79.33,
+   "stderr": 1.46,
+   "trials": 445,
+   "cost_usd": 134.09
+  },
+  "2026-07-09-openai-muse-spark-1-1-xhigh-mini-swe-agent.json": {
+   "sha": "b9c0502111a6c81786dd4059a885ff183802af54",
+   "model": "Muse Spark 1.1",
+   "agent": "mini-SWE-agent",
+   "effort": "xhigh",
+   "date": "2026-07-09",
+   "accuracy": 76.18,
+   "stderr": 1.23,
+   "trials": 445,
+   "cost_usd": 198.05
+  },
+  "2026-07-10-gpt-5-6-luna-max-codex.json": {
+   "sha": "d69a75074838ffcd5c0314467bafa38d4390c4c4",
+   "model": "GPT-5.6 Luna",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-10",
+   "accuracy": 71.24,
+   "stderr": 1.39,
+   "trials": 445,
+   "cost_usd": 218.28
+  },
+  "2026-07-10-gpt-5-6-sol-max-codex.json": {
+   "sha": "0660a5610c256daf2a67f426597ff4c343bf0990",
+   "model": "GPT-5.6 Sol",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-10",
+   "accuracy": 76.18,
+   "stderr": 1.28,
+   "trials": 445,
+   "cost_usd": 574.68
+  },
+  "2026-07-10-gpt-5-6-terra-max-codex.json": {
+   "sha": "2ddc7c1c4c4ac5bcc17a826760665b191a2c62b4",
+   "model": "GPT-5.6 Terra",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-10",
+   "accuracy": 74.38,
+   "stderr": 1.54,
+   "trials": 445,
+   "cost_usd": 401.03
+  },
+  "2026-07-11-openai-gpt-5-6-luna-max-codex.json": {
+   "sha": "5565e6dcfcb70a0b61d267e153520ce58a63ef9f",
+   "model": "GPT-5.6 Luna",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-11",
+   "accuracy": 75.73,
+   "stderr": 1.32,
+   "trials": 445,
+   "cost_usd": 241.45
+  },
+  "2026-07-11-openai-gpt-5-6-terra-max-codex.json": {
+   "sha": "20ec067af1a821169022593aba58b7a8e18eec23",
+   "model": "GPT-5.6 Terra",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-11",
+   "accuracy": 78.43,
+   "stderr": 1.25,
+   "trials": 445,
+   "cost_usd": 421.15
+  }
+ },
+ "benchmark": "Terminal-Bench 2.1",
+ "measures": "터미널에서 코딩 에이전트가 실제 작업을 끝까지 해내는 비율",
+ "source": "https://github.com/harbor-framework/terminal-bench-2-1",
+ "page": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
+ "license": "Apache-2.0",
+ "checked_at": "2026-10-19T08:55:20Z",
+ "rows": [
+  {
+   "model": "Fable 5",
+   "agent": "Claude Code",
+   "effort": "xhigh",
+   "date": "2026-06-07",
+   "accuracy": 83.82,
+   "stderr": 1.16,
+   "trials": 445,
+   "cost_usd": 552.67
+  },
+  {
+   "model": "GPT-5.5",
+   "agent": "Codex",
+   "effort": "xhigh",
+   "date": "2026-05-01",
+   "accuracy": 83.15,
+   "stderr": 1.13,
+   "trials": 445,
+   "cost_usd": 2059.19
+  },
+  {
+   "model": "Grok 4.5",
+   "agent": "Cursor CLI",
+   "effort": "high",
+   "date": "2026-07-09",
+   "accuracy": 79.33,
+   "stderr": 1.46,
+   "trials": 445,
+   "cost_usd": 134.09
+  },
+  {
+   "model": "Opus 4.8",
+   "agent": "Claude Code",
+   "effort": "high",
+   "date": "2026-07-09",
+   "accuracy": 78.88,
+   "stderr": 1.31,
+   "trials": 445,
+   "cost_usd": 286.94
+  },
+  {
+   "model": "GPT-5.6 Terra",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-11",
+   "accuracy": 78.43,
+   "stderr": 1.25,
+   "trials": 445,
+   "cost_usd": 421.15
+  },
+  {
+   "model": "Muse Spark 1.1",
+   "agent": "mini-SWE-agent",
+   "effort": "xhigh",
+   "date": "2026-07-09",
+   "accuracy": 76.18,
+   "stderr": 1.23,
+   "trials": 445,
+   "cost_usd": 198.05
+  },
+  {
+   "model": "GPT-5.6 Sol",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-10",
+   "accuracy": 76.18,
+   "stderr": 1.28,
+   "trials": 445,
+   "cost_usd": 574.68
+  },
+  {
+   "model": "GPT-5.6 Luna",
+   "agent": "Codex",
+   "effort": "max",
+   "date": "2026-07-11",
+   "accuracy": 75.73,
+   "stderr": 1.32,
+   "trials": 445,
+   "cost_usd": 241.45
+  },
+  {
+   "model": "Sonnet 5",
+   "agent": "Claude Code",
+   "effort": "high",
+   "date": "2026-07-09",
+   "accuracy": 74.61,
+   "stderr": 1.64,
+   "trials": 445,
+   "cost_usd": 288.18
+  },
+  {
+   "model": "Gemini 3 Pro",
+   "agent": "Terminus 2",
+   "effort": "high",
+   "date": "2026-05-01",
+   "accuracy": 73.93,
+   "stderr": 1.29,
+   "trials": 445,
+   "cost_usd": 224.44
+  },
+  {
+   "model": "Opus 4.7",
+   "agent": "Claude Code",
+   "effort": "max",
+   "date": "2026-05-01",
+   "accuracy": 68.9,
+   "stderr": 1.41,
+   "trials": 447,
+   "cost_usd": 599.52
+  },
+  {
+   "model": "Gemini 3.1 Pro",
+   "agent": "Gemini CLI",
+   "effort": "high",
+   "date": "2026-05-05",
+   "accuracy": 65.84,
+   "stderr": 1.67,
+   "trials": 445,
+   "cost_usd": 236.49
+  },
+  {
+   "model": "GLM-5.1",
+   "agent": "Claude Code",
+   "effort": "max",
+   "date": "2026-05-01",
+   "accuracy": 58.65,
+   "stderr": 1.24,
+   "trials": 445,
+   "cost_usd": 277.14
+  }
+ ]
+}

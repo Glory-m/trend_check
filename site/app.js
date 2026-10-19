@@ -120,6 +120,8 @@ const WHY = [
   [/^내 환경\(([^)]+)\) 관련 변경/, (m) => `내 환경(${ENV_KO[m[1]] || m[1]})에 해당하는 변경이에요`],
   [/^내 스택 '([^']+)'/, (m) => `내 스택(${m[1]})과 관련 있어요`],
   [/^신규 발견/, () => "새로 빠르게 뜨고 있는 저장소예요"],
+  [/^벤치마크 1위 변경/, () => "AI 코딩 벤치마크 1위가 바뀌었어요"],
+  [/^벤치마크 새 기록/, () => "AI 코딩 벤치마크에 새 기록이 올라왔어요"],
   [/^GitHub 트렌딩/, () => "GitHub 트렌딩에 올랐어요"],
   [/^watchlist 변경 제안/, () => "관심 저장소에 넣거나 뺄지 검토해 볼 만해요"],
   [/^스타 패턴 참고 경고/, () => "별 증가 패턴이 특이해요 (참고만 하세요)"],
@@ -484,6 +486,63 @@ function renderEco(items) {
         r.d1 ? el("span", { class: "up", text: `${signed(r.d1)} 오늘` }) : null, aiMark(x),
         (r.warnings || []).length ? el("span", { class: "warn" }, icon("alert", 13), "참고 경고") : null));
   }) : [el("ul", { class: "list" }, stateRow("이 기간에 눈에 띄는 저장소가 없어요.", "기간을 넓혀 보세요."))]));
+}
+
+// ======================= AI 코딩 벤치마크 =======================
+/** 'claude-opus-5-5_max' → { name: 'Claude Opus 5.5', effort: 'max' } */
+function prettyModel(raw) {
+  const [base, effort] = String(raw).split("_");
+  const words = base.replace(/-(\d{8})$/, "").split("-");
+  const out = [];
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i];
+    if (/^\d+$/.test(w) && /^\d+$/.test(words[i + 1] || "") && words[i + 1].length <= 2) { out.push(`${w}.${words[++i]}`); continue; }
+    out.push(/^(gpt|glm|ai)$/i.test(w) ? w.toUpperCase() : w.charAt(0).toUpperCase() + w.slice(1));
+  }
+  return { name: out.join(" ").replace(/^GPT /, "GPT-"), effort: effort || "" };
+}
+const isClaude = (s) => /claude|opus|sonnet|haiku|fable/i.test(s);
+function benchCard(title, measures, rows, unit, foot) {
+  const max = Math.max(...rows.map((r) => r.score));
+  const min = unit === "점" ? Math.min(...rows.map((r) => r.score)) * 0.9 : 0;   // Elo 점수는 차이가 보이게 바닥을 올린다
+  return el("article", { class: "bench" },
+    el("div", { class: "bench-head" }, el("h3", { text: title }), el("p", { text: measures })),
+    el("ol", { class: "bars" }, rows.map((r) => {
+      const li = el("li", { class: isClaude(r.name) ? "is-claude" : "" },
+        el("span", { class: "b-name", title: r.title || r.name }, r.name, r.sub ? el("small", { text: r.sub }) : null),
+        el("span", { class: "b-val", text: `${r.score}${unit === "%" ? "%" : ""}` }),
+        el("span", { class: "b-bar" }, el("span")));
+      li.querySelector(".b-bar span").style.setProperty("--w", `${Math.max(2, ((r.score - min) / (max - min || 1)) * 100)}%`);
+      return li;
+    })),
+    el("p", { class: "bench-foot", text: foot }));
+}
+async function renderBench() {
+  const [tb, ep] = await Promise.all([getJSON("data/benchmarks/terminal_bench.json").catch(() => null),
+    getJSON("data/benchmarks/epoch.json").catch(() => null)]);
+  const grid = document.getElementById("bench-grid"), cards = [];
+  if (tb?.rows?.length) {
+    cards.push(benchCard("Terminal-Bench 2.1", `${tb.measures} — 모델 + 에이전트 조합`,
+      tb.rows.slice(0, 8).map((r) => ({ name: r.model, sub: `${r.agent}${r.effort ? ` · ${r.effort}` : ""}`, score: r.accuracy,
+        title: `${r.model} + ${r.agent} (${r.effort}) ${r.accuracy}% ±${r.stderr} · ${r.date} · 실행 비용 $${r.cost_usd}` })),
+      "%", `가장 최근 측정 ${tb.rows.map((r) => r.date).sort().pop()} · 모델 ${tb.rows.length}개 · 모델별 최고 기록`));
+  }
+  for (const s of ep?.sets || []) {
+    if (!s.top?.length) continue;
+    const latest = s.top.map((x) => x.released).filter(Boolean).sort().pop();
+    cards.push(benchCard(s.benchmark, s.measures, s.top.slice(0, 8).map((x) => {
+      const p = prettyModel(x.model);
+      return { name: p.name, sub: [p.effort, x.org].filter(Boolean).join(" · "), score: x.score, title: `${x.model} · ${x.org} · 출시 ${x.released} ${x.extra}` };
+    }), s.unit, `목록 중 가장 최근 모델 출시 ${latest || "—"} · 모델 ${s.models}개 중 상위 8`));
+  }
+  grid.replaceChildren(...(cards.length ? cards : [el("ul", { class: "list" }, stateRow("벤치마크 데이터가 아직 없어요.", "다음 수집 때 채워져요."))]));
+  const credits = [];
+  if (tb) credits.push(`Terminal-Bench 2.1 (harbor-framework, Apache-2.0)`);
+  if (ep) credits.push(`${ep.attribution || "Data: Epoch AI, CC BY 4.0"}`);
+  document.getElementById("bench-credit").textContent = credits.length
+    ? `출처: ${credits.join(" · ")} · 확인 ${fmtKst(parseIso(ep?.checked_at || tb?.checked_at))}. 같은 모델이라도 추론 강도·에이전트에 따라 점수가 다르며, 여기서는 모델별 최고 기록만 보여 줘요.` : "";
+  const sec = grid.closest("[data-reveal]");
+  if (sec?.classList.contains("is-drawn")) { sec.classList.remove("is-drawn"); requestAnimationFrame(() => requestAnimationFrame(() => sec.classList.add("is-drawn"))); }
 }
 
 // ======================= 관심 저장소 =======================
@@ -947,9 +1006,10 @@ async function init() {
   // 본문을 먼저 그리고, 그래프·AI 요약은 준비되는 대로 채운다
   const pulse = loadItems(range(14)).then((xs) => { cache.items14 = xs; renderPulse(xs); });
   const digest = loadDigest().then((d) => { cache.digest = d; renderDigest(); });
+  const bench = renderBench().catch(() => {});
   await update();
   observe();
-  await Promise.all([pulse, digest]);
+  await Promise.all([pulse, digest, bench]);
   observe();
 }
 addEventListener("hashchange", () => { readHash(); document.getElementById("f-q").value = state.q; update(); });
