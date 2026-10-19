@@ -136,7 +136,13 @@ function friendlyWhy(r) {
   for (const [rx, fn] of WHY) { const m = r.match(rx); if (m) return fn(m); }
   return r;
 }
-const aiMark = (x) => (koOf(x) ? el("span", { class: "ai-mark", title: "PC의 Claude가 번역한 문장 (classified_by: ai)" }, "AI 번역") : null);
+const aiMark = (x) => {
+  const k = cache.ko.get(x.id);
+  if (!k) return null;
+  return k.classified_by === "mt"
+    ? el("span", { class: "ai-mark mt", title: "무료 기계 번역 (Azure Translator) — /brief 실행 시 Claude 번역으로 다듬어져요" }, "기계 번역")
+    : el("span", { class: "ai-mark", title: "Claude가 번역한 문장 (classified_by: ai)" }, "AI 번역");
+};
 const sortItems = (a, b) => (IMP[a.importance] ?? 3) - (IMP[b.importance] ?? 3)
   || (TYPE_RANK[a.type] ?? 9) - (TYPE_RANK[b.type] ?? 9)
   || String(b.published_at || b.collected_at).localeCompare(String(a.published_at || a.collected_at));
@@ -656,7 +662,7 @@ function buildSlides(items) {
         ["발표", x.published_at ? `${mdKo(parseIso(x.published_at))}` : null],
         ["버전", x.version && x.type === "claude_code_change" ? `Claude Code ${x.version}` : null],
         ["저장소", x.repo && x.type !== "claude_code_change" ? x.repo : null],
-        ["문장", koOf(x) ? "AI 번역" : "규칙 요약 (원문은 영어)"]], el("span", { class: "s-num", "aria-hidden": "true", text: String(k + 1).padStart(2, "0") })) });
+        ["문장", cache.ko.get(x.id)?.classified_by === "mt" ? "기계 번역" : koOf(x) ? "AI 번역" : "규칙 요약 (원문은 영어)"]], el("span", { class: "s-num", "aria-hidden": "true", text: String(k + 1).padStart(2, "0") })) });
   });
   if (vers.length) {
     const tops = cc.filter((x) => x.importance === "높음").sort(sortItems).slice(0, 4);

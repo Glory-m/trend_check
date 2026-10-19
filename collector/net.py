@@ -99,6 +99,28 @@ class Client:
                 self.sleep(wait)
         raise last
 
+    def post_json(self, url, payload, headers):
+        """JSON POST (외부 번역 API용). 오류 메시지에 헤더(키)를 절대 넣지 않는다."""
+        body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        last = None
+        for attempt in range(self.max_retries):
+            self.calls += 1
+            try:
+                req = urllib.request.Request(url, data=body, method="POST", headers={"User-Agent": USER_AGENT, **headers})
+                with urllib.request.urlopen(req, timeout=60, context=self.ctx) as r:
+                    return json.loads(r.read().decode("utf-8"))
+            except urllib.error.HTTPError as e:
+                detail = e.read()[:200].decode("utf-8", "replace")
+                if e.code not in (429, 500, 502, 503, 504):
+                    raise HttpError(e.code, url.split("?")[0], detail) from None
+                last = HttpError(e.code, url.split("?")[0])
+                wait = int(e.headers.get("retry-after") or 0) or self._backoff(attempt)
+            except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+                last, wait = e, self._backoff(attempt)
+            if attempt < self.max_retries - 1:
+                self.sleep(min(wait, 60))
+        raise last
+
     def rate_limit(self):
         """GET /rate_limit — 이 호출은 한도를 소모하지 않는다."""
         d = self.get("/rate_limit").json()["resources"]

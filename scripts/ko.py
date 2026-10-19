@@ -17,13 +17,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from collector import safety  # noqa: E402
+from collector import safety  # noqa: E402,F401
+from collector.translate import validate as _validate  # noqa: E402
 from collector.timeutil import KST, iso, kst_date, now_utc, parse_iso  # noqa: E402
 
 DATA = ROOT / "data"
 PENDING = ROOT / "state" / "ko.pending.json"
-HANGUL = re.compile(r"[가-힣]")
-FORBIDDEN = re.compile(r"https?://|www\.|<[a-z/!]|javascript:|\]\(", re.I)
 ORDER = {"높음": 0, "보통": 1}
 
 
@@ -53,9 +52,12 @@ def recent_items(days):
 
 
 def translated_ids(dates):
+    """Claude(AI)가 이미 번역한 id. 기계 번역(mt)만 있는 항목은 다시 다듬을 대상으로 남긴다."""
     done = set()
     for d in dates:
-        done |= set(load(DATA / "ko" / f"{d}.json", {"items": {}})["items"])
+        for i, v in load(DATA / "ko" / f"{d}.json", {"items": {}})["items"].items():
+            if v.get("classified_by") == "ai":
+                done.add(i)
     return done
 
 
@@ -91,18 +93,7 @@ def cmd_todo(args):
 
 
 def validate(text):
-    if not isinstance(text, str):
-        return "문자열 아님"
-    t = " ".join(text.split())
-    if not 4 <= len(t) <= 160:
-        return f"길이 {len(t)}자 (4~160자)"
-    if not HANGUL.search(t):
-        return "한글 없음"
-    if FORBIDDEN.search(t):
-        return "링크·HTML·마크다운 포함"
-    if safety.must_quarantine(safety.scan(t, "search")):
-        return "의심 문구"
-    return None
+    return _validate(text, max_len=160)
 
 
 def cmd_save(args):

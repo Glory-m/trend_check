@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from . import analyze, audit, benchmarks, classify, claude_code, discovery, official, repos
+from . import analyze, audit, benchmarks, classify, claude_code, discovery, official, repos, translate
 from .net import Client
 from .store import Store
 from .timeutil import now_utc, parse_iso
@@ -102,6 +102,17 @@ def main(argv=None):
         ctx.warn("classify", f"{type(e).__name__}: {e}")
         traceback.print_exc(file=sys.stderr)
     steps["classify"]["seconds"] = round(time.time() - t, 1)
+
+    # 무료 기계 번역 (키가 있을 때만) — 분류가 끝나야 중요도로 대상을 고를 수 있어 그 뒤에 실행
+    if not only or "translate" in only:
+        t = time.time()
+        try:
+            steps["translate"] = {"status": "ok", "detail": translate.run(ctx)}
+            print(f"  ✓ translate: {steps['translate']['detail']}")
+        except Exception as e:
+            steps["translate"] = {"status": "fail", "detail": f"{type(e).__name__}: {e}"[:300]}
+            ctx.warn("translate", f"{type(e).__name__}: {e}")
+        steps["translate"]["seconds"] = round(time.time() - t, 1)
 
     health = ctx.store.load_json("health.json", {"errors": []})
     statuses = {s["status"] for s in steps.values()}
