@@ -1,27 +1,27 @@
 {
  "errors": [],
- "last_run_at": "2026-10-19T06:43:10Z",
+ "last_run_at": "2026-10-19T06:52:21Z",
  "status": "ok",
  "steps": {
   "claude_code": {
    "status": "ok",
    "detail": "versions=555 new_items=0 bootstrap=False latest=2.1.303",
-   "seconds": 1.7
+   "seconds": 2.0
   },
   "watchlist": {
    "status": "ok",
    "detail": "repos=13 failed=0",
-   "seconds": 7.5
+   "seconds": 7.6
   },
   "search": {
    "status": "ok",
    "detail": "queries=14 repos=1229",
-   "seconds": 93.0
+   "seconds": 93.3
   },
   "trending": {
    "status": "ok",
    "detail": "relevant=12",
-   "seconds": 0.3
+   "seconds": 1.6
   },
   "hn": {
    "status": "ok",
@@ -30,55 +30,65 @@
   },
   "official_platform_notes": {
    "status": "ok",
-   "detail": "parsed=265 new_items=248 bootstrap=False",
-   "seconds": 0.4
+   "detail": "parsed=265 new_items=0 bootstrap=False",
+   "seconds": 0.5
   },
   "official_apps_notes": {
    "status": "ok",
-   "detail": "parsed=103 new_items=100 bootstrap=False",
+   "detail": "parsed=103 new_items=0 bootstrap=False",
    "seconds": 0.4
   },
   "official_news": {
    "status": "ok",
-   "detail": "parsed=10 new_items=2 bootstrap=False",
+   "detail": "parsed=10 new_items=0 bootstrap=False",
    "seconds": 0.2
   },
   "official_engineering": {
    "status": "ok",
-   "detail": "parsed=25 new_items=25 bootstrap=False",
+   "detail": "parsed=25 new_items=0 bootstrap=False",
    "seconds": 0.1
   },
   "official_org_repos": {
    "status": "ok",
-   "detail": "repos=30 new_items=22 bootstrap=False",
-   "seconds": 0.6
+   "detail": "repos=30 new_items=0 bootstrap=False",
+   "seconds": 0.8
   },
   "candidates": {
    "status": "ok",
    "detail": "found=1250 tracked=150 entered=0 new_items=0",
    "seconds": 0.2
+  },
+  "analyze": {
+   "status": "ok",
+   "detail": "repos=163 history_days=1 surges=0 warnings=2 promote=0 demote=0",
+   "seconds": 0.0
+  },
+  "classify": {
+   "status": "ok",
+   "detail": "reclassified_items=454 files=1",
+   "seconds": 0.1
   }
  },
- "new_items": 397,
+ "new_items": 3,
  "authenticated": true,
  "rate_limit": {
   "core": {
-   "remaining": 4956,
+   "remaining": 4941,
    "reset": 1792395194,
    "limit": 5000
   },
   "search": {
    "remaining": 23,
-   "reset": 1792392321,
+   "reset": 1792392873,
    "limit": 30
   },
   "graphql": {
    "remaining": 5000,
-   "reset": 1792395791,
+   "reset": 1792396341,
    "limit": 5000
   }
  },
  "http_calls": 66,
  "warnings": [],
- "last_success_at": "2026-10-19T06:43:10Z"
+ "last_success_at": "2026-10-19T06:52:21Z"
 }

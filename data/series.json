@@ -1,0 +1,496 @@
+{
+ "dates": [
+  "2026-10-19"
+ ],
+ "repos": {
+  "AgriciDaniel/claude-obsidian": [
+   15633
+  ],
+  "Alishahryar1/free-claude-code": [
+   61669
+  ],
+  "Arekejoker/qwen21-nsfw-pose-skill": [
+   3122
+  ],
+  "CherryHQ/cherry-studio": [
+   52735
+  ],
+  "ChromeDevTools/chrome-devtools-mcp": [
+   53814
+  ],
+  "ComposioHQ/awesome-claude-skills": [
+   77404
+  ],
+  "D4Vinci/Scrapling": [
+   88541
+  ],
+  "DayuanJiang/next-ai-draw-io": [
+   36318
+  ],
+  "DeusData/codebase-memory-mcp": [
+   46884
+  ],
+  "DietrichGebert/ponytail": [
+   167264
+  ],
+  "Donchitos/Claude-Code-Game-Studios": [
+   26844
+  ],
+  "Egonex-AI/Understand-Anything": [
+   86918
+  ],
+  "EveryInc/compound-engineering-plugin": [
+   25592
+  ],
+  "Folkbench/folkbench": [
+   1902
+  ],
+  "Gathin23/tv-vibehack": [
+   2644
+  ],
+  "Graphify-Labs/graphify": [
+   128589
+  ],
+  "HarnessMD/munder-difflin": [
+   8894
+  ],
+  "Imbad0202/academic-research-skills": [
+   52849
+  ],
+  "Jakeschincariol/founder-skill": [
+   1011
+  ],
+  "Jakeschincariol/replica-skill": [
+   3433
+  ],
+  "JuliusBrussee/caveman": [
+   113523
+  ],
+  "K-Dense-AI/scientific-agent-skills": [
+   52727
+  ],
+  "Leonxlnx/earshot": [
+   967
+  ],
+  "Leonxlnx/taste-skill": [
+   98988
+  ],
+  "LiCinCan/blender-ai-mcp-addon": [
+   790
+  ],
+  "Louis-CFM/coucou": [
+   5547
+  ],
+  "MadsLorentzen/ai-job-search": [
+   54286
+  ],
+  "MaryCache/imozuru": [
+   485
+  ],
+  "NVIDIA/SkillSpector": [
+   20513
+  ],
+  "Nanako0129/sepia": [
+   3236
+  ],
+  "NanmiCoder/cc-haha": [
+   15065
+  ],
+  "Noniv/web-ocean": [
+   700
+  ],
+  "NousResearch/hermes-agent": [
+   255023
+  ],
+  "Oldcircle/geo-sleuth": [
+   3397
+  ],
+  "OthmanAdi/planning-with-files": [
+   27520
+  ],
+  "Panniantong/Agent-Reach": [
+   99208
+  ],
+  "QingYunA/answer-me-with-html": [
+   3736
+  ],
+  "Ryze-AI-Adgent/open-seo-mcp-skills": [
+   6076
+  ],
+  "Tejashmakwana/motionmaxxing": [
+   875
+  ],
+  "Vincentwei1021/video-shotcraft": [
+   12439
+  ],
+  "VoltAgent/awesome-agent-skills": [
+   35965
+  ],
+  "VoltAgent/awesome-openclaw-skills": [
+   53200
+  ],
+  "Wei-Shaw/sub2api": [
+   44335
+  ],
+  "Yeachan-Heo/oh-my-claudecode": [
+   40055
+  ],
+  "YeonwooSung/my-claude-code-mods": [
+   1045
+  ],
+  "addyosmani/agent-skills": [
+   108305
+  ],
+  "affaan-m/ECC": [
+   283472
+  ],
+  "alchaincyf/huashu-design": [
+   25364
+  ],
+  "alchaincyf/huashu-motion": [
+   577
+  ],
+  "alibaba/open-code-review": [
+   47619
+  ],
+  "android/skills": [
+   8900
+  ],
+  "anomalyco/opencode": [
+   216895
+  ],
+  "anthropics/claude-code": [
+   152296
+  ],
+  "anthropics/claude-code-action": [
+   9567
+  ],
+  "anthropics/claude-plugins-official": [
+   42892
+  ],
+  "anthropics/commerce-agents": [
+   3273
+  ],
+  "anthropics/oss-scanner": [
+   1125
+  ],
+  "anthropics/skills": [
+   182060
+  ],
+  "asgeirtj/system_prompts_leaks": [
+   69879
+  ],
+  "blader/humanizer": [
+   58202
+  ],
+  "browser-use/browser-harness": [
+   18491
+  ],
+  "career-ops-hq/career-ops": [
+   75545
+  ],
+  "cathrynlavery/diagram-design": [
+   57928
+  ],
+  "ccch1mneyyy/dsh-TUI": [
+   4837
+  ],
+  "chenhg5/cc-connect": [
+   15991
+  ],
+  "citrolabs/ego-lite": [
+   17654
+  ],
+  "cobusgreyling/loop-engineering": [
+   11578
+  ],
+  "code-yeongyu/oh-my-openagent": [
+   70179
+  ],
+  "colbymchenry/codegraph": [
+   74409
+  ],
+  "coreyhaines31/marketingskills": [
+   55423
+  ],
+  "cursor/plugins": [
+   12861
+  ],
+  "davila7/claude-code-templates": [
+   32739
+  ],
+  "decolua/9router": [
+   31043
+  ],
+  "diegosouzapw/OmniRoute": [
+   78233
+  ],
+  "dmmulroy/anti-slop": [
+   5603
+  ],
+  "dzhng/jevgrep": [
+   2797
+  ],
+  "edenfunf/reelmimic": [
+   3638
+  ],
+  "eternityspring/shuohao-skills": [
+   4785
+  ],
+  "farion1231/cc-switch": [
+   146051
+  ],
+  "feder-cr/invisible_playwright_mcp": [
+   2773
+  ],
+  "franzenzenhofer/big-arrow-on-the-screen": [
+   784
+  ],
+  "garrytan/gstack": [
+   136886
+  ],
+  "gastownhall/beads": [
+   28000
+  ],
+  "genspark-ai/genoffice": [
+   9979
+  ],
+  "getagentseal/codeburn": [
+   11511
+  ],
+  "github/awesome-copilot": [
+   40169
+  ],
+  "google-gemini/gemini-cli": [
+   107443
+  ],
+  "headroomlabs-ai/headroom": [
+   75931
+  ],
+  "herdrdev/herdr": [
+   44692
+  ],
+  "hesreallyhim/awesome-claude-code": [
+   55984
+  ],
+  "hujjun/mcd-saver-strategist": [
+   619
+  ],
+  "iOfficeAI/AionUi": [
+   33624
+  ],
+  "iOfficeAI/OfficeCLI": [
+   32157
+  ],
+  "img2threejs/img2threejs": [
+   18400
+  ],
+  "jarrodwatts/claude-hud": [
+   28633
+  ],
+  "jatechan/ai-data-extractor": [
+   416
+  ],
+  "jnMetaCode/agency-agents-zh": [
+   21352
+  ],
+  "kaankiziltug/logo-design-skill": [
+   3716
+  ],
+  "koala73/worldmonitor": [
+   88768
+  ],
+  "larashero3-dotcom/lieflat-charts": [
+   6225
+  ],
+  "latent-spaces/brag": [
+   16788
+  ],
+  "lemomo-ai/lemo-opuscar": [
+   3296
+  ],
+  "lidge-jun/opencodex": [
+   17581
+  ],
+  "luongnv89/claude-howto": [
+   41949
+  ],
+  "manaflow-ai/cmux": [
+   28251
+  ],
+  "marclou/mailcheap": [
+   1237
+  ],
+  "mattpocock/skills": [
+   296546
+  ],
+  "microsoft/SkillOpt": [
+   18546
+  ],
+  "microsoft/playwright-mcp": [
+   38351
+  ],
+  "milind-soni/OpenMausBot": [
+   5144
+  ],
+  "miqdadbadjuber/anti-slop": [
+   6469
+  ],
+  "mksglu/context-mode": [
+   30855
+  ],
+  "modelcontextprotocol/servers": [
+   91363
+  ],
+  "morluto/awesome-reverse-engineering": [
+   862
+  ],
+  "morluto/rea": [
+   326706
+  ],
+  "multica-ai/andrej-karpathy-skills": [
+   221034
+  ],
+  "mvanhorn/last30days-skill": [
+   64687
+  ],
+  "n8n-io/n8n": [
+   207962
+  ],
+  "nanaism/yomiyasu": [
+   2243
+  ],
+  "nanocoai/nanoclaw": [
+   30966
+  ],
+  "nateherkai/roast-room": [
+   800
+  ],
+  "nextlevelbuilder/ui-ux-pro-max-skill": [
+   137338
+  ],
+  "nexu-io/open-design": [
+   102289
+  ],
+  "nidhinjs/prompt-master": [
+   14616
+  ],
+  "nykooi1/vibe-wise": [
+   3761
+  ],
+  "obra/superpowers": [
+   301763
+  ],
+  "oil-oil/oil-ui": [
+   1794
+  ],
+  "omnigent-ai/omnigent": [
+   10885
+  ],
+  "open-gsd/gsd-core": [
+   10663
+  ],
+  "openfilm/openfilm": [
+   1066
+  ],
+  "pacifio/atlas": [
+   9621
+  ],
+  "paperclipai/paperclip": [
+   104284
+  ],
+  "pascalorg/editor": [
+   24974
+  ],
+  "phuryn/pm-skills": [
+   27191
+  ],
+  "rehan-remade/universal-modder": [
+   8373
+  ],
+  "router-for-me/CLIProxyAPI": [
+   55642
+  ],
+  "rtk-ai/rtk": [
+   83903
+  ],
+  "ruvnet/ruflo": [
+   76709
+  ],
+  "sansan0/TrendRadar": [
+   63010
+  ],
+  "shanraisshan/claude-code-best-practice": [
+   67721
+  ],
+  "sickn33/agentic-awesome-skills": [
+   47916
+  ],
+  "stablyai/orca": [
+   97131
+  ],
+  "steipete/CodexBar": [
+   22644
+  ],
+  "teng-lin/notebooklm-py": [
+   19794
+  ],
+  "thedotmack/claude-mem": [
+   101664
+  ],
+  "tigerless-labs/agent-memory": [
+   4319
+  ],
+  "tigerless-labs/autoharness": [
+   11140
+  ],
+  "tirth8205/code-review-graph": [
+   32254
+  ],
+  "titanwings/distilly": [
+   25773
+  ],
+  "trailhq/Trail-Code": [
+   10410
+  ],
+  "travisvn/awesome-claude-skills": [
+   15457
+  ],
+  "tt-a1i/archify": [
+   85531
+  ],
+  "tw93/Kami": [
+   12000
+  ],
+  "upstash/context7": [
+   63272
+  ],
+  "vinzdg/codenotch": [
+   2859
+  ],
+  "virgiliojr94/book-to-skill": [
+   35298
+  ],
+  "wanshuiyin/Auto-claude-code-research-in-sleep": [
+   17689
+  ],
+  "wshobson/agents": [
+   41048
+  ],
+  "x1xhlol/system-prompts-and-models-of-ai-tools": [
+   144084
+  ],
+  "xbtlin/ai-berkshire": [
+   16790
+  ],
+  "yetone/cumora": [
+   3995
+  ],
+  "yetone/magpie": [
+   16381
+  ],
+  "zhuyansen/new-term-radar": [
+   1115
+  ]
+ }
+}

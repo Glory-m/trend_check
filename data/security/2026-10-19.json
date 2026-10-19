@@ -118,8 +118,8 @@
    "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
   }
  ],
- "last_scan_at": "2026-10-19T06:43:10Z",
- "scanned_last_run": 9839,
+ "last_scan_at": "2026-10-19T06:52:21Z",
+ "scanned_last_run": 9334,
  "flagged_count": 10,
  "rules": "collector/safety.py (규칙 기반, AI 미사용)",
  "quarantined_count": 4
