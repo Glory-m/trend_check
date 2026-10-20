@@ -1,5 +1,26 @@
 {
  "repos": {
+  "Arekejoker/qwen21-nsfw-pose-skill": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 1,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "SKILL.md"
+    ],
+    "credentials": [],
+    "shell": [
+     "SKILL.md"
+    ],
+    "injection": [
+     "SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 1
+  },
   "ComposioHQ/awesome-claude-skills": {
    "audited_at": "2026-10-19T09:40:45Z",
    "skill_files": 864,
@@ -39,6 +60,36 @@
    },
    "tree_truncated": false,
    "checked_files": 13
+  },
+  "Gathin23/cleanyourtv": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
+  },
+  "Gathin23/tv-vibehack": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 0,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 0
   },
   "Graphify-Labs/graphify": {
    "audited_at": "2026-10-19T09:40:45Z",
@@ -96,7 +147,7 @@
    "checked_files": 28
   },
   "NousResearch/hermes-agent": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 212,
    "script_files": 256,
    "hook_configs": [],
@@ -158,10 +209,51 @@
     ]
    },
    "tree_truncated": false,
-   "checked_files": 38
+   "checked_files": 40
+  },
+  "addyosmani/agent-skills": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 25,
+   "script_files": 1,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [
+     "skills/browser-testing-with-devtools/SKILL.md",
+     "skills/ci-cd-and-automation/SKILL.md",
+     "skills/code-review-and-quality/SKILL.md",
+     "skills/constraint-driven-development/SKILL.md",
+     "skills/context-engineering/SKILL.md",
+     "skills/documentation-and-adrs/SKILL.md",
+     "skills/git-workflow-and-versioning/SKILL.md",
+     "skills/observability-and-instrumentation/SKILL.md",
+     "skills/security-and-hardening/SKILL.md",
+     "skills/shipping-and-launch/SKILL.md",
+     "skills/spec-driven-development/SKILL.md",
+     "skills/test-driven-development/SKILL.md"
+    ],
+    "shell": [
+     "skills/debugging-and-error-recovery/SKILL.md",
+     "skills/doubt-driven-development/SKILL.md",
+     "skills/git-workflow-and-versioning/SKILL.md",
+     "skills/idea-refine/SKILL.md",
+     "skills/performance-optimization/SKILL.md"
+    ],
+    "injection": [
+     "skills/browser-testing-with-devtools/SKILL.md",
+     "skills/code-simplification/SKILL.md",
+     "skills/debugging-and-error-recovery/SKILL.md",
+     "skills/frontend-ui-engineering/SKILL.md",
+     "skills/security-and-hardening/SKILL.md",
+     "skills/source-driven-development/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 25
   },
   "affaan-m/ECC": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 1062,
    "script_files": 134,
    "hook_configs": [
@@ -244,7 +336,7 @@
    "checked_files": 24
   },
   "anthropics/claude-code": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 10,
    "script_files": 10,
    "hook_configs": [
@@ -287,7 +379,7 @@
    "checked_files": 10
   },
   "anthropics/claude-code-action": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -306,7 +398,7 @@
    "checked_files": 0
   },
   "anthropics/claude-plugins-official": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 33,
    "script_files": 25,
    "hook_configs": [
@@ -415,10 +507,56 @@
    "tree_truncated": false,
    "checked_files": 20
   },
+  "cursor/plugins": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 171,
+   "script_files": 94,
+   "hook_configs": [
+    "advisor/hooks/hooks.json",
+    "continual-learning/hooks/hooks.json",
+    "ralph-loop/hooks/hooks.json"
+   ],
+   "mcp_configs": [],
+   "flags": {
+    "network": [
+     "cursor-team-kit/skills/pr-review-canvas/SKILL.md",
+     "grok-voice/skills/add-dictation/SKILL.md",
+     "grok-voice/skills/add-read-aloud/SKILL.md",
+     "grok-voice/skills/debug-voice/SKILL.md"
+    ],
+    "credentials": [
+     "advisor/skills/advisor/SKILL.md",
+     "cursor-sdk/skills/cursor-sdk/SKILL.md",
+     "cursor-team-kit/skills/control-cli/SKILL.md",
+     "cursor-team-kit/skills/workflow-from-chats/SKILL.md",
+     "grok-voice/skills/add-voice/SKILL.md",
+     "grok-voice/skills/debug-voice/SKILL.md"
+    ],
+    "shell": [
+     "cursor-sdk/skills/cursor-sdk/SKILL.md",
+     "cursor-team-kit/skills/control-cli/SKILL.md",
+     "cursor-team-kit/skills/loop-on-ci/SKILL.md",
+     "cursor-team-kit/skills/make-pr-easy-to-review/SKILL.md",
+     "cursor-team-kit/skills/pr-review-canvas/SKILL.md",
+     "cursor-team-kit/skills/review-and-ship/SKILL.md",
+     "cursor-team-kit/skills/run-smoke-tests/SKILL.md",
+     "dyl-stack/skills/dyl-mode/SKILL.md",
+     "grok-voice/skills/debug-voice/SKILL.md"
+    ],
+    "injection": [
+     "cursor-sdk/skills/cursor-sdk/SKILL.md",
+     "cursor-team-kit/skills/pr-review-canvas/SKILL.md",
+     "grok-voice/skills/add-read-aloud/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 36,
+   "budget_exhausted": true
+  },
   "garrytan/gstack": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 70,
-   "script_files": 417,
+   "script_files": 419,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
@@ -492,7 +630,7 @@
    "checked_files": 40
   },
   "hesreallyhim/awesome-claude-code": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -507,7 +645,7 @@
    "checked_files": 0
   },
   "mattpocock/skills": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 38,
    "script_files": 3,
    "hook_configs": [],
@@ -540,7 +678,7 @@
    "checked_files": 38
   },
   "microsoft/playwright-mcp": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -593,7 +731,7 @@
    "checked_files": 11
   },
   "morluto/rea": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 5,
    "script_files": 0,
    "hook_configs": [],
@@ -629,7 +767,7 @@
    "checked_files": 1
   },
   "nexu-io/open-design": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 553,
    "script_files": 218,
    "hook_configs": [],
@@ -702,6 +840,147 @@
    "tree_truncated": false,
    "checked_files": 15
   },
+  "paperclipai/paperclip": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 83,
+   "script_files": 20,
+   "hook_configs": [],
+   "mcp_configs": [
+    "integrations/assistant-plugins/claude/paperclip/.mcp.json",
+    "integrations/assistant-plugins/openai/paperclip/.mcp.json"
+   ],
+   "flags": {
+    "network": [
+     ".agents/skills/create-agent-adapter/SKILL.md",
+     ".agents/skills/create-verification-skill/SKILL.md",
+     ".agents/skills/paperclip-dev-workspace-run-verify-fix/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".agents/skills/pr-gardening/SKILL.md"
+    ],
+    "credentials": [
+     ".agents/skills/add-product-e2e-eval/SKILL.md",
+     ".agents/skills/add-runner-eval/SKILL.md",
+     ".agents/skills/company-creator/SKILL.md",
+     ".agents/skills/create-agent-adapter/SKILL.md",
+     ".agents/skills/create-external-bot-integration/SKILL.md",
+     ".agents/skills/create-paperclip-bundled-skill/SKILL.md",
+     ".agents/skills/create-runner-adapter/SKILL.md",
+     ".agents/skills/deal-with-security-advisory/SKILL.md",
+     ".agents/skills/diagnose-why-work-stopped/SKILL.md",
+     ".agents/skills/fix-failed-paperclip-run/SKILL.md",
+     ".agents/skills/honeycomb-tracing/SKILL.md",
+     ".agents/skills/paperclip-dev-workspace-run-verify-fix/SKILL.md",
+     ".agents/skills/paperclip-evals/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".agents/skills/pr-gardening/SKILL.md",
+     ".agents/skills/prcheckloop/SKILL.md",
+     ".agents/skills/release-changelog-discord-message/SKILL.md",
+     ".agents/skills/setup-code-maintenance-bot/SKILL.md",
+     ".agents/skills/terminal-bench-loop/SKILL.md",
+     ".agents/skills/verify-paperclip/SKILL.md"
+    ],
+    "shell": [
+     ".agents/skills/add-product-e2e-eval/SKILL.md",
+     ".agents/skills/add-runner-eval/SKILL.md",
+     ".agents/skills/check-pr/SKILL.md",
+     ".agents/skills/company-creator/SKILL.md",
+     ".agents/skills/create-issue-interaction-ui/SKILL.md",
+     ".agents/skills/create-paperclip-bundled-skill/SKILL.md",
+     ".agents/skills/doc-maintenance/SKILL.md",
+     ".agents/skills/garden-inbox/SKILL.md",
+     ".agents/skills/honeycomb-tracing/SKILL.md",
+     ".agents/skills/paperclip-create-plugin/SKILL.md",
+     ".agents/skills/paperclip-dev-workspace-run-verify-fix/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".agents/skills/pr-gardening/SKILL.md",
+     ".agents/skills/prcheckloop/SKILL.md",
+     ".agents/skills/release-changelog-discord-message/SKILL.md",
+     ".agents/skills/release-changelog/SKILL.md",
+     ".agents/skills/release/SKILL.md",
+     ".agents/skills/terminal-bench-loop/SKILL.md",
+     ".agents/skills/verify-paperclip/SKILL.md"
+    ],
+    "injection": [
+     ".agents/skills/company-creator/SKILL.md",
+     ".agents/skills/create-agent-adapter/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".claude/skills/design-guide/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 40
+  },
+  "rehan-remade/universal-modder": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 36,
+   "script_files": 3,
+   "hook_configs": [
+    ".claude/settings.json",
+    "hooks/hooks.json"
+   ],
+   "mcp_configs": [
+    ".mcp.json"
+   ],
+   "flags": {
+    "network": [
+     ".agents/skills/game-research-websearch/SKILL.md",
+     ".claude/skills/game-research-websearch/SKILL.md",
+     "skills/game-research-websearch/SKILL.md"
+    ],
+    "credentials": [
+     ".agents/skills/fal-assets/SKILL.md",
+     ".agents/skills/game-research-websearch/SKILL.md",
+     ".agents/skills/mod-any-game/SKILL.md",
+     ".agents/skills/share-field-notes/SKILL.md",
+     ".claude/skills/fal-assets/SKILL.md",
+     ".claude/skills/game-research-websearch/SKILL.md",
+     ".claude/skills/mod-any-game/SKILL.md",
+     ".claude/skills/share-field-notes/SKILL.md",
+     "skills/fal-assets/SKILL.md",
+     "skills/game-research-websearch/SKILL.md",
+     "skills/mod-any-game/SKILL.md",
+     "skills/share-field-notes/SKILL.md"
+    ],
+    "shell": [
+     ".agents/skills/asset-pipeline/SKILL.md",
+     ".agents/skills/game-automation/SKILL.md",
+     ".agents/skills/game-recon/SKILL.md",
+     ".agents/skills/publish-mod/SKILL.md",
+     ".agents/skills/share-field-notes/SKILL.md",
+     ".agents/skills/showcase-video/SKILL.md",
+     ".claude/skills/asset-pipeline/SKILL.md",
+     ".claude/skills/game-automation/SKILL.md",
+     ".claude/skills/game-recon/SKILL.md",
+     ".claude/skills/publish-mod/SKILL.md",
+     ".claude/skills/share-field-notes/SKILL.md",
+     ".claude/skills/showcase-video/SKILL.md",
+     "skills/asset-pipeline/SKILL.md",
+     "skills/game-automation/SKILL.md",
+     "skills/game-recon/SKILL.md",
+     "skills/publish-mod/SKILL.md",
+     "skills/share-field-notes/SKILL.md",
+     "skills/showcase-video/SKILL.md"
+    ],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 36
+  },
+  "stablyai/orca": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 11,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 11
+  },
   "travisvn/awesome-claude-skills": {
    "audited_at": "2026-10-19T09:40:45Z",
    "skill_files": 0,
@@ -717,8 +996,25 @@
    "tree_truncated": false,
    "checked_files": 0
   },
+  "tt-a1i/archify": {
+   "audited_at": "2026-10-20T00:23:41Z",
+   "skill_files": 5,
+   "script_files": 108,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [
+     "archify/SKILL.md"
+    ],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 5
+  },
   "yetone/magpie": {
-   "audited_at": "2026-10-19T09:40:45Z",
+   "audited_at": "2026-10-20T00:23:41Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -733,6 +1029,6 @@
    "checked_files": 0
   }
  },
- "updated_at": "2026-10-19T09:40:45Z",
+ "updated_at": "2026-10-20T00:23:41Z",
  "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
 }

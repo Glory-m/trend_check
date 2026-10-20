@@ -1,0 +1,106 @@
+{
+ "date": "2026-10-20",
+ "flagged": [
+  {
+   "ref": "repo:AskTheWay/dsh-auto-memory",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "fd7ec1ca529c3e6c",
+   "length": 172,
+   "url": "https://github.com/AskTheWay/dsh-auto-memory"
+  },
+  {
+   "ref": "repo:klsoen/opus-js-animations",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "markup"
+   ],
+   "quarantined": true,
+   "sha256_16": "dad222799732a38e",
+   "length": 186,
+   "url": "https://github.com/klsoen/opus-js-animations"
+  },
+  {
+   "ref": "repo:alexgetmancom/claudecut",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "0592ac7a7cfb1368",
+   "length": 119,
+   "url": "https://github.com/alexgetmancom/claudecut"
+  },
+  {
+   "ref": "repo:asgeirtj/system_prompts_leaks",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "5b94861664b9bf73",
+   "length": 248,
+   "url": "https://github.com/asgeirtj/system_prompts_leaks"
+  },
+  {
+   "ref": "repo:Piebald-AI/claude-code-system-prompts",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "535959df3666745a",
+   "length": 265,
+   "url": "https://github.com/Piebald-AI/claude-code-system-prompts"
+  },
+  {
+   "ref": "repo:jonigl/mcp-client-for-ollama",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "7713e96bc34ae7a4",
+   "length": 289,
+   "url": "https://github.com/jonigl/mcp-client-for-ollama"
+  },
+  {
+   "ref": "repo:Piebald-AI/tweakcc",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "d5bd3802091a2c0f",
+   "length": 290,
+   "url": "https://github.com/Piebald-AI/tweakcc"
+  },
+  {
+   "ref": "repo:asgeirtj/system_prompts_leaks",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "5b94861664b9bf73",
+   "length": 248,
+   "url": "https://github.com/asgeirtj/system_prompts_leaks"
+  }
+ ],
+ "last_scan_at": "2026-10-20T00:23:41Z",
+ "scanned_last_run": 9666,
+ "flagged_count": 8,
+ "quarantined_count": 1,
+ "rules": "collector/safety.py (규칙 기반, AI 미사용)"
+}

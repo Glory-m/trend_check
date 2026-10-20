@@ -1,5 +1,16 @@
 {
  "versions": {
+  "2.1.304": {
+   "first_seen_at": "2026-10-20T00:23:41Z",
+   "in_changelog": true,
+   "in_release": true,
+   "in_npm": true,
+   "npm_published_at": "2026-10-19T19:47:15.337Z",
+   "release_published_at": "2026-10-19T21:34:39Z",
+   "bullet_source": "changelog",
+   "bullet_count": 76,
+   "emitted": true
+  },
   "2.1.303": {
    "first_seen_at": "2026-10-19T06:33:13Z",
    "in_changelog": true,
@@ -1127,10 +1138,10 @@
   "2.1.185": {
    "first_seen_at": "2026-10-19T06:33:13Z",
    "in_changelog": true,
-   "in_release": true,
+   "in_release": false,
    "in_npm": true,
    "npm_published_at": "2026-06-20T16:54:36.327Z",
-   "release_published_at": "2026-06-20T20:59:19Z",
+   "release_published_at": null,
    "bullet_source": "changelog",
    "bullet_count": 1,
    "emitted": true
@@ -6238,16 +6249,16 @@
    "unlisted_reported": true
   }
  },
- "updated_at": "2026-10-19T09:40:45Z",
+ "updated_at": "2026-10-20T00:23:41Z",
  "dist_tags": {
-  "latest": "2.1.303",
-  "next": "2.1.303",
-  "stable": "2.1.292"
+  "latest": "2.1.304",
+  "next": "2.1.304",
+  "stable": "2.1.304"
  },
  "summary": {
-  "total": 555,
-  "changelog": 423,
-  "npm": 547,
+  "total": 556,
+  "changelog": 424,
+  "npm": 548,
   "release": 100,
   "npm_only": [
    "0.2.6",
