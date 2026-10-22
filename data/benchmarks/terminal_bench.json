@@ -226,7 +226,7 @@
  "source": "https://github.com/harbor-framework/terminal-bench-2-1",
  "page": "https://www.tbench.ai/leaderboard/terminal-bench/2.1",
  "license": "Apache-2.0",
- "checked_at": "2026-10-20T23:55:21Z",
+ "checked_at": "2026-10-22T00:01:27Z",
  "rows": [
   {
    "model": "Fable 5",
