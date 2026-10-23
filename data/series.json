@@ -4,7 +4,8 @@
   "2026-10-20",
   "2026-10-21",
   "2026-10-22",
-  "2026-10-23"
+  "2026-10-23",
+  "2026-10-24"
  ],
  "repos": {
   "AgriciDaniel/claude-obsidian": [
@@ -12,38 +13,44 @@
    15652,
    15675,
    15703,
-   15732
+   15732,
+   15756
   ],
   "AgriciDaniel/claude-seo": [
    null,
    null,
    null,
    19590,
-   19724
+   19724,
+   19873
   ],
   "Alishahryar1/free-claude-code": [
    61717,
    61924,
    62175,
    62439,
-   62659
+   62659,
+   62893
   ],
   "Ansub/tv-detox": [
    null,
    530,
    948,
    1162,
-   1286
+   1286,
+   1381
   ],
   "Arekejoker/qwen21-nsfw-pose-skill": [
    3249,
    3368,
    3493,
    3582,
-   3630
+   3630,
+   3671
   ],
   "CherryHQ/cherry-studio": [
    52735,
+   null,
    null,
    null,
    null,
@@ -54,24 +61,28 @@
    53866,
    53897,
    53951,
-   54002
+   54002,
+   54045
   ],
   "ComposioHQ/awesome-claude-skills": [
    77414,
    77450,
    77529,
    77620,
-   77694
+   77694,
+   77769
   ],
   "D4Vinci/Scrapling": [
    88573,
    88682,
    88877,
    89040,
-   89204
+   89204,
+   89349
   ],
   "DayuanJiang/next-ai-draw-io": [
    36322,
+   null,
    null,
    null,
    null,
@@ -82,33 +93,38 @@
    46950,
    47030,
    47120,
-   47245
+   47245,
+   47347
   ],
   "DietrichGebert/ponytail": [
    167426,
    168099,
    169602,
    171582,
-   173427
+   173427,
+   174788
   ],
   "Donchitos/Claude-Code-Game-Studios": [
    26851,
    26893,
    26983,
    27058,
-   27185
+   27185,
+   27298
   ],
   "Egonex-AI/Understand-Anything": [
    86930,
    null,
    null,
    87487,
-   87720
+   87720,
+   87924
   ],
   "EveryInc/compound-engineering-plugin": [
    25605,
    25613,
    25625,
+   null,
    null,
    null
   ],
@@ -117,6 +133,7 @@
    null,
    null,
    606,
+   null,
    null
   ],
   "Folkbench/folkbench": [
@@ -124,17 +141,20 @@
    1986,
    2182,
    2259,
-   2703
+   2703,
+   3009
   ],
   "Gathin23/cleanyourtv": [
    null,
    5218,
    11618,
    19029,
-   23963
+   23963,
+   27870
   ],
   "Gathin23/tv-vibehack": [
    3079,
+   null,
    null,
    null,
    null,
@@ -145,11 +165,13 @@
    129166,
    130208,
    131602,
-   132920
+   132920,
+   133897
   ],
   "HarnessMD/munder-difflin": [
    8901,
    8925,
+   null,
    null,
    null,
    null
@@ -159,69 +181,79 @@
    52982,
    53174,
    53355,
-   53494
+   53494,
+   53608
   ],
   "JCodesMore/ai-website-cloner-template": [
    null,
    37010,
    37056,
    37125,
-   37184
+   37184,
+   37234
   ],
   "Jakeschincariol/day-trader-skill": [
    null,
    null,
    null,
    null,
-   507
+   507,
+   848
   ],
   "Jakeschincariol/founder-skill": [
    1030,
    1087,
    1191,
    1309,
-   1430
+   1430,
+   1545
   ],
   "Jakeschincariol/replica-skill": [
    3460,
    3545,
    3747,
    4011,
-   4634
+   4634,
+   5021
   ],
   "JuliusBrussee/caveman": [
    113552,
    113674,
    113859,
    114130,
-   114408
+   114408,
+   114627
   ],
   "K-Dense-AI/scientific-agent-skills": [
    52764,
    52926,
    53260,
    53576,
-   53886
+   53886,
+   54208
   ],
   "Leonxlnx/earshot": [
    1076,
    1526,
    1944,
    2050,
-   2160
+   2160,
+   2458
   ],
   "Leonxlnx/taste-skill": [
    99071,
    99356,
    99852,
    100559,
-   101116
+   101116,
+   101614
   ],
   "LiCinCan/blender-ai-mcp-addon": [
    792,
    938,
    936,
    975,
+   null,
    null
   ],
   "Louis-CFM/coucou": [
@@ -229,12 +261,14 @@
    5588,
    5644,
    5897,
-   6223
+   6223,
+   6312
   ],
   "MadsLorentzen/ai-job-search": [
    54842,
    57202,
    60495,
+   null,
    null,
    null
   ],
@@ -243,17 +277,20 @@
    791,
    960,
    1031,
-   1103
+   1103,
+   1150
   ],
   "NVIDIA/SkillSpector": [
    20526,
    20611,
    20722,
    20822,
-   20999
+   20999,
+   21088
   ],
   "Nanako0129/sepia": [
    3240,
+   null,
    null,
    null,
    null,
@@ -264,68 +301,86 @@
    15077,
    15084,
    15105,
-   15116
+   15116,
+   15136
   ],
   "Noniv/web-ocean": [
    714,
    768,
    806,
    844,
-   883
+   883,
+   901
   ],
   "NousResearch/hermes-agent": [
    255078,
    255269,
    255579,
    255899,
-   256243
+   256243,
+   256526
   ],
   "Nutlope/hallmark": [
    null,
    null,
    null,
    30575,
-   30781
+   30781,
+   31335
   ],
   "Oldcircle/geo-sleuth": [
    3416,
    3471,
    3637,
    3749,
-   3835
+   3835,
+   3955
   ],
   "OthmanAdi/planning-with-files": [
    27527,
    27535,
    27551,
    27566,
-   27592
+   27592,
+   27609
   ],
   "Panniantong/Agent-Reach": [
    99321,
    99690,
    100289,
    100647,
-   101024
+   101024,
+   101340
   ],
   "QingYunA/answer-me-with-html": [
    3793,
    3903,
    4100,
    4175,
-   4253
+   4253,
+   4313
   ],
   "Ryze-AI-Adgent/open-seo-mcp-skills": [
    6086,
    6164,
    6263,
    null,
-   null
+   null,
+   6821
+  ],
+  "SnailSploit/Claude-Red": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   8462
   ],
   "Tejashmakwana/motionmaxxing": [
    882,
    907,
    934,
+   null,
    null,
    null
   ],
@@ -334,54 +389,62 @@
    null,
    486,
    590,
-   635
+   635,
+   null
   ],
   "Vincentwei1021/video-shotcraft": [
    12472,
    12527,
    12667,
    12784,
-   12984
+   12984,
+   13239
   ],
   "VoltAgent/awesome-agent-skills": [
    35971,
    36013,
    36072,
    36136,
-   36186
+   36186,
+   36231
   ],
   "VoltAgent/awesome-openclaw-skills": [
    53203,
    53223,
    53241,
    53262,
-   53273
+   53273,
+   53291
   ],
   "Wei-Shaw/sub2api": [
    44349,
    44376,
    44455,
    44539,
-   44611
+   44611,
+   44710
   ],
   "Yeachan-Heo/oh-my-claudecode": [
    40057,
    40086,
    40121,
    40160,
-   40183
+   40183,
+   40207
   ],
   "YeonwooSung/my-claude-code-mods": [
    1057,
    1071,
    1108,
    1131,
-   1099
+   1099,
+   1100
   ],
   "addyosmani/agent-skills": [
    108383,
    108625,
    108984,
+   null,
    null,
    null
   ],
@@ -390,89 +453,102 @@
    284132,
    284895,
    285708,
-   286519
+   286519,
+   287313
   ],
   "ai-job-search-dev/ai-job-search": [
    null,
    null,
    null,
    62920,
-   63548
+   63548,
+   64092
   ],
   "alchaincyf/huashu-design": [
    25383,
    25419,
    25570,
    25669,
-   25745
+   25745,
+   25912
   ],
   "alchaincyf/huashu-motion": [
    696,
    911,
    1146,
    1265,
-   1437
+   1437,
+   1537
   ],
   "alibaba/open-code-review": [
    47628,
    47659,
    47728,
    47937,
-   48066
+   48066,
+   48150
   ],
   "alirezarezvani/claude-skills": [
    null,
    null,
    null,
    28500,
-   28558
+   28558,
+   28607
   ],
   "amontlabs/lcu": [
    null,
    null,
    1937,
    2033,
-   2091
+   2091,
+   2179
   ],
   "android/skills": [
    8955,
    null,
    9051,
    9147,
-   9243
+   9243,
+   9415
   ],
   "anomalyco/opencode": [
    217065,
    217794,
    218888,
    219664,
-   220202
+   220202,
+   220613
   ],
   "anthropics/claude-code": [
    152314,
    152644,
    152649,
    152748,
-   152912
+   152912,
+   153170
   ],
   "anthropics/claude-code-action": [
    9567,
    9578,
    9592,
    9604,
-   9610
+   9610,
+   9622
   ],
   "anthropics/claude-plugins-official": [
    42997,
    43173,
    43405,
    43633,
-   43886
+   43886,
+   44114
   ],
   "anthropics/commerce-agents": [
    3275,
    3281,
    3287,
+   null,
    null,
    null
   ],
@@ -481,152 +557,182 @@
    null,
    30781,
    null,
-   31570
+   31570,
+   32196
   ],
   "anthropics/oss-scanner": [
    1127,
    1183,
    1349,
    1422,
-   1453
+   1453,
+   1481
   ],
   "anthropics/skills": [
    182093,
    182235,
    182494,
    182757,
-   183032
+   183032,
+   183292
+  ],
+  "ardeyouxipianyi/workbuddy2api-hub": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   2828
   ],
   "asgeirtj/system_prompts_leaks": [
    69889,
    69918,
    69940,
    70001,
-   70052
+   70052,
+   70113
   ],
   "ayghri/i-have-adhd": [
    null,
    57851,
    58020,
    58165,
-   58336
+   58336,
+   58473
   ],
   "blader/humanizer": [
    58283,
    58510,
    58903,
    59291,
-   59649
+   59649,
+   59991
   ],
   "browser-use/browser-harness": [
    18495,
    18499,
    18524,
    18546,
-   18571
+   18571,
+   18588
   ],
   "career-ops-hq/career-ops": [
    75566,
    75679,
    75885,
    76400,
-   76609
+   76609,
+   76838
   ],
   "cathrynlavery/diagram-design": [
    58043,
    58396,
    58972,
    59516,
-   60036
+   60036,
+   60351
   ],
   "ccch1mneyyy/dsh-TUI": [
    4856,
    4951,
    5037,
    5113,
-   5242
+   5242,
+   5489
   ],
   "cheaper-inference/OmniRoute": [
    null,
    null,
    null,
    79434,
-   79884
+   79884,
+   80397
   ],
   "chenhg5/cc-connect": [
    15995,
    15998,
    16009,
    null,
-   16047
+   16047,
+   null
   ],
   "citrolabs/ego-lite": [
    17674,
    17746,
    18157,
    18518,
-   18799
+   18799,
+   19017
   ],
   "cloudflare/security-audit-skill": [
    null,
    null,
    34133,
    36407,
-   39517
+   39517,
+   42090
   ],
   "cobusgreyling/loop-engineering": [
    11581,
    11585,
    11597,
    11600,
-   11610
+   11610,
+   11618
   ],
   "code-yeongyu/oh-my-openagent": [
    70181,
    70204,
    70229,
    70250,
-   70278
+   70278,
+   70292
   ],
   "colbymchenry/codegraph": [
    74416,
    74462,
    74538,
    74622,
-   74759
+   74759,
+   75076
   ],
   "coreyhaines31/marketingskills": [
    55443,
    55556,
    55686,
    55837,
-   56042
+   56042,
+   56240
   ],
   "cursor/plugins": [
    12910,
    13049,
    13248,
    13396,
-   13606
+   13606,
+   13780
   ],
   "davila7/claude-code-templates": [
    32743,
    32769,
    32789,
    32814,
-   32842
+   32842,
+   32856
   ],
   "decolua/9router": [
    31048,
    31080,
    31125,
    31174,
-   31238
+   31238,
+   31296
   ],
   "diegosouzapw/OmniRoute": [
    78285,
    78554,
    78969,
+   null,
    null,
    null
   ],
@@ -635,6 +741,7 @@
    5615,
    5627,
    null,
+   null,
    null
   ],
   "dominikmartn/harp": [
@@ -642,25 +749,29 @@
    null,
    null,
    531,
-   582
+   582,
+   591
   ],
   "dzhng/jevgrep": [
    2802,
    2818,
    2830,
    2835,
-   2848
+   2848,
+   2879
   ],
   "edenfunf/reelmimic": [
    3648,
    3662,
    1867,
    null,
+   null,
    null
   ],
   "eternityspring/shuohao-skills": [
    4794,
    4824,
+   null,
    null,
    null,
    null
@@ -670,11 +781,13 @@
    146346,
    146797,
    147222,
-   147672
+   147672,
+   148039
   ],
   "feder-cr/invisible_playwright_mcp": [
    2773,
    2771,
+   null,
    null,
    null,
    null
@@ -684,6 +797,7 @@
    788,
    794,
    null,
+   null,
    null
   ],
   "garrytan/gstack": [
@@ -691,24 +805,28 @@
    136966,
    137078,
    137203,
-   137313
+   137313,
+   137388
   ],
   "gastownhall/beads": [
    28007,
    28026,
    28056,
    28084,
-   28121
+   28121,
+   28153
   ],
   "genspark-ai/genoffice": [
    9992,
    10044,
    10186,
    10345,
-   10537
+   10537,
+   10660
   ],
   "getagentseal/codeburn": [
    11517,
+   null,
    null,
    null,
    null,
@@ -719,80 +837,92 @@
    40192,
    40234,
    40285,
-   40321
+   40321,
+   40361
   ],
   "google-gemini/gemini-cli": [
    107449,
    107458,
    107474,
    107490,
-   107525
+   107525,
+   107563
   ],
   "headroomlabs-ai/headroom": [
    75950,
    76234,
    76740,
    77240,
-   77553
+   77553,
+   77655
   ],
   "herdrdev/herdr": [
    44727,
    44826,
    45010,
    45208,
-   45399
+   45399,
+   45556
   ],
   "hesreallyhim/awesome-claude-code": [
    55992,
    56038,
    56112,
    56198,
-   56271
+   56271,
+   56349
   ],
   "heygen-com/hyperframes": [
    null,
    null,
    68480,
    69197,
-   69999
+   69999,
+   70787
   ],
   "hujjun/mcd-saver-strategist": [
    633,
    704,
    804,
    880,
-   990
+   990,
+   1134
   ],
   "iOfficeAI/AionUi": [
    33629,
    33644,
    33665,
    33682,
-   33705
+   33705,
+   33731
   ],
   "iOfficeAI/OfficeCLI": [
    32170,
    32194,
    32231,
    32277,
-   32330
+   32330,
+   32367
   ],
   "img2threejs/img2threejs": [
    18412,
    18459,
    18518,
    18584,
-   18854
+   18854,
+   19055
   ],
   "jarrodwatts/claude-hud": [
    28642,
    28657,
    28688,
    28738,
-   28781
+   28781,
+   28827
   ],
   "jatechan/ai-data-extractor": [
    436,
+   null,
    null,
    null,
    null,
@@ -803,39 +933,45 @@
    21386,
    21432,
    21482,
-   21512
+   21512,
+   21539
   ],
   "juliobsz/skills": [
    431,
    654,
    789,
    854,
-   883
+   883,
+   913
   ],
   "kaankiziltug/logo-design-skill": [
    3727,
    3773,
    3852,
    4024,
-   4164
+   4164,
+   4302
   ],
   "kitlangton/scrawl": [
    null,
    465,
    577,
    663,
-   698
+   698,
+   717
   ],
   "koala73/worldmonitor": [
    88792,
    88848,
    88934,
    89095,
-   89229
+   89229,
+   89353
   ],
   "larashero3-dotcom/lieflat-charts": [
    6239,
    6268,
+   null,
    null,
    null,
    null
@@ -845,173 +981,198 @@
    16984,
    17174,
    null,
-   null
+   null,
+   18097
   ],
   "lemomo-ai/lemo-opuscar": [
    3447,
    3775,
    4352,
    4910,
-   5548
+   5548,
+   6127
   ],
   "lidge-jun/opencodex": [
    17592,
    17628,
    17689,
    17738,
-   17787
+   17787,
+   17818
   ],
   "luongnv89/claude-howto": [
    41951,
    41966,
    42091,
    42492,
-   43173
+   43173,
+   43999
   ],
   "manaflow-ai/cmux": [
    28261,
    28288,
    28304,
    28330,
-   28355
+   28355,
+   28377
   ],
   "marclou/mailcheap": [
    1240,
    1252,
    1274,
    1294,
-   1307
+   1307,
+   1327
   ],
   "mattpocock/skills": [
    296755,
    297481,
    298641,
    299842,
-   300873
+   300873,
+   301802
   ],
   "microsoft/SkillOpt": [
    18547,
    18565,
    18590,
    18613,
-   18634
+   18634,
+   18651
   ],
   "microsoft/playwright-mcp": [
    38355,
    38380,
    38436,
    38475,
-   38515
+   38515,
+   38557
   ],
   "milind-soni/OpenMausBot": [
    5154,
    5202,
    5295,
    5368,
-   5439
+   5439,
+   5508
   ],
   "miqdadbadjuber/anti-slop": [
    6481,
    6560,
    6687,
    6768,
-   6883
+   6883,
+   6971
   ],
   "mksglu/context-mode": [
    30891,
    31072,
    31352,
    31650,
-   31827
+   31827,
+   31991
   ],
   "modelcontextprotocol/servers": [
    91367,
    91383,
    91426,
    91452,
-   91490
+   91490,
+   91525
   ],
   "morluto/awesome-reverse-engineering": [
    878,
    923,
    1005,
    1063,
-   1121
+   1121,
+   1162
   ],
   "morluto/rea": [
    328973,
    336623,
    347743,
    357623,
-   366084
+   366084,
+   373087
   ],
   "multica-ai/andrej-karpathy-skills": [
    221067,
    221226,
    221530,
    221944,
-   222523
+   222523,
+   222921
   ],
   "mvanhorn/last30days-skill": [
    64704,
    64779,
    64876,
    64988,
-   65128
+   65128,
+   65211
   ],
   "n8n-io/n8n": [
    207981,
    208052,
    208157,
    208252,
-   208350
+   208350,
+   208412
   ],
   "nanaism/yomiyasu": [
    2249,
    2264,
    2347,
    2381,
-   2403
+   2403,
+   2439
   ],
   "nano-muse/nanoMuse": [
    null,
    null,
    null,
    2160,
-   2306
+   2306,
+   2428
   ],
   "nanocoai/nanoclaw": [
    30967,
    30972,
    30979,
    30977,
-   30993
+   30993,
+   31003
   ],
   "nateherkai/roast-room": [
    805,
    828,
    873,
    916,
-   1000
+   1000,
+   1048
   ],
   "nextlevelbuilder/ui-ux-pro-max-skill": [
    137412,
    137614,
    137994,
    138487,
-   139011
+   139011,
+   139431
   ],
   "nexu-io/open-design": [
    102342,
    102525,
    102805,
    103087,
-   103346
+   103346,
+   103593
   ],
   "nidhinjs/prompt-master": [
    14622,
    14651,
    14690,
+   null,
    null,
    null
   ],
@@ -1020,45 +1181,52 @@
    3783,
    3811,
    3836,
-   3864
+   3864,
+   3881
   ],
   "obra/superpowers": [
    301829,
    302131,
    302590,
    303155,
-   303730
+   303730,
+   304233
   ],
   "oil-oil/oil-ui": [
    1811,
    1844,
    1924,
    1977,
-   2018
+   2018,
+   2062
   ],
   "omnigent-ai/omnigent": [
    10895,
    10910,
    10938,
    10965,
-   10994
+   10994,
+   11012
   ],
   "open-gsd/gsd-core": [
    10671,
    10687,
    10723,
    10760,
-   10783
+   10783,
+   10814
   ],
   "openfilm/openfilm": [
    1113,
    1320,
    1595,
    1842,
-   2103
+   2103,
+   2329
   ],
   "pacifio/atlas": [
    9622,
+   null,
    null,
    null,
    null,
@@ -1069,12 +1237,14 @@
    104733,
    105238,
    105674,
-   106156
+   106156,
+   106586
   ],
   "pascalorg/editor": [
    24976,
    24989,
    25011,
+   null,
    null,
    null
   ],
@@ -1083,75 +1253,94 @@
    27222,
    27239,
    27274,
-   27308
+   27308,
+   27326
   ],
   "rehan-remade/universal-modder": [
    8389,
    8454,
    8543,
    8631,
-   8720
+   8720,
+   8814
   ],
   "router-for-me/CLIProxyAPI": [
    55666,
    55700,
    55810,
    55910,
-   55999
+   55999,
+   56090
   ],
   "rtk-ai/rtk": [
    83926,
    83987,
    84088,
    84210,
-   84312
+   84312,
+   84394
   ],
   "ruvnet/ruflo": [
    76786,
    77179,
    77827,
    78211,
-   78483
+   78483,
+   78777
   ],
   "sansan0/TrendRadar": [
    63019,
    63029,
    63051,
    63083,
-   63116
+   63116,
+   63137
   ],
   "shanraisshan/claude-code-best-practice": [
    67728,
    67777,
    67832,
    67883,
-   67915
+   67915,
+   67942
+  ],
+  "shaongitbd/doory": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   1795
   ],
   "sickn33/agentic-awesome-skills": [
    47929,
    47958,
    48087,
    48269,
-   48337
+   48337,
+   48400
   ],
   "simbasjungles/free-my-tv": [
    null,
    null,
    1767,
    2711,
-   3421
+   3421,
+   3949
   ],
   "stablyai/orca": [
    97355,
    98257,
    99702,
    101216,
-   102728
+   102728,
+   103844
   ],
   "steipete/CodexBar": [
    22646,
    22663,
    22687,
+   null,
    null,
    null
   ],
@@ -1160,40 +1349,46 @@
    19812,
    19828,
    19839,
-   19852
+   19852,
+   null
   ],
   "thedotmack/claude-mem": [
    101696,
    101805,
    101959,
    102153,
-   102335
+   102335,
+   102558
   ],
   "tigerless-labs/agent-memory": [
    4356,
    4394,
    4135,
    4299,
-   4463
+   4463,
+   4555
   ],
   "tigerless-labs/autoharness": [
    11144,
    11143,
    10492,
    10544,
-   10586
+   10586,
+   10638
   ],
   "tirth8205/code-review-graph": [
    32254,
    32264,
    32285,
    32309,
-   32329
+   32329,
+   32352
   ],
   "titanwings/distilly": [
    25779,
    25800,
    25832,
+   null,
    null,
    null
   ],
@@ -1202,25 +1397,29 @@
    10455,
    10520,
    10602,
-   10666
+   10666,
+   10715
   ],
   "travisvn/awesome-claude-skills": [
    15459,
    15464,
    15484,
    15495,
-   15511
+   15511,
+   15525
   ],
   "tt-a1i/archify": [
    85603,
    85853,
    86430,
    87064,
-   87598
+   87598,
+   88282
   ],
   "tw93/Kami": [
    12000,
    12004,
+   null,
    null,
    null,
    null
@@ -1230,11 +1429,13 @@
    63326,
    63381,
    63450,
-   63511
+   63511,
+   63553
   ],
   "vinzdg/codenotch": [
    2861,
    2865,
+   null,
    null,
    null,
    null
@@ -1244,24 +1445,28 @@
    35368,
    35469,
    35595,
-   35746
+   35746,
+   35875
   ],
   "wanshuiyin/Auto-claude-code-research-in-sleep": [
    17700,
    17733,
    17792,
    17854,
-   17922
+   17922,
+   17977
   ],
   "wshobson/agents": [
    41067,
    41159,
    41247,
    41474,
-   41565
+   41565,
+   41612
   ],
   "x1xhlol/system-prompts-and-models-of-ai-tools": [
    144089,
+   null,
    null,
    null,
    null,
@@ -1272,18 +1477,21 @@
    16804,
    16811,
    16826,
-   16844
+   16844,
+   16850
   ],
   "xerj-org/xerj": [
    null,
    null,
    12424,
    12778,
-   13115
+   13115,
+   14196
   ],
   "yetone/cumora": [
    3996,
    4000,
+   null,
    null,
    null,
    null
@@ -1293,14 +1501,16 @@
    16992,
    17944,
    18782,
-   19509
+   19509,
+   20202
   ],
   "zhuyansen/new-term-radar": [
    1117,
    1131,
    1415,
    1607,
-   1686
+   1686,
+   1756
   ]
  }
 }

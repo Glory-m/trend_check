@@ -92,7 +92,7 @@
    "checked_files": 9
   },
   "Gathin23/cleanyourtv": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -122,9 +122,9 @@
    "checked_files": 0
   },
   "Graphify-Labs/graphify": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 2,
-   "script_files": 96,
+   "script_files": 97,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
@@ -146,7 +146,7 @@
    "checked_files": 2
   },
   "JuliusBrussee/caveman": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 28,
    "script_files": 17,
    "hook_configs": [],
@@ -194,7 +194,7 @@
    "checked_files": 1
   },
   "NousResearch/hermes-agent": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 211,
    "script_files": 255,
    "hook_configs": [],
@@ -259,15 +259,13 @@
    "checked_files": 40
   },
   "Panniantong/Agent-Reach": {
-   "audited_at": "2026-10-22T00:01:27Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
-    "network": [
-     "agent_reach/skill/SKILL.md"
-    ],
+    "network": [],
     "credentials": [],
     "shell": [
      "agent_reach/skill/SKILL.md"
@@ -402,7 +400,7 @@
    "checked_files": 24
   },
   "anthropics/claude-code": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 10,
    "script_files": 10,
    "hook_configs": [
@@ -445,7 +443,7 @@
    "checked_files": 10
   },
   "anthropics/claude-code-action": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -464,7 +462,7 @@
    "checked_files": 0
   },
   "anthropics/claude-plugins-official": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 33,
    "script_files": 25,
    "hook_configs": [
@@ -636,7 +634,7 @@
    "checked_files": 2
   },
   "career-ops-hq/career-ops": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 13,
    "script_files": 17,
    "hook_configs": [],
@@ -655,8 +653,25 @@
    "tree_truncated": false,
    "checked_files": 13
   },
+  "cathrynlavery/diagram-design": {
+   "audited_at": "2026-10-23T23:52:17Z",
+   "skill_files": 1,
+   "script_files": 6,
+   "hook_configs": [],
+   "mcp_configs": [],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": [
+     "skills/diagram-design/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 1
+  },
   "cheaper-inference/OmniRoute": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 53,
    "script_files": 0,
    "hook_configs": [
@@ -664,9 +679,35 @@
    ],
    "mcp_configs": [],
    "flags": {
-    "network": [],
+    "network": [
+     "skills/cli-skill-collector/SKILL.md",
+     "skills/omni-agents-a2a/SKILL.md",
+     "skills/omni-api-keys/SKILL.md",
+     "skills/omni-auth/SKILL.md",
+     "skills/omni-budget/SKILL.md",
+     "skills/omni-cache/SKILL.md",
+     "skills/omni-combos-routing/SKILL.md",
+     "skills/omni-compression/SKILL.md",
+     "skills/omni-context-rtk/SKILL.md",
+     "skills/omni-db-backups/SKILL.md",
+     "skills/omni-inference/SKILL.md"
+    ],
     "credentials": [
-     "config/quality/skill-templates/merge-prs/SKILL.md"
+     "config/quality/skill-templates/merge-prs/SKILL.md",
+     "skills/cli-contexts/SKILL.md",
+     "skills/cli-cost-usage/SKILL.md",
+     "skills/cli-keys/SKILL.md",
+     "skills/cli-plugins-skills/SKILL.md",
+     "skills/cli-policy-audit/SKILL.md",
+     "skills/cli-providers/SKILL.md",
+     "skills/cli-resilience/SKILL.md",
+     "skills/cli-serve/SKILL.md",
+     "skills/cli-setup/SKILL.md",
+     "skills/cli-skill-collector/SKILL.md",
+     "skills/omni-api-keys/SKILL.md",
+     "skills/omni-auth/SKILL.md",
+     "skills/omni-github-skills/SKILL.md",
+     "skills/omni-inference/SKILL.md"
     ],
     "shell": [
      "config/quality/skill-templates/merge-batch/SKILL.md",
@@ -675,13 +716,25 @@
      "skills/cli-backup-sync/SKILL.md",
      "skills/cli-batches/SKILL.md",
      "skills/cli-chat/SKILL.md",
-     "skills/cli-compression/SKILL.md"
+     "skills/cli-compression/SKILL.md",
+     "skills/cli-contexts/SKILL.md",
+     "skills/cli-cost-usage/SKILL.md",
+     "skills/cli-eval/SKILL.md",
+     "skills/cli-health/SKILL.md",
+     "skills/cli-keys/SKILL.md",
+     "skills/cli-mcp/SKILL.md",
+     "skills/cli-models/SKILL.md",
+     "skills/cli-plugins-skills/SKILL.md",
+     "skills/cli-policy-audit/SKILL.md",
+     "skills/cli-providers/SKILL.md",
+     "skills/cli-resilience/SKILL.md",
+     "skills/cli-routing/SKILL.md",
+     "skills/cli-serve/SKILL.md"
     ],
     "injection": []
    },
    "tree_truncated": false,
-   "checked_files": 11,
-   "budget_exhausted": true
+   "checked_files": 40
   },
   "cloudflare/security-audit-skill": {
    "audited_at": "2026-10-20T23:55:21Z",
@@ -747,7 +800,7 @@
    "budget_exhausted": true
   },
   "farion1231/cc-switch": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -762,9 +815,9 @@
    "checked_files": 0
   },
   "garrytan/gstack": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 70,
-   "script_files": 421,
+   "script_files": 422,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
@@ -839,7 +892,7 @@
    "checked_files": 40
   },
   "hesreallyhim/awesome-claude-code": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -940,7 +993,7 @@
    "checked_files": 11
   },
   "morluto/rea": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 5,
    "script_files": 0,
    "hook_configs": [],
@@ -976,7 +1029,7 @@
    "checked_files": 1
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 13,
    "script_files": 64,
    "hook_configs": [
@@ -1013,7 +1066,7 @@
    "checked_files": 13
   },
   "nexu-io/open-design": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 553,
    "script_files": 218,
    "hook_configs": [],
@@ -1057,7 +1110,7 @@
    "checked_files": 40
   },
   "obra/superpowers": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 15,
    "script_files": 6,
    "hook_configs": [
@@ -1084,7 +1137,7 @@
    "checked_files": 15
   },
   "paperclipai/paperclip": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 84,
    "script_files": 20,
    "hook_configs": [],
@@ -1154,7 +1207,7 @@
    "checked_files": 40
   },
   "rehan-remade/universal-modder": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 36,
    "script_files": 3,
    "hook_configs": [
@@ -1210,7 +1263,7 @@
    "checked_files": 36
   },
   "simbasjungles/free-my-tv": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1225,7 +1278,7 @@
    "checked_files": 0
   },
   "stablyai/orca": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 11,
    "script_files": 0,
    "hook_configs": [],
@@ -1255,7 +1308,7 @@
    "checked_files": 0
   },
   "tt-a1i/archify": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 5,
    "script_files": 108,
    "hook_configs": [],
@@ -1272,7 +1325,7 @@
    "checked_files": 5
   },
   "yetone/magpie": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-23T23:52:17Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1287,6 +1340,6 @@
    "checked_files": 0
   }
  },
- "updated_at": "2026-10-22T23:59:38Z",
+ "updated_at": "2026-10-23T23:52:17Z",
  "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
 }
