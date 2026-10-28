@@ -41,7 +41,7 @@
    "checked_files": 13
   },
   "Egonex-AI/Understand-Anything": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 9,
    "script_files": 18,
    "hook_configs": [
@@ -71,7 +71,7 @@
    "checked_files": 9
   },
   "Gathin23/cleanyourtv": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -86,7 +86,7 @@
    "checked_files": 0
   },
   "Gathin23/tv-vibehack": {
-   "audited_at": "2026-10-20T00:23:41Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -101,7 +101,7 @@
    "checked_files": 0
   },
   "Graphify-Labs/graphify": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 2,
    "script_files": 97,
    "hook_configs": [],
@@ -125,7 +125,7 @@
    "checked_files": 2
   },
   "JuliusBrussee/caveman": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 28,
    "script_files": 17,
    "hook_configs": [],
@@ -156,7 +156,7 @@
    "checked_files": 28
   },
   "Leonxlnx/taste-skill": {
-   "audited_at": "2026-10-25T23:17:53Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 1,
    "script_files": 13,
    "hook_configs": [],
@@ -175,7 +175,7 @@
    "checked_files": 1
   },
   "NousResearch/hermes-agent": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 211,
    "script_files": 255,
    "hook_configs": [],
@@ -257,7 +257,7 @@
    "checked_files": 1
   },
   "addyosmani/agent-skills": {
-   "audited_at": "2026-10-20T00:23:41Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 25,
    "script_files": 1,
    "hook_configs": [],
@@ -417,49 +417,27 @@
    "checked_files": 24
   },
   "anthropics/claude-code": {
-   "audited_at": "2026-10-27T00:28:38Z",
-   "skill_files": 10,
-   "script_files": 10,
+   "audited_at": "2026-10-28T00:32:27Z",
+   "skill_files": 0,
+   "script_files": 0,
    "hook_configs": [
     "mods/agents-md/hooks/hooks.json",
     "mods/diff/hooks/hooks.json",
     "mods/sec-default/hooks/hooks.json",
-    "mods/telemetry/hooks/hooks.json",
-    "plugins/explanatory-output-style/hooks/hooks.json",
-    "plugins/hookify/hooks/hooks.json",
-    "plugins/learning-output-style/hooks/hooks.json",
-    "plugins/ralph-wiggum/hooks/hooks.json"
+    "mods/telemetry/hooks/hooks.json"
    ],
    "mcp_configs": [],
    "flags": {
     "network": [],
-    "credentials": [
-     "plugins/hookify/skills/writing-rules/SKILL.md",
-     "plugins/plugin-dev/skills/command-development/SKILL.md",
-     "plugins/plugin-dev/skills/hook-development/SKILL.md",
-     "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
-     "plugins/plugin-dev/skills/plugin-structure/SKILL.md"
-    ],
-    "shell": [
-     "plugins/hookify/skills/writing-rules/SKILL.md",
-     "plugins/plugin-dev/skills/agent-development/SKILL.md",
-     "plugins/plugin-dev/skills/command-development/SKILL.md",
-     "plugins/plugin-dev/skills/hook-development/SKILL.md",
-     "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
-     "plugins/plugin-dev/skills/plugin-settings/SKILL.md",
-     "plugins/plugin-dev/skills/plugin-structure/SKILL.md",
-     "plugins/plugin-dev/skills/skill-development/SKILL.md"
-    ],
-    "injection": [
-     "plugins/hookify/skills/writing-rules/SKILL.md",
-     "plugins/plugin-dev/skills/agent-development/SKILL.md"
-    ]
+    "credentials": [],
+    "shell": [],
+    "injection": []
    },
    "tree_truncated": false,
-   "checked_files": 10
+   "checked_files": 0
   },
   "anthropics/claude-code-action": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -478,7 +456,7 @@
    "checked_files": 0
   },
   "anthropics/claude-plugins-official": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 33,
    "script_files": 25,
    "hook_configs": [
@@ -555,7 +533,7 @@
    "checked_files": 33
   },
   "anthropics/knowledge-work-plugins": {
-   "audited_at": "2026-10-20T23:55:21Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 252,
    "script_files": 26,
    "hook_configs": [],
@@ -650,10 +628,12 @@
    "checked_files": 2
   },
   "career-ops-hq/career-ops": {
-   "audited_at": "2026-10-25T23:17:53Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 13,
    "script_files": 17,
-   "hook_configs": [],
+   "hook_configs": [
+    "hooks/hooks.json"
+   ],
    "mcp_configs": [],
    "flags": {
     "network": [],
@@ -669,74 +649,8 @@
    "tree_truncated": false,
    "checked_files": 13
   },
-  "cheaper-inference/OmniRoute": {
-   "audited_at": "2026-10-25T23:17:53Z",
-   "skill_files": 53,
-   "script_files": 0,
-   "hook_configs": [
-    "tests/fixtures/devin-bridge/e2e-workspace/.claude/settings.json"
-   ],
-   "mcp_configs": [],
-   "flags": {
-    "network": [
-     "skills/cli-skill-collector/SKILL.md",
-     "skills/omni-agents-a2a/SKILL.md",
-     "skills/omni-api-keys/SKILL.md",
-     "skills/omni-auth/SKILL.md",
-     "skills/omni-budget/SKILL.md",
-     "skills/omni-cache/SKILL.md",
-     "skills/omni-combos-routing/SKILL.md",
-     "skills/omni-compression/SKILL.md",
-     "skills/omni-context-rtk/SKILL.md",
-     "skills/omni-db-backups/SKILL.md",
-     "skills/omni-inference/SKILL.md"
-    ],
-    "credentials": [
-     "config/quality/skill-templates/merge-prs/SKILL.md",
-     "skills/cli-contexts/SKILL.md",
-     "skills/cli-cost-usage/SKILL.md",
-     "skills/cli-keys/SKILL.md",
-     "skills/cli-plugins-skills/SKILL.md",
-     "skills/cli-policy-audit/SKILL.md",
-     "skills/cli-providers/SKILL.md",
-     "skills/cli-resilience/SKILL.md",
-     "skills/cli-serve/SKILL.md",
-     "skills/cli-setup/SKILL.md",
-     "skills/cli-skill-collector/SKILL.md",
-     "skills/omni-api-keys/SKILL.md",
-     "skills/omni-auth/SKILL.md",
-     "skills/omni-github-skills/SKILL.md",
-     "skills/omni-inference/SKILL.md"
-    ],
-    "shell": [
-     "config/quality/skill-templates/merge-batch/SKILL.md",
-     "config/quality/skill-templates/quality-scan/SKILL.md",
-     "skills/cli-a2a/SKILL.md",
-     "skills/cli-backup-sync/SKILL.md",
-     "skills/cli-batches/SKILL.md",
-     "skills/cli-chat/SKILL.md",
-     "skills/cli-compression/SKILL.md",
-     "skills/cli-contexts/SKILL.md",
-     "skills/cli-cost-usage/SKILL.md",
-     "skills/cli-eval/SKILL.md",
-     "skills/cli-health/SKILL.md",
-     "skills/cli-keys/SKILL.md",
-     "skills/cli-mcp/SKILL.md",
-     "skills/cli-models/SKILL.md",
-     "skills/cli-plugins-skills/SKILL.md",
-     "skills/cli-policy-audit/SKILL.md",
-     "skills/cli-providers/SKILL.md",
-     "skills/cli-resilience/SKILL.md",
-     "skills/cli-routing/SKILL.md",
-     "skills/cli-serve/SKILL.md"
-    ],
-    "injection": []
-   },
-   "tree_truncated": false,
-   "checked_files": 40
-  },
   "cloudflare/security-audit-skill": {
-   "audited_at": "2026-10-20T23:55:21Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
@@ -813,8 +727,8 @@
    "checked_files": 0
   },
   "garrytan/gstack": {
-   "audited_at": "2026-10-27T00:28:38Z",
-   "skill_files": 72,
+   "audited_at": "2026-10-28T00:32:27Z",
+   "skill_files": 74,
    "script_files": 428,
    "hook_configs": [],
    "mcp_configs": [],
@@ -833,9 +747,7 @@
      "gstack-upgrade/SKILL.md",
      "ios-qa/SKILL.md",
      "land-and-deploy/SKILL.md",
-     "make-pdf/SKILL.md",
-     "office-hours/SKILL.md",
-     "open-gstack-browser/SKILL.md"
+     "make-pdf/SKILL.md"
     ],
     "credentials": [
      "autoplan/SKILL.md",
@@ -855,7 +767,7 @@
      "health/SKILL.md",
      "investigate/SKILL.md",
      "land-and-deploy/SKILL.md",
-     "office-hours/SKILL.md"
+     "modernize/SKILL.md"
     ],
     "shell": [
      "SKILL.md",
@@ -872,12 +784,12 @@
      "cso/SKILL.md",
      "design-consultation/SKILL.md",
      "design-html/SKILL.md",
+     "design-motion/SKILL.md",
      "design-review/SKILL.md",
      "design-shotgun/SKILL.md",
      "devex-review/SKILL.md",
      "diagram/SKILL.md",
-     "document-generate/SKILL.md",
-     "document-release/SKILL.md"
+     "document-generate/SKILL.md"
     ],
     "injection": [
      "benchmark-models/SKILL.md",
@@ -908,7 +820,7 @@
    "checked_files": 0
   },
   "hesreallyhim/awesome-claude-code": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -923,7 +835,7 @@
    "checked_files": 0
   },
   "mattpocock/skills": {
-   "audited_at": "2026-10-22T23:59:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 38,
    "script_files": 3,
    "hook_configs": [],
@@ -971,7 +883,7 @@
    "checked_files": 0
   },
   "modelcontextprotocol/servers": {
-   "audited_at": "2026-10-25T23:17:53Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 11,
    "script_files": 0,
    "hook_configs": [
@@ -1011,7 +923,7 @@
    "checked_files": 11
   },
   "morluto/rea": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 5,
    "script_files": 0,
    "hook_configs": [],
@@ -1047,7 +959,7 @@
    "checked_files": 1
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "audited_at": "2026-10-23T23:52:17Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 13,
    "script_files": 64,
    "hook_configs": [
@@ -1084,7 +996,7 @@
    "checked_files": 13
   },
   "nexu-io/open-design": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 553,
    "script_files": 218,
    "hook_configs": [],
@@ -1155,7 +1067,7 @@
    "checked_files": 15
   },
   "paperclipai/paperclip": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 85,
    "script_files": 67,
    "hook_configs": [],
@@ -1165,35 +1077,70 @@
    ],
    "flags": {
     "network": [
-     ".agents/skills/create-agent-adapter/SKILL.md"
+     ".agents/skills/create-agent-adapter/SKILL.md",
+     ".agents/skills/create-verification-skill/SKILL.md",
+     ".agents/skills/paperclip-dev-workspace-run-verify-fix/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".agents/skills/pr-gardening/SKILL.md"
     ],
     "credentials": [
      ".agents/skills/add-product-e2e-eval/SKILL.md",
      ".agents/skills/add-runner-eval/SKILL.md",
      ".agents/skills/company-creator/SKILL.md",
      ".agents/skills/create-agent-adapter/SKILL.md",
-     ".agents/skills/create-external-bot-integration/SKILL.md"
+     ".agents/skills/create-external-bot-integration/SKILL.md",
+     ".agents/skills/create-paperclip-bundled-skill/SKILL.md",
+     ".agents/skills/create-runner-adapter/SKILL.md",
+     ".agents/skills/deal-with-security-advisory/SKILL.md",
+     ".agents/skills/diagnose-why-work-stopped/SKILL.md",
+     ".agents/skills/fix-failed-paperclip-run/SKILL.md",
+     ".agents/skills/honeycomb-tracing/SKILL.md",
+     ".agents/skills/paperclip-dev-workspace-run-verify-fix/SKILL.md",
+     ".agents/skills/paperclip-evals/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".agents/skills/pr-gardening/SKILL.md",
+     ".agents/skills/prcheckloop/SKILL.md",
+     ".agents/skills/release-changelog-discord-message/SKILL.md",
+     ".agents/skills/setup-code-maintenance-bot/SKILL.md",
+     ".agents/skills/terminal-bench-loop/SKILL.md",
+     ".agents/skills/verify-paperclip/SKILL.md"
     ],
     "shell": [
      ".agents/skills/add-product-e2e-eval/SKILL.md",
      ".agents/skills/add-runner-eval/SKILL.md",
      ".agents/skills/check-pr/SKILL.md",
      ".agents/skills/company-creator/SKILL.md",
-     ".agents/skills/create-issue-interaction-ui/SKILL.md"
+     ".agents/skills/create-issue-interaction-ui/SKILL.md",
+     ".agents/skills/create-paperclip-bundled-skill/SKILL.md",
+     ".agents/skills/directions-lab/SKILL.md",
+     ".agents/skills/doc-maintenance/SKILL.md",
+     ".agents/skills/garden-inbox/SKILL.md",
+     ".agents/skills/honeycomb-tracing/SKILL.md",
+     ".agents/skills/paperclip-create-plugin/SKILL.md",
+     ".agents/skills/paperclip-dev-workspace-run-verify-fix/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".agents/skills/pr-gardening/SKILL.md",
+     ".agents/skills/prcheckloop/SKILL.md",
+     ".agents/skills/release-changelog-discord-message/SKILL.md",
+     ".agents/skills/release-changelog/SKILL.md",
+     ".agents/skills/release/SKILL.md",
+     ".agents/skills/terminal-bench-loop/SKILL.md",
+     ".agents/skills/verify-paperclip/SKILL.md"
     ],
     "injection": [
      ".agents/skills/company-creator/SKILL.md",
-     ".agents/skills/create-agent-adapter/SKILL.md"
+     ".agents/skills/create-agent-adapter/SKILL.md",
+     ".agents/skills/paperclip-page/SKILL.md",
+     ".claude/skills/design-guide/SKILL.md"
     ]
    },
    "tree_truncated": false,
-   "checked_files": 8,
-   "budget_exhausted": true
+   "checked_files": 40
   },
   "rehan-remade/universal-modder": {
-   "audited_at": "2026-10-25T23:17:53Z",
-   "skill_files": 36,
-   "script_files": 3,
+   "audited_at": "2026-10-28T00:32:27Z",
+   "skill_files": 39,
+   "script_files": 15,
    "hook_configs": [
     ".claude/settings.json",
     "hooks/hooks.json"
@@ -1202,52 +1149,23 @@
     ".mcp.json"
    ],
    "flags": {
-    "network": [
-     ".agents/skills/game-research-websearch/SKILL.md",
-     ".claude/skills/game-research-websearch/SKILL.md",
-     "skills/game-research-websearch/SKILL.md"
-    ],
+    "network": [],
     "credentials": [
-     ".agents/skills/fal-assets/SKILL.md",
-     ".agents/skills/game-research-websearch/SKILL.md",
-     ".agents/skills/mod-any-game/SKILL.md",
-     ".agents/skills/share-field-notes/SKILL.md",
-     ".claude/skills/fal-assets/SKILL.md",
-     ".claude/skills/game-research-websearch/SKILL.md",
-     ".claude/skills/mod-any-game/SKILL.md",
-     ".claude/skills/share-field-notes/SKILL.md",
-     "skills/fal-assets/SKILL.md",
-     "skills/game-research-websearch/SKILL.md",
-     "skills/mod-any-game/SKILL.md",
-     "skills/share-field-notes/SKILL.md"
+     ".agents/skills/fal-assets/SKILL.md"
     ],
     "shell": [
      ".agents/skills/asset-pipeline/SKILL.md",
      ".agents/skills/game-automation/SKILL.md",
-     ".agents/skills/game-recon/SKILL.md",
-     ".agents/skills/publish-mod/SKILL.md",
-     ".agents/skills/share-field-notes/SKILL.md",
-     ".agents/skills/showcase-video/SKILL.md",
-     ".claude/skills/asset-pipeline/SKILL.md",
-     ".claude/skills/game-automation/SKILL.md",
-     ".claude/skills/game-recon/SKILL.md",
-     ".claude/skills/publish-mod/SKILL.md",
-     ".claude/skills/share-field-notes/SKILL.md",
-     ".claude/skills/showcase-video/SKILL.md",
-     "skills/asset-pipeline/SKILL.md",
-     "skills/game-automation/SKILL.md",
-     "skills/game-recon/SKILL.md",
-     "skills/publish-mod/SKILL.md",
-     "skills/share-field-notes/SKILL.md",
-     "skills/showcase-video/SKILL.md"
+     ".agents/skills/game-recon/SKILL.md"
     ],
     "injection": []
    },
    "tree_truncated": false,
-   "checked_files": 36
+   "checked_files": 5,
+   "budget_exhausted": true
   },
   "simbasjungles/free-my-tv": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1262,7 +1180,7 @@
    "checked_files": 0
   },
   "stablyai/orca": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 11,
    "script_files": 0,
    "hook_configs": [
@@ -1296,7 +1214,7 @@
    "checked_files": 0
   },
   "tt-a1i/archify": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 5,
    "script_files": 109,
    "hook_configs": [],
@@ -1313,7 +1231,7 @@
    "checked_files": 5
   },
   "yetone/magpie": {
-   "audited_at": "2026-10-27T00:28:38Z",
+   "audited_at": "2026-10-28T00:32:27Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1328,6 +1246,6 @@
    "checked_files": 0
   }
  },
- "updated_at": "2026-10-27T00:28:38Z",
+ "updated_at": "2026-10-28T00:32:27Z",
  "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
 }
