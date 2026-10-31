@@ -1,14 +1,35 @@
 {
  "versions": {
-  "2.1.314": {
-   "first_seen_at": "2026-10-30T01:03:47Z",
+  "2.1.316": {
+   "first_seen_at": "2026-10-31T00:48:39Z",
    "in_changelog": false,
    "in_release": false,
    "in_npm": true,
-   "npm_published_at": "2026-10-30T00:12:56.911Z",
+   "npm_published_at": "2026-10-31T00:42:05.743Z",
    "release_published_at": null,
    "bullet_source": null,
    "bullet_count": 0
+  },
+  "2.1.315": {
+   "first_seen_at": "2026-10-31T00:48:39Z",
+   "in_changelog": false,
+   "in_release": false,
+   "in_npm": true,
+   "npm_published_at": "2026-10-30T21:05:24.080Z",
+   "release_published_at": null,
+   "bullet_source": null,
+   "bullet_count": 0
+  },
+  "2.1.314": {
+   "first_seen_at": "2026-10-30T01:03:47Z",
+   "in_changelog": true,
+   "in_release": true,
+   "in_npm": true,
+   "npm_published_at": "2026-10-30T00:12:56.911Z",
+   "release_published_at": "2026-10-30T01:06:26Z",
+   "bullet_source": "changelog",
+   "bullet_count": 119,
+   "emitted": true
   },
   "2.1.312": {
    "first_seen_at": "2026-10-28T00:32:27Z",
@@ -1137,10 +1158,10 @@
   "2.1.198": {
    "first_seen_at": "2026-10-19T06:33:13Z",
    "in_changelog": true,
-   "in_release": true,
+   "in_release": false,
    "in_npm": true,
    "npm_published_at": "2026-07-01T16:50:16.245Z",
-   "release_published_at": "2026-07-01T20:45:36Z",
+   "release_published_at": null,
    "bullet_source": "changelog",
    "bullet_count": 33,
    "emitted": true
@@ -6347,16 +6368,16 @@
    "unlisted_reported": true
   }
  },
- "updated_at": "2026-10-30T01:03:47Z",
+ "updated_at": "2026-10-31T00:48:39Z",
  "dist_tags": {
-  "latest": "2.1.312",
-  "next": "2.1.314",
+  "latest": "2.1.314",
+  "next": "2.1.316",
   "stable": "2.1.308"
  },
  "summary": {
-  "total": 565,
-  "changelog": 432,
-  "npm": 557,
+  "total": 567,
+  "changelog": 433,
+  "npm": 559,
   "release": 100,
   "npm_only": [
    "0.2.6",
@@ -6491,7 +6512,8 @@
    "2.1.182",
    "2.1.213",
    "2.1.242",
-   "2.1.314"
+   "2.1.315",
+   "2.1.316"
   ],
   "changelog_not_on_npm": [
    "0.2.21",

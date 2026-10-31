@@ -1,0 +1,94 @@
+{
+ "date": "2026-10-31",
+ "flagged": [
+  {
+   "ref": "repo:ZiChuanLan/agent-purge",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "e98448904facc369",
+   "length": 154,
+   "url": "https://github.com/ZiChuanLan/agent-purge"
+  },
+  {
+   "ref": "repo:lordon1a/agents.md",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "705f2c7993d48841",
+   "length": 113,
+   "url": "https://github.com/lordon1a/agents.md"
+  },
+  {
+   "ref": "repo:asgeirtj/system_prompts_leaks",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "5b94861664b9bf73",
+   "length": 248,
+   "url": "https://github.com/asgeirtj/system_prompts_leaks"
+  },
+  {
+   "ref": "repo:Piebald-AI/claude-code-system-prompts",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "535959df3666745a",
+   "length": 265,
+   "url": "https://github.com/Piebald-AI/claude-code-system-prompts"
+  },
+  {
+   "ref": "repo:Piebald-AI/tweakcc",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "d5bd3802091a2c0f",
+   "length": 290,
+   "url": "https://github.com/Piebald-AI/tweakcc"
+  },
+  {
+   "ref": "repo:ZiChuanLan/agent-purge",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "e98448904facc369",
+   "length": 154,
+   "url": "https://github.com/ZiChuanLan/agent-purge"
+  },
+  {
+   "ref": "repo:asgeirtj/system_prompts_leaks",
+   "field": "description",
+   "source": "search",
+   "flags": [
+    "mentions_system_prompt"
+   ],
+   "quarantined": false,
+   "sha256_16": "5b94861664b9bf73",
+   "length": 248,
+   "url": "https://github.com/asgeirtj/system_prompts_leaks"
+  }
+ ],
+ "last_scan_at": "2026-10-31T00:48:39Z",
+ "scanned_last_run": 10132,
+ "flagged_count": 7,
+ "quarantined_count": 0,
+ "rules": "collector/safety.py (규칙 기반, AI 미사용)"
+}
