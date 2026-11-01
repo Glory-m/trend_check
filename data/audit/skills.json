@@ -71,7 +71,7 @@
    "checked_files": 9
   },
   "Gathin23/cleanyourtv": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -154,7 +154,7 @@
    "checked_files": 11
   },
   "JuliusBrussee/caveman": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 28,
    "script_files": 17,
    "hook_configs": [],
@@ -185,7 +185,7 @@
    "checked_files": 28
   },
   "Leonxlnx/taste-skill": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 1,
    "script_files": 13,
    "hook_configs": [],
@@ -204,7 +204,7 @@
    "checked_files": 1
   },
   "NousResearch/hermes-agent": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 194,
    "script_files": 252,
    "hook_configs": [],
@@ -287,9 +287,9 @@
    "checked_files": 1
   },
   "addyosmani/agent-skills": {
-   "audited_at": "2026-10-30T01:03:47Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 25,
-   "script_files": 1,
+   "script_files": 2,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
@@ -412,7 +412,7 @@
    "checked_files": 24
   },
   "anthropics/claude-code": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -432,7 +432,7 @@
    "checked_files": 0
   },
   "anthropics/claude-code-action": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -451,7 +451,7 @@
    "checked_files": 0
   },
   "anthropics/claude-plugins-official": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 33,
    "script_files": 25,
    "hook_configs": [
@@ -623,7 +623,7 @@
    "checked_files": 2
   },
   "career-ops-hq/career-ops": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 16,
    "script_files": 15,
    "hook_configs": [
@@ -720,7 +720,7 @@
    "checked_files": 1
   },
   "farion1231/cc-switch": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -735,9 +735,9 @@
    "checked_files": 0
   },
   "garrytan/gstack": {
-   "audited_at": "2026-10-31T00:48:39Z",
-   "skill_files": 75,
-   "script_files": 428,
+   "audited_at": "2026-11-01T00:09:25Z",
+   "skill_files": 76,
+   "script_files": 448,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
@@ -774,7 +774,6 @@
      "document-release/SKILL.md",
      "health/SKILL.md",
      "investigate/SKILL.md",
-     "land-and-deploy/SKILL.md",
      "modernize/SKILL.md"
     ],
     "shell": [
@@ -785,6 +784,7 @@
      "browse/SKILL.md",
      "canary/SKILL.md",
      "captain/SKILL.md",
+     "capy/skill/gstack/SKILL.md",
      "careful/SKILL.md",
      "codex/SKILL.md",
      "context-restore/SKILL.md",
@@ -796,8 +796,7 @@
      "design-review/SKILL.md",
      "design-shotgun/SKILL.md",
      "devex-review/SKILL.md",
-     "diagram/SKILL.md",
-     "document-generate/SKILL.md"
+     "diagram/SKILL.md"
     ],
     "injection": [
      "benchmark-models/SKILL.md",
@@ -828,7 +827,7 @@
    "checked_files": 0
   },
   "hesreallyhim/awesome-claude-code": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -843,8 +842,8 @@
    "checked_files": 0
   },
   "mattpocock/skills": {
-   "audited_at": "2026-10-31T00:48:39Z",
-   "skill_files": 38,
+   "audited_at": "2026-11-01T00:09:25Z",
+   "skill_files": 40,
    "script_files": 3,
    "hook_configs": [],
    "mcp_configs": [],
@@ -873,10 +872,10 @@
     ]
    },
    "tree_truncated": false,
-   "checked_files": 38
+   "checked_files": 40
   },
   "microsoft/playwright-mcp": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
@@ -933,7 +932,7 @@
    "checked_files": 11
   },
   "morluto/rea": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 5,
    "script_files": 0,
    "hook_configs": [],
@@ -969,7 +968,7 @@
    "checked_files": 1
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 13,
    "script_files": 64,
    "hook_configs": [
@@ -1006,7 +1005,7 @@
    "checked_files": 13
   },
   "nexu-io/open-design": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 566,
    "script_files": 233,
    "hook_configs": [],
@@ -1077,7 +1076,7 @@
    "checked_files": 15
   },
   "paperclipai/paperclip": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 85,
    "script_files": 67,
    "hook_configs": [],
@@ -1148,7 +1147,7 @@
    "checked_files": 40
   },
   "simbasjungles/free-my-tv": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1163,7 +1162,7 @@
    "checked_files": 0
   },
   "stablyai/orca": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 11,
    "script_files": 0,
    "hook_configs": [
@@ -1215,7 +1214,7 @@
    "checked_files": 0
   },
   "tt-a1i/archify": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 5,
    "script_files": 109,
    "hook_configs": [],
@@ -1232,7 +1231,7 @@
    "checked_files": 5
   },
   "yetone/magpie": {
-   "audited_at": "2026-10-31T00:48:39Z",
+   "audited_at": "2026-11-01T00:09:25Z",
    "skill_files": 3,
    "script_files": 0,
    "hook_configs": [],
@@ -1247,6 +1246,6 @@
    "checked_files": 3
   }
  },
- "updated_at": "2026-10-31T00:48:39Z",
+ "updated_at": "2026-11-01T00:09:25Z",
  "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
 }
