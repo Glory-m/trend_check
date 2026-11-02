@@ -19,7 +19,8 @@
    "npm_published_at": "2026-10-30T21:05:24.080Z",
    "release_published_at": null,
    "bullet_source": null,
-   "bullet_count": 0
+   "bullet_count": 0,
+   "unlisted_reported": true
   },
   "2.1.314": {
    "first_seen_at": "2026-10-30T01:03:47Z",
@@ -6369,7 +6370,7 @@
    "unlisted_reported": true
   }
  },
- "updated_at": "2026-11-01T00:09:25Z",
+ "updated_at": "2026-11-02T00:47:20Z",
  "dist_tags": {
   "latest": "2.1.316",
   "next": "2.1.316",
