@@ -6,22 +6,22 @@
  },
  "anthropic_news": {
   "first_run_at": "2026-10-19T06:33:13Z",
-  "last_ok_at": "2026-11-06T01:34:52Z",
+  "last_ok_at": "2026-11-07T00:57:16Z",
   "last_parsed": 18
  },
  "anthropics_org_repos": {
   "first_run_at": "2026-10-19T06:33:13Z",
-  "last_ok_at": "2026-11-06T01:34:52Z",
+  "last_ok_at": "2026-11-07T00:57:16Z",
   "last_parsed": 30
  },
  "apps_release_notes": {
   "first_run_at": "2026-10-19T06:33:13Z",
-  "last_ok_at": "2026-11-06T01:34:52Z",
-  "last_parsed": 106
+  "last_ok_at": "2026-11-07T00:57:16Z",
+  "last_parsed": 107
  },
  "platform_release_notes": {
   "first_run_at": "2026-10-19T06:33:13Z",
-  "last_ok_at": "2026-11-06T01:34:52Z",
-  "last_parsed": 287
+  "last_ok_at": "2026-11-07T00:57:16Z",
+  "last_parsed": 338
  }
 }
