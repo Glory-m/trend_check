@@ -97,7 +97,7 @@
    "checked_files": 9
   },
   "Gathin23/cleanyourtv": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -112,7 +112,7 @@
    "checked_files": 0
   },
   "Graphify-Labs/graphify": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 2,
    "script_files": 99,
    "hook_configs": [],
@@ -169,7 +169,7 @@
    "checked_files": 28
   },
   "JuneYaooo/rea-video": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
@@ -188,7 +188,7 @@
    "checked_files": 1
   },
   "KKKKhazix/agent-autoloop": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 10,
    "script_files": 5,
    "hook_configs": [],
@@ -230,7 +230,7 @@
    "checked_files": 1
   },
   "NousResearch/hermes-agent": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 186,
    "script_files": 250,
    "hook_configs": [],
@@ -242,7 +242,10 @@
      "optional-skills/blockchain/hyperliquid/SKILL.md",
      "optional-skills/blockchain/solana/SKILL.md",
      "optional-skills/creative/ascii-art/SKILL.md",
-     "optional-skills/creative/baoyu-article-illustrator/SKILL.md"
+     "optional-skills/creative/baoyu-article-illustrator/SKILL.md",
+     "optional-skills/creative/baoyu-comic/SKILL.md",
+     "optional-skills/creative/comfyui/SKILL.md",
+     "optional-skills/creative/ip-as-logo/SKILL.md"
     ],
     "credentials": [
      "optional-skills/autonomous-ai-agents/antigravity-cli/SKILL.md",
@@ -250,7 +253,11 @@
      "optional-skills/autonomous-ai-agents/opencode/SKILL.md",
      "optional-skills/blockchain/hyperliquid/SKILL.md",
      "optional-skills/creative/ai-presenter-video/SKILL.md",
+     "optional-skills/creative/auteur/SKILL.md",
      "optional-skills/creative/baoyu-article-illustrator/SKILL.md",
+     "optional-skills/creative/baoyu-comic/SKILL.md",
+     "optional-skills/creative/brag/SKILL.md",
+     "optional-skills/creative/comfyui/SKILL.md",
      "optional-skills/creative/concept-diagrams/SKILL.md",
      "optional-skills/creative/kanban-video-orchestrator/SKILL.md"
     ],
@@ -263,25 +270,29 @@
      "optional-skills/creative/ai-presenter-video/SKILL.md",
      "optional-skills/creative/anatomy/SKILL.md",
      "optional-skills/creative/ascii-art/SKILL.md",
+     "optional-skills/creative/comfyui/SKILL.md",
      "optional-skills/creative/concept-diagrams/SKILL.md",
+     "optional-skills/creative/design-md/SKILL.md",
      "optional-skills/creative/draw-your-font/SKILL.md",
      "optional-skills/creative/excalidraw/SKILL.md",
      "optional-skills/creative/heartmula/SKILL.md",
      "optional-skills/creative/hyperframes/SKILL.md",
      "optional-skills/creative/kanban-video-orchestrator/SKILL.md",
      "optional-skills/creative/meme-generation/SKILL.md",
+     "optional-skills/creative/pixel-art/SKILL.md",
      "optional-skills/creative/pretext/SKILL.md",
      "optional-skills/creative/system-atlas/SKILL.md"
     ],
     "injection": [
      "optional-skills/autonomous-ai-agents/grok/SKILL.md",
+     "optional-skills/creative/brag/SKILL.md",
      "optional-skills/creative/concept-diagrams/SKILL.md",
      "optional-skills/creative/pretext/SKILL.md",
      "optional-skills/creative/sketch/SKILL.md"
     ]
    },
    "tree_truncated": false,
-   "checked_files": 30
+   "checked_files": 40
   },
   "Panniantong/Agent-Reach": {
    "audited_at": "2026-11-09T00:56:20Z",
@@ -396,37 +407,8 @@
    "tree_truncated": false,
    "checked_files": 40
   },
-  "anomalyco/opencode": {
-   "audited_at": "2026-11-10T03:35:50Z",
-   "skill_files": 24,
-   "script_files": 9,
-   "hook_configs": [],
-   "mcp_configs": [],
-   "flags": {
-    "network": [
-     "packages/plugins/figma/skills/figma-implement-motion/SKILL.md"
-    ],
-    "credentials": [
-     ".opencode/skills/opencode-dev/SKILL.md",
-     ".opencode/skills/unit-tests/SKILL.md",
-     "packages/plugins/figma/skills/figma-generative-plugins/SKILL.md"
-    ],
-    "shell": [
-     ".opencode/skills/component-tests/SKILL.md",
-     ".opencode/skills/opencode-dev/SKILL.md",
-     ".opencode/skills/tui-tests/SKILL.md",
-     ".opencode/skills/unit-tests/SKILL.md"
-    ],
-    "injection": [
-     "packages/plugins/figma/skills/figma-generate-design/SKILL.md",
-     "packages/plugins/figma/skills/figma-implement-motion/SKILL.md"
-    ]
-   },
-   "tree_truncated": false,
-   "checked_files": 24
-  },
   "anthropics/claude-code": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -447,7 +429,7 @@
    "checked_files": 0
   },
   "anthropics/claude-code-action": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -466,7 +448,7 @@
    "checked_files": 0
   },
   "anthropics/claude-plugins-official": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 40,
    "script_files": 25,
    "hook_configs": [
@@ -613,7 +595,7 @@
    "checked_files": 13
   },
   "anthropics/knowledge-work-plugins": {
-   "audited_at": "2026-11-04T01:25:08Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 252,
    "script_files": 26,
    "hook_configs": [],
@@ -688,8 +670,8 @@
    "checked_files": 20
   },
   "calesthio/OpenMontage": {
-   "audited_at": "2026-11-05T01:28:50Z",
-   "skill_files": 140,
+   "audited_at": "2026-11-12T02:17:26Z",
+   "skill_files": 141,
    "script_files": 246,
    "hook_configs": [],
    "mcp_configs": [],
@@ -774,7 +756,7 @@
    "checked_files": 16
   },
   "cloudflare/security-audit-skill": {
-   "audited_at": "2026-11-04T01:25:08Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
@@ -791,7 +773,7 @@
    "checked_files": 1
   },
   "elayadesign/ai-design-skills": {
-   "audited_at": "2026-11-05T01:28:50Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 2,
    "script_files": 0,
    "hook_configs": [],
@@ -806,7 +788,7 @@
    "checked_files": 2
   },
   "garrytan/gstack": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 76,
    "script_files": 466,
    "hook_configs": [],
@@ -960,7 +942,7 @@
    "checked_files": 40
   },
   "hesreallyhim/awesome-claude-code": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1001,7 +983,7 @@
    "checked_files": 15
   },
   "mattpocock/skills": {
-   "audited_at": "2026-11-10T03:35:50Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 40,
    "script_files": 3,
    "hook_configs": [],
@@ -1034,7 +1016,7 @@
    "checked_files": 40
   },
   "microsoft/playwright-mcp": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1049,7 +1031,7 @@
    "checked_files": 0
   },
   "modelcontextprotocol/servers": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 11,
    "script_files": 0,
    "hook_configs": [
@@ -1089,8 +1071,8 @@
    "checked_files": 11
   },
   "morluto/rea": {
-   "audited_at": "2026-11-11T01:15:46Z",
-   "skill_files": 5,
+   "audited_at": "2026-11-12T02:17:26Z",
+   "skill_files": 6,
    "script_files": 0,
    "hook_configs": [],
    "mcp_configs": [],
@@ -1102,12 +1084,13 @@
     "shell": [
      ".agents/skills/rea-changelog-update/SKILL.md",
      ".agents/skills/rea-ci-tests-audit/SKILL.md",
-     ".agents/skills/reverse-engineer-anything/SKILL.md"
+     ".agents/skills/reverse-engineer-anything/SKILL.md",
+     ".cursor-plugin/skills/reverse-engineer-anything/SKILL.md"
     ],
     "injection": []
    },
    "tree_truncated": false,
-   "checked_files": 5
+   "checked_files": 6
   },
   "multica-ai/andrej-karpathy-skills": {
    "audited_at": "2026-11-10T03:35:50Z",
@@ -1162,7 +1145,7 @@
    "checked_files": 13
   },
   "nexu-io/open-design": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 566,
    "script_files": 234,
    "hook_configs": [],
@@ -1206,7 +1189,7 @@
    "checked_files": 40
   },
   "obra/superpowers": {
-   "audited_at": "2026-11-04T01:25:08Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 15,
    "script_files": 6,
    "hook_configs": [
@@ -1232,8 +1215,38 @@
    "tree_truncated": false,
    "checked_files": 15
   },
+  "openai/codex-security": {
+   "audited_at": "2026-11-12T02:17:26Z",
+   "skill_files": 24,
+   "script_files": 9,
+   "hook_configs": [],
+   "mcp_configs": [
+    "plugins/codex-security/.mcp.json"
+   ],
+   "flags": {
+    "network": [
+     "evals/check-skills/fixtures/style-guide/SKILL.md"
+    ],
+    "credentials": [
+     "plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+     "plugins/codex-security/skills/check-skills/SKILL.md",
+     "plugins/codex-security/skills/cloud-findings/SKILL.md",
+     "plugins/codex-security/skills/define-security-policy/SKILL.md"
+    ],
+    "shell": [
+     "evals/check-skills/fixtures/style-guide/SKILL.md",
+     "plugins/codex-security/skills/define-security-policy/SKILL.md"
+    ],
+    "injection": [
+     "evals/check-skills/fixtures/style-guide/SKILL.md"
+    ]
+   },
+   "tree_truncated": false,
+   "checked_files": 12,
+   "budget_exhausted": true
+  },
   "paperclipai/paperclip": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 87,
    "script_files": 67,
    "hook_configs": [],
@@ -1323,7 +1336,7 @@
    "checked_files": 1
   },
   "stablyai/orca": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 12,
    "script_files": 0,
    "hook_configs": [
@@ -1359,7 +1372,7 @@
    "checked_files": 0
   },
   "tt-a1i/archify": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 5,
    "script_files": 109,
    "hook_configs": [],
@@ -1376,7 +1389,7 @@
    "checked_files": 5
   },
   "yetone/magpie": {
-   "audited_at": "2026-11-11T01:15:46Z",
+   "audited_at": "2026-11-12T02:17:26Z",
    "skill_files": 3,
    "script_files": 0,
    "hook_configs": [],
@@ -1391,6 +1404,6 @@
    "checked_files": 3
   }
  },
- "updated_at": "2026-11-11T01:15:46Z",
+ "updated_at": "2026-11-12T02:17:26Z",
  "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
 }
