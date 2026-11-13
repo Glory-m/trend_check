@@ -1,16 +1,6 @@
 {
  "errors": [
   {
-   "at": "2026-10-24T23:17:56Z",
-   "step": "official_engineering",
-   "message": "RuntimeError: https://www.anthropic.com/engineering 구조 변경 — 글 링크를 찾지 못함"
-  },
-  {
-   "at": "2026-10-25T23:17:53Z",
-   "step": "search",
-   "message": "결과 1000개 초과 쿼리 — 별 순 상위만 사용, 조건 세분화 검토: topic:claude-code/active(1016)"
-  },
-  {
    "at": "2026-10-25T23:17:53Z",
    "step": "official_engineering",
    "message": "RuntimeError: https://www.anthropic.com/engineering 구조 변경 — 글 링크를 찾지 못함"
@@ -149,45 +139,55 @@
    "at": "2026-11-12T02:17:26Z",
    "step": "official_engineering",
    "message": "RuntimeError: https://www.anthropic.com/engineering 구조 변경 — 글 링크를 찾지 못함"
+  },
+  {
+   "at": "2026-11-13T01:51:26Z",
+   "step": "search",
+   "message": "결과 1000개 초과 쿼리 — 별 순 상위만 사용, 조건 세분화 검토: topic:claude-code/active(1069)"
+  },
+  {
+   "at": "2026-11-13T01:51:26Z",
+   "step": "official_engineering",
+   "message": "RuntimeError: https://www.anthropic.com/engineering 구조 변경 — 글 링크를 찾지 못함"
   }
  ],
- "last_run_at": "2026-11-12T02:17:26Z",
+ "last_run_at": "2026-11-13T01:51:26Z",
  "status": "partial",
  "steps": {
   "claude_code": {
    "status": "ok",
-   "detail": "versions=572 new_items=0 bootstrap=False latest=2.1.322",
-   "seconds": 1.6
+   "detail": "versions=573 new_items=294 bootstrap=False latest=2.1.323",
+   "seconds": 1.5
   },
   "watchlist": {
    "status": "ok",
    "detail": "repos=13 failed=0",
-   "seconds": 5.8
+   "seconds": 5.6
   },
   "search": {
    "status": "ok",
-   "detail": "queries=14 repos=1300",
-   "seconds": 97.6
+   "detail": "queries=14 repos=1299",
+   "seconds": 98.9
   },
   "trending": {
    "status": "ok",
-   "detail": "relevant=9",
-   "seconds": 2.2
+   "detail": "relevant=10",
+   "seconds": 2.4
   },
   "hn": {
    "status": "ok",
-   "detail": "new_mentions=3",
-   "seconds": 1.6
+   "detail": "new_mentions=1",
+   "seconds": 2.0
   },
   "official_platform_notes": {
    "status": "ok",
-   "detail": "parsed=349 new_items=8 bootstrap=False",
-   "seconds": 0.3
+   "detail": "parsed=350 new_items=1 bootstrap=False",
+   "seconds": 0.5
   },
   "official_apps_notes": {
    "status": "ok",
-   "detail": "parsed=107 new_items=0 bootstrap=False",
-   "seconds": 0.4
+   "detail": "parsed=108 new_items=1 bootstrap=False",
+   "seconds": 0.3
   },
   "official_news": {
    "status": "ok",
@@ -206,8 +206,8 @@
   },
   "candidates": {
    "status": "ok",
-   "detail": "found=1323 tracked=150 entered=3 new_items=3",
-   "seconds": 0.2
+   "detail": "found=1324 tracked=150 entered=5 new_items=5",
+   "seconds": 0.1
   },
   "bench_terminal": {
    "status": "ok",
@@ -216,23 +216,23 @@
   },
   "bench_epoch": {
    "status": "ok",
-   "detail": "sets=3 missing=0 bytes=2311216",
-   "seconds": 0.3
+   "detail": "sets=3 missing=0 bytes=2311218",
+   "seconds": 0.2
   },
   "analyze": {
    "status": "ok",
-   "detail": "repos=141 history_days=25 surges=2 warnings=1 promote=2 demote=0",
+   "detail": "repos=141 history_days=26 surges=6 warnings=0 promote=0 demote=0",
    "seconds": 0.0
   },
   "audit": {
    "status": "ok",
-   "detail": "targets=43 audited=25 failed=0 pending=2",
-   "seconds": 41.9
+   "detail": "targets=43 audited=24 failed=0 pending=2",
+   "seconds": 43.7
   },
   "classify": {
    "status": "ok",
-   "detail": "reclassified_items=24 files=1",
-   "seconds": 0.3
+   "detail": "reclassified_items=312 files=1",
+   "seconds": 0.2
   },
   "translate": {
    "status": "ok",
@@ -240,37 +240,37 @@
    "seconds": 0.0
   }
  },
- "new_items": 24,
+ "new_items": 312,
  "authenticated": true,
  "rate_limit": {
   "core": {
-   "remaining": 4958,
-   "reset": 1794453447,
+   "remaining": 4960,
+   "reset": 1794538286,
    "limit": 5000
   },
   "search": {
    "remaining": 22,
-   "reset": 1794449977,
+   "reset": 1794534818,
    "limit": 30
   },
   "graphql": {
    "remaining": 5000,
-   "reset": 1794453447,
+   "reset": 1794538286,
    "limit": 5000
   }
  },
- "http_calls": 495,
+ "http_calls": 494,
  "warnings": [
   {
-   "at": "2026-11-12T02:17:26Z",
+   "at": "2026-11-13T01:51:26Z",
    "step": "search",
-   "message": "결과 1000개 초과 쿼리 — 별 순 상위만 사용, 조건 세분화 검토: topic:claude-code/active(1076)"
+   "message": "결과 1000개 초과 쿼리 — 별 순 상위만 사용, 조건 세분화 검토: topic:claude-code/active(1069)"
   },
   {
-   "at": "2026-11-12T02:17:26Z",
+   "at": "2026-11-13T01:51:26Z",
    "step": "official_engineering",
    "message": "RuntimeError: https://www.anthropic.com/engineering 구조 변경 — 글 링크를 찾지 못함"
   }
  ],
- "last_success_at": "2026-11-12T02:17:26Z"
+ "last_success_at": "2026-11-13T01:51:26Z"
 }
