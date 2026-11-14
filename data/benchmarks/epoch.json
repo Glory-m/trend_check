@@ -3,7 +3,7 @@
  "download": "https://epoch.ai/data/benchmark_data.zip",
  "license": "CC BY 4.0",
  "attribution": "Data: Epoch AI, Benchmarking Hub (epoch.ai/benchmarks), CC BY 4.0",
- "checked_at": "2026-11-13T01:51:26Z",
+ "checked_at": "2026-11-14T01:27:43Z",
  "missing": [],
  "sets": [
   {
@@ -166,7 +166,7 @@
      "model": "gemini-4-argon_high",
      "org": "Google DeepMind",
      "score": 1679.5,
-     "released": "2026-09-30",
+     "released": "2026-10-13",
      "extra": "2422표"
     },
     {
@@ -231,7 +231,7 @@
      "model": "gemini-4-carbon_high",
      "org": "Google DeepMind",
      "score": 61.0,
-     "released": "2026-10-28",
+     "released": "2026-11-10",
      "extra": "proximus"
     },
     {
@@ -245,7 +245,7 @@
      "model": "gemini-4-argon_high",
      "org": "Google DeepMind",
      "score": 55.0,
-     "released": "2026-09-30",
+     "released": "2026-10-13",
      "extra": "proximus"
     },
     {
