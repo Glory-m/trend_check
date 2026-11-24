@@ -23,13 +23,13 @@
     "kw:claude code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-28T19:02:30Z",
    "language": "Python",
-   "stars": 72701,
+   "stars": 72894,
    "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-   "score": 243.96,
+   "score": 243.79,
    "url": "https://github.com/Alishahryar1/free-claude-code"
   },
   "Arekejoker/qwen21-nsfw-pose-skill": {
@@ -70,13 +70,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2025-09-11T10:39:55Z",
    "language": "TypeScript",
-   "stars": 58851,
+   "stars": 59075,
    "description": "Chrome DevTools for coding agents",
-   "score": 134.67,
+   "score": 134.87,
    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
   },
   "CopilotKit/OpenBot": {
@@ -96,13 +96,13 @@
    "sources": [
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2024-10-13T20:29:53Z",
    "language": "Python",
-   "stars": 105048,
+   "stars": 105350,
    "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-   "score": 136.43,
+   "score": 136.64,
    "url": "https://github.com/D4Vinci/Scrapling"
   },
   "DIYgod/pinky": {
@@ -112,13 +112,13 @@
     "topic:mcp-server/active",
     "topic:mcp-server/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-06T16:53:14Z",
    "language": "Go",
-   "stars": 2676,
+   "stars": 2722,
    "description": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
-   "score": 167.25,
+   "score": 160.12,
    "url": "https://github.com/DIYgod/pinky"
   },
   "DenisSergeevitch/ex-ussr-kinship-research": {
@@ -130,13 +130,13 @@
     "topic:agent-skills/new",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-25T10:05:56Z",
    "language": "Python",
-   "stars": 2735,
+   "stars": 2752,
    "description": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
-   "score": 97.68,
+   "score": 94.9,
    "url": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research"
   },
   "DeusData/codebase-memory-mcp": {
@@ -145,13 +145,13 @@
     "topic:claude-code/active",
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-24T22:01:00Z",
    "language": "C",
-   "stars": 49045,
+   "stars": 49093,
    "description": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
-   "score": 180.98,
+   "score": 180.49,
    "url": "https://github.com/DeusData/codebase-memory-mcp"
   },
   "DietrichGebert/ponytail": {
@@ -161,13 +161,13 @@
     "topic:claude-code-plugin/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-06-12T00:52:37Z",
    "language": "JavaScript",
-   "stars": 196911,
+   "stars": 197614,
    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-   "score": 1200.68,
+   "score": 1197.66,
    "url": "https://github.com/DietrichGebert/ponytail"
   },
   "Donchitos/Claude-Code-Game-Studios": {
@@ -198,13 +198,13 @@
     "topic:mcp-server/active",
     "topic:mcp-server/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-21T14:40:27Z",
    "language": "Rust",
-   "stars": 1954,
+   "stars": 3257,
    "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
-   "score": 279.14,
+   "score": 465.29,
    "url": "https://github.com/EL4CTEO/fast-anything"
   },
   "Egonex-AI/Understand-Anything": {
@@ -214,13 +214,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-15T02:30:51Z",
    "language": "TypeScript",
-   "stars": 93686,
+   "stars": 93816,
    "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-   "score": 371.77,
+   "score": 369.35,
    "url": "https://github.com/Egonex-AI/Understand-Anything"
   },
   "Gathin23/cleanyourtv": {
@@ -229,13 +229,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-17T08:12:35Z",
    "language": "Python",
-   "stars": 60378,
+   "stars": 60624,
    "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-   "score": 1677.17,
+   "score": 1638.49,
    "url": "https://github.com/Gathin23/cleanyourtv"
   },
   "GoogleChrome/modern-web-guidance-src": {
@@ -244,11 +244,11 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
-   "stars": 10225,
+   "stars": 10580,
    "description": "Keep your coding agent up to date with the latest web best practices",
-   "score": 340.83,
+   "score": 352.67,
    "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
   },
   "Graphify-Labs/graphify": {
@@ -259,14 +259,28 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-03T15:49:07Z",
    "language": "Python",
-   "stars": 152078,
+   "stars": 152597,
    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-   "score": 652.7,
+   "score": 652.12,
    "url": "https://github.com/Graphify-Labs/graphify"
+  },
+  "INK-Q/agy-fast": {
+   "first_seen_at": "2026-11-24T05:20:32Z",
+   "sources": [
+    "topic:mcp-server/new"
+   ],
+   "last_seen_at": "2026-11-24T05:20:32Z",
+   "trending_today": false,
+   "created_at": "2026-11-19T04:58:46Z",
+   "language": "TypeScript",
+   "stars": 817,
+   "description": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.",
+   "score": 116.71,
+   "url": "https://github.com/INK-Q/agy-fast"
   },
   "Imbad0202/academic-research-skills": {
    "first_seen_at": "2026-10-19T06:33:13Z",
@@ -274,13 +288,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-26T06:31:01Z",
    "language": "Python",
-   "stars": 58116,
+   "stars": 58304,
    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-   "score": 216.04,
+   "score": 215.94,
    "url": "https://github.com/Imbad0202/academic-research-skills"
   },
   "JCodesMore/ai-website-cloner-template": {
@@ -318,13 +332,13 @@
     "kw:claude code/new",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-05T15:04:31Z",
    "language": "Swift",
-   "stars": 1839,
+   "stars": 1894,
    "description": "Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone, reads the screen, and taps, types and swipes in real apps with your own model account.",
-   "score": 108.18,
+   "score": 105.22,
    "url": "https://github.com/JosssphZhou/poki"
   },
   "JuliusBrussee/caveman": {
@@ -333,13 +347,13 @@
     "topic:claude-code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-04T10:03:00Z",
    "language": "Go",
-   "stars": 122192,
+   "stars": 122465,
    "description": "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.",
-   "score": 526.69,
+   "score": 525.6,
    "url": "https://github.com/JuliusBrussee/caveman"
   },
   "JuneYaooo/rea-video": {
@@ -350,13 +364,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-29T16:15:01Z",
    "language": "Python",
-   "stars": 12259,
+   "stars": 12748,
    "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频,逐个镜头看是拍的、AI 生成的还是代码做的,再告诉你怎么复刻;拆解结果按 VIDEO.md 格式输出。",
-   "score": 510.79,
+   "score": 509.92,
    "url": "https://github.com/JuneYaooo/rea-video"
   },
   "K-Dense-AI/scientific-agent-skills": {
@@ -367,13 +381,13 @@
     "topic:claude-skills/active",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-10-19T20:54:15Z",
    "language": "Python",
-   "stars": 58117,
+   "stars": 58252,
    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigrav",
-   "score": 145.66,
+   "score": 145.63,
    "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
   },
   "KKKKhazix/agent-autoloop": {
@@ -382,13 +396,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-03T08:02:11Z",
    "language": "TypeScript",
-   "stars": 6296,
+   "stars": 6419,
    "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底;平时不烦你,遇到拿不准的事才发卡片找你拍板。",
-   "score": 331.37,
+   "score": 320.95,
    "url": "https://github.com/KKKKhazix/agent-autoloop"
   },
   "KKKKhazix/khazix-skills": {
@@ -398,13 +412,13 @@
     "topic:agent-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-06T07:37:02Z",
    "language": "Python",
-   "stars": 22460,
+   "stars": 22495,
    "description": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader(帮你定义目标), neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
-   "score": 97.65,
+   "score": 97.38,
    "url": "https://github.com/KKKKhazix/khazix-skills"
   },
   "Leonxlnx/earshot": {
@@ -413,13 +427,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-15T06:52:46Z",
    "language": "Python",
-   "stars": 5565,
+   "stars": 5660,
    "description": "Sound effects for coding agents: ask in plain words and earshot renders the sound in code. CPU-only, no audio model, open source.",
-   "score": 146.45,
+   "score": 145.13,
    "url": "https://github.com/Leonxlnx/earshot"
   },
   "Leonxlnx/taste-skill": {
@@ -429,13 +443,13 @@
     "topic:claude-code/active",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-19T21:44:05Z",
    "language": "JavaScript",
-   "stars": 120146,
+   "stars": 120756,
    "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
-   "score": 435.31,
+   "score": 435.94,
    "url": "https://github.com/Leonxlnx/taste-skill"
   },
   "Louis-CFM/coucou": {
@@ -446,13 +460,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-09-27T21:54:12Z",
    "language": "Swift",
-   "stars": 7398,
+   "stars": 7426,
    "description": "A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI coding agents: Claude Code, Codex, Cursor, Gemini CLI, Antigravity and more. Approve from the notch or your Lock Screen.",
-   "score": 132.11,
+   "score": 130.28,
    "url": "https://github.com/Louis-CFM/coucou"
   },
   "N1nEmAn/sapper-v2": {
@@ -460,13 +474,13 @@
    "sources": [
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-30T15:12:35Z",
    "language": "Python",
-   "stars": 2555,
+   "stars": 2599,
    "description": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
-   "score": 111.09,
+   "score": 108.29,
    "url": "https://github.com/N1nEmAn/sapper-v2"
   },
   "NVIDIA/SkillSpector": {
@@ -477,13 +491,13 @@
     "topic:claude-code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-21T00:28:43Z",
    "language": "Python",
-   "stars": 27307,
+   "stars": 27452,
    "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
-   "score": 110.55,
+   "score": 110.69,
    "url": "https://github.com/NVIDIA/SkillSpector"
   },
   "NiazMorshed2007/reanimate": {
@@ -494,13 +508,13 @@
     "topic:claude-code/new",
     "topic:claude-skills/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-29T06:20:59Z",
    "language": "JavaScript",
-   "stars": 2226,
+   "stars": 2414,
    "description": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
-   "score": 92.75,
+   "score": 96.56,
    "url": "https://github.com/NiazMorshed2007/reanimate"
   },
   "NousResearch/hermes-agent": {
@@ -508,13 +522,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-07-22T22:22:28Z",
    "language": "Python",
-   "stars": 265444,
+   "stars": 265703,
    "description": "The agent that grows with you",
-   "score": 543.94,
+   "score": 543.36,
    "url": "https://github.com/NousResearch/hermes-agent"
   },
   "Nutlope/hallmark": {
@@ -540,13 +554,13 @@
     "topic:agent-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-09-18T08:51:34Z",
    "language": "Python",
-   "stars": 7419,
+   "stars": 7466,
    "description": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
-   "score": 114.14,
+   "score": 113.12,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   "Panniantong/Agent-Reach": {
@@ -554,13 +568,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-24T02:10:24Z",
    "language": "Python",
-   "stars": 114028,
+   "stars": 114313,
    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-   "score": 420.77,
+   "score": 418.73,
    "url": "https://github.com/Panniantong/Agent-Reach"
   },
   "QingYunA/answer-me-with-html": {
@@ -571,13 +585,13 @@
     "topic:claude-skills/active",
     "topic:claude-skills/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-02T09:57:40Z",
    "language": "JavaScript",
-   "stars": 6604,
+   "stars": 6632,
    "description": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
-   "score": 129.49,
+   "score": 127.54,
    "url": "https://github.com/QingYunA/answer-me-with-html"
   },
   "QwenLM/qwen-code": {
@@ -632,19 +646,6 @@
    "score": 95.71,
    "url": "https://github.com/TrapAccountant/GitHub-Copilot-app"
   },
-  "TrueDefenderRouter/GitHub-Copilot-app": {
-   "first_seen_at": "2026-11-15T01:05:02Z",
-   "sources": [
-    "topic:agent-skills/new"
-   ],
-   "last_seen_at": "2026-11-15T01:05:02Z",
-   "trending_today": false,
-   "created_at": "2026-11-14T19:25:20Z",
-   "stars": 660,
-   "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
-   "score": 94.29,
-   "url": "https://github.com/TrueDefenderRouter/GitHub-Copilot-app"
-  },
   "TurkeyDesignate/GitHub-Copilot-app": {
    "first_seen_at": "2026-11-15T01:05:02Z",
    "sources": [
@@ -667,13 +668,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-07-19T11:44:41Z",
    "language": "TypeScript",
-   "stars": 22117,
+   "stars": 22312,
    "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.",
-   "score": 175.53,
+   "score": 175.69,
    "url": "https://github.com/Vincentwei1021/video-shotcraft"
   },
   "VoltAgent/awesome-agent-skills": {
@@ -698,12 +699,12 @@
    "sources": [
     "topic:agent-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-25T09:22:32Z",
-   "stars": 53938,
+   "stars": 53962,
    "description": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
-   "score": 179.2,
+   "score": 178.68,
    "url": "https://github.com/VoltAgent/awesome-openclaw-skills"
   },
   "WebBookkeeper/GitHub-Copilot-app": {
@@ -724,13 +725,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-12-18T02:26:18Z",
    "language": "Go",
-   "stars": 46456,
+   "stars": 46531,
    "description": "Sub2API 一站式开源中转服务,让 Claude、Openai 、Gemini、Grok订阅统一接入,支持拼车共享,更高效分摊成本,原生工具无缝使用。",
-   "score": 137.04,
+   "score": 136.45,
    "url": "https://github.com/Wei-Shaw/sub2api"
   },
   "XinaTian/MROffice": {
@@ -740,13 +741,13 @@
     "topic:mcp-server/active",
     "topic:mcp-server/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-10T17:54:07Z",
    "language": "TypeScript",
-   "stars": 2174,
+   "stars": 3037,
    "description": "MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and e",
-   "score": 181.17,
+   "score": 233.62,
    "url": "https://github.com/XinaTian/MROffice"
   },
   "Yeachan-Heo/oh-my-claudecode": {
@@ -755,13 +756,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-09T03:36:29Z",
    "language": "TypeScript",
-   "stars": 41016,
+   "stars": 41039,
    "description": "Teams-first Multi-agent orchestration for Claude Code",
-   "score": 129.39,
+   "score": 128.65,
    "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
   },
   "addyosmani/agent-skills": {
@@ -772,13 +773,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-15T20:20:26Z",
    "language": "JavaScript",
-   "stars": 119787,
+   "stars": 120034,
    "description": "Production-grade engineering skills for AI coding agents.",
-   "score": 427.81,
+   "score": 427.17,
    "url": "https://github.com/addyosmani/agent-skills"
   },
   "agentes-chat/agentes-chat": {
@@ -786,13 +787,13 @@
    "sources": [
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-09T00:50:28Z",
    "language": "TypeScript",
-   "stars": 1955,
+   "stars": 1994,
    "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGP",
-   "score": 139.64,
+   "score": 132.93,
    "url": "https://github.com/agentes-chat/agentes-chat"
   },
   "ai-job-search-dev/ai-job-search": {
@@ -801,13 +802,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-18T14:33:04Z",
    "language": "Python",
-   "stars": 73046,
+   "stars": 73162,
    "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-   "score": 293.36,
+   "score": 292.65,
    "url": "https://github.com/ai-job-search-dev/ai-job-search"
   },
   "alchaincyf/huashu-art-motion": {
@@ -818,13 +819,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-06T04:49:37Z",
    "language": "JavaScript",
-   "stars": 7479,
+   "stars": 7560,
    "description": "艺术动画skill:35种艺术风格、9种解说语法,用代码让画动起来。",
-   "score": 159.13,
+   "score": 154.29,
    "url": "https://github.com/alchaincyf/huashu-art-motion"
   },
   "alchaincyf/huashu-design": {
@@ -837,13 +838,13 @@
     "topic:claude-skills/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-19T14:42:06Z",
    "language": "HTML",
-   "stars": 30437,
+   "stars": 30721,
    "description": "Huashu Design 3.4 · 在 agent 里打一句话,拿回能交付的设计:网页 / App 原型 / App Store 宣传图 / 小红书图文 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 92 种带样张的风格库 · 该是图的地方放真图 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
-   "score": 140.26,
+   "score": 140.92,
    "url": "https://github.com/alchaincyf/huashu-design"
   },
   "alchaincyf/nuwa-skill": {
@@ -854,13 +855,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-05T04:33:04Z",
    "language": "Python",
-   "stars": 38815,
+   "stars": 38908,
    "description": "你想蒸馏的下一个员工,何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
-   "score": 168.03,
+   "score": 166.99,
    "url": "https://github.com/alchaincyf/nuwa-skill"
   },
   "alibaba/open-code-review": {
@@ -870,13 +871,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2026-05-18T02:16:36Z",
    "language": "Go",
-   "stars": 55429,
+   "stars": 55792,
    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-   "score": 294.84,
+   "score": 293.64,
    "url": "https://github.com/alibaba/open-code-review"
   },
   "anthropics/claude-quickstarts": {
@@ -898,13 +899,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-05-03T02:43:56Z",
    "language": "Python",
-   "stars": 72433,
+   "stars": 72526,
    "description": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perple",
-   "score": 127.52,
+   "score": 127.24,
    "url": "https://github.com/asgeirtj/system_prompts_leaks"
   },
   "blader/humanizer": {
@@ -914,13 +915,13 @@
     "topic:claude-code/active",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-18T05:30:15Z",
    "language": "Python",
-   "stars": 72347,
+   "stars": 72817,
    "description": "Agent skill that removes signs of AI-generated writing from text",
-   "score": 234.89,
+   "score": 235.65,
    "url": "https://github.com/blader/humanizer"
   },
   "bookwjitchieni1986/blender-ai-mcp-addon": {
@@ -943,13 +944,13 @@
     "topic:agent-skills/new",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-16T15:09:46Z",
    "language": "Python",
-   "stars": 796,
+   "stars": 821,
    "description": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
-   "score": 113.71,
+   "score": 117.29,
    "url": "https://github.com/boringmarketer/boring-marketing-skills"
   },
   "career-ops-hq/career-ops": {
@@ -960,13 +961,13 @@
     "topic:claude-code-plugin/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-04T18:21:18Z",
    "language": "JavaScript",
-   "stars": 84229,
+   "stars": 84459,
    "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCod",
-   "score": 363.06,
+   "score": 362.48,
    "url": "https://github.com/career-ops-hq/career-ops"
   },
   "caru-ini/stack-diagram": {
@@ -978,13 +979,13 @@
     "topic:claude-skills/active",
     "topic:claude-skills/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-01T05:35:12Z",
    "language": "TypeScript",
-   "stars": 2708,
+   "stars": 2860,
    "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
-   "score": 128.95,
+   "score": 130.0,
    "url": "https://github.com/caru-ini/stack-diagram"
   },
   "cathrynlavery/diagram-design": {
@@ -996,13 +997,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2026-04-16T18:01:16Z",
    "language": "HTML",
-   "stars": 70326,
-   "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-   "score": 319.66,
+   "stars": 71139,
+   "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "score": 321.9,
    "url": "https://github.com/cathrynlavery/diagram-design"
   },
   "cheaper-inference/OmniRoute": {
@@ -1011,13 +1012,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-13T12:38:31Z",
    "language": "TypeScript",
-   "stars": 89634,
+   "stars": 89926,
    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop",
-   "score": 317.85,
+   "score": 317.76,
    "url": "https://github.com/cheaper-inference/OmniRoute"
   },
   "citrolabs/ego-lite": {
@@ -1027,13 +1028,13 @@
     "topic:agent-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-16T12:51:09Z",
    "language": "JavaScript",
-   "stars": 24039,
+   "stars": 24230,
    "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-   "score": 109.27,
+   "score": 109.64,
    "url": "https://github.com/citrolabs/ego-lite"
   },
   "cloudflare/security-audit-skill": {
@@ -1054,13 +1055,13 @@
    "sources": [
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-12-03T01:40:05Z",
    "language": "TypeScript",
-   "stars": 71064,
+   "stars": 71089,
    "description": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
-   "score": 200.18,
+   "score": 199.69,
    "url": "https://github.com/code-yeongyu/oh-my-openagent"
   },
   "colbymchenry/codegraph": {
@@ -1068,13 +1069,13 @@
    "sources": [
     "kw:claude code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-18T21:45:37Z",
    "language": "TypeScript",
-   "stars": 78419,
+   "stars": 78535,
    "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
-   "score": 254.61,
+   "score": 254.16,
    "url": "https://github.com/colbymchenry/codegraph"
   },
   "coreyhaines31/marketingskills": {
@@ -1086,13 +1087,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-15T19:45:23Z",
    "language": "JavaScript",
-   "stars": 62077,
+   "stars": 62295,
    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
-   "score": 199.6,
+   "score": 199.66,
    "url": "https://github.com/coreyhaines31/marketingskills"
   },
   "cursor/plugins": {
@@ -1100,12 +1101,28 @@
    "sources": [
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
-   "stars": 18469,
+   "stars": 18885,
    "description": "Cursor plugin specification and official plugins",
-   "score": 615.63,
+   "score": 629.5,
    "url": "https://github.com/cursor/plugins"
+  },
+  "danielwh2/sprite-stacking": {
+   "first_seen_at": "2026-11-24T05:20:32Z",
+   "sources": [
+    "kw:claude code/new",
+    "topic:agent-skills/new",
+    "topic:claude-code/new"
+   ],
+   "last_seen_at": "2026-11-24T05:20:32Z",
+   "trending_today": false,
+   "created_at": "2026-11-20T14:32:43Z",
+   "language": "HTML",
+   "stars": 688,
+   "description": "Agent skill: turn four pixel art views into fake-3D sprites you can spin. Works with Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Pi.",
+   "score": 98.29,
+   "url": "https://github.com/danielwh2/sprite-stacking"
   },
   "decolua/9router": {
    "first_seen_at": "2026-10-19T06:33:13Z",
@@ -1113,13 +1130,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-05T02:59:30Z",
    "language": "JavaScript",
-   "stars": 32753,
+   "stars": 32798,
    "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
-   "score": 102.03,
+   "score": 101.54,
    "url": "https://github.com/decolua/9router"
   },
   "elementalsouls/Claude-BugHunter": {
@@ -1130,13 +1147,13 @@
     "topic:claude-skills/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2026-05-05T11:22:32Z",
    "language": "Python",
-   "stars": 17890,
-   "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-   "score": 89.0,
+   "stars": 20076,
+   "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+   "score": 99.39,
    "url": "https://github.com/elementalsouls/Claude-BugHunter"
   },
   "elvarofficial/teardown": {
@@ -1145,13 +1162,13 @@
     "kw:claude code/active",
     "kw:claude code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-30T09:29:01Z",
    "language": "JavaScript",
-   "stars": 4030,
+   "stars": 4097,
    "description": "A Claude Code skill that turns any machine into a 3D simulator you can take apart",
-   "score": 175.22,
+   "score": 170.71,
    "url": "https://github.com/elvarofficial/teardown"
   },
   "emilkowalski/skills": {
@@ -1177,13 +1194,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-16T12:10:36Z",
    "language": "Rust",
-   "stars": 8023,
+   "stars": 8827,
    "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
-   "score": 1146.14,
+   "score": 1261.0,
    "url": "https://github.com/erkamyaman/rust-anything"
   },
   "ersinkoc/phonebox": {
@@ -1192,13 +1209,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-07T16:45:16Z",
    "language": "JavaScript",
-   "stars": 5064,
+   "stars": 5539,
    "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
-   "score": 337.6,
+   "score": 346.19,
    "url": "https://github.com/ersinkoc/phonebox"
   },
   "farion1231/cc-switch": {
@@ -1207,13 +1224,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-08-04T14:16:16Z",
    "language": "Rust",
-   "stars": 156408,
+   "stars": 156718,
    "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
-   "score": 329.28,
+   "score": 329.24,
    "url": "https://github.com/farion1231/cc-switch"
   },
   "garrytan/gstack": {
@@ -1222,13 +1239,13 @@
     "kw:claude code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-11T21:22:45Z",
    "language": "TypeScript",
-   "stars": 142386,
+   "stars": 142495,
    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-   "score": 556.2,
+   "score": 554.46,
    "url": "https://github.com/garrytan/gstack"
   },
   "genspark-ai/genoffice": {
@@ -1237,13 +1254,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-07-31T09:40:58Z",
    "language": "TypeScript",
-   "stars": 12777,
+   "stars": 12836,
    "description": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.",
-   "score": 112.08,
+   "score": 111.62,
    "url": "https://github.com/genspark-ai/genoffice"
   },
   "google-gemini/gemini-cli": {
@@ -1251,13 +1268,13 @@
    "sources": [
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-04-17T17:04:31Z",
    "language": "TypeScript",
-   "stars": 109008,
+   "stars": 109034,
    "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
-   "score": 186.66,
+   "score": 186.38,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   "google-labs-code/stitch-skills": {
@@ -1267,11 +1284,11 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
-   "stars": 11937,
+   "stars": 12386,
    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-   "score": 38.51,
+   "score": 39.83,
    "url": "https://github.com/google-labs-code/stitch-skills",
    "created_at": "2026-01-16T17:17:17Z",
    "language": "TypeScript"
@@ -1284,13 +1301,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-09-13T16:31:06Z",
    "language": "Python",
-   "stars": 22175,
+   "stars": 22461,
    "description": "Open-source plugin for designing and reviewing software with agents",
-   "score": 316.79,
+   "score": 316.35,
    "url": "https://github.com/google/elephant-goldfish-model"
   },
   "google/skills": {
@@ -1311,13 +1328,13 @@
    "sources": [
     "topic:agent-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-02T19:46:06Z",
    "language": "Rust",
-   "stars": 32451,
+   "stars": 32456,
    "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
-   "score": 122.46,
+   "score": 122.02,
    "url": "https://github.com/googleworkspace/cli"
   },
   "haydenschmitty/floorplan": {
@@ -1328,13 +1345,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-27T12:03:01Z",
    "language": "JavaScript",
-   "stars": 6262,
+   "stars": 6497,
    "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
-   "score": 240.85,
+   "score": 240.63,
    "url": "https://github.com/haydenschmitty/floorplan"
   },
   "headroomlabs-ai/headroom": {
@@ -1343,13 +1360,13 @@
     "topic:claude-code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-07T19:58:51Z",
    "language": "Python",
-   "stars": 80512,
+   "stars": 80684,
    "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-   "score": 252.39,
+   "score": 252.14,
    "url": "https://github.com/headroomlabs-ai/headroom"
   },
   "herdrdev/herdr": {
@@ -1358,13 +1375,13 @@
     "topic:claude-code/active",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-27T17:54:33Z",
    "language": "Rust",
-   "stars": 52350,
+   "stars": 52530,
    "description": "the runtime your coding agents live on",
-   "score": 218.12,
+   "score": 217.97,
    "url": "https://github.com/herdrdev/herdr"
   },
   "heygen-com/hyperframes": {
@@ -1374,13 +1391,13 @@
     "topic:agent-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-10T01:51:06Z",
    "language": "TypeScript",
-   "stars": 88300,
+   "stars": 89071,
    "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
-   "score": 343.58,
+   "score": 343.9,
    "url": "https://github.com/heygen-com/hyperframes"
   },
   "hitkeeen/blender-ai-mcp-addon": {
@@ -1414,13 +1431,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-15T07:39:12Z",
    "language": "C#",
-   "stars": 33527,
+   "stars": 33542,
    "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
-   "score": 133.04,
+   "score": 132.58,
    "url": "https://github.com/iOfficeAI/OfficeCLI"
   },
   "img2threejs/img2threejs": {
@@ -1428,29 +1445,14 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-07-15T02:58:39Z",
    "language": "Python",
-   "stars": 21780,
+   "stars": 21837,
    "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
-   "score": 167.54,
+   "score": 165.43,
    "url": "https://github.com/img2threejs/img2threejs"
-  },
-  "jarrodwatts/claude-hud": {
-   "first_seen_at": "2026-11-23T01:45:53Z",
-   "sources": [
-    "kw:claude code/active",
-    "topic:claude-code/active"
-   ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
-   "trending_today": false,
-   "created_at": "2026-01-02T01:35:07Z",
-   "language": "JavaScript",
-   "stars": 29292,
-   "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
-   "score": 90.13,
-   "url": "https://github.com/jarrodwatts/claude-hud"
   },
   "kaankiziltug/logo-design-skill": {
    "first_seen_at": "2026-10-19T06:33:13Z",
@@ -1479,13 +1481,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2026-09-03T14:33:38Z",
    "language": "Python",
-   "stars": 9750,
+   "stars": 10323,
    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-   "score": 121.88,
+   "score": 127.44,
    "url": "https://github.com/kajisho5/ffmpeg-skill"
   },
   "koala73/worldmonitor": {
@@ -1493,13 +1495,13 @@
    "sources": [
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-08T17:26:06Z",
    "language": "TypeScript",
-   "stars": 91074,
+   "stars": 91122,
    "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-   "score": 286.4,
+   "score": 285.65,
    "url": "https://github.com/koala73/worldmonitor"
   },
   "latent-spaces/brag": {
@@ -1530,13 +1532,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-09-26T10:10:41Z",
    "language": "JavaScript",
-   "stars": 19933,
+   "stars": 20376,
    "description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱:99 种现成风格,也能做出你自己的",
-   "score": 349.7,
+   "score": 351.31,
    "url": "https://github.com/lemomo-ai/lemo-opuscar"
   },
   "lidge-jun/opencodex": {
@@ -1545,13 +1547,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-06-18T23:03:18Z",
    "language": "TypeScript",
-   "stars": 18711,
+   "stars": 18728,
    "description": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama...) with Codex CLI, App, SDK, and Claude Code",
-   "score": 119.18,
+   "score": 118.53,
    "url": "https://github.com/lidge-jun/opencodex"
   },
   "luongnv89/claude-howto": {
@@ -1561,13 +1563,13 @@
     "topic:claude-code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-11-07T22:59:34Z",
    "language": "Python",
-   "stars": 47508,
+   "stars": 47545,
    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-   "score": 125.02,
+   "score": 124.79,
    "url": "https://github.com/luongnv89/claude-howto"
   },
   "manaflow-ai/cmux": {
@@ -1575,13 +1577,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-28T10:03:24Z",
    "language": "Swift",
-   "stars": 28896,
+   "stars": 28928,
    "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
-   "score": 96.97,
+   "score": 96.75,
    "url": "https://github.com/manaflow-ai/cmux"
   },
   "mdiri-ai/SoduWork": {
@@ -1590,13 +1592,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-29T02:43:14Z",
    "language": "JavaScript",
-   "stars": 6819,
+   "stars": 7167,
    "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
-   "score": 284.12,
+   "score": 275.65,
    "url": "https://github.com/mdiri-ai/SoduWork"
   },
   "microsoft/SkillOpt": {
@@ -1604,13 +1606,13 @@
    "sources": [
     "topic:agent-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-05-08T06:41:01Z",
    "language": "Python",
-   "stars": 19182,
+   "stars": 19194,
    "description": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
-   "score": 96.88,
+   "score": 96.45,
    "url": "https://github.com/microsoft/SkillOpt"
   },
   "microsoft/TokenEconomizer": {
@@ -1619,13 +1621,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-13T04:16:50Z",
    "language": "Python",
-   "stars": 7970,
+   "stars": 8039,
    "description": "Experience-Driven Black-Box Cost Control for Coding Agents",
-   "score": 199.25,
+   "score": 191.4,
    "url": "https://github.com/microsoft/TokenEconomizer"
   },
   "milind-soni/OpenMausBot": {
@@ -1633,41 +1635,29 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-08-11T18:58:55Z",
    "language": "TypeScript",
-   "stars": 26862,
+   "stars": 27252,
    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-   "score": 260.8,
+   "score": 262.04,
    "url": "https://github.com/milind-soni/OpenMausBot"
-  },
-  "miqdadbadjuber/anti-slop": {
-   "first_seen_at": "2026-11-20T02:21:22Z",
-   "sources": [
-    "topic:agent-skills/active",
-    "topic:claude-code/active"
-   ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
-   "trending_today": false,
-   "created_at": "2026-08-07T10:29:56Z",
-   "language": "JavaScript",
-   "stars": 9855,
-   "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
-   "score": 92.1,
-   "url": "https://github.com/miqdadbadjuber/anti-slop"
   },
   "mjmirza/app-store-compliance": {
    "first_seen_at": "2026-11-20T02:21:22Z",
    "sources": [
+    "topic:claude-code/active",
     "trending:daily"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
-   "stars": 4016,
+   "stars": 5129,
    "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
-   "score": 133.87,
-   "url": "https://github.com/mjmirza/app-store-compliance"
+   "score": 30.17,
+   "url": "https://github.com/mjmirza/app-store-compliance",
+   "created_at": "2026-06-06T11:29:45Z",
+   "language": "Shell"
   },
   "mksglu/context-mode": {
    "first_seen_at": "2026-10-19T06:33:13Z",
@@ -1677,13 +1667,13 @@
     "topic:mcp-server/active",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-23T05:56:28Z",
    "language": "JavaScript",
-   "stars": 34399,
+   "stars": 34426,
    "description": "Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OMP, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.",
-   "score": 126.47,
+   "score": 126.1,
    "url": "https://github.com/mksglu/context-mode"
   },
   "morluto/rea": {
@@ -1692,13 +1682,13 @@
     "topic:agent-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-14T00:51:32Z",
    "language": "TypeScript",
-   "stars": 474155,
+   "stars": 475884,
    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-   "score": 2126.26,
+   "score": 2124.48,
    "url": "https://github.com/morluto/rea"
   },
   "mvanhorn/last30days-skill": {
@@ -1709,13 +1699,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2026-01-23T20:37:37Z",
    "language": "Python",
-   "stars": 72757,
+   "stars": 73580,
    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-   "score": 240.12,
+   "score": 242.04,
    "url": "https://github.com/mvanhorn/last30days-skill"
   },
   "nanocoai/nanoclaw": {
@@ -1725,13 +1715,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-31T15:47:22Z",
    "language": "TypeScript",
-   "stars": 31144,
+   "stars": 31150,
    "description": "Your own always-on AI assistant: self-hosted, open source, lightweight. Each agent runs in its own container on your machine, on the harness you choose (Claude Code, Codex, Cursor, OpenCode). Talk to it from Slack, WhatsApp, Telegram, Discord and more.",
-   "score": 105.57,
+   "score": 105.24,
    "url": "https://github.com/nanocoai/nanoclaw"
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
@@ -1739,13 +1729,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-11-30T11:36:31Z",
    "language": "Python",
-   "stars": 152872,
+   "stars": 153389,
    "description": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
-   "score": 428.21,
+   "score": 428.46,
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
   },
   "nexu-io/open-design": {
@@ -1753,13 +1743,13 @@
    "sources": [
     "topic:agent-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-28T04:25:20Z",
    "language": "TypeScript",
-   "stars": 108987,
+   "stars": 109203,
    "description": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.",
-   "score": 523.98,
+   "score": 520.01,
    "url": "https://github.com/nexu-io/open-design"
   },
   "obsidianmd/obsidian-skills": {
@@ -1768,13 +1758,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-02T21:45:11Z",
    "language": "Shell",
-   "stars": 53463,
+   "stars": 53574,
    "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
-   "score": 165.01,
+   "score": 164.84,
    "url": "https://github.com/obsidianmd/obsidian-skills"
   },
   "onehumanbeing/esp32-iphone-agent": {
@@ -1783,13 +1773,13 @@
     "topic:claude-code/active",
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-11T19:10:25Z",
    "language": "Swift",
-   "stars": 5229,
+   "stars": 5286,
    "description": "Manina AI: let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
-   "score": 124.5,
+   "score": 122.93,
    "url": "https://github.com/onehumanbeing/esp32-iphone-agent"
   },
   "openai/codex-security": {
@@ -1811,13 +1801,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-04T09:29:07Z",
    "language": "TypeScript",
-   "stars": 9008,
+   "stars": 9165,
    "description": "The open source AI video agent: turns any coding agent into a video agent, with editors to change anything it makes.",
-   "score": 183.84,
+   "score": 183.3,
    "url": "https://github.com/openfilm/openfilm"
   },
   "paperclipai/paperclip": {
@@ -1827,13 +1817,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-02T15:01:51Z",
    "language": "TypeScript",
-   "stars": 115982,
+   "stars": 116437,
    "description": "The open-source app everyone uses to manage agents at work",
-   "score": 437.67,
+   "score": 437.73,
    "url": "https://github.com/paperclipai/paperclip"
   },
   "patch-gg/pixelfx": {
@@ -1846,13 +1836,13 @@
     "topic:claude-code-plugin/active",
     "topic:claude-code-plugin/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-30T06:43:25Z",
    "language": "JavaScript",
-   "stars": 8757,
+   "stars": 8923,
    "description": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-   "score": 380.74,
+   "score": 371.79,
    "url": "https://github.com/patch-gg/pixelfx"
   },
   "pbakaus/impeccable": {
@@ -1862,13 +1852,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-11-16T01:52:04Z",
    "language": "Rust",
-   "stars": 115043,
+   "stars": 115751,
    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-   "score": 310.09,
+   "score": 310.32,
    "url": "https://github.com/pbakaus/impeccable"
   },
   "phuryn/pm-skills": {
@@ -1884,19 +1874,34 @@
    "score": 108.5,
    "url": "https://github.com/phuryn/pm-skills"
   },
+  "pierridotite/mobile-agent-testers": {
+   "first_seen_at": "2026-11-24T05:20:32Z",
+   "sources": [
+    "kw:claude code/new",
+    "topic:claude-code/new"
+   ],
+   "last_seen_at": "2026-11-24T05:20:32Z",
+   "trending_today": false,
+   "created_at": "2026-11-16T19:11:44Z",
+   "language": "Python",
+   "stars": 1539,
+   "description": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+   "score": 219.86,
+   "url": "https://github.com/pierridotite/mobile-agent-testers"
+  },
   "pingdotgg/t3code": {
    "first_seen_at": "2026-11-13T01:51:26Z",
    "sources": [
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-02-08T23:46:22Z",
    "language": "TypeScript",
-   "stars": 71759,
+   "stars": 75421,
    "description": "The best way to control Claude Code, Codex and more from any computer or phone",
-   "score": 250.03,
+   "score": 261.88,
    "url": "https://github.com/pingdotgg/t3code"
   },
   "punkpeye/awesome-mcp-servers": {
@@ -1919,13 +1924,13 @@
     "topic:mcp-server/active",
     "topic:mcp-server/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-25T05:25:45Z",
    "language": "TypeScript",
-   "stars": 6427,
+   "stars": 6617,
    "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
-   "score": 229.54,
+   "score": 228.17,
    "url": "https://github.com/qybaihe/bla"
   },
   "rehan-remade/universal-modder": {
@@ -1938,13 +1943,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-09-30T05:00:35Z",
    "language": "Python",
-   "stars": 9836,
+   "stars": 9859,
    "description": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
-   "score": 185.58,
+   "score": 179.25,
    "url": "https://github.com/rehan-remade/universal-modder"
   },
   "router-for-me/CLIProxyAPI": {
@@ -1953,13 +1958,13 @@
     "kw:claude code/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-07-01T19:43:27Z",
    "language": "Go",
-   "stars": 59255,
+   "stars": 59361,
    "description": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
-   "score": 116.41,
+   "score": 116.39,
    "url": "https://github.com/router-for-me/CLIProxyAPI"
   },
   "rtk-ai/rtk": {
@@ -1967,13 +1972,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-22T16:54:16Z",
    "language": "Rust",
-   "stars": 87515,
+   "stars": 87628,
    "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
-   "score": 287.88,
+   "score": 287.3,
    "url": "https://github.com/rtk-ai/rtk"
   },
   "ruvnet/RuView": {
@@ -1981,13 +1986,13 @@
    "sources": [
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-06-07T04:32:30Z",
    "language": "Rust",
-   "stars": 104825,
+   "stars": 104986,
    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-   "score": 196.67,
+   "score": 196.24,
    "url": "https://github.com/ruvnet/RuView"
   },
   "ruvnet/ruflo": {
@@ -1999,13 +2004,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-06-02T21:24:20Z",
    "language": "TypeScript",
-   "stars": 82282,
+   "stars": 82336,
    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-   "score": 152.94,
+   "score": 152.76,
    "url": "https://github.com/ruvnet/ruflo"
   },
   "sansan0/TrendRadar": {
@@ -2013,13 +2018,13 @@
    "sources": [
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-04-28T11:42:16Z",
    "language": "Python",
-   "stars": 63803,
+   "stars": 63840,
    "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, web search, MCP & smart alerts.🎯 告别信息过载,你的 AI     舆情监控助手与热点筛选工具!聚合多平台热点 + RSS 订阅 + 定时联网搜索,支持关键词与 AI 智能筛选。AI 翻译 + AI 分析简报直推手机,支持接入 MCP     架构,赋能 AI 自然语言对话分析、实时检索、情感洞察与趋势预测。支持 Docker,数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/B",
-   "score": 111.35,
+   "score": 111.22,
    "url": "https://github.com/sansan0/TrendRadar"
   },
   "shanraisshan/claude-code-best-practice": {
@@ -2029,13 +2034,13 @@
     "topic:claude-code-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-10-31T14:15:28Z",
    "language": "HTML",
-   "stars": 69321,
+   "stars": 69366,
    "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-   "score": 179.12,
+   "score": 178.78,
    "url": "https://github.com/shanraisshan/claude-code-best-practice"
   },
   "shareAI-lab/learn-claude-code": {
@@ -2056,15 +2061,16 @@
   "shinyobjectz/raea": {
    "first_seen_at": "2026-11-22T01:22:26Z",
    "sources": [
-    "topic:agent-skills/active"
+    "topic:agent-skills/active",
+    "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-10-18T18:08:48Z",
    "language": "TypeScript",
-   "stars": 4303,
+   "stars": 4747,
    "description": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
-   "score": 122.94,
+   "score": 131.86,
    "url": "https://github.com/shinyobjectz/raea"
   },
   "sickn33/agentic-awesome-skills": {
@@ -2075,13 +2081,13 @@
     "topic:claude-code-skills/active",
     "topic:claude-code/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-01-14T17:48:09Z",
    "language": "Python",
-   "stars": 50161,
+   "stars": 50219,
    "description": "3,000+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
-   "score": 160.77,
+   "score": 160.44,
    "url": "https://github.com/sickn33/agentic-awesome-skills"
   },
   "simbasjungles/free-my-tv": {
@@ -2109,13 +2115,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-03-17T03:28:57Z",
    "language": "TypeScript",
-   "stars": 133070,
+   "stars": 134759,
    "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
-   "score": 532.28,
+   "score": 534.76,
    "url": "https://github.com/stablyai/orca"
   },
   "sybil-solutions/inference-optimisation-skill": {
@@ -2123,13 +2129,13 @@
    "sources": [
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-11-16T18:40:04Z",
    "language": "Python",
-   "stars": 1965,
+   "stars": 2270,
    "description": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
-   "score": 280.71,
+   "score": 324.29,
    "url": "https://github.com/sybil-solutions/inference-optimisation-skill"
   },
   "t3dotgg/tstack": {
@@ -2157,13 +2163,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-08-31T20:50:03Z",
    "language": "TypeScript",
-   "stars": 119098,
+   "stars": 119369,
    "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-   "score": 265.84,
+   "score": 265.86,
    "url": "https://github.com/thedotmack/claude-mem"
   },
   "tirth8205/code-review-graph": {
@@ -2187,13 +2193,13 @@
     "trending:daily",
     "trending:weekly"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": true,
    "created_at": "2025-10-19T16:37:29Z",
    "language": "Python",
-   "stars": 7797,
+   "stars": 8127,
    "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-   "score": 19.54,
+   "score": 20.32,
    "url": "https://github.com/tradermonty/claude-trading-skills"
   },
   "tt-a1i/archify": {
@@ -2204,13 +2210,13 @@
     "topic:claude-code/active",
     "topic:claude-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-04-15T05:27:37Z",
    "language": "JavaScript",
-   "stars": 98808,
+   "stars": 99199,
    "description": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
-   "score": 447.1,
+   "score": 446.84,
    "url": "https://github.com/tt-a1i/archify"
   },
   "unitsenseimonitor/GitHub-Copilot-app": {
@@ -2231,13 +2237,13 @@
    "sources": [
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2025-03-26T23:40:39Z",
    "language": "TypeScript",
-   "stars": 65295,
+   "stars": 65353,
    "description": "Context7 Platform -- Up-to-date docs for AI agents",
-   "score": 107.75,
+   "score": 107.67,
    "url": "https://github.com/upstash/context7"
   },
   "virgiliojr94/book-to-skill": {
@@ -2246,13 +2252,13 @@
     "kw:claude code/active",
     "topic:agent-skills/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-05-01T02:09:39Z",
    "language": "Python",
-   "stars": 38768,
+   "stars": 38886,
    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
-   "score": 189.11,
+   "score": 187.86,
    "url": "https://github.com/virgiliojr94/book-to-skill"
   },
   "xerj-org/xerj": {
@@ -2261,13 +2267,13 @@
     "topic:claude-code/active",
     "topic:mcp-server/active"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-06-30T04:32:45Z",
    "language": "Rust",
-   "stars": 19426,
+   "stars": 20270,
    "description": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
-   "score": 133.97,
+   "score": 137.89,
    "url": "https://github.com/xerj-org/xerj"
   },
   "yetone/magpie": {
@@ -2278,13 +2284,13 @@
     "topic:claude-code/active",
     "topic:claude-code/new"
    ],
-   "last_seen_at": "2026-11-23T01:45:53Z",
+   "last_seen_at": "2026-11-24T05:20:32Z",
    "trending_today": false,
    "created_at": "2026-09-23T16:22:35Z",
    "language": "Go",
-   "stars": 40062,
+   "stars": 40633,
    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-   "score": 667.7,
+   "score": 666.11,
    "url": "https://github.com/yetone/magpie"
   },
   "zhaoxuya520/reverse-skill": {
@@ -2302,5 +2308,5 @@
    "url": "https://github.com/zhaoxuya520/reverse-skill"
   }
  },
- "updated_at": "2026-11-23T01:45:53Z"
+ "updated_at": "2026-11-24T05:20:32Z"
 }

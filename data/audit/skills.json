@@ -1,7 +1,7 @@
 {
  "repos": {
   "ComposioHQ/awesome-claude-skills": {
-   "audited_at": "2026-11-17T03:56:01Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 864,
    "script_files": 65,
    "hook_configs": [],
@@ -67,8 +67,25 @@
    "tree_truncated": false,
    "checked_files": 13
   },
+  "EL4CTEO/fast-anything": {
+   "audited_at": "2026-11-24T05:20:32Z",
+   "skill_files": 1,
+   "script_files": 0,
+   "hook_configs": [],
+   "mcp_configs": [
+    ".mcp.json"
+   ],
+   "flags": {
+    "network": [],
+    "credentials": [],
+    "shell": [],
+    "injection": []
+   },
+   "tree_truncated": false,
+   "checked_files": 1
+  },
   "Egonex-AI/Understand-Anything": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 9,
    "script_files": 20,
    "hook_configs": [
@@ -98,7 +115,7 @@
    "checked_files": 9
   },
   "Gathin23/cleanyourtv": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -113,7 +130,7 @@
    "checked_files": 0
   },
   "Graphify-Labs/graphify": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 2,
    "script_files": 104,
    "hook_configs": [],
@@ -137,7 +154,7 @@
    "checked_files": 2
   },
   "JuliusBrussee/caveman": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 28,
    "script_files": 17,
    "hook_configs": [],
@@ -170,7 +187,7 @@
    "checked_files": 28
   },
   "JuneYaooo/rea-video": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
@@ -208,7 +225,7 @@
    "checked_files": 1
   },
   "NousResearch/hermes-agent": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 186,
    "script_files": 251,
    "hook_configs": [],
@@ -377,7 +394,7 @@
    "budget_exhausted": true
   },
   "affaan-m/ECC": {
-   "audited_at": "2026-11-20T02:21:22Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 1089,
    "script_files": 152,
    "hook_configs": [
@@ -433,7 +450,7 @@
    "checked_files": 40
   },
   "anthropics/claude-code": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -456,7 +473,7 @@
    "checked_files": 0
   },
   "anthropics/claude-code-action": {
-   "audited_at": "2026-11-21T02:20:23Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [
@@ -475,7 +492,7 @@
    "checked_files": 0
   },
   "anthropics/claude-plugins-official": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 57,
    "script_files": 27,
    "hook_configs": [
@@ -611,7 +628,7 @@
    "checked_files": 13
   },
   "anthropics/skills": {
-   "audited_at": "2026-11-17T03:56:01Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 20,
    "script_files": 79,
    "hook_configs": [],
@@ -657,32 +674,6 @@
    },
    "tree_truncated": false,
    "checked_files": 0
-  },
-  "career-ops-hq/career-ops": {
-   "audited_at": "2026-11-23T01:45:53Z",
-   "skill_files": 16,
-   "script_files": 15,
-   "hook_configs": [
-    "hooks/hooks.json"
-   ],
-   "mcp_configs": [],
-   "flags": {
-    "network": [],
-    "credentials": [],
-    "shell": [
-     "modes/upskill.md",
-     "plugins/h1b-sponsor/skill.md"
-    ],
-    "injection": [
-     ".agents/skills/career-ops/SKILL.md",
-     "antigravity-directory/skills/career-ops/SKILL.md",
-     "claude-directory/skills/career-ops/SKILL.md",
-     "cursor-directory/skills/career-ops/SKILL.md",
-     "openai-directory/skills/career-ops/SKILL.md"
-    ]
-   },
-   "tree_truncated": false,
-   "checked_files": 16
   },
   "cloudflare/security-audit-skill": {
    "audited_at": "2026-11-19T02:36:10Z",
@@ -747,7 +738,7 @@
    "checked_files": 40
   },
   "erkamyaman/rust-anything": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 3,
    "script_files": 0,
    "hook_configs": [],
@@ -769,9 +760,9 @@
    "checked_files": 3
   },
   "garrytan/gstack": {
-   "audited_at": "2026-11-23T01:45:53Z",
-   "skill_files": 77,
-   "script_files": 466,
+   "audited_at": "2026-11-24T05:20:32Z",
+   "skill_files": 76,
+   "script_files": 467,
    "hook_configs": [],
    "mcp_configs": [],
    "flags": {
@@ -808,7 +799,8 @@
      "devex-review/SKILL.md",
      "document-generate/SKILL.md",
      "document-release/SKILL.md",
-     "health/SKILL.md"
+     "health/SKILL.md",
+     "modernize/SKILL.md"
     ],
     "shell": [
      "SKILL.md",
@@ -923,7 +915,7 @@
    "checked_files": 40
   },
   "hesreallyhim/awesome-claude-code": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1026,7 +1018,7 @@
    "checked_files": 11
   },
   "morluto/rea": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 6,
    "script_files": 0,
    "hook_configs": [],
@@ -1048,7 +1040,7 @@
    "checked_files": 6
   },
   "multica-ai/andrej-karpathy-skills": {
-   "audited_at": "2026-11-17T03:56:01Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 1,
    "script_files": 0,
    "hook_configs": [],
@@ -1063,9 +1055,9 @@
    "checked_files": 1
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 13,
-   "script_files": 76,
+   "script_files": 78,
    "hook_configs": [
     "stack/.claude/settings.json"
    ],
@@ -1100,7 +1092,7 @@
    "checked_files": 13
   },
   "nexu-io/open-design": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 566,
    "script_files": 234,
    "hook_configs": [],
@@ -1204,7 +1196,7 @@
    "checked_files": 24
   },
   "paperclipai/paperclip": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 87,
    "script_files": 67,
    "hook_configs": [],
@@ -1309,7 +1301,7 @@
    "checked_files": 0
   },
   "stablyai/orca": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 12,
    "script_files": 0,
    "hook_configs": [
@@ -1330,7 +1322,7 @@
    "checked_files": 12
   },
   "travisvn/awesome-claude-skills": {
-   "audited_at": "2026-11-17T03:56:01Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 0,
    "script_files": 0,
    "hook_configs": [],
@@ -1345,7 +1337,7 @@
    "checked_files": 0
   },
   "tt-a1i/archify": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 6,
    "script_files": 410,
    "hook_configs": [],
@@ -1363,7 +1355,7 @@
    "checked_files": 6
   },
   "yetone/magpie": {
-   "audited_at": "2026-11-23T01:45:53Z",
+   "audited_at": "2026-11-24T05:20:32Z",
    "skill_files": 3,
    "script_files": 0,
    "hook_configs": [],
@@ -1378,6 +1370,6 @@
    "checked_files": 3
   }
  },
- "updated_at": "2026-11-23T01:45:53Z",
+ "updated_at": "2026-11-24T05:20:32Z",
  "note": "규칙 기반 신호일 뿐 — 신호가 없어도 안전이 보장되지 않는다. 원문은 저장하지 않음."
 }
