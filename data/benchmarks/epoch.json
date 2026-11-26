@@ -3,7 +3,7 @@
  "download": "https://epoch.ai/data/benchmark_data.zip",
  "license": "CC BY 4.0",
  "attribution": "Data: Epoch AI, Benchmarking Hub (epoch.ai/benchmarks), CC BY 4.0",
- "checked_at": "2026-11-25T04:14:45Z",
+ "checked_at": "2026-11-26T03:36:12Z",
  "missing": [],
  "sets": [
   {
@@ -197,7 +197,7 @@
    "measures": "구현·성능·연구가 섞인 어려운 소프트웨어 작업 점수",
    "unit": "%",
    "file": "frontierswe_external.csv",
-   "models": 25,
+   "models": 27,
    "top": [
     {
      "model": "claude-fable-5-2_max",
@@ -211,6 +211,13 @@
      "org": "OpenAI",
      "score": 66.0,
      "released": "2026-09-03",
+     "extra": "proximus"
+    },
+    {
+     "model": "gemini-4-neon_unknown",
+     "org": "Google DeepMind",
+     "score": 62.0,
+     "released": "2026-11-18",
      "extra": "proximus"
     },
     {
@@ -274,13 +281,6 @@
      "org": "Anthropic",
      "score": 44.0,
      "released": "2026-10-07",
-     "extra": "proximus"
-    },
-    {
-     "model": "gpt-5.6-sol_max",
-     "org": "OpenAI",
-     "score": 32.0,
-     "released": "2026-07-09",
      "extra": "proximus"
     }
    ]
